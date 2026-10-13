@@ -30,7 +30,7 @@ const RANGE_GEOMETRY = {
   avantgarde: {t: .022, top: 1.9, fascia: .14, over: .03, post: 'round', profile: {type: 'rib', pitch: .08, rib: .012}, door: 1.84, clear: 1.82, joint: .8},
   europa: {t: .02, top: 1.775, fascia: .05, over: .1, gable: .02, post: 'angle', profile: {type: 'groups', pitch: .088, count: 4, gap: .18, rib: .014}, door: 1.73, clear: 1.71, joint: .72},
   panorama: {t: .022, top: 1.86, fascia: .05, over: .08, gable: .105, post: 'round', profile: {type: 'rib', pitch: .08, rib: .012}, door: 1.84, clear: 1.82, joint: .8},
-  neo: {t: .025, top: 2.045, fascia: .155, over: .0475, post: 'rounded', profile: {type: 'groove', pitch: .28, groove: .003}, door: 2.02, clear: 2.0, joint: .56},
+  neo: {t: .025, top: 2.045, fascia: .155, over: .0475, post: 'rounded', profile: {type: 'groove', pitch: .28, groove: .0018}, door: 2.02, clear: 2.0, joint: .56},
   casanova: {t: .04, top: 2.04, fascia: .265, over: .12, post: 'square', profile: {type: 'groove', pitch: 1.0, groove: .004}, door: 2.0, clear: 1.98, joint: 1.0}
 };
 const BASE_STRIP = .035;
@@ -118,7 +118,7 @@ export function buildRoom(s, tex) {
   const smooth = steelMat(col, {type: 'smooth'});
   const smoothIn = steelMat(INSIDE, {type: 'smooth'}, {metalness: .15, roughness: .55});
   const roofHex = R === 'highline' ? COLOURS.quartz.render : col;
-  const roofMat = steelMat(roofHex, R === 'europa' ? {type: 'groove', pitch: .25, groove: .004} : {type: 'smooth'});
+  const roofMat = steelMat(roofHex, R === 'europa' ? {type: 'groove', pitch: .25, groove: .004} : {type: 'smooth'}, {metalness: .18, roughness: .55});
   const roofUnder = steelMat(R === 'neo' || R === 'casanova' ? '#d8c39d' : INSIDE, R === 'panorama' || R === 'avantgarde' ? {type: 'trapezoid', pitch: .2, crest: .05, flank: .02} : {type: 'smooth'}, {metalness: .1});
   if (R === 'neo' || R === 'casanova') { const p = tex.plywood(); roofUnder.map = p.map; roofUnder.color.set('#ffffff'); roofUnder.metalness = 0; }
   const acrylicPair = tex.acrylic();
@@ -130,6 +130,8 @@ export function buildRoom(s, tex) {
   const stainless = std('#d4d6d6', {roughness: .22, metalness: .9});
   const dark = std('#2a2c2d', {roughness: .6, metalness: .2});
   const hidden = std('#3a3a38', {roughness: 1}); hidden.name = 'hidden';
+  // Pressed grooves read as a shadow line in the panel's own colour, not as black.
+  const groove = std(new THREE.Color(COLOURS[s.colour].render).multiplyScalar(.62), {roughness: .5, metalness: .3});
   const conc = tex.concrete();
   const concrete = std('#ffffff', {map: conc.map, normalMap: conc.normalMap, roughness: .95});
 
@@ -155,8 +157,8 @@ export function buildRoom(s, tex) {
     const boards = tex.steel('#c3c7ca', {type: 'groove', pitch: .2, groove: .004});
     const deckMat = std('#ffffff', {map: boards.map, normalMap: boards.normalMap, roughness: .4, metalness: .7});
     box(base, ww + .02, deck, wd + .02, 0, top - deck / 2, 0, deckMat, 'foundation', 'smartbase');
-    box(base, ww + .024, .045, .03, 0, top - deck - .022, wd / 2 - .005, alu, 'foundation', 'smartbase');
-    box(base, ww + .024, .045, .03, 0, top - deck - .022, -wd / 2 + .005, alu, 'foundation', 'smartbase');
+    box(base, ww + .024, .045, .03, 0, top - deck - .022, wd / 2 - .002, alu, 'foundation', 'smartbase');
+    box(base, ww + .024, .045, .03, 0, top - deck - .022, -wd / 2 + .002, alu, 'foundation', 'smartbase');
     const nx = Math.max(2, Math.round(ww / .8) + 1), nz = Math.max(2, Math.round(wd / .8) + 1);
     for (let i = 0; i < nx; i++) for (let j = 0; j < nz; j++) {
       if (i > 0 && i < nx - 1 && j > 0 && j < nz - 1) continue;
@@ -170,16 +172,20 @@ export function buildRoom(s, tex) {
   if (s.anchors) {
     // Biohort's ground anchors for a gravel base: a bracket at the wall foot, staked into the ground.
     const total = {HS: 8, H1: 8, H2: 10, H3: 10, H4: 12, H5: 12, H6: 12, A1: 8, A2: 10, A3: 10, A4: 12, A5: 10, A6: 10, A7: 12, A8: 12, 1: 4, 2: 6, '2A': 6, 3: 8, 4: 8, '4A': 8, 5: 10, 6: 10, 7: 12}[s.size] || 8;
-    const perim = 2 * (ww + wd);
+    const perim = 2 * (ww + wd), md0 = mainDoor(s);
     for (const side of WALL_ORDER) {
       const L = side === 'front' || side === 'back' ? ww : wd, k = Math.max(1, Math.round(total * L / perim));
+      const holes = [md0, ...s.openings].filter(o => o.wall === side).map(o => holeOf(s, g, o, L));
       for (let i = 0; i < k; i++) {
-        const u = -L / 2 + L * (i + .5) / k;
+        // c runs along the wall from its left end as seen from outside; never in front of a door.
+        let c = L * (i + .5) / k;
+        for (const [h0, h1] of holes) if (c > h0 - .08 && c < h1 + .08) c = c - h0 < h1 - c ? h0 - .1 : h1 + .1;
+        c = Math.min(L - .05, Math.max(.05, c));
         const an = group(base, 'anchors');
-        const [x, z, a2] = side === 'front' ? [u, wd / 2, 0] : side === 'back' ? [-u, -wd / 2, Math.PI] : side === 'left' ? [-ww / 2, -u, -Math.PI / 2] : [ww / 2, u, Math.PI / 2];
+        const [x, z, a2] = side === 'front' ? [-ww / 2 + c, wd / 2, 0] : side === 'back' ? [ww / 2 - c, -wd / 2, Math.PI] : side === 'left' ? [-ww / 2, -wd / 2 + c, -Math.PI / 2] : [ww / 2, wd / 2 - c, Math.PI / 2];
         an.position.set(x, 0, z); an.rotation.y = a2;
-        box(an, .045, .09, .004, 0, B + .045, .004, galv, 'anchors');
-        box(an, .045, .004, .1, 0, B - .002, .054, galv, 'anchors');
+        box(an, .045, .09, .004, 0, B + .045, .009, galv, 'anchors');
+        box(an, .045, .004, .1, 0, B + .004, .059, galv, 'anchors');
         cyl(an, .006, .006, .14, 0, B - .06, .095, galv, 8, 'anchors');
       }
     }
@@ -220,7 +226,7 @@ export function buildRoom(s, tex) {
       box(wg, R === 'casanova' ? .006 : .01, wallH - .004, .0016, x, BASE_STRIP + wallH / 2, .0008 + .0004, jointMat, 'walls', 'wall:' + side, 'joints');
     }
     // Base strip along the bottom.
-    box(wg, b - a, BASE_STRIP - .002, t + .006, (a + b) / 2, BASE_STRIP / 2, -t / 2 + .001, R === 'neo' ? galv : alu, 'walls', 'baseStrip');
+    box(wg, b - a, BASE_STRIP - .002, t + .002, (a + b) / 2, BASE_STRIP / 2, -t / 2 + .001, R === 'neo' ? galv : alu, 'walls', 'baseStrip');
     for (const o of els) buildOpening(wg, o, L, side);
   }
 
@@ -251,7 +257,7 @@ export function buildRoom(s, tex) {
       cyl(posts, .036, .036, h, x - sx * .012, B + h / 2, z - sz * .012, smooth, 20, 'posts');
     } else {
       const h = g.top - B - .002;
-      box(posts, .07, h, .07, x - sx * .033, B + h / 2, z - sz * .033, smooth, 'posts');
+      box(posts, .07, h, .07, x - sx * .031, B + h / 2, z - sz * .031, smooth, 'posts');
     }
   }
 
@@ -272,7 +278,7 @@ export function buildRoom(s, tex) {
       const n = Math.max(1, Math.round((b - a) / mullionEvery));
       for (let i = 1; i < n; i++) box(wg, .03, h - .004, .03, a + (b - a) * i / n, y0 - B + h / 2, -t / 2, smooth, 'skylight', 'mullions', ...tags);
       // Frame rails above and below the acrylic.
-      box(wg, b - a, .022, t + .012, (a + b) / 2, y0 - B + .011, -t / 2, smooth, 'skylight', ...tags);
+      box(wg, b - a, .022, t + .018, (a + b) / 2, y0 - B + .011, -t / 2, smooth, 'skylight', ...tags);
     }
   }
 
@@ -306,11 +312,16 @@ export function buildRoom(s, tex) {
     box(roof, K - 2 * ft - .004, .008, Lr - 2 * ft - .004, 0, y0 + .004, 0, roofUnder, 'roof', 'ceiling', 'soffit');
     if (R === 'highline') {
       // Ventilation slots in a row along the fascia underside.
-      for (const sz of [1, -1]) for (let x = -K / 2 + .2; x < K / 2 - .2; x += .12) box(roof, .06, .002, .014, x, y0 - .0005, sz * (Lr / 2 - .045), dark, 'roof', 'vents');
+      for (const sz of [1, -1]) for (let x = -K / 2 + .2; x < K / 2 - .2; x += .12) box(roof, .06, .002, .014, x, y0 - .004, sz * (Lr / 2 - .045), dark, 'roof', 'vents');
     }
     if (R === 'casanova') {
-      // The milled CASA NOVA lettering on the front fascia: a slim recessed plate.
-      box(roof, .62, .045, .002, -K / 2 + .55, (top + y0) / 2, Lr / 2 + .0011, dark, 'roof', 'fascia', 'logo');
+      // The CASA NOVA lettering milled into the front fascia, lit from behind.
+      const sign = tex.lettering('CASA NOVA');
+      if (sign.map) {
+      const letters = keep(new THREE.MeshBasicMaterial({map: sign.map, transparent: true, depthWrite: false, color: '#f3f1e8'}));
+      const lm = add(roof, new THREE.PlaneGeometry(.72, .09), letters, -K / 2 + .62, (top + y0) / 2, Lr / 2 + .0016, 'roof', 'fascia', 'logo');
+      lm.castShadow = false; lm.renderOrder = 2;
+      }
       if (s.roofSupport) roofBars(std('#efeeea', {roughness: .5}), 'roofSupport');
       else roofBars(alu, 'roofBars');
       // External lighting: 68mm cut-outs in the soffit, a spotlight in each.
@@ -362,7 +373,7 @@ export function buildRoom(s, tex) {
     m.userData.solid = true;
     // Fascia across the high front edge and the gutter at the back.
     box(roof, xR - xL + .004, g.fascia, .02, 0, yF + .05 - g.fascia / 2 + .002, zF + .011, smooth, 'roof', 'fascia');
-    box(roof, xR - xL + .004, .07, .06, 0, yB - .01, zB - .031, smooth, 'roof', 'gutter');
+    box(roof, xR - xL + .004, .07, .06, 0, yB - .01, zB - .036, smooth, 'roof', 'gutter');
     // Underside: the roof's ribbed sheet seen from inside.
     void slope;
   }
@@ -407,7 +418,7 @@ export function buildRoom(s, tex) {
     // Ridge cap and the eaves gutters with their outlets.
     const cap = add(roof, new THREE.CylinderGeometry(.03, .03, Lr + .01, 12, 1, false, 0, Math.PI), smooth, 0, yR + th - .006, 0, 'roof', 'ridge');
     cap.rotation.x = Math.PI / 2; cap.rotation.y = Math.PI / 2;
-    for (const sx of [-1, 1]) box(roof, .06, .07, Lr + .004, sx * (half + .028), yE - .02, 0, smooth, 'roof', 'gutter');
+    for (const sx of [-1, 1]) box(roof, .06, .07, Lr + .016, sx * (half + .028), yE - .02, 0, smooth, 'roof', 'gutter');
   }
 
   // ---- Doors and windows -----------------------------------------------------------------------------
@@ -422,8 +433,9 @@ export function buildRoom(s, tex) {
     const jamb = (y1 + fw) - y0;
     box(og, fw, jamb, t + .012, x0 - fw / 2 - .0005, y0 + jamb / 2, -t / 2, smooth, 'frames');
     box(og, fw, jamb, t + .012, x1 + fw / 2 + .0005, y0 + jamb / 2, -t / 2, smooth, 'frames');
-    box(og, W0 + .002, fw, t + .012, cx, y1 + fw / 2 + .0004, -t / 2, smooth, 'frames');
-    if (y0 > BASE_STRIP + .001) box(og, W0 + .002, fw, t + .012, cx, y0 - fw / 2 - .0004, -t / 2, smooth, 'frames');
+    // Head and sill sit between the jambs, never overlapping them.
+    box(og, W0, fw, t + .012, cx, y1 + fw / 2, -t / 2, smooth, 'frames');
+    if (y0 > BASE_STRIP + .001) box(og, W0, fw, t + .012, cx, y0 - fw / 2, -t / 2, smooth, 'frames');
     if (kind === 'window' || kind === 'glassPanel' || kind === 'glassElement' || kind === 'tiltWindow') return windowIn(og, kind, x0, x1, y0, y1, fz);
     if (kind === 'gate') return gateIn(og, x0, x1, y0, y1);
     // Leaves.
@@ -436,10 +448,7 @@ export function buildRoom(s, tex) {
       const lx = x0 + .002 + lw / 2 + i * (lw + .004);
       const leaf = box(og, lw, H0 - .004, .03, lx, y0 + (H0 - .004) / 2 + .002, -.015 + fz, leafMat, 'doors', 'leaf');
       leaf.material = [leafMat, leafMat, leafMat, leafMat, leafMat, R === 'europa' ? inner : smoothIn];
-      if (R === 'neo' || R === 'casanova') {
-        // Three fine horizontal grooves across the leaf.
-        for (const f of [.3, .52, .74]) box(og, lw - .06, .004, .002, lx, y0 + H0 * f, fz + .0011, dark, 'doors', 'grooves');
-      }
+
       if (R === 'neo' && kind === 'door') {
         // The tinted glazed strip toward the hinge edge (standard on the Neo's standard door).
         const gx = lx + lw / 2 - .08 - .065;
@@ -447,6 +456,10 @@ export function buildRoom(s, tex) {
       }
       const isMainLeaf = leaves === 1 || i === (R === 'casanova' ? (s.hinge === 'right' ? 0 : 1) : 1);
       const glazed = R === 'casanova' && ((o.id === 'main' && s.doorGlass && isMainLeaf) || (o.glass && o.id !== 'main'));
+      if ((R === 'neo' || R === 'casanova') && !glazed) {
+        // Three fine horizontal grooves across a solid leaf (a glazed leaf is mostly glass).
+        for (const f of [.3, .52, .74]) box(og, lw - .06, .003, .0012, lx, y0 + H0 * f, fz + .0011, groove, 'doors', 'grooves');
+      }
       if (glazed) {
         add(og, new THREE.PlaneGeometry(.75 * lw / .95, 1.79), glass, lx, y0 + H0 / 2 + .02, fz + .0013, 'doors', 'glass', 'doorGlass').renderOrder = 2;
         box(og, .75 * lw / .95 + .02, 1.79 + .02, .002, lx, y0 + H0 / 2 + .02, fz + .0002, dark, 'doors', 'doorGlass');
@@ -526,7 +539,7 @@ export function buildRoom(s, tex) {
     else if (R === 'avantgarde') { yTop = g.roofTop - .04; yLow = g.eaves; }
     else { yTop = g.roofTop; yLow = g.roofTop; }
     const roofHex2 = R === 'highline' ? COLOURS.quartz.render : col;
-    const cm = steelMat(roofHex2, {type: 'smooth'});
+    const cm = steelMat(roofHex2, {type: 'smooth'}, {metalness: .18, roughness: .55});
     if (R === 'europa') {
       // Lean-to: falls from under the eaves to 1.56m at its outer edge.
       const sh = new THREE.Shape();
@@ -556,12 +569,12 @@ export function buildRoom(s, tex) {
     if (s.canopyWalls[k].back) {
       const bwid = cw - .1;
       const bwm = box(cg, bwid, wallTop2 - B, .02, (x0 + x1) / 2 - sx * .02, B + (wallTop2 - B) / 2, -depth / 2 + zc + .045, outer, 'canopy', 'canopyWall', 'canopyWall:' + k + ':back');
-      bwm.material = [outer, outer, outer, outer, outer, inner];
+      bwm.material = [outer, outer, outer, outer, inner, outer];
     }
     if (s.canopyWalls[k].side) {
       const swl = depth - .2;
       const sw = box(cg, .02, wallTop2 - B, swl, postX - sx * .05, B + (wallTop2 - B) / 2, zc, outer, 'canopy', 'canopyWall', 'canopyWall:' + k + ':side');
-      sw.material = [outer, outer, outer, outer, outer, outer];
+      sw.material = sx > 0 ? [outer, inner, outer, outer, outer, outer] : [inner, outer, outer, outer, outer, outer];
     }
     if (R === 'neo' && (s.canopyGlass || s.canopyFlora) && k === (s.canopy.left !== 'none' ? 'left' : 'right')) {
       // Glass panels and FloraBoards on the canopy's outer posts line.
@@ -569,7 +582,7 @@ export function buildRoom(s, tex) {
         const z = -depth / 2 + .4 + i * .36;
         add(cg, new THREE.PlaneGeometry(.29, 1.96), tinted, postX - sx * .04, B + 1.0, z, 'canopy', 'canopyGlass', 'glass').rotation.y = Math.PI / 2;
         for (const dz of [-.152, .152]) box(cg, .03, 2.0, .014, postX - sx * .04, B + 1.0, z + dz, smooth, 'canopy', 'canopyGlass');
-        for (const dy of [0, 1.99]) box(cg, .03, .016, .318, postX - sx * .04, B + .01 + dy, z, smooth, 'canopy', 'canopyGlass');
+        for (const dy of [0, 1.99]) box(cg, .024, .016, .29, postX - sx * .04, B + .01 + dy, z, smooth, 'canopy', 'canopyGlass');
       }
       for (let i = 0; i < s.canopyFlora; i++) planter(cg, postX - sx * .09, depth / 2 - .6 - i * .95, sx > 0 ? Math.PI / 2 : -Math.PI / 2, 'canopyFlora');
     }

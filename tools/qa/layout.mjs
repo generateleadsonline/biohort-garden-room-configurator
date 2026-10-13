@@ -25,24 +25,29 @@ const MEASURE = () => {
   }
   return {overflow, small, inline};
 };
-for (const [w, h] of SIZES) {
+for (const [w, h] of SIZES) for (const range of ['highline', 'neo', 'casanova']) {
+  // HighLine is the default; Neo's 4 x 4 size grid and CasaNova's wall elements are the widest panels.
+  if (range !== 'highline' && w > 768) continue;
   const {ctx, page, errors} = await openDesigner(browser, {viewport: {width: w, height: h}, query: '?qa=layout'});
   await waitFor(page, () => window.__cfg && document.querySelector('#step-content').children.length);
+  if (range !== 'highline') await page.evaluate(r => window.__cfg.change({range: r}, {}), range);
   const issues = [];
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < 8; i++) {
     await page.evaluate(i => window.__cfg.selectStep(i, {focusHeading: false}), i);
     await sleep(150);
-    // Open the optional sections too: a deck and an extra door, so every control is measured.
-    if (i === 3) await page.evaluate(() => { const c = window.__cfg; c.change({deck: {...c.state.deck, front: 1.2}}, {}); c.selectStep(3, {focusHeading: false}); });
+    // Open the optional sections too: an extra wall element and a canopy, so every control is measured.
+    if (i === 3) await page.evaluate(() => { const c = window.__cfg; const big = c.state.range === 'neo' ? '4D' : c.state.range === 'casanova' ? '4x6' : 'H5'; c.change({size: big}, {}); c.change({openings: [{id: 'q1', kind: c.state.range === 'casanova' ? 'tiltWindow' : 'door', wall: 'left', p: .5}]}, {}); c.selectStep(3, {focusHeading: false}); });
+    if (i === 4) await page.evaluate(() => { const c = window.__cfg; if (c.state.range !== 'casanova') c.change({canopy: {left: c.state.range === 'neo' ? 'on' : 'L', right: 'none'}}, {}); c.selectStep(4, {focusHeading: false}); });
     const m = await page.evaluate(MEASURE);
-    if (m.overflow > 0) issues.push(`step ${i + 1} scrolls sideways by ${m.overflow}px`);
-    for (const s of m.small) issues.push(`step ${i + 1} small target ${s}`);
-    if (i === 0 || i === 6) await page.screenshot({path: `qa/layout/${w}-step${i + 1}.png`, fullPage: false});
+    if (m.overflow > 0) issues.push(`${range} step ${i + 1} scrolls sideways by ${m.overflow}px`);
+    for (const s of m.small) issues.push(`${range} step ${i + 1} small target ${s}`);
+    await page.screenshot({path: `qa/layout/${w}-${range}-step${i + 1}.png`, fullPage: false});
   }
+  if (range !== 'highline') { check(!issues.length, `${w}x${h} ${range}: no sideways scroll, every target 44px+`, issues.slice(0, 40).join(' | ')); check(!errors.length, `${w}x${h} ${range}: no page errors`, errors.slice(0, 3).join(' | ')); await ctx.close(); continue; }
   // Dialogs, the menu and the tour.
   for (const mode of ['callback', 'showroom', 'brochure', 'book', 'quote', 'pdf']) {
     await page.evaluate(m => { document.querySelector(`[data-open="${m}"]`) ? document.querySelector(`[data-open="${m}"]`).click() : null; }, mode).catch(() => {});
-    await page.evaluate(m => { if (!document.getElementById('form-dialog').open) { window.__cfg.selectStep(6, {focusHeading: false}); } }, mode);
+    await page.evaluate(m => { if (!document.getElementById('form-dialog').open) { window.__cfg.selectStep(7, {focusHeading: false}); } }, mode);
     if (!(await page.evaluate(() => document.getElementById('form-dialog').open))) await page.evaluate(m => document.querySelector(`[data-open="${m}"], [data-action="pdf"]`)?.click(), mode);
     await sleep(120);
     const m = await page.evaluate(MEASURE);
@@ -59,13 +64,13 @@ for (const [w, h] of SIZES) {
     await page.screenshot({path: `qa/layout/${w}-menu.png`});
     await page.click('#menu-toggle');
   }
-  await page.evaluate(() => { document.querySelector('[data-action="westbury"]') || window.__cfg.selectStep(0, {focusHeading: false}); });
-  await page.evaluate(() => { window.__cfg.selectStep(0, {focusHeading: false}); document.querySelector('[data-action="westbury"]').click(); });
+  await page.evaluate(() => { window.__cfg.selectStep(0, {focusHeading: false}); document.querySelector('[data-action="compare"]').click(); });
   await sleep(100);
   let m = await page.evaluate(MEASURE);
-  for (const s of m.small) issues.push(`westbury small target ${s}`);
-  if (m.overflow > 0) issues.push(`westbury scrolls sideways by ${m.overflow}px`);
-  await page.evaluate(() => document.getElementById('westbury-dialog').close());
+  for (const s of m.small) issues.push(`compare small target ${s}`);
+  if (m.overflow > 0) issues.push(`compare dialog scrolls sideways by ${m.overflow}px`);
+  await page.screenshot({path: `qa/layout/${w}-compare.png`});
+  await page.evaluate(() => document.getElementById('info-dialog').close());
   await page.evaluate(() => { localStorage.removeItem('bh-cfg-tour-v1'); document.getElementById('help').click(); });
   if (w < 720) await page.evaluate(() => { document.getElementById('help-menu').click(); });
   await sleep(200);

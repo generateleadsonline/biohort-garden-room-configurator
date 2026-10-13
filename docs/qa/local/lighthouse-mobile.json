@@ -1,0 +1,74 @@
+[
+ {
+  "run": 1,
+  "scores": {
+   "performance": 99,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100,
+   "agentic-browsing": 100
+  },
+  "first-contentful-paint": "1.2 s",
+  "largest-contentful-paint": "1.7 s",
+  "total-blocking-time": "0 ms",
+  "cumulative-layout-shift": "0.049",
+  "speed-index": "1.5 s",
+  "lighthouse": "13.4.1",
+  "url": "http://127.0.0.1:4841/configurator/#d=b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkifQ",
+  "formFactor": "mobile",
+  "failing": [
+   "image-delivery-insight",
+   "legacy-javascript-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ]
+ },
+ {
+  "run": 2,
+  "scores": {
+   "performance": 98,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100,
+   "agentic-browsing": 100
+  },
+  "first-contentful-paint": "1.2 s",
+  "largest-contentful-paint": "2.3 s",
+  "total-blocking-time": "0 ms",
+  "cumulative-layout-shift": "0.049",
+  "speed-index": "1.5 s",
+  "lighthouse": "13.4.1",
+  "url": "http://127.0.0.1:4841/configurator/#d=b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkifQ",
+  "formFactor": "mobile",
+  "failing": [
+   "image-delivery-insight",
+   "legacy-javascript-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ]
+ },
+ {
+  "run": 3,
+  "scores": {
+   "performance": 99,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100,
+   "agentic-browsing": 100
+  },
+  "first-contentful-paint": "1.2 s",
+  "largest-contentful-paint": "1.7 s",
+  "total-blocking-time": "0 ms",
+  "cumulative-layout-shift": "0.049",
+  "speed-index": "1.5 s",
+  "lighthouse": "13.4.1",
+  "url": "http://127.0.0.1:4841/configurator/#d=b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkifQ",
+  "formFactor": "mobile",
+  "failing": [
+   "image-delivery-insight",
+   "legacy-javascript-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ]
+ }
+]

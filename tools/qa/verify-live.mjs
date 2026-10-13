@@ -1,9 +1,9 @@
 // Confirms the deployed site serves exactly the files of this build: fetches every path in
 // dist/build-manifest.json from the live origin and compares MD5s.
-//   node tools/qa/verify-live.mjs https://my-retreat-garden-configurator.netlify.app
+//   node tools/qa/verify-live.mjs https://biohort-garden-room-configurator.netlify.app
 import {readFile, writeFile, mkdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-const origin = (process.argv[2] || 'https://my-retreat-garden-configurator.netlify.app').replace(/\/$/, '');
+const origin = (process.argv[2] || 'https://biohort-garden-room-configurator.netlify.app').replace(/\/$/, '');
 const manifest = JSON.parse(await readFile('dist/build-manifest.json', 'utf8'));
 let bad = 0;
 const rows = [];

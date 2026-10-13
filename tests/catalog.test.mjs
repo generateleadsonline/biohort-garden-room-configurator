@@ -1,112 +1,106 @@
-// The design model: published prices, pricing rules, sizes, normalisation, share codes and the
-// UK phone and postcode rules. Prices are pinned to My Retreat's website (13 Oct 2026); if their
-// price lists change, these tests should be the first thing to fail.
+// The design model: every published size, colour and door has Biohort's SKU and GB price; every
+// option the designer offers resolves to a SKU for every size, colour and door it is offered with;
+// share codes round-trip; UK phone numbers follow Ofcom's plan.
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as C from '../src/catalog.js';
+import {PRICES} from '../src/data/prices.js';
+import {SIZES} from '../src/data/sizes.js';
 
-// Copied by hand from myretreatgardenrooms.co.uk/service/ashton-garden-room/ and
-// /service/clifton-garden-room/ (research/site-2026-10-13/*.txt).
-const SITE = {
-  ashton: {'2.9x2.9': [19563, 21610, 22845], '4x2.9': [22927, 25132, 26573], '5.2x2.9': [25923, 27190, 28838], '5.2x3.4': [27338, 30313, 32063], '5.2x4': [30239, 33126, 34979], '5.8x4': [31257, 34223, 36179], '7x4': [33362, 36486, 38648]},
-  clifton: {'2.9x2.9': [22321, 22149, 23416], '4x2.9': [26296, 25890, 27390], '5.2x2.9': [28806, 28196, 29899], '5.2x3.4': [31849, 31319, 33124], '5.2x4': [34583, 34132, 36040], '5.8x4': [35926, 35357, 37383], '7x4': [38639, 37858, 40097]}
-};
-const plain = (range, w, d, cladding, extra = {}) => ({range, width: w, depth: d, cladding, colour: C.CLADDINGS[cladding].colours[0].id, coverage: 'front-left', openings: [{id: 'd1', wall: 'front', type: 'slide2m', p: .5}, {id: 'w1', wall: 'left', type: 'openM', p: .5}], ...extra});
-
-test('every published Ashton and Clifton price is returned exactly, for that size and cladding only', () => {
-  let n = 0;
-  for (const [range, rows] of Object.entries(SITE)) for (const [size, prices] of Object.entries(rows)) {
-    const [w, d] = size.split('x').map(Number);
-    ['thermowood', 'lap', 'cedar'].forEach((cl, i) => {
-      const p = C.priceFor(plain(range, w, d, cl));
-      assert.equal(p.status, 'published', `${range} ${size} ${cl}`);
-      assert.equal(p.base, prices[i], `${range} ${size} ${cl}`);
-      n++;
-    });
+const designs = function* () {
+  for (const range of C.RANGE_ORDER) for (const size of C.sizeCodes(range)) for (const colour of C.RANGES[range].colours) for (const door of ['standard', 'double']) for (const model of range === 'avantgarde' ? ['classic', 'eco'] : ['classic']) for (const hinge of range === 'casanova' ? ['right', 'left'] : ['right']) {
+    const s = C.normalise({range, size, colour, door, model, hinge});
+    if (door === 'double' && s.door !== 'double') continue;
+    yield s;
   }
-  assert.equal(n, 42);
+};
+
+test('every published size, colour and door has Biohort\'s SKU and GB price', () => {
+  let n = 0;
+  for (const range of C.RANGE_ORDER) for (const row of SIZES[range]) for (const sku of Object.values(row.sku)) { assert.ok(PRICES[sku], `${range} ${row.code} ${sku}`); n++; }
+  assert.equal(n, 39 + 96 + 36 + 30 + 84 + 36);
+  for (const s of designs()) assert.ok(C.buildingSku(s), `${s.range} ${s.size} ${s.colour} ${s.door}`);
 });
 
-test('the compact Ashton: £18,032 front-only, £19,066 two elevations, Thermowood and a single door only', () => {
-  const base = plain('ashton', 2.9, 2.1, 'thermowood', {openings: [{wall: 'front', type: 'single', p: .4}, {wall: 'front', type: 'openS', p: .8}]});
-  assert.equal(C.priceFor({...base, coverage: 'front'}).base, 18032);
-  assert.equal(C.priceFor({...base, coverage: 'front-right'}).base, 19066);
-  assert.equal(C.priceFor({...base, cladding: 'cedar', colour: 'natural'}).status, 'quoted');
-  assert.equal(C.priceFor({...base, openings: [{wall: 'front', type: 'french', p: .5}]}).status, 'quoted');
-  assert.equal(C.priceFor({...base, range: 'clifton'}).status, 'quoted', 'compact Clifton is priced on request');
+test('pinned prices from Biohort\'s GB configurator and 2026 price list', () => {
+  const p = d => C.priceFor(d).total;
+  assert.equal(p({range: 'highline', size: 'H3', colour: 'darkgrey'}), 2699);
+  assert.equal(p({range: 'highline', size: 'H2', colour: 'darkgrey', door: 'double'}), 2609);
+  assert.equal(p({range: 'highline', size: 'H2', door: 'double', foundation: 'frame'}), 2609 + 219);
+  assert.equal(p({range: 'europa', size: '3'}), 1299);
+  assert.equal(p({range: 'europa', size: '5', foundation: 'frame'}), 2028);
+  assert.equal(p({range: 'europa', size: '5', foundation: 'frame', canopy: {left: 'on'}}), 2377);
+  assert.equal(p({range: 'neo', size: '2B', door: 'double', foundation: 'frame'}), 3978);
+  assert.equal(p({range: 'neo', size: '2B', door: 'double', foundation: 'frame', panelling: true}), 4897);
+  assert.equal(p({range: 'neo', size: '2B', door: 'double', foundation: 'frame', panelling: true, insulation: true}), 5066);
+  assert.equal(p({range: 'neo', size: '2B', door: 'standard', foundation: 'frame', panelling: true, insulation: true}), 4906);
+  assert.equal(p({range: 'avantgarde', size: 'A1'}), 1589);
+  assert.equal(p({range: 'avantgarde', size: 'A1', model: 'eco'}), 1349);
+  assert.equal(p({range: 'panorama', size: 'P2', door: 'double', foundation: 'frame'}), 2989 + 219);
+  assert.equal(p({range: 'casanova', size: '3x4'}), 11569);
+  assert.equal(p({range: 'casanova', size: '3x4', skylight: true}), 11569 + 319);
+  assert.equal(p({range: 'casanova', size: '3x4', roofSupport: true}), 11569 + 329);
+  assert.equal(p({range: 'highline', size: 'H3', canopy: {left: 'S'}}), 2699 + 1229);
+  assert.equal(p({range: 'highline', size: 'H5', canopy: {left: 'L'}}), 3199 + 1749);
 });
 
-test('no price is invented: made-to-measure sizes, quoted claddings, four sides and over 30m² are quoted', () => {
-  assert.equal(C.priceFor(plain('clifton', 5.5, 3.4, 'cedar')).base, null);
-  for (const cl of ['charred', 'vl', 'ecoscape']) assert.equal(C.priceFor(plain('clifton', 5.2, 3.4, cl)).base, null, cl);
-  assert.equal(C.priceFor(plain('ashton', 5.2, 3.4, 'cedar', {coverage: 'all'})).base, null);
-  assert.equal(C.priceFor(plain('ashton', 5.2, 3.4, 'cedar', {coverage: 'front'})).base, null);
-  assert.equal(C.priceFor(plain('ashton', 7, 4.6, 'cedar')).base, null);
-  const near = C.priceFor(plain('clifton', 5.5, 3.4, 'cedar')).nearest;
-  assert.deepEqual([near.width, near.depth, near.price], [5.8, 4, 37383]);
+test('every option offered resolves to a priced SKU for every size, colour and door', () => {
+  let checked = 0;
+  for (const s of designs()) {
+    const kinds = C.kindsFor(s);
+    const can = C.canopyOptions(s);
+    const items = Object.fromEntries(C.itemsFor(s.range).filter(k => C.itemFits(s, k)).map(k => [k, 2]));
+    const full = C.normalise({...s, openings: kinds.map((k, i) => ({kind: k, wall: ['left', 'right', 'back'][i % 3], p: .5})),
+      canopy: can.length ? {left: can[can.length - 1], right: can[1]} : undefined, canopyWalls: {left: {back: true, side: true}, right: {back: true, side: true}},
+      downpipe: C.downpipeOptions(s).slice(-1)[0], foundation: 'frame', floorPlate: true, pv: true, skylight: true, roofSupport: true,
+      extLight: {front: true, left: true, right: true, back: true}, gasSpring: true, panelling: true, insulation: true, sauna: 'right', led: 1, solar: 1,
+      floraboard: 2, canopyGlass: 2, canopyFlora: 1, items, bikeLift: 'standard', doorGlass: true});
+    for (const f of C.foundationOptions(s)) {
+      const d = C.normalise({...full, foundation: f, anchors: f === 'none'});
+      const p = C.priceFor(d);
+      const unexpected = p.missing.filter(q => q.name !== 'Additional double door' && !(d.size === '3x3' && q.key === 'gate'));
+      assert.deepEqual(unexpected, [], `${s.range} ${s.size} ${s.colour} ${s.door} ${f}`);
+      for (const l of p.lines) assert.equal(l.unit, PRICES[l.sku][0]);
+      checked++;
+    }
+  }
+  assert.ok(checked > 1000, `${checked} designs`);
 });
 
-test('upgrades never carry a number and are marked Upgrade or Quoted', () => {
-  const s = plain('clifton', 5.2, 3.4, 'cedar', {extras: {aircon: true, usb: true, sedum: true}, deck: {front: 1.2}, electrics: 'premium', overhangSides: {left: true}, extensions: {right: .3}, sockets: 'black', walls: 'sage',
-    openings: [{wall: 'front', type: 'bifold3', p: .5}, {wall: 'left', type: 'openM', p: .5}, {wall: 'back', type: 'openS', p: .3}]});
-  const p = C.priceFor(s);
-  assert.equal(p.status, 'base');
-  assert.equal(p.base, 33124);
-  for (const u of p.upgrades) { assert.ok(['Upgrade', 'Quoted'].includes(u.status), u.name); assert.ok(!/£\s?\d/.test(u.name), u.name); }
-  const keys = p.upgrades.map(u => u.key);
-  for (const k of ['aluminium', 'windows', 'overhangSides', 'extensions', 'deck', 'electrics', 'sockets', 'walls', 'aircon', 'usb', 'sedum']) assert.ok(keys.includes(k), k);
+test('data-sheet errors are not shown: Neo 3B interior and foundation, CasaNova 3 x 3 electric door', () => {
+  const d = C.dims(C.normalise({range: 'neo', size: '3B'}));
+  assert.deepEqual([d.iw, d.id, d.area], [2.2, 2.76, 6.07]);
+  assert.equal(d.base, null);
+  const p = C.priceFor({range: 'casanova', size: '3x3', gate: 'electric'});
+  assert.equal(p.status, 'part'); assert.ok(p.missing.some(q => q.key === 'gate'));
+  assert.equal(C.priceFor({range: 'casanova', size: '3x4', gate: 'electric'}).status, 'published');
 });
 
-test('sizes follow the site minimum and the embedded tool limits', () => {
-  assert.equal(C.normalise({width: 1, depth: 1}).width, 2.9);
-  assert.equal(C.normalise({width: 1, depth: 1}).depth, 2.1);
-  assert.equal(C.normalise({width: 99}).width, 10.7);
-  assert.equal(C.maxDepthFor(5.2), 5.9);
-  assert.equal(C.maxDepthFor(5.8), 5.2);
-  assert.equal(C.maxDepthFor(7), 4.6);
-  assert.equal(C.normalise({width: 7, depth: 8}).depth, 4.6);
-  for (const [w, d] of C.PUBLISHED_SIZES) { const s = C.normalise({width: w, depth: d}); assert.deepEqual([s.width, s.depth], [w, d]); }
+test('a size change drops what no longer fits, and keeps the rest', () => {
+  const s = C.normalise({range: 'highline', size: 'H5', canopy: {left: 'L', right: 'none'}, openings: [{kind: 'window', wall: 'left', p: .5}]});
+  assert.equal(s.canopy.left, 'L'); assert.equal(s.openings.length, 1);
+  const hs = C.normalise({...s, size: 'HS'});
+  assert.equal(hs.canopy.left, 'none'); assert.equal(hs.openings.length, 0);
+  assert.equal(C.normalise({range: 'neo', size: '2A', door: 'double'}).door, 'standard');
+  assert.equal(C.normalise({range: 'highline', size: 'HS', door: 'double'}).door, 'standard');
 });
 
-test('normalise keeps a design valid: Ashton has no overhang, bifolds are aluminium, openings fit their walls', () => {
-  const s = C.normalise({range: 'ashton', overhang: .6, extensions: {left: .6}, openings: [{wall: 'front', type: 'bifold4', material: 'upvc', p: 0}, {wall: 'front', type: 'slide4l', p: .1}]});
-  assert.equal(s.overhang, 0); assert.equal(s.extensions.left, 0);
-  assert.equal(s.openings.length, 1, 'two 3.45m doors cannot both fit a 5.2m wall');
-  assert.equal(C.normalise({openings: [{wall: 'front', type: 'bifold3', material: 'upvc', p: .5}]}).openings[0].material, 'alu');
-  const {a, b, L} = C.wallSpan(s, 'front');
-  for (const o of s.openings) { const c = o.p * L, hw = C.OPENINGS[o.type].w / 2; assert.ok(c - hw >= a - 2e-3 && c + hw <= b + 2e-3, `${c} ${hw}`); }
-  assert.equal(C.normalise({cladding: 'vl', colour: 'c50', direction: 'vertical'}).direction, 'vertical');
-  assert.equal(C.normalise({cladding: 'cedar', direction: 'horizontal'}).direction, 'vertical');
+test('share codes round-trip every option, and damaged codes are refused', () => {
+  for (const s of designs()) {
+    const back = C.decodeDesign(C.encodeDesign(s));
+    assert.deepEqual({...back, step: 0}, {...s, step: 0});
+  }
+  const rich = C.normalise({range: 'casanova', size: '4x6', colour: 'quartz', door: 'double', hinge: 'left', doorWall: 'left', doorGlass: false, openings: [{kind: 'glassElement', wall: 'front', p: .3}, {kind: 'tiltWindow', wall: 'back', p: .6, hinge: 'left'}], skylight: true, extLight: {front: true, left: false, right: true, back: false}, sauna: 'left', foundation: 'frame', floorPlate: true, items: {table: 1, bikeMax: 3}});
+  const back = C.decodeDesign(C.encodeDesign(rich));
+  assert.deepEqual(back.openings.map(o => [o.kind, o.wall, o.hinge]), rich.openings.map(o => [o.kind, o.wall, o.hinge]));
+  assert.equal(C.priceFor(back).total, C.priceFor(rich).total);
+  for (const bad of ['', 'b1.', 'b1.@@@', '2~1~2', 'b1.eyJyIjoibm9wZSJ9']) assert.equal(C.decodeDesign(bad), null);
+  assert.ok(C.encodeDesign(rich).length < 400);
 });
 
-test('share codes round-trip every option and stay short', () => {
-  const s = C.normalise({range: 'clifton', use: 'bar', width: 6.3, depth: 3.7, cladding: 'ecoscape', colour: 'havana', coverage: 'all', metal: 'black', frame: 'black', overhang: .3, overhangSides: {back: true}, extensions: {left: .3}, deck: {front: 2.4, right: .6}, deckColour: 'oak', floor: 'walnut', walls: 'blue', electrics: 'upgrade', sockets: 'chrome', lights: 'chrome', extras: {speakers: true, data: true}, openings: [{wall: 'front', type: 'frenchSide', p: .5}, {wall: 'back', type: 'openHigh', material: 'alu', p: .5}]});
-  const code = C.encodeDesign(s);
-  assert.ok(code.length < 110, `${code.length} chars`);
-  const back = C.decodeDesign(code);
-  const strip = x => JSON.stringify({...x, step: 0, openings: x.openings.map(o => ({...o, id: ''}))});
-  assert.equal(strip(back), strip(s));
-  assert.equal(C.decodeDesign('nonsense'), null);
-  assert.equal(C.designReference(s), C.designReference(back));
-});
-
-test('UK phone numbers follow Ofcom numbering', () => {
-  for (const ok of ['020 3818 5911', '+44 20 3818 5911', '01932 123456', '07911 123456', '+447911123456', '0044 7911 123456', '0333 880 6157', '0800 123 4567', '01697 73123']) assert.ok(C.parseUKPhone(ok).valid, ok);
-  for (const [bad, why] of [['', 'empty'], ['07700 900123', 'fictional'], ['020 7946 0123', 'fictional'], ['0217 123 4567', 'range'], ['0909 123 4567', 'range'], ['0700 123 4567', 'range'], ['07624 1234', 'short'], ['07624 12345', 'range'], ['0123', 'short'], ['+33 1 23 45 67 89', 'international'], ['07911 123 4567 8', 'long'], ['call me', 'characters'], ['07777 777777', 'fictional']]) assert.equal(C.parseUKPhone(bad).reason, why, bad);
-  assert.equal(C.parseUKPhone('07911123456').display, '07911 123456');
-  assert.equal(C.parseUKPhone('02038185911').display, '020 3818 5911');
-});
-
-test('postcodes, emails and names', () => {
-  for (const p of ['KT15 2QG', 'kt152qg', 'SW1A 1AA', 'GU1 1AA', 'M1 1AE']) assert.ok(C.validPostcode(p), p);
-  for (const p of ['KT15', 'ZZ1 1ZZ', '12345']) assert.ok(!C.validPostcode(p), p);
-  assert.equal(C.formatPostcode('kt152qg'), 'KT15 2QG');
-  assert.ok(C.validEmail('sam@example.co.uk')); assert.ok(!C.validEmail('sam@example'));
-  assert.ok(C.validName("Sian O'Neill")); assert.ok(C.validName('Zoë')); assert.ok(!C.validName('<b>'));
-});
-
-test('the specification lists every choice', () => {
-  const s = C.normalise({extras: {aircon: true}, deck: {front: 1.2}});
-  const text = JSON.stringify(C.specRows(s));
-  for (const t of ['Clifton', '5.2m x 3.4m', 'Western Red Cedar', 'Front and left side', 'Anthracite grey', '600mm', 'Decking', 'Front: 2-panel sliding, mid (UPVC)', 'Howdens', 'Standard package', 'air conditioning', 'Steel floor frame']) assert.ok(text.includes(t), t);
+test('UK phone numbers follow Ofcom\'s numbering plan', () => {
+  for (const ok of ['07911 123456', '+44 7911 123456', '020 7123 4567', '01632 961 123', '028 9012 3456', '0800 123 4567', '0300 123 4567']) assert.ok(C.parseUKPhone(ok).valid, ok);
+  for (const bad of ['020 7946 0000', '07700 900123', '0217 123 4567', '+33 1 23 45 67 89', '0909 879 0000', '070 1234 5678', '12345', '07911 12345678', '07911 abc123']) assert.ok(!C.parseUKPhone(bad).valid, bad);
+  assert.equal(C.parseUKPhone('+44 (0)7911 123456').e164, '+447911123456');
+  assert.ok(C.validPostcode('SW1A 1AA')); assert.ok(!C.validPostcode('SW1A'));
 });

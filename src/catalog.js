@@ -73,7 +73,7 @@ export const USPS = {
     {title: 'Room for bikes', text: 'BikeMax hangers, BikeHolder racks and the BikeLift store bicycles off the floor.'}
   ],
   price: [
-    {title: 'Free delivery in Great Britain', text: 'Free kerbside delivery to mainland Great Britain: within 3 weeks for garden sheds, 6 weeks for CasaNova.'},
+    {title: 'Free delivery in Great Britain', text: 'Free kerbside delivery of garden sheds to mainland Great Britain, usually within 3 weeks. CasaNova delivery is confirmed when you order.'},
     {title: 'Prices including VAT', text: 'Biohort\'s published UK prices, including 20% VAT, from their own configurator and 2026 price list.'}
   ]
 };
@@ -175,7 +175,13 @@ export function kindWidth(s, kind) {
 export function dims(s) {
   const v = variantsOf(s.range, s.size).find(x => x.door === (s.range === 'europa' ? 'double' : s.door === 'double' && s.range !== 'casanova' ? 'double' : 'standard')) || variantsOf(s.range, s.size)[0];
   const [W, D, H] = v.ext.map(n => n / 100);
-  const [iw, id, ih] = (v.int || v.ext).map(n => n / 100);
+  // Biohort's Neo data sheet prints the 3B standard-door interior scrambled (276 x 208 x 220,
+  // 4.58m²) and both 3B foundations as 229 x 217cm, which cannot fit a 2.92m-long shed. The
+  // double-door row agrees with the size selector (6.07m²); the foundation is left to Biohort's plan.
+  // Both are in docs/CONFIRMATIONS.md.
+  const errata = s.range === 'neo' && s.size === '3B';
+  const vi = errata ? variantsOf('neo', '3B').find(x => x.door === 'double') : v;
+  const [iw, id, ih] = (vi.int || vi.ext).map(n => n / 100);
   // Wall faces from the roof size, per Biohort's dimension tables.
   const roofOver = {highline: .105, avantgarde: .03, europa: .1, panorama: .08, neo: .0475, casanova: .12}[s.range];
   let ww = W - 2 * roofOver, wd = D - 2 * roofOver;
@@ -184,7 +190,7 @@ export function dims(s) {
   if (s.range === 'panorama') wd = D - .24;
   if (s.range === 'neo') { ww = W - .095; wd = D - .095; }
   if (s.range === 'casanova') { ww = W - .24; wd = D - .24; }
-  return {W, D, H, iw, id, ih, ww: round3(ww), wd: round3(wd), area: v.area, base: v.base, kg: v.kg, opening: v.opening};
+  return {W, D, H, iw, id, ih, ww: round3(ww), wd: round3(wd), area: vi.area, base: errata ? null : v.base, kg: v.kg, opening: v.opening};
 }
 const round3 = v => Math.round(v * 1000) / 1000;
 export const wallLength = (s, wall) => { const d = dims(s); return wall === 'front' || wall === 'back' ? d.ww : d.wd; };
@@ -291,6 +297,12 @@ function itemSku(s, key, which = 'src') {
   if (name === null) return opts; // a SKU taken from Biohort's configurator add-on list, not the page
   return resolve(s, name, {opts: opts || {}});
 }
+/** How many of a fitting a design can take. Tool holders: Biohort allows four or five per door leaf,
+ * and two come with the building, so one more pair on a single door, three on a double door. */
+export function itemMax(s, key) {
+  if (key === 'toolHolders') return s.door === 'double' || s.range === 'europa' ? 3 : 1;
+  return ITEMS[key].max;
+}
 /** Size limits on inside fittings, from the product pages and Biohort's configurator. */
 export function itemFits(s, key) {
   if (s.range === 'casanova' && ['shelves', 'deepShelves', 'hookSet', 'table'].includes(key)) return !['3x2', '4x2'].includes(s.size);
@@ -384,7 +396,7 @@ export function normalise(input = {}) {
   s.canopyFlora = range === 'neo' && anyCanopy ? int(i.canopyFlora, 0, 2) : 0;
   s.ramp = ['panorama', 'neo'].includes(range) ? Boolean(i.ramp) && s.door === 'double' && s.foundation === 'frame'
     : range === 'casanova' ? Boolean(i.ramp) && (s.door === 'double' || s.gate !== 'none') : false;
-  for (const k of itemsFor(range)) { const v = int(i.items?.[k], 0, ITEMS[k].max); if (v && itemFits(s, k)) s.items[k] = v; }
+  for (const k of itemsFor(range)) { const v = int(i.items?.[k], 0, itemMax(s, k)); if (v && itemFits(s, k)) s.items[k] = v; }
   if (i.bikeLift && ['standard', 'swivel'].includes(i.bikeLift) && range !== 'casanova') s.bikeLift = range === 'europa' || range === 'highline' || range === 'avantgarde' ? 'standard' : i.bikeLift;
   else s.bikeLift = 'none';
   s.step = int(i.step, 0, 7);
@@ -478,7 +490,9 @@ export function linesFor(input) {
     if (s.door === 'double' && s.doorWall !== 'front' && s.doorWall !== 'back') add('doubleSide', 'Side installation of the double door', resolve(s, 'Additional charge for side installation of the double door'));
     if (s.doorGlass) add('doorGlass', 'Glass insert for the door', resolve(s, 'Glass Insert for Door'));
     if (s.gate === 'manual') add('gate', 'Sectional overhead door, manual', resolve(s, 'Sectional Overhead Door, without electric opener'));
-    if (s.gate === 'electric') add('gate', 'Sectional overhead door with electric opener', resolve(s, 'Sectional Overhead Door, with electric opener (including one remote)'));
+    // The price list offers the electric opener from 3 x 3; the brochure says "not for CasaNova 3 x 3".
+    if (s.gate === 'electric' && s.size === '3x3') quote('gate', 'Sectional overhead door with electric opener', 'Biohort\'s price list and brochure disagree on 3 x 3: Biohort confirms');
+    else if (s.gate === 'electric') add('gate', 'Sectional overhead door with electric opener', resolve(s, 'Sectional Overhead Door, with electric opener (including one remote)'));
   }
   const count = kind => s.openings.filter(o => o.kind === kind).length;
   const extraDoors = count('door') + count('double');
@@ -576,7 +590,7 @@ export function linesFor(input) {
     add('bikeLift', 'BikeLift mounting kit for a garden shed', s.range === 'neo' ? '49058' : '49057');
   }
   // Services Biohort does not price online.
-  quote('assembly', 'Assembly', 'Biohort finds an assembly partner near you; priced by the partner');
+  quote('assembly', 'Assembly', 'Biohort finds an assembly partner near you, who prices the work');
   if (s.foundation === 'none') quote('base', 'Concrete base or point foundations', 'Built to Biohort\'s foundation plan by you or a local contractor');
   return {lines, quoted, total: lines.reduce((t, l) => t + l.total, 0)};
 }
@@ -590,7 +604,7 @@ export function priceFor(input) {
     status, total, lines, quoted, missing, building: lines.find(l => l.key === 'building') || null,
     headline: pounds(total) + (missing.length ? ' + quoted items' : ''),
     caveat: s.range === 'casanova'
-      ? 'Biohort\'s published UK prices including 20% VAT and free kerbside delivery within about 6 weeks to mainland Great Britain. Assembly, foundations, electrics and any planning permission are separate.'
+      ? 'Biohort\'s published UK prices including 20% VAT. Biohort\'s site shows free shipping within 6 weeks; the CasaNova price list prices delivery to your dealer, who arranges the last leg, so delivery is confirmed when you order. Assembly, foundations, electrics and any planning permission are separate.'
       : 'Biohort\'s published UK prices including 20% VAT and free kerbside delivery within 3 weeks to mainland Great Britain. Assembly and the base are separate unless you choose a Biohort foundation.'
   };
 }
@@ -624,13 +638,13 @@ export function specRows(input) {
     ]],
     ['Doors and windows', [
       ['Main door', `${doorText}, ${WALLS[main.wall].toLowerCase()}`],
-      ...s.openings.map((o, i) => [`${i + 2}`, `${openingLabel(s, o)}, ${WALLS[o.wall].toLowerCase()}`]),
+      ...s.openings.map(o => [openingLabel(s, o), WALLS[o.wall]]),
       ...(s.gasSpring ? [['Gas spring', 'Yes']] : []),
       ...(s.ramp ? [['Threshold ramp', 'Yes']] : [])
     ]],
     ['Roof and outside', [
       ['Roof', {flat: 'Flat roof, 360° acrylic glass skylight, integrated gutters', pent: 'Pent roof, front acrylic glass skylight, gutter at the back', apex: s.range === 'panorama' ? 'Apex roof on a continuous acrylic glass skylight, gutters both sides' : 'Apex roof, gutters both sides', neo: 'Flat roof with a 19mm plywood ceiling and EPDM membrane', casanova: 'Flat EPDM roof on three-layer plywood, all-round acrylic light band'}[R.roof]],
-      ...(canopyOptions(s).length ? [['Side canopy', ['left', 'right'].filter(k => s.canopy[k] !== 'none').map(k => `${k}${['S', 'L'].includes(s.canopy[k]) ? ` (${s.canopy[k]})` : ''}${s.canopyWalls[k].back || s.canopyWalls[k].side ? ` with ${[s.canopyWalls[k].back && 'back wall', s.canopyWalls[k].side && 'side wall'].filter(Boolean).join(' and ')}` : ''}`).join(', ') || 'None']] : []),
+      ...(canopyOptions(s).length ? [['Side canopy', ['left', 'right'].filter(k => s.canopy[k] !== 'none').map(k => `${k[0].toUpperCase() + k.slice(1)}${['S', 'L'].includes(s.canopy[k]) ? ` (${s.canopy[k]})` : ''}${s.canopyWalls[k].back || s.canopyWalls[k].side ? ` with ${[s.canopyWalls[k].back && 'back wall', s.canopyWalls[k].side && 'side wall'].filter(Boolean).join(' and ')}` : ''}`).join(', ') || 'None']] : []),
       ...(downpipeOptions(s).length ? [['Downpipes', s.range === 'casanova' ? `Included, at the ${s.downpipe === 'front' ? 'front' : 'back'}` : s.downpipe === 'none' ? (s.range === 'neo' ? 'Included' : 'Gutter hose outlets only') : `Downpipe set at the ${s.downpipe === 'front' ? 'front' : 'back'}`]] : [['Downpipes', s.range === 'neo' ? 'Two included' : 'None']]),
       ...(s.pv ? [['PV mounting system', 'Yes']] : []),
       ...(s.floraboard ? [['FloraBoard', `${s.floraboard} set${s.floraboard > 1 ? 's' : ''}`]] : []),

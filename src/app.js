@@ -8,7 +8,7 @@ import {
   COMPANY, USPS, RANGES, RANGE_ORDER, MODELS, COLOURS, KINDS, WALLS, WALL_ORDER, ITEMS, FOUNDATIONS,
   normalise, clone, priceFor, pounds, metres, specRows, encodeDesign, decodeDesign, designURL, designReference, summaryLine, designName,
   sizeOrder, sizeLabel, variantsOf, dims, priceOf, kindsFor, mainDoor, fitOpenings, wallLength, openingLabel,
-  canopyOptions, hasCanopyWalls, downpipeOptions, foundationOptions, doorWallOptions, hasDoubleDoor, itemsFor, itemFits, includedOf, anchorCount, shopURL,
+  canopyOptions, hasCanopyWalls, downpipeOptions, foundationOptions, doorWallOptions, hasDoubleDoor, itemsFor, itemFits, itemMax, includedOf, anchorCount, shopURL,
   parseUKPhone, phoneProblem, validEmail, validPostcode, formatPostcode, validName
 } from './catalog.js';
 import {createBoot, RUNGS} from './scene/boot.js';
@@ -288,7 +288,7 @@ function stepInside() {
     let rows = list.map(k => {
       const it = ITEMS[k], one = priceFor(normalise({...state, items: {...state.items, [k]: (state.items[k] || 0) + 1}})).total - priceFor(state).total;
       const unit = k === 'bikeMax' ? priceFor(normalise({...state, items: {...state.items, bikeMax: 1}})).total - priceFor(normalise({...state, items: {...state.items, bikeMax: 0}})).total : one;
-      return stepper('item-' + k, state.items[k] || 0, 0, it.max, it.name, `${it.text}${inc[k] ? ` ${inc[k]} ${it.pack} included.` : ''}`, tagOf(`${pounds(unit)} a ${it.pack}`));
+      return stepper('item-' + k, state.items[k] || 0, 0, itemMax(state, k), it.name, `${it.text}${inc[k] ? ` ${inc[k]} ${it.pack} included.` : ''}`, tagOf(`${pounds(unit)} a ${it.pack}`));
     }).join('');
     if (title === 'Bikes' && R !== 'casanova') rows += `<div class="stepper-row"><div class="lbl"><span class="t">BikeLift</span><span class="d">Lifts a bike to the roof on a crank, with the garden shed mounting kit.</span></div><div class="chips">${['none', 'standard', ...(['panorama', 'neo'].includes(R) ? ['swivel'] : [])].map(v => chip('bikeLift', v, state.bikeLift === v, v === 'none' ? 'None' : `${v === 'swivel' ? 'Swivelling' : 'Standard'} <small>${plus(delta({bikeLift: v}) - delta({bikeLift: 'none'}))}</small>`)).join('')}</div></div>`;
     if (title === 'Electrics and more' && ['panorama', 'neo'].includes(R)) rows += stepper('led', state.led, 0, 2, 'LED light', 'A ceiling light inside', tagOf(pounds(priceFor(normalise({...state, led: 1})).total - priceFor(normalise({...state, led: 0})).total) + ' each'));
@@ -320,7 +320,7 @@ function stepPrice() {
   <section aria-labelledby="next-title"><h2 class="group-title" id="next-title">What happens next</h2><ol class="next-steps">
     <li>Send your design. Biohort's UK team checks it and calls you to confirm every part.</li>
     <li>Prepare the base: your own slab to Biohort's foundation plan, or a Biohort SmartBase.</li>
-    <li>Free kerbside delivery to mainland Great Britain, ${state.range === 'casanova' ? 'within about 6 weeks' : 'usually within 3 weeks'}.</li>
+    <li>${state.range === 'casanova' ? 'Delivery: Biohort shows free shipping within 6 weeks; your dealer confirms the delivery date and any charge.' : 'Free kerbside delivery to mainland Great Britain, usually within 3 weeks.'}</li>
     <li>Build it yourself with Biohort's illustrated manual and videos, or ask for an assembly partner near you.</li>
   </ol></section>`;
 }
@@ -722,7 +722,7 @@ function openCompare() {
     const prices = codes.flatMap(c => variantsOf(id, c).map(v => priceOf(Object.values(v.sku)[0]) || 0)).filter(Boolean);
     return `<tr><th scope="row">${esc(r.name)}</th><td>${esc(r.tagline)}</td><td>${codes.length}</td><td>${Math.min(...ds.map(d => d.area)).toFixed(1)} to ${Math.max(...ds.map(d => d.area)).toFixed(1)}m²</td><td>${pounds(Math.min(...prices))}</td></tr>`;
   }).join('');
-  $('#info-body').innerHTML = `<h2 id="info-title">Compare the six ranges</h2><div class="table-scroll"><table class="compare"><caption class="visually-hidden">Biohort ranges compared</caption><thead><tr><th scope="col">Range</th><th scope="col">Roof and light</th><th scope="col">Sizes</th><th scope="col">Inside</th><th scope="col">From</th></tr></thead><tbody>${rows}</tbody></table></div><p class="hint">Biohort's published UK prices including VAT, smallest size, standard door.</p><button type="button" class="btn wide" data-close-info>Back to my design</button>`;
+  $('#info-body').innerHTML = `<h2 id="info-title">Compare the six ranges</h2><div class="table-scroll" tabindex="0" role="region" aria-label="The six ranges compared, scrolls sideways"><table class="compare"><caption class="visually-hidden">Biohort ranges compared</caption><thead><tr><th scope="col">Range</th><th scope="col">Roof and light</th><th scope="col">Sizes</th><th scope="col">Inside</th><th scope="col">From</th></tr></thead><tbody>${rows}</tbody></table></div><p class="hint">Biohort's published UK prices including VAT, smallest size, standard door.</p><button type="button" class="btn wide" data-close-info>Back to my design</button>`;
   $('#info-dialog').showModal();
   track('compare_open');
 }

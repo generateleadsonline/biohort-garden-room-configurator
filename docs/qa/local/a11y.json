@@ -1,0 +1,341 @@
+{
+ "base": "http://127.0.0.1:4841",
+ "at": "2026-10-13T13:55:26.527Z",
+ "runs": [
+  {
+   "label": "desktop",
+   "state": "highline step 1",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "highline step 2",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "highline step 3",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "highline step 4",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "highline step 5",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "highline step 6",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "highline step 7",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "highline step 8",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "casanova step 1",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "casanova step 2",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "casanova step 3",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "casanova step 4",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "casanova step 5",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "casanova step 6",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "casanova step 7",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "casanova step 8",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "neo step 1",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "neo step 2",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "neo step 3",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "neo step 4",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "neo step 5",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "neo step 6",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "neo step 7",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "neo step 8",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "callback form",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "callback form with errors",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "showroom form",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "brochure form",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "book form",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "quote form",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "compare dialog",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "share dialog",
+   "violations": []
+  },
+  {
+   "label": "desktop",
+   "state": "tour open",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "highline step 1",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "highline step 2",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "highline step 3",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "highline step 4",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "highline step 5",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "highline step 6",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "highline step 7",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "highline step 8",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "casanova step 1",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "casanova step 2",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "casanova step 3",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "casanova step 4",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "casanova step 5",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "casanova step 6",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "casanova step 7",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "casanova step 8",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "neo step 1",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "neo step 2",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "neo step 3",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "neo step 4",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "neo step 5",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "neo step 6",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "neo step 7",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "neo step 8",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "callback form",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "callback form with errors",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "showroom form",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "brochure form",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "book form",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "quote form",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "compare dialog",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "share dialog",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "menu open",
+   "violations": []
+  },
+  {
+   "label": "phone",
+   "state": "tour open",
+   "violations": []
+  }
+ ]
+}

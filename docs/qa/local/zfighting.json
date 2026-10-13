@@ -1,0 +1,736 @@
+{
+ "base": "harness",
+ "at": "2026-10-13T13:54:57.909Z",
+ "designs": [
+  {
+   "name": "highline HS",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSFMiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "highline H1",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDEiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "highline H1 double door",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDEiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "highline H3",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "highline H2 double door",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDIiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "highline H2",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDIiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "highline H3 double door",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "highline H4",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDQiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "highline H4 double door",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDQiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "highline H6",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDYiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "highline H5 double door",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDUiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "highline H5",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDUiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "highline H6 canopies L both sides with walls",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDYiLCJjIjoiZGFya2dyZXkiLCJrIjpbIkwiLCJMIiwxLDEsMSwxXX0",
+   "visible": []
+  },
+  {
+   "name": "highline H6 double door",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDYiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "highline H6 canopies S both sides with walls",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDYiLCJjIjoiZGFya2dyZXkiLCJrIjpbIlMiLCJTIiwxLDEsMSwxXX0",
+   "visible": []
+  },
+  {
+   "name": "highline foundation none",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkiLCJhIjoxfQ",
+   "visible": []
+  },
+  {
+   "name": "highline foundation frame",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkiLCJmIjoiZnJhbWUiLCJmcCI6MX0",
+   "visible": []
+  },
+  {
+   "name": "highline H6 every wall element",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDYiLCJjIjoiZGFya2dyZXkiLCJvIjpbWyJkb29yIiwibGVmdCIsMzAwLDAsMF0sWyJ3aW5kb3ciLCJsZWZ0Iiw3NTAsMCwwXSxbImRvdWJsZSIsInJpZ2h0IiwzMDAsMCwwXSxbImRvb3IiLCJyaWdodCIsNzUwLDAsMF0sWyJ3aW5kb3ciLCJiYWNrIiwzMDAsMCwwXV19",
+   "visible": []
+  },
+  {
+   "name": "highline H6 every fitting inside",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDYiLCJjIjoiZGFya2dyZXkiLCJibCI6InN0YW5kYXJkIiwiaSI6eyJzaGVsdmVzIjoyLCJkZWVwU2hlbHZlcyI6MiwicmFpbHMiOjIsInRvb2xIYW5nZXJzIjoyLCJ0b29sSG9sZGVycyI6MSwiZG9vckJhc2tldHMiOjIsInNoZWxmQmFza2V0cyI6MiwiaG9va1NldCI6Miwic3VzcGVuc2lvbiI6MiwibW91bnRQYW5lbCI6MiwidGFibGUiOjEsImJpa2VNYXgiOjIsImJpa2VIb2xkZXIiOjEsImJpbkJhZyI6MX19",
+   "visible": []
+  },
+  {
+   "name": "highline foundation smartbaseplus",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkiLCJmIjoic21hcnRiYXNlcGx1cyJ9",
+   "visible": []
+  },
+  {
+   "name": "highline foundation smartbase",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkiLCJmIjoic21hcnRiYXNlIn0",
+   "visible": []
+  },
+  {
+   "name": "highline roof extras and downpipes",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiZHAiOiJyZWFyIiwiZiI6ImZyYW1lIiwieCI6WyJwdiJdLCJmbG9yYWJvYXJkIjozfQ",
+   "visible": []
+  },
+  {
+   "name": "highline H6 door on the left",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDYiLCJjIjoiZGFya2dyZXkiLCJ3IjoibGVmdCJ9",
+   "visible": []
+  },
+  {
+   "name": "highline HS every fitting inside",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSFMiLCJjIjoiZGFya2dyZXkiLCJibCI6InN0YW5kYXJkIiwiaSI6eyJzaGVsdmVzIjoyLCJkZWVwU2hlbHZlcyI6MiwicmFpbHMiOjIsInRvb2xIYW5nZXJzIjoyLCJ0b29sSG9sZGVycyI6MSwiZG9vckJhc2tldHMiOjIsInNoZWxmQmFza2V0cyI6MiwiaG9va1NldCI6Miwic3VzcGVuc2lvbiI6MiwibW91bnRQYW5lbCI6MiwiYmlrZU1heCI6MiwiYmlrZUhvbGRlciI6MSwiYmluQmFnIjoxfX0",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A1 double door",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBMSIsImMiOiJkYXJrZ3JleSIsImQiOiJkb3VibGUifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A1",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBMSIsImMiOiJkYXJrZ3JleSJ9",
+   "visible": []
+  },
+  {
+   "name": "highline H6 door on the right",
+   "code": "b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDYiLCJjIjoiZGFya2dyZXkiLCJ3IjoicmlnaHQifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A2",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBMiIsImMiOiJkYXJrZ3JleSJ9",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A3",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBMyIsImMiOiJkYXJrZ3JleSJ9",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A2 double door",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBMiIsImMiOiJkYXJrZ3JleSIsImQiOiJkb3VibGUifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A3 double door",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBMyIsImMiOiJkYXJrZ3JleSIsImQiOiJkb3VibGUifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A4 double door",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNCIsImMiOiJkYXJrZ3JleSIsImQiOiJkb3VibGUifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A4",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNCIsImMiOiJkYXJrZ3JleSJ9",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A5",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNSIsImMiOiJkYXJrZ3JleSJ9",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A6",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNiIsImMiOiJkYXJrZ3JleSJ9",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A5 double door",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNSIsImMiOiJkYXJrZ3JleSIsImQiOiJkb3VibGUifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A7 double door",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNyIsImMiOiJkYXJrZ3JleSIsImQiOiJkb3VibGUifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A7",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNyIsImMiOiJkYXJrZ3JleSJ9",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A6 double door",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNiIsImMiOiJkYXJrZ3JleSIsImQiOiJkb3VibGUifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A8",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBOCIsImMiOiJkYXJrZ3JleSJ9",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A8 canopies L both sides with walls",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBOCIsImMiOiJkYXJrZ3JleSIsImsiOlsiTCIsIkwiLDEsMSwxLDFdfQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A8 double door",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBOCIsImMiOiJkYXJrZ3JleSIsImQiOiJkb3VibGUifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde foundation none",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNiIsImMiOiJkYXJrZ3JleSIsImEiOjF9",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A8 every wall element",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBOCIsImMiOiJkYXJrZ3JleSIsIm8iOltbImRvb3IiLCJsZWZ0IiwzMDAsMCwwXSxbIndpbmRvdyIsImxlZnQiLDc1MCwwLDBdLFsiZG91YmxlIiwicmlnaHQiLDMwMCwwLDBdLFsiZG9vciIsInJpZ2h0Iiw3NTAsMCwwXSxbIndpbmRvdyIsImJhY2siLDMwMCwwLDBdXX0",
+   "visible": []
+  },
+  {
+   "name": "avantgarde foundation frame",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNiIsImMiOiJkYXJrZ3JleSIsImYiOiJmcmFtZSIsImZwIjoxfQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde foundation smartbaseplus",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNiIsImMiOiJkYXJrZ3JleSIsImYiOiJzbWFydGJhc2VwbHVzIn0",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A8 every fitting inside",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBOCIsImMiOiJkYXJrZ3JleSIsImJsIjoic3RhbmRhcmQiLCJpIjp7InNoZWx2ZXMiOjIsImRlZXBTaGVsdmVzIjoyLCJyYWlscyI6MiwidG9vbEhhbmdlcnMiOjIsInRvb2xIb2xkZXJzIjoxLCJkb29yQmFza2V0cyI6Miwic2hlbGZCYXNrZXRzIjoyLCJob29rU2V0IjoyLCJzdXNwZW5zaW9uIjoyLCJtb3VudFBhbmVsIjoyLCJ0YWJsZSI6MSwiYmlrZU1heCI6MiwiYmlrZUhvbGRlciI6MSwiYmluQmFnIjoxfX0",
+   "visible": []
+  },
+  {
+   "name": "avantgarde foundation smartbase",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNiIsImMiOiJkYXJrZ3JleSIsImYiOiJzbWFydGJhc2UifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde A1 every fitting inside",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBMSIsImMiOiJkYXJrZ3JleSIsImJsIjoic3RhbmRhcmQiLCJpIjp7InNoZWx2ZXMiOjIsImRlZXBTaGVsdmVzIjoyLCJyYWlscyI6MiwidG9vbEhhbmdlcnMiOjIsInRvb2xIb2xkZXJzIjoxLCJkb29yQmFza2V0cyI6Miwic2hlbGZCYXNrZXRzIjoyLCJob29rU2V0IjoyLCJzdXNwZW5zaW9uIjoyLCJtb3VudFBhbmVsIjoyLCJ0YWJsZSI6MSwiYmlrZU1heCI6MiwiYmlrZUhvbGRlciI6MSwiYmluQmFnIjoxfX0",
+   "visible": []
+  },
+  {
+   "name": "europa 1",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjEiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "avantgarde roof extras and downpipes",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBNiIsImMiOiJkYXJrZ3JleSIsImQiOiJkb3VibGUiLCJkcCI6InJlYXIiLCJmIjoiZnJhbWUiLCJ4IjpbInB2Il0sImZsb3JhYm9hcmQiOjN9",
+   "visible": []
+  },
+  {
+   "name": "europa 2A",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjJBIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "europa 2",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjIiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "europa 3",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "europa 4A",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjRBIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "europa 4",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjQiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "europa 5",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjUiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "europa 6",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjYiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "europa 7 canopies on both sides with walls",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjciLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiayI6WyJvbiIsIm9uIiwwLDAsMCwwXX0",
+   "visible": []
+  },
+  {
+   "name": "europa 7",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjciLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "europa foundation none",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiYSI6MX0",
+   "visible": []
+  },
+  {
+   "name": "europa foundation frame",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiZiI6ImZyYW1lIiwiZnAiOjF9",
+   "visible": []
+  },
+  {
+   "name": "europa 7 every wall element",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjciLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwibyI6W1siZG91YmxlIiwibGVmdCIsMzAwLDAsMF0sWyJ3aW5kb3ciLCJyaWdodCIsMzAwLDAsMF0sWyJkb3VibGUiLCJyaWdodCIsNzQwLDAsMF0sWyJ3aW5kb3ciLCJiYWNrIiw3NTAsMCwwXV19",
+   "visible": []
+  },
+  {
+   "name": "europa foundation smartbaseplus",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiZiI6InNtYXJ0YmFzZXBsdXMifQ",
+   "visible": []
+  },
+  {
+   "name": "europa foundation smartbase",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiZiI6InNtYXJ0YmFzZSJ9",
+   "visible": []
+  },
+  {
+   "name": "europa 7 every fitting inside",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjciLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiYmwiOiJzdGFuZGFyZCIsImkiOnsic2hlbHZlcyI6MiwiZGVlcFNoZWx2ZXMiOjIsInJhaWxzIjoyLCJ0b29sSGFuZ2VycyI6MiwiZG9vckJhc2tldHMiOjIsInNoZWxmQmFza2V0cyI6MiwiaG9va1NldCI6Miwic3VzcGVuc2lvbiI6MiwibW91bnRQYW5lbCI6MiwidGFibGUiOjEsImJpa2VNYXgiOjIsImJpa2VIb2xkZXIiOjEsImJpbkJhZyI6MX19",
+   "visible": []
+  },
+  {
+   "name": "panorama P1",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDEiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "europa roof extras and downpipes",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiZHAiOiJyZWFyIiwiZiI6ImZyYW1lIiwieCI6WyJwdiIsImdhc1NwcmluZyJdfQ",
+   "visible": []
+  },
+  {
+   "name": "europa 1 every fitting inside",
+   "code": "b1.eyJyIjoiZXVyb3BhIiwieiI6IjEiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiYmwiOiJzdGFuZGFyZCIsImkiOnsic2hlbHZlcyI6MiwiZGVlcFNoZWx2ZXMiOjIsInJhaWxzIjoyLCJ0b29sSGFuZ2VycyI6MiwiZG9vckJhc2tldHMiOjIsInNoZWxmQmFza2V0cyI6MiwiaG9va1NldCI6Miwic3VzcGVuc2lvbiI6MiwibW91bnRQYW5lbCI6MiwidGFibGUiOjEsImJpa2VNYXgiOjIsImJpa2VIb2xkZXIiOjEsImJpbkJhZyI6MX19",
+   "visible": []
+  },
+  {
+   "name": "panorama P1 double door",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDEiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "panorama P2 double door",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDIiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "panorama P2",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDIiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "panorama P3",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDMiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "panorama P3 double door",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "panorama P4",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDQiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "panorama P5 double door",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDUiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "panorama P5",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDUiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "panorama P4 double door",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDQiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIn0",
+   "visible": []
+  },
+  {
+   "name": "panorama foundation frame",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDMiLCJjIjoiZGFya2dyZXkiLCJmIjoiZnJhbWUiLCJmcCI6MX0",
+   "visible": []
+  },
+  {
+   "name": "panorama foundation none",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDMiLCJjIjoiZGFya2dyZXkifQ",
+   "visible": []
+  },
+  {
+   "name": "panorama P5 every wall element",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDUiLCJjIjoiZGFya2dyZXkiLCJvIjpbWyJkb29yIiwibGVmdCIsMzAwLDAsMF0sWyJ3aW5kb3ciLCJsZWZ0Iiw3NTAsMCwwXSxbImRvdWJsZSIsInJpZ2h0IiwzMDAsMCwwXSxbImRvb3IiLCJyaWdodCIsNzUwLDAsMF0sWyJ3aW5kb3ciLCJiYWNrIiwzMDAsMCwwXV19",
+   "visible": []
+  },
+  {
+   "name": "panorama P5 every fitting inside",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDUiLCJjIjoiZGFya2dyZXkiLCJsZWQiOjIsImJsIjoic3RhbmRhcmQiLCJpIjp7InNoZWx2ZXMiOjIsImRlZXBTaGVsdmVzIjoyLCJyYWlscyI6MiwidG9vbEhhbmdlcnMiOjIsInRvb2xIb2xkZXJzIjoxLCJkb29yQmFza2V0cyI6Miwic2hlbGZCYXNrZXRzIjoyLCJob29rU2V0IjoyLCJzdXNwZW5zaW9uIjoyLCJtb3VudFBhbmVsIjoyLCJ0YWJsZSI6MSwiYmlrZU1heCI6MiwiYmlrZUhvbGRlciI6MSwiYmluQmFnIjoxfX0",
+   "visible": []
+  },
+  {
+   "name": "panorama foundation smartbase",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDMiLCJjIjoiZGFya2dyZXkiLCJmIjoic21hcnRiYXNlIn0",
+   "visible": []
+  },
+  {
+   "name": "panorama foundation smartbaseplus",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDMiLCJjIjoiZGFya2dyZXkiLCJmIjoic21hcnRiYXNlcGx1cyJ9",
+   "visible": []
+  },
+  {
+   "name": "panorama P1 every fitting inside",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDEiLCJjIjoiZGFya2dyZXkiLCJsZWQiOjEsImJsIjoic3RhbmRhcmQiLCJpIjp7InNoZWx2ZXMiOjIsImRlZXBTaGVsdmVzIjoyLCJyYWlscyI6MiwidG9vbEhhbmdlcnMiOjIsInRvb2xIb2xkZXJzIjoxLCJkb29yQmFza2V0cyI6Miwic2hlbGZCYXNrZXRzIjoyLCJob29rU2V0IjoyLCJzdXNwZW5zaW9uIjoyLCJtb3VudFBhbmVsIjoyLCJ0YWJsZSI6MSwiYmlrZU1heCI6MiwiYmlrZUhvbGRlciI6MSwiYmluQmFnIjoxfX0",
+   "visible": []
+  },
+  {
+   "name": "panorama roof extras and downpipes",
+   "code": "b1.eyJyIjoicGFub3JhbWEiLCJ6IjoiUDMiLCJjIjoiZGFya2dyZXkiLCJkIjoiZG91YmxlIiwiZHAiOiJyZWFyIiwiZiI6ImZyYW1lIiwieCI6WyJwdiIsInJhbXAiXSwic29sYXIiOjIsImZsb3JhYm9hcmQiOjN9",
+   "visible": []
+  },
+  {
+   "name": "neo 1A",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjFBIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 3A",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjNBIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 4A",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjRBIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 2A",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJBIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 1B",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjFCIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 1B double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjFCIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 2B",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJCIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 3B double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjNCIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 3B",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjNCIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 2B double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJCIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 4B double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjRCIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 4B",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjRCIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 1C",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjFDIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 2C",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJDIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 2C double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJDIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 1C double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjFDIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 3C double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjNDIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 4C",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjRDIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 3C",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjNDIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 4C double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjRDIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 1D",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjFEIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 1D double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjFEIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 2D double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJEIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 3D",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjNEIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 2D",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJEIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 3D double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjNEIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo 4D",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjREIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 4D double door",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjREIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo foundation none",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJCIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "neo 4D every wall element",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjREIiwiYyI6ImRhcmtncmV5IiwibyI6W1siZG9vciIsImxlZnQiLDMwMCwwLDBdLFsiZ2xhc3NQYW5lbCIsImxlZnQiLDc1MCwwLDBdLFsiZG91YmxlIiwicmlnaHQiLDMwMCwwLDBdLFsiZG9vciIsInJpZ2h0Iiw3NTAsMCwwXSxbImdsYXNzUGFuZWwiLCJiYWNrIiwzMDAsMCwwXSxbImRvdWJsZSIsImJhY2siLDcyNiwwLDBdXX0",
+   "visible": []
+  },
+  {
+   "name": "neo 4D canopies on both sides with walls",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjREIiwiYyI6ImRhcmtncmV5IiwiayI6WyJvbiIsIm9uIiwxLDEsMSwxXSwiY2Fub3B5R2xhc3MiOjMsImNhbm9weUZsb3JhIjoyfQ",
+   "visible": []
+  },
+  {
+   "name": "neo foundation frame",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJCIiwiYyI6ImRhcmtncmV5IiwiZiI6ImZyYW1lIiwiZnAiOjF9",
+   "visible": []
+  },
+  {
+   "name": "neo foundation smartbase",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJCIiwiYyI6ImRhcmtncmV5IiwiZiI6InNtYXJ0YmFzZSJ9",
+   "visible": []
+  },
+  {
+   "name": "neo foundation smartbaseplus",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJCIiwiYyI6ImRhcmtncmV5IiwiZiI6InNtYXJ0YmFzZXBsdXMifQ",
+   "visible": []
+  },
+  {
+   "name": "neo 1A every fitting inside",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjFBIiwiYyI6ImRhcmtncmV5IiwibGVkIjoxLCJibCI6InN0YW5kYXJkIiwiaSI6eyJzaGVsdmVzIjoyLCJkZWVwU2hlbHZlcyI6MiwidG9vbEhhbmdlcnMiOjIsInRvb2xIb2xkZXJzIjoxLCJkb29yQmFza2V0cyI6Miwic2hlbGZCYXNrZXRzIjoyLCJob29rU2V0IjoyLCJzdXNwZW5zaW9uIjoyLCJtb3VudFBhbmVsIjoyLCJiaWtlTWF4IjoyLCJiaWtlSG9sZGVyIjoxLCJiaW5CYWciOjF9fQ",
+   "visible": []
+  },
+  {
+   "name": "neo roof extras and downpipes",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjJCIiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSIsImYiOiJmcmFtZSIsIngiOlsicHYiLCJyYW1wIl0sInNvbGFyIjoyLCJmbG9yYWJvYXJkIjozfQ",
+   "visible": []
+  },
+  {
+   "name": "neo 4D every fitting inside",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjREIiwiYyI6ImRhcmtncmV5IiwieCI6WyJwYW5lbGxpbmciLCJpbnN1bGF0aW9uIl0sImxlZCI6MiwiYmwiOiJzdGFuZGFyZCIsImkiOnsic2hlbHZlcyI6MiwiZGVlcFNoZWx2ZXMiOjIsInRvb2xIYW5nZXJzIjoyLCJ0b29sSG9sZGVycyI6MSwiZG9vckJhc2tldHMiOjIsInNoZWxmQmFza2V0cyI6MiwiaG9va1NldCI6Miwic3VzcGVuc2lvbiI6MiwibW91bnRQYW5lbCI6MiwiYmlrZU1heCI6MiwiYmlrZUhvbGRlciI6MSwiYmluQmFnIjoxfX0",
+   "visible": []
+  },
+  {
+   "name": "neo 4D door on the right",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjREIiwiYyI6ImRhcmtncmV5IiwidyI6InJpZ2h0In0",
+   "visible": []
+  },
+  {
+   "name": "neo 4D door on the left",
+   "code": "b1.eyJyIjoibmVvIiwieiI6IjREIiwiYyI6ImRhcmtncmV5IiwidyI6ImxlZnQifQ",
+   "visible": []
+  },
+  {
+   "name": "casanova 3x2",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiM3gyIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 3x3",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiM3gzIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 3x4",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiM3g0IiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 3x5",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiM3g1IiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 4x2",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHgyIiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 3x6",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiM3g2IiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 4x4",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg0IiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 4x6",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg2IiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 4x5",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg1IiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 4x6 every wall element",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg2IiwiYyI6ImRhcmtncmV5IiwibyI6W1siZG9vciIsImxlZnQiLDMwMCwwLDBdLFsidGlsdFdpbmRvdyIsImxlZnQiLDc1MCwwLDBdLFsiZ2xhc3NFbGVtZW50IiwicmlnaHQiLDMwMCwwLDBdLFsiZG9vciIsInJpZ2h0Iiw3NTAsMCwwXSxbInRpbHRXaW5kb3ciLCJiYWNrIiwzMDAsMCwwXSxbImdsYXNzRWxlbWVudCIsImJhY2siLDc1MCwwLDBdXX0",
+   "visible": []
+  },
+  {
+   "name": "casanova foundation none",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiM3g0IiwiYyI6ImRhcmtncmV5In0",
+   "visible": []
+  },
+  {
+   "name": "casanova foundation frame",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiM3g0IiwiYyI6ImRhcmtncmV5IiwiZiI6ImZyYW1lIiwiZnAiOjF9",
+   "visible": []
+  },
+  {
+   "name": "casanova 4x6 every fitting inside",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg2IiwiYyI6ImRhcmtncmV5IiwiaSI6eyJzaGVsdmVzIjoyLCJkZWVwU2hlbHZlcyI6MiwiY29ybmVyU2hlbHZlcyI6MiwiY29ybmVyRGVlcFNoZWx2ZXMiOjIsInJhaWxzIjoyLCJob29rU2V0IjoyLCJjb3JuZXJIb29rU2V0IjoyLCJtb3VudFBhbmVsIjoyLCJtb3VudFBhbmVsQ29hdGVkIjoyLCJ0YWJsZSI6MSwiYmlrZU1heCI6Mn19",
+   "visible": []
+  },
+  {
+   "name": "casanova 4x6 door on the left",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg2IiwiYyI6ImRhcmtncmV5IiwidyI6ImxlZnQifQ",
+   "visible": []
+  },
+  {
+   "name": "casanova roof extras and downpipes",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiM3g0IiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSIsImRwIjoiZnJvbnQiLCJmIjoiZnJhbWUiLCJ4IjpbInJhbXAiXX0",
+   "visible": []
+  },
+  {
+   "name": "casanova 3x2 every fitting inside",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiM3gyIiwiYyI6ImRhcmtncmV5IiwiaSI6eyJjb3JuZXJTaGVsdmVzIjoyLCJjb3JuZXJEZWVwU2hlbHZlcyI6MiwicmFpbHMiOjIsImNvcm5lckhvb2tTZXQiOjIsIm1vdW50UGFuZWwiOjIsIm1vdW50UGFuZWxDb2F0ZWQiOjIsImJpa2VNYXgiOjJ9fQ",
+   "visible": []
+  },
+  {
+   "name": "casanova 4x6 door on the right",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg2IiwiYyI6ImRhcmtncmV5IiwidyI6InJpZ2h0In0",
+   "visible": []
+  },
+  {
+   "name": "casanova 4x6 door on the back",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg2IiwiYyI6ImRhcmtncmV5IiwidyI6ImJhY2sifQ",
+   "visible": []
+  },
+  {
+   "name": "avantgarde ECO* double door",
+   "code": "b1.eyJyIjoiYXZhbnRnYXJkZSIsInoiOiJBOCIsImMiOiJkYXJrZ3JleSIsIm0iOiJlY28iLCJkIjoiZG91YmxlIiwieCI6WyJnYXNTcHJpbmciXX0",
+   "visible": []
+  },
+  {
+   "name": "casanova sectional door, electric, ramp",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg2IiwiYyI6ImRhcmtncmV5IiwidCI6ImVsZWN0cmljIiwieCI6WyJyYW1wIl19",
+   "visible": []
+  },
+  {
+   "name": "casanova double door left hinge, glass, sauna, light band, roof supports, spotlights",
+   "code": "b1.eyJyIjoiY2FzYW5vdmEiLCJ6IjoiNHg2IiwiYyI6ImRhcmtncmV5IiwiZCI6ImRvdWJsZSIsImgiOiJsZWZ0IiwiZyI6MSwibyI6W1sidGlsdFdpbmRvdyIsInJpZ2h0IiwzMDAsMSwwXSxbImRvb3IiLCJiYWNrIiw1MDAsMCwxXV0sIngiOlsic2t5bGlnaHQiLCJyb29mU3VwcG9ydCJdLCJlbCI6WyJmcm9udCIsImxlZnQiLCJyaWdodCIsImJhY2siXSwic2EiOiJsZWZ0In0",
+   "visible": []
+  }
+ ]
+}

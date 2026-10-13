@@ -1,0 +1,35 @@
+PASS  callback ("Request a callback"): empty submit names all five required fields, focus on first name  f-first-error,f-last-error,f-phone-error,f-email-error,f-postcode-error
+PASS  callback: an unallocated 021 number is refused
+PASS  callback: an Ofcom drama number is refused
+PASS  callback: submitted, reference shown  Reference BHE-20261013-D7QFFW
+PASS  showroom ("See a Biohort building near you"): empty submit names all five required fields, focus on first name  f-first-error,f-last-error,f-phone-error,f-email-error,f-postcode-error
+PASS  showroom: an unallocated 021 number is refused
+PASS  showroom: an Ofcom drama number is refused
+PASS  showroom: submitted, reference shown  Reference BHE-20261013-3BQ2CM
+PASS  brochure ("Download the brochure"): empty submit names all five required fields, focus on first name  f-first-error,f-last-error,f-phone-error,f-email-error,f-postcode-error
+PASS  brochure: an unallocated 021 number is refused
+PASS  brochure: an Ofcom drama number is refused
+PASS  brochure: submitted, reference shown  Reference BHE-20261013-9CRT32
+PASS  brochure: opens Biohort's English product catalogue, with a link to it
+PASS  book ("Book a design call"): empty submit names all five required fields, focus on first name  f-first-error,f-last-error,f-phone-error,f-email-error,f-postcode-error
+PASS  book: an unallocated 021 number is refused
+PASS  book: an Ofcom drama number is refused
+PASS  book: submitted, reference shown  Reference BHE-20261013-UB3Q6F
+PASS  quote ("Send your design to Biohort"): empty submit names all five required fields, focus on first name  f-first-error,f-last-error,f-phone-error,f-email-error,f-postcode-error
+PASS  quote: an unallocated 021 number is refused
+PASS  quote: an Ofcom drama number is refused
+PASS  quote: submitted, reference shown  Reference BHE-20261013-D4GZ32
+PASS  pdf ("Download your design PDF"): empty submit names all five required fields, focus on first name  f-first-error,f-last-error,f-phone-error,f-email-error,f-postcode-error
+PASS  pdf: an unallocated 021 number is refused
+PASS  pdf: an Ofcom drama number is refused
+PASS  pdf: submitted, reference shown  Reference BHE-20261013-QN36LL
+PASS  pdf: download saved  Biohort-HighLine-H3-BH-0CP3OH7.pdf
+PASS  six enquiries stored, one per form  6
+PASS  callback: stored with names, E.164 phone, postcode, full specification, priced lines and design and booking links
+PASS  showroom: stored with names, E.164 phone, postcode, full specification, priced lines and design and booking links
+PASS  brochure: stored with names, E.164 phone, postcode, full specification, priced lines and design and booking links
+PASS  book: stored with names, E.164 phone, postcode, full specification, priced lines and design and booking links
+PASS  quote: stored with names, E.164 phone, postcode, full specification, priced lines and design and booking links
+PASS  pdf: stored with names, E.164 phone, postcode, full specification, priced lines and design and booking links
+PASS  no page errors
+All form checks passed

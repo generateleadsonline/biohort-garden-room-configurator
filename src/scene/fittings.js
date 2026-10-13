@@ -29,16 +29,39 @@ export function fitOut(root, s, room, kit) {
   const used = Object.fromEntries(WALL_ORDER.map(w => [w, []]));
   /** Finds room for `w` metres on a wall, from the preferred end; marks it used. */
   function claim(side, w, fromRight = false) {
+    const c = freeSpot(side, w, fromRight);
+    if (c !== null) used[side].push([c - w / 2, c + w / 2]);
+    return c;
+  }
+  /** The first free centre for `w` metres on a wall, from the preferred end, without claiming it. */
+  function freeSpot(side, w, fromRight = false) {
     const lim = L(side) / 2 - .04;
     for (let k = 0; k <= 200; k++) {
       const c = fromRight ? lim - w / 2 - k * .02 : -lim + w / 2 + k * .02;
       if (c - w / 2 < -lim - 1e-6 || c + w / 2 > lim + 1e-6) break;
-      if (blocked[side].concat(used[side]).every(([a, b]) => c + w / 2 <= a || c - w / 2 >= b)) { used[side].push([c - w / 2, c + w / 2]); return c; }
+      if (blocked[side].concat(used[side]).every(([a, b]) => c + w / 2 <= a || c - w / 2 >= b)) return c;
     }
     return null;
   }
   const order = (...pref) => pref.concat(WALL_ORDER.filter(w => !pref.includes(w)));
   function claimAny(sides, w, fromRight = false) { for (const side of sides) { const c = claim(side, w, fromRight); if (c !== null) return {side, u: c}; } return null; }
+  // Where a point u along a wall sits in plan, matching onWall() below.
+  const planAt = (side, u) => side === 'back' ? [u, -wd / 2] : side === 'front' ? [-u, wd / 2] : side === 'left' ? [-ww / 2, -u] : [ww / 2, u];
+  const doorAt = (() => { const [b0, b1] = blocked[room.mainDoor.wall][0]; return planAt(room.mainDoor.wall, (b0 + b1) / 2); })();
+  /**
+   * For bikes, which reach into the room: the free spot farthest from the main door on any of the
+   * walls (searched from each wall's far end), so they fill the back corners and keep the doorway clear.
+   */
+  function claimFar(sides, w) {
+    const dist = (side, u) => { const [x, z] = planAt(side, u); return Math.hypot(x - doorAt[0], z - doorAt[1]); };
+    let best = null;
+    for (const side of sides) {
+      const lim = L(side) / 2, c = freeSpot(side, w, dist(side, lim) > dist(side, -lim));
+      if (c !== null && (!best || dist(side, c) > best.d + 1e-6)) best = {side, u: c, d: dist(side, c)};
+    }
+    if (best) used[best.side].push([best.u - w / 2, best.u + w / 2]);
+    return best && {side: best.side, u: best.u};
+  }
   /** A group flat against a wall's inside face, local +z into the room, local x along the wall. */
   function onWall(side, u, y, out = 0, ...tags) {
     const gr = group(inside, ...tags);
@@ -62,13 +85,13 @@ export function fitOut(root, s, room, kit) {
       const pg = onWall(side, 0, floorY + h / 2, ins + .006, 'panelling');
       const segs = [];
       let a = -Lw / 2 + .002;
-      for (const [b0, b1] of blocked[side].slice().sort((p, q) => p[0] - q[0])) { if (b0 > a) segs.push([a, Math.min(b0 + .1, Lw / 2 - .002)]); a = Math.max(a, b1 - .1); }
+      // Boards stop 5mm short of each opening, tucked behind the door frame rather than flush with its reveal.
+      for (const [b0, b1] of blocked[side].slice().sort((p, q) => p[0] - q[0])) { if (b0 > a) segs.push([a, Math.min(b0 + .095, Lw / 2 - .002)]); a = Math.max(a, b1 - .095); }
       if (a < Lw / 2 - .002) segs.push([a, Lw / 2 - .002]);
       for (const [p0, p1] of segs) if (p1 - p0 > .05) {
         box(pg, p1 - p0, h, .012, (p0 + p1) / 2, 0, 0, pm, 'panelling');
         if (ins) box(pg, p1 - p0 - .004, h - .004, ins - .002, (p0 + p1) / 2, 0, -ins / 2 - .005, foam, 'panelling', 'insulation');
-        // Insulation shows at the board edges: a foam strip where the panelling stops at a door.
-        if (ins) for (const x of [p0, p1]) if (Math.abs(x) < Lw / 2 - .01) box(pg, .004, h - .004, ins + .012, x + (x === p0 ? .002 : -.002), 0, -ins / 2, foam, 'insulation');
+        // The foam stops 2mm short of each board end, so it shows as a line where the panelling meets a door.
       }
     }
   }
@@ -174,7 +197,8 @@ export function fitOut(root, s, room, kit) {
   // ---- Bikes: BikeMax hangers, the BikeHolder rack and the BikeLift ---------------------------------------
   const bikeMax = s.items.bikeMax || 0;
   for (let i = 0; i < bikeMax; i++) {
-    const spot = claimAny(order('left', 'right', 'back'), .32);
+    // 44cm apart, so neighbouring handlebars (42cm) clear each other.
+    const spot = claimFar(order('left', 'right', 'back'), .44);
     if (!spot) break;
     const bg = onWall(spot.side, spot.u, floorY, wallOut, 'bikes', 'bikeMax');
     box(bg, .06, 2.06 - .2, .03, 0, 1.0, .015, metal, 'bikes');
@@ -183,7 +207,7 @@ export function fitOut(root, s, room, kit) {
   }
   if (s.items.bikeHolder) {
     const count = s.range === 'neo' ? 2 : 3;
-    const spot = claimAny(order('left', 'right', 'back'), count * .35 + .1);
+    const spot = claimFar(order('left', 'right', 'back'), count * .35 + .1);
     if (spot) {
       const bg = onWall(spot.side, spot.u, floorY, wallOut, 'bikes', 'bikeHolder');
       box(bg, count * .35, .03, .3, 0, .015, .2, metal, 'bikes');
@@ -195,7 +219,7 @@ export function fitOut(root, s, room, kit) {
     }
   }
   if (s.bikeLift !== 'none') {
-    const spot = claimAny(order('left', 'right', 'back'), .5, true);
+    const spot = claimFar(order('left', 'right', 'back'), .5);
     if (spot) {
       const lg = onWall(spot.side, spot.u, floorY, wallOut, 'bikes', 'bikeLift');
       box(lg, .17, 1.85, .43, 0, .95, .2, s.range === 'neo' ? std('#e9e8e3', {roughness: .5}) : std('#55585a', {roughness: .5, metalness: .4}), 'bikes', 'bikeLift');
@@ -243,10 +267,10 @@ export function fitOut(root, s, room, kit) {
     spruce.map = ply.map;
     box(sg, sw, sh, .05, 0, sh / 2, sd / 2 - .025, spruce, 'sauna');
     box(sg, .05, sh, sd - .1, -side * (sw / 2 - .025), sh / 2, 0, spruce, 'sauna');
-    box(sg, sw - .02, .04, sd - .02, 0, sh - .02, 0, spruce, 'sauna');
+    box(sg, sw - .12, .04, sd - .11, 0, sh - .016, -.03, spruce, 'sauna');
     // Its glazed door, hinged as chosen.
-    add(sg, new THREE.PlaneGeometry(.6, 1.8), M.glass, side * -.3, .95, sd / 2 + .002, 'sauna', 'glass').renderOrder = 2;
-    box(sg, .64, 1.84, .02, side * -.3, .95, sd / 2 - .01, std('#b98f58', {roughness: .7}), 'sauna');
+    box(sg, .64, 1.84, .012, side * -.3, .95, sd / 2 + .006, std('#b98f58', {roughness: .7}), 'sauna');
+    add(sg, new THREE.PlaneGeometry(.6, 1.8), M.glass, side * -.3, .95, sd / 2 + .0135, 'sauna', 'glass').renderOrder = 2;
     box(sg, 1.8, .05, .5, 0, .45, -sd / 2 + .3, spruce, 'sauna');
     box(sg, 1.8, .05, .5, 0, .9, -sd / 2 + .3, spruce, 'sauna');
     box(sg, .4, .5, .3, side * (sw / 2 - .3), .35, sd / 2 - .3, std('#3b3d3f', {roughness: .5}), 'sauna');
@@ -283,7 +307,7 @@ export function fitOut(root, s, room, kit) {
     const tube = (x0, y0, x1, y1, r = .016) => { const l = Math.hypot(x1 - x0, y1 - y0); const m = cyl(bg, r, r, l, (x0 + x1) / 2, (y0 + y1) / 2, 0, frame, 8, 'bikes'); m.rotation.z = Math.atan2(y1 - y0, x1 - x0) - Math.PI / 2; };
     tube(-.52, .35, -.05, .35); tube(-.05, .35, -.18, .78); tube(-.18, .78, .38, .78); tube(-.05, .35, .38, .78); tube(.38, .78, .52, .35); tube(-.52, .35, -.18, .78);
     box(bg, .22, .04, .08, -.2, .83, 0, tyre, 'bikes');
-    box(bg, .04, .04, .5, .4, .92, 0, tyre, 'bikes');
+    box(bg, .026, .026, .42, .4, .92, 0, tyre, 'bikes');
     if (mode === 'vertical') { bg.rotation.z = Math.PI / 2; bg.rotation.y = Math.PI / 2; bg.position.set(x, y + .95, z); }
     else if (mode === 'upright') { bg.rotation.y = Math.PI / 2; bg.position.set(x, y, z - .35); }
     else { bg.rotation.y = 0; bg.position.set(x, y, z); bg.scale.set(.9, .9, .9); }

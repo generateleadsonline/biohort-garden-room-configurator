@@ -1,0 +1,87 @@
+
+> biohort-garden-room-configurator@2.0.0 test
+> node --test tests/*.test.mjs && node tools/check-price-list.mjs
+
+TAP version 13
+# Subtest: every published size, colour and door has Biohort's SKU and GB price
+ok 1 - every published size, colour and door has Biohort's SKU and GB price
+  ---
+  duration_ms: 9.347917
+  type: 'test'
+  ...
+# Subtest: pinned prices from Biohort's GB configurator and 2026 price list
+ok 2 - pinned prices from Biohort's GB configurator and 2026 price list
+  ---
+  duration_ms: 14.682292
+  type: 'test'
+  ...
+# Subtest: every option offered resolves to a priced SKU for every size, colour and door
+ok 3 - every option offered resolves to a priced SKU for every size, colour and door
+  ---
+  duration_ms: 95.624167
+  type: 'test'
+  ...
+# Subtest: data-sheet errors are not shown: Neo 3B interior and foundation, CasaNova 3 x 3 electric door
+ok 4 - data-sheet errors are not shown: Neo 3B interior and foundation, CasaNova 3 x 3 electric door
+  ---
+  duration_ms: 0.266167
+  type: 'test'
+  ...
+# Subtest: a size change drops what no longer fits, and keeps the rest
+ok 5 - a size change drops what no longer fits, and keeps the rest
+  ---
+  duration_ms: 0.129792
+  type: 'test'
+  ...
+# Subtest: share codes round-trip every option, and damaged codes are refused
+ok 6 - share codes round-trip every option, and damaged codes are refused
+  ---
+  duration_ms: 19.206333
+  type: 'test'
+  ...
+# Subtest: UK phone numbers follow Ofcom's numbering plan
+ok 7 - UK phone numbers follow Ofcom's numbering plan
+  ---
+  duration_ms: 0.786792
+  type: 'test'
+  ...
+# Subtest: a valid enquiry is stored with the specification, price status and links to the design and booking
+ok 8 - a valid enquiry is stored with the specification, price status and links to the design and booking
+  ---
+  duration_ms: 42.834667
+  type: 'test'
+  ...
+# Subtest: each contact field is validated on the server, with the field named
+ok 9 - each contact field is validated on the server, with the field named
+  ---
+  duration_ms: 2.691
+  type: 'test'
+  ...
+# Subtest: other origins, unknown forms, bad designs and oversized bodies are refused; the honeypot stores nothing
+ok 10 - other origins, unknown forms, bad designs and oversized bodies are refused; the honeypot stores nothing
+  ---
+  duration_ms: 1.156458
+  type: 'test'
+  ...
+# Subtest: every form type is accepted
+ok 11 - every form type is accepted
+  ---
+  duration_ms: 3.833417
+  type: 'test'
+  ...
+# Subtest: diagnostics: stored for a phone, read back by code, skipped for headless browsers
+ok 12 - diagnostics: stored for a phone, read back by code, skipped for headless browsers
+  ---
+  duration_ms: 0.89425
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 226.230042
+739 prices match the GB price list, 0 differ, 2 not printed in it (of 741).

@@ -1,0 +1,147 @@
+ok   highline HS
+ok   highline H1
+ok   highline H1 double door
+ok   highline H3
+ok   highline H2 double door
+ok   highline H2
+ok   highline H3 double door
+ok   highline H4
+ok   highline H4 double door
+ok   highline H6
+ok   highline H5 double door
+ok   highline H5
+ok   highline H6 canopies L both sides with walls
+ok   highline H6 double door
+ok   highline H6 canopies S both sides with walls
+ok   highline foundation none
+ok   highline foundation frame
+ok   highline H6 every wall element
+ok   highline H6 every fitting inside
+ok   highline foundation smartbaseplus
+ok   highline foundation smartbase
+ok   highline roof extras and downpipes
+ok   highline H6 door on the left
+ok   highline HS every fitting inside
+ok   avantgarde A1 double door
+ok   avantgarde A1
+ok   highline H6 door on the right
+ok   avantgarde A2
+ok   avantgarde A3
+ok   avantgarde A2 double door
+ok   avantgarde A3 double door
+ok   avantgarde A4 double door
+ok   avantgarde A4
+ok   avantgarde A5
+ok   avantgarde A6
+ok   avantgarde A5 double door
+ok   avantgarde A7 double door
+ok   avantgarde A7
+ok   avantgarde A6 double door
+ok   avantgarde A8
+ok   avantgarde A8 canopies L both sides with walls
+ok   avantgarde A8 double door
+ok   avantgarde foundation none
+ok   avantgarde A8 every wall element
+ok   avantgarde foundation frame
+ok   avantgarde foundation smartbaseplus
+ok   avantgarde A8 every fitting inside
+ok   avantgarde foundation smartbase
+ok   avantgarde A1 every fitting inside
+ok   europa 1
+ok   avantgarde roof extras and downpipes
+ok   europa 2A
+ok   europa 2
+ok   europa 3
+ok   europa 4A
+ok   europa 4
+ok   europa 5
+ok   europa 6
+ok   europa 7 canopies on both sides with walls
+ok   europa 7
+ok   europa foundation none
+ok   europa foundation frame
+ok   europa 7 every wall element
+ok   europa foundation smartbaseplus
+ok   europa foundation smartbase
+ok   europa 7 every fitting inside
+ok   panorama P1
+ok   europa roof extras and downpipes
+ok   europa 1 every fitting inside
+ok   panorama P1 double door
+ok   panorama P2 double door
+ok   panorama P2
+ok   panorama P3
+ok   panorama P3 double door
+ok   panorama P4
+ok   panorama P5 double door
+ok   panorama P5
+ok   panorama P4 double door
+ok   panorama foundation frame
+ok   panorama foundation none
+ok   panorama P5 every wall element
+ok   panorama P5 every fitting inside
+ok   panorama foundation smartbase
+ok   panorama foundation smartbaseplus
+ok   panorama P1 every fitting inside
+ok   panorama roof extras and downpipes
+ok   neo 1A
+ok   neo 3A
+ok   neo 4A
+ok   neo 2A
+ok   neo 1B
+ok   neo 1B double door
+ok   neo 2B
+ok   neo 3B double door
+ok   neo 3B
+ok   neo 2B double door
+ok   neo 4B double door
+ok   neo 4B
+ok   neo 1C
+ok   neo 2C
+ok   neo 2C double door
+ok   neo 1C double door
+ok   neo 3C double door
+ok   neo 4C
+ok   neo 3C
+ok   neo 4C double door
+ok   neo 1D
+ok   neo 1D double door
+ok   neo 2D double door
+ok   neo 3D
+ok   neo 2D
+ok   neo 3D double door
+ok   neo 4D
+ok   neo 4D double door
+ok   neo foundation none
+ok   neo 4D every wall element
+ok   neo 4D canopies on both sides with walls
+ok   neo foundation frame
+ok   neo foundation smartbase
+ok   neo foundation smartbaseplus
+ok   neo 1A every fitting inside
+ok   neo roof extras and downpipes
+ok   neo 4D every fitting inside
+ok   neo 4D door on the right
+ok   neo 4D door on the left
+ok   casanova 3x2
+ok   casanova 3x3
+ok   casanova 3x4
+ok   casanova 3x5
+ok   casanova 4x2
+ok   casanova 3x6
+ok   casanova 4x4
+ok   casanova 4x6
+ok   casanova 4x5
+ok   casanova 4x6 every wall element
+ok   casanova foundation none
+ok   casanova foundation frame
+ok   casanova 4x6 every fitting inside
+ok   casanova 4x6 door on the left
+ok   casanova roof extras and downpipes
+ok   casanova 3x2 every fitting inside
+ok   casanova 4x6 door on the right
+ok   casanova 4x6 door on the back
+ok   avantgarde ECO* double door
+ok   casanova sectional door, electric, ramp
+ok   casanova double door left hinge, glass, sauna, light band, roof supports, spotlights
+No visible z-fighting in 146 designs.

@@ -182,6 +182,18 @@ export function createTextures(renderer, {scale = 1, flat: flatOnly = false} = {
     });
   }
 
+  /** Spaced capitals on a clear ground, for lettering milled into a fascia. */
+  function lettering(text) {
+    return memo('letters:' + text, null, () => {
+      const c = canvas(1024, 128), ctx = c.getContext('2d');
+      ctx.clearRect(0, 0, 1024, 128);
+      ctx.fillStyle = '#ffffff'; ctx.font = '600 92px system-ui, Helvetica, Arial, sans-serif'; ctx.textBaseline = 'middle';
+      const letters = [...text], gap = 1024 / (letters.length + .5);
+      letters.forEach((ch, i) => { ctx.textAlign = 'center'; ctx.fillText(ch, gap * (i + .75), 66); });
+      return {map: make(c, true, false), normalMap: null, roughness: .5};
+    });
+  }
+
   /** Clear acrylic glazing: faint streaks so it reads as a sheet, not a hole. */
   function acrylic() {
     return memo('acrylic', '#dfe9ee', () => {
@@ -292,7 +304,7 @@ export function createTextures(renderer, {scale = 1, flat: flatOnly = false} = {
   }
 
   return {
-    steel, acrylic, aluFloor, concrete, lawn, paving, gravel, plywood, epdm,
+    steel, acrylic, aluFloor, concrete, lawn, paving, gravel, plywood, epdm, lettering,
     /** Starts a rebuild: textures the new room does not ask for become free to prune. */
     begin() { gen++; },
     /**

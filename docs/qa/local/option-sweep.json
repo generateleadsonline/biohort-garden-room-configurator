@@ -1,0 +1,2534 @@
+{
+ "base": "http://127.0.0.1:4841",
+ "at": "2026-10-13T13:52:48.163Z",
+ "cases": [
+  {
+   "name": "highline: range",
+   "changed": 75761,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "highline: size HS",
+   "changed": 201368,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "highline: size H1",
+   "changed": 154665,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "highline: size H2",
+   "changed": 113290,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "highline: size H4",
+   "changed": 98837,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "highline: size H5",
+   "changed": 121476,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "highline: size H6",
+   "changed": 154921,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "highline: colour silver",
+   "changed": 164753,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: colour quartz",
+   "changed": 164598,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: double door",
+   "changed": 26280,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: door on the left",
+   "changed": 16276,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: door on the right",
+   "changed": 3092,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: door position",
+   "changed": 39040,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: add door",
+   "changed": 11232,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: add double",
+   "changed": 20015,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: add window",
+   "changed": 44464,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: move an element along its wall",
+   "changed": 16257,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: remove an element",
+   "changed": 7133,
+   "total": 432480,
+   "highlight": [
+    "wall:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy left S",
+   "changed": 102678,
+   "total": 432480,
+   "highlight": [
+    "canopy:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy left S back wall",
+   "changed": 33594,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:left:back"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy left S side wall",
+   "changed": 68750,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:left:side"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy left L",
+   "changed": 97708,
+   "total": 432480,
+   "highlight": [
+    "canopy:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy left L back wall",
+   "changed": 46189,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:left:back"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy left L side wall",
+   "changed": 66140,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:left:side"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy right S",
+   "changed": 62205,
+   "total": 432480,
+   "highlight": [
+    "canopy:right"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy right S back wall",
+   "changed": 34457,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:right:back"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy right S side wall",
+   "changed": 46199,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:right:side"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy right L",
+   "changed": 71379,
+   "total": 432480,
+   "highlight": [
+    "canopy:right"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy right L back wall",
+   "changed": 49181,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:right:back"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: canopy right L side wall",
+   "changed": 59242,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:right:side"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: downpipe front",
+   "changed": 4481,
+   "total": 432480,
+   "highlight": [
+    "downpipe"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: downpipe rear",
+   "changed": 9406,
+   "total": 432480,
+   "highlight": [
+    "downpipe"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: PV mounting",
+   "changed": 3605,
+   "total": 432480,
+   "highlight": [
+    "pv"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: FloraBoard",
+   "changed": 12947,
+   "total": 432480,
+   "highlight": [
+    "floraboard"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: foundation frame",
+   "changed": 18152,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: foundation smartbase",
+   "changed": 24774,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: foundation smartbaseplus",
+   "changed": 30454,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: floor panels",
+   "changed": 210862,
+   "total": 432480,
+   "highlight": [
+    "floorPlate"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: ground anchors",
+   "changed": 466,
+   "total": 432480,
+   "highlight": [
+    "anchors"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "highline: shelves",
+   "changed": 7792,
+   "total": 432480,
+   "highlight": [
+    "shelves:std"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: deepShelves",
+   "changed": 19300,
+   "total": 432480,
+   "highlight": [
+    "shelves:deep"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: rails",
+   "changed": 21791,
+   "total": 432480,
+   "highlight": [
+    "rails"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: toolHangers",
+   "changed": 17679,
+   "total": 432480,
+   "highlight": [
+    "toolHangers"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: toolHolders",
+   "changed": 2719,
+   "total": 432480,
+   "highlight": [
+    "toolHolders"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: doorBaskets",
+   "changed": 5817,
+   "total": 432480,
+   "highlight": [
+    "doorBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: shelfBaskets",
+   "changed": 5179,
+   "total": 432480,
+   "highlight": [
+    "shelfBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: hookSet",
+   "changed": 1279,
+   "total": 432480,
+   "highlight": [
+    "hooks"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: suspension",
+   "changed": 4425,
+   "total": 432480,
+   "highlight": [
+    "suspension"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: mountPanel",
+   "changed": 36945,
+   "total": 432480,
+   "highlight": [
+    "mountPanel"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: table",
+   "changed": 7067,
+   "total": 432480,
+   "highlight": [
+    "table"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: bikeMax",
+   "changed": 19600,
+   "total": 432480,
+   "highlight": [
+    "bikeMax"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: bikeHolder",
+   "changed": 32809,
+   "total": 432480,
+   "highlight": [
+    "bikeHolder"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: binBag",
+   "changed": 23734,
+   "total": 432480,
+   "highlight": [
+    "binBag"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "highline: BikeLift standard",
+   "changed": 36647,
+   "total": 432480,
+   "highlight": [
+    "bikeLift"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: range",
+   "changed": 71218,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: model ECO*",
+   "changed": 1482,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: size A1",
+   "changed": 194958,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: size A2",
+   "changed": 154734,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: size A3",
+   "changed": 168367,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: size A4",
+   "changed": 165449,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: size A5",
+   "changed": 113141,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: size A7",
+   "changed": 98570,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: size A8",
+   "changed": 150880,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: colour silver",
+   "changed": 150874,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: colour quartz",
+   "changed": 150779,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: double door",
+   "changed": 13000,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: door position",
+   "changed": 29459,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: add door",
+   "changed": 11387,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: add double",
+   "changed": 19903,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: add window",
+   "changed": 44450,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: move an element along its wall",
+   "changed": 16146,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: remove an element",
+   "changed": 6199,
+   "total": 432480,
+   "highlight": [
+    "wall:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: canopy left L",
+   "changed": 103989,
+   "total": 432480,
+   "highlight": [
+    "canopy:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: canopy left L back wall",
+   "changed": 37376,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:left:back"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: canopy left L side wall",
+   "changed": 63840,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:left:side"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: canopy right L",
+   "changed": 71768,
+   "total": 432480,
+   "highlight": [
+    "canopy:right"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: canopy right L back wall",
+   "changed": 42941,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:right:back"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: canopy right L side wall",
+   "changed": 51480,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:right:side"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: downpipe rear",
+   "changed": 8734,
+   "total": 432480,
+   "highlight": [
+    "downpipe"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: PV mounting",
+   "changed": 7264,
+   "total": 432480,
+   "highlight": [
+    "pv"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: FloraBoard",
+   "changed": 12604,
+   "total": 432480,
+   "highlight": [
+    "floraboard"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: foundation frame",
+   "changed": 16400,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: foundation smartbase",
+   "changed": 22543,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: foundation smartbaseplus",
+   "changed": 27728,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: floor panels",
+   "changed": 213813,
+   "total": 432480,
+   "highlight": [
+    "floorPlate"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: ground anchors",
+   "changed": 453,
+   "total": 432480,
+   "highlight": [
+    "anchors"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "avantgarde: gas spring",
+   "changed": 472,
+   "total": 432480,
+   "highlight": [
+    "gasSpring"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: shelves",
+   "changed": 8116,
+   "total": 432480,
+   "highlight": [
+    "shelves:std"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: deepShelves",
+   "changed": 19842,
+   "total": 432480,
+   "highlight": [
+    "shelves:deep"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: rails",
+   "changed": 21922,
+   "total": 432480,
+   "highlight": [
+    "rails"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: toolHangers",
+   "changed": 16501,
+   "total": 432480,
+   "highlight": [
+    "toolHangers"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: toolHolders",
+   "changed": 2860,
+   "total": 432480,
+   "highlight": [
+    "toolHolders"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: doorBaskets",
+   "changed": 6062,
+   "total": 432480,
+   "highlight": [
+    "doorBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: shelfBaskets",
+   "changed": 5347,
+   "total": 432480,
+   "highlight": [
+    "shelfBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: hookSet",
+   "changed": 1294,
+   "total": 432480,
+   "highlight": [
+    "hooks"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: suspension",
+   "changed": 4334,
+   "total": 432480,
+   "highlight": [
+    "suspension"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: mountPanel",
+   "changed": 35955,
+   "total": 432480,
+   "highlight": [
+    "mountPanel"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: table",
+   "changed": 7927,
+   "total": 432480,
+   "highlight": [
+    "table"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: bikeMax",
+   "changed": 20287,
+   "total": 432480,
+   "highlight": [
+    "bikeMax"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: bikeHolder",
+   "changed": 34224,
+   "total": 432480,
+   "highlight": [
+    "bikeHolder"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: binBag",
+   "changed": 23851,
+   "total": 432480,
+   "highlight": [
+    "binBag"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "avantgarde: BikeLift standard",
+   "changed": 37554,
+   "total": 432480,
+   "highlight": [
+    "bikeLift"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: range",
+   "changed": 172362,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "europa: size 1",
+   "changed": 230309,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "europa: size 2",
+   "changed": 174713,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "europa: size 2A",
+   "changed": 157774,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "europa: size 4",
+   "changed": 129091,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "europa: size 4A",
+   "changed": 135823,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "europa: size 5",
+   "changed": 170260,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "europa: size 6",
+   "changed": 175093,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "europa: size 7",
+   "changed": 181926,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "europa: colour silver",
+   "changed": 180957,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: colour quartz",
+   "changed": 180944,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: colour darkgreen",
+   "changed": 175537,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: door position",
+   "changed": 33344,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: add double",
+   "changed": 11137,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: add window",
+   "changed": 42369,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: canopy left on",
+   "changed": 99555,
+   "total": 432480,
+   "highlight": [
+    "canopy:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: canopy right on",
+   "changed": 66403,
+   "total": 432480,
+   "highlight": [
+    "canopy:right"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: downpipe front",
+   "changed": 8466,
+   "total": 432480,
+   "highlight": [
+    "downpipe"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: downpipe rear",
+   "changed": 13478,
+   "total": 432480,
+   "highlight": [
+    "downpipe"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: PV mounting",
+   "changed": 9930,
+   "total": 432480,
+   "highlight": [
+    "pv"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: foundation frame",
+   "changed": 17341,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: foundation smartbase",
+   "changed": 24184,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: foundation smartbaseplus",
+   "changed": 28393,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: floor panels",
+   "changed": 183391,
+   "total": 432480,
+   "highlight": [
+    "floorPlate"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: ground anchors",
+   "changed": 547,
+   "total": 432480,
+   "highlight": [
+    "anchors"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "europa: gas spring",
+   "changed": 904,
+   "total": 432480,
+   "highlight": [
+    "gasSpring"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: shelves",
+   "changed": 23721,
+   "total": 432480,
+   "highlight": [
+    "shelves:std"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: deepShelves",
+   "changed": 52829,
+   "total": 432480,
+   "highlight": [
+    "shelves:deep"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: rails",
+   "changed": 39113,
+   "total": 432480,
+   "highlight": [
+    "rails"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: toolHangers",
+   "changed": 12565,
+   "total": 432480,
+   "highlight": [
+    "toolHangers"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: doorBaskets",
+   "changed": 18377,
+   "total": 432480,
+   "highlight": [
+    "doorBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: shelfBaskets",
+   "changed": 14484,
+   "total": 432480,
+   "highlight": [
+    "shelfBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: hookSet",
+   "changed": 2208,
+   "total": 432480,
+   "highlight": [
+    "hooks"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: suspension",
+   "changed": 7248,
+   "total": 432480,
+   "highlight": [
+    "suspension"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: mountPanel",
+   "changed": 39065,
+   "total": 432480,
+   "highlight": [
+    "mountPanel"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: table",
+   "changed": 26182,
+   "total": 432480,
+   "highlight": [
+    "table"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: bikeMax",
+   "changed": 49209,
+   "total": 432480,
+   "highlight": [
+    "bikeMax"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: bikeHolder",
+   "changed": 56731,
+   "total": 432480,
+   "highlight": [
+    "bikeHolder"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: binBag",
+   "changed": 15577,
+   "total": 432480,
+   "highlight": [
+    "binBag"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "europa: BikeLift standard",
+   "changed": 96514,
+   "total": 432480,
+   "highlight": [
+    "bikeLift"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: range",
+   "changed": 63558,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: size P1",
+   "changed": 150745,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: size P2",
+   "changed": 106197,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: size P4",
+   "changed": 92261,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: size P5",
+   "changed": 119665,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: colour silver",
+   "changed": 156972,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: colour quartz",
+   "changed": 156799,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: double door",
+   "changed": 25972,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: door position",
+   "changed": 39434,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: left hinge",
+   "changed": 668,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: add door",
+   "changed": 10945,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: add double",
+   "changed": 19487,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: add window",
+   "changed": 44470,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: move an element along its wall",
+   "changed": 15685,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: remove an element",
+   "changed": 6857,
+   "total": 432480,
+   "highlight": [
+    "wall:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: downpipe front",
+   "changed": 4180,
+   "total": 432480,
+   "highlight": [
+    "downpipe"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: downpipe rear",
+   "changed": 8879,
+   "total": 432480,
+   "highlight": [
+    "downpipe"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: PV mounting",
+   "changed": 8660,
+   "total": 432480,
+   "highlight": [
+    "pv"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: FloraBoard",
+   "changed": 13105,
+   "total": 432480,
+   "highlight": [
+    "floraboard"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: solar light",
+   "changed": 3478,
+   "total": 432480,
+   "highlight": [
+    "solar"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: LED light",
+   "changed": 1450,
+   "total": 432480,
+   "highlight": [
+    "led"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: foundation frame",
+   "changed": 20720,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: foundation smartbase",
+   "changed": 25855,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: foundation smartbaseplus",
+   "changed": 30538,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: floor panels",
+   "changed": 212696,
+   "total": 432480,
+   "highlight": [
+    "floorPlate"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: threshold ramp",
+   "changed": 62363,
+   "total": 432480,
+   "highlight": [
+    "ramp"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "panorama: shelves",
+   "changed": 7701,
+   "total": 432480,
+   "highlight": [
+    "shelves:std"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: deepShelves",
+   "changed": 19066,
+   "total": 432480,
+   "highlight": [
+    "shelves:deep"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: rails",
+   "changed": 21666,
+   "total": 432480,
+   "highlight": [
+    "rails"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: toolHangers",
+   "changed": 17526,
+   "total": 432480,
+   "highlight": [
+    "toolHangers"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: toolHolders",
+   "changed": 2701,
+   "total": 432480,
+   "highlight": [
+    "toolHolders"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: doorBaskets",
+   "changed": 5793,
+   "total": 432480,
+   "highlight": [
+    "doorBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: shelfBaskets",
+   "changed": 5125,
+   "total": 432480,
+   "highlight": [
+    "shelfBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: hookSet",
+   "changed": 1239,
+   "total": 432480,
+   "highlight": [
+    "hooks"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: suspension",
+   "changed": 4403,
+   "total": 432480,
+   "highlight": [
+    "suspension"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: mountPanel",
+   "changed": 37404,
+   "total": 432480,
+   "highlight": [
+    "mountPanel"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: table",
+   "changed": 6983,
+   "total": 432480,
+   "highlight": [
+    "table"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: bikeMax",
+   "changed": 19391,
+   "total": 432480,
+   "highlight": [
+    "bikeMax"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: bikeHolder",
+   "changed": 32179,
+   "total": 432480,
+   "highlight": [
+    "bikeHolder"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: binBag",
+   "changed": 24004,
+   "total": 432480,
+   "highlight": [
+    "binBag"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: BikeLift standard",
+   "changed": 36129,
+   "total": 432480,
+   "highlight": [
+    "bikeLift"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "panorama: BikeLift swivel",
+   "changed": 36129,
+   "total": 432480,
+   "highlight": [
+    "bikeLift"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: range",
+   "changed": 107961,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 1A",
+   "changed": 182133,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 2A",
+   "changed": 132288,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 3A",
+   "changed": 131009,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 4A",
+   "changed": 148349,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 1B",
+   "changed": 114645,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 3B",
+   "changed": 95040,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 4B",
+   "changed": 134651,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 1C",
+   "changed": 132758,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 2C",
+   "changed": 115290,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 3C",
+   "changed": 145060,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 4C",
+   "changed": 160140,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 1D",
+   "changed": 172973,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 2D",
+   "changed": 141077,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 3D",
+   "changed": 156707,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: size 4D",
+   "changed": 167271,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "neo: colour silver",
+   "changed": 192228,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: colour quartz",
+   "changed": 192228,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: double door",
+   "changed": 23917,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: door on the left",
+   "changed": 17147,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: door on the right",
+   "changed": 8936,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: door position",
+   "changed": 42636,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: add door",
+   "changed": 12251,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: add double",
+   "changed": 4588,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: add glassPanel",
+   "changed": 26533,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: move an element along its wall",
+   "changed": 23373,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: remove an element",
+   "changed": 9453,
+   "total": 432480,
+   "highlight": [
+    "wall:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: canopy left on",
+   "changed": 97064,
+   "total": 432480,
+   "highlight": [
+    "canopy:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: canopy left on back wall",
+   "changed": 39123,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:left:back"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: canopy left on side wall",
+   "changed": 64443,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:left:side"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: canopy right on",
+   "changed": 71825,
+   "total": 432480,
+   "highlight": [
+    "canopy:right"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: canopy right on back wall",
+   "changed": 46245,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:right:back"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: canopy right on side wall",
+   "changed": 54306,
+   "total": 432480,
+   "highlight": [
+    "canopyWall:right:side"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: canopy glass panel",
+   "changed": 11243,
+   "total": 432480,
+   "highlight": [
+    "canopyGlass"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: canopy FloraBoard",
+   "changed": 8895,
+   "total": 432480,
+   "highlight": [
+    "canopyFlora"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: PV mounting",
+   "changed": 8764,
+   "total": 432480,
+   "highlight": [
+    "pv"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: FloraBoard",
+   "changed": 14595,
+   "total": 432480,
+   "highlight": [
+    "floraboard"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: solar light",
+   "changed": 3638,
+   "total": 432480,
+   "highlight": [
+    "solar"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: LED light",
+   "changed": 1092,
+   "total": 432480,
+   "highlight": [
+    "led"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: foundation frame",
+   "changed": 10826,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: foundation smartbase",
+   "changed": 16085,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: foundation smartbaseplus",
+   "changed": 19706,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: floor panels",
+   "changed": 186763,
+   "total": 432480,
+   "highlight": [
+    "floorPlate"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: threshold ramp",
+   "changed": 70085,
+   "total": 432480,
+   "highlight": [
+    "ramp"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "neo: interior panelling",
+   "changed": 277791,
+   "total": 432480,
+   "highlight": [
+    "panelling"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: insulation",
+   "changed": 8291,
+   "total": 432480,
+   "highlight": [
+    "insulation"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: shelves",
+   "changed": 4991,
+   "total": 432480,
+   "highlight": [
+    "shelves:std"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: deepShelves",
+   "changed": 13957,
+   "total": 432480,
+   "highlight": [
+    "shelves:deep"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: toolHangers",
+   "changed": 2581,
+   "total": 432480,
+   "highlight": [
+    "toolHangers"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: toolHolders",
+   "changed": 1135,
+   "total": 432480,
+   "highlight": [
+    "toolHolders"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: doorBaskets",
+   "changed": 551,
+   "total": 432480,
+   "highlight": [
+    "doorBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: shelfBaskets",
+   "changed": 1173,
+   "total": 432480,
+   "highlight": [
+    "shelfBaskets"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: hookSet",
+   "changed": 947,
+   "total": 432480,
+   "highlight": [
+    "hooks"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: suspension",
+   "changed": 4105,
+   "total": 432480,
+   "highlight": [
+    "suspension"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: mountPanel",
+   "changed": 2327,
+   "total": 432480,
+   "highlight": [
+    "mountPanel"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: bikeMax",
+   "changed": 14021,
+   "total": 432480,
+   "highlight": [
+    "bikeMax"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: bikeHolder",
+   "changed": 22533,
+   "total": 432480,
+   "highlight": [
+    "bikeHolder"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: binBag",
+   "changed": 23286,
+   "total": 432480,
+   "highlight": [
+    "binBag"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: BikeLift standard",
+   "changed": 25922,
+   "total": 432480,
+   "highlight": [
+    "bikeLift"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "neo: BikeLift swivel",
+   "changed": 25922,
+   "total": 432480,
+   "highlight": [
+    "bikeLift"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: range",
+   "changed": 136859,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: size 3x2",
+   "changed": 167553,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: size 3x3",
+   "changed": 109903,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: size 3x5",
+   "changed": 85860,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: size 3x6",
+   "changed": 109856,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: size 4x2",
+   "changed": 170121,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: size 4x4",
+   "changed": 93485,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: size 4x5",
+   "changed": 113462,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: size 4x6",
+   "changed": 121377,
+   "total": 432480,
+   "highlight": [],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: colour quartz",
+   "changed": 131858,
+   "total": 432480,
+   "highlight": [
+    "walls"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: door on the left",
+   "changed": 2228,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: door on the right",
+   "changed": 1249,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: door on the back",
+   "changed": 1834,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: door position",
+   "changed": 23892,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: left hinge",
+   "changed": 591,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: double door",
+   "changed": 16215,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: glass insert",
+   "changed": 3795,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: sectional door",
+   "changed": 163982,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: sectional door, electric",
+   "changed": 1915,
+   "total": 432480,
+   "highlight": [
+    "door:main"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: add door",
+   "changed": 2048,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: add glassElement",
+   "changed": 78970,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: add tiltWindow",
+   "changed": 60514,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: move an element along its wall",
+   "changed": 3054,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: remove an element",
+   "changed": 755,
+   "total": 432480,
+   "highlight": [
+    "wall:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: additional door left hinge",
+   "changed": 590,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: additional door glass",
+   "changed": 58146,
+   "total": 432480,
+   "highlight": [
+    "opening:n1"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: downpipe front",
+   "changed": 5329,
+   "total": 432480,
+   "highlight": [
+    "downpipe"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: double glazed light band",
+   "changed": 163,
+   "total": 432480,
+   "highlight": [
+    "doubleGlazing"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: grey white roof supports",
+   "changed": 32871,
+   "total": 432480,
+   "highlight": [
+    "roofSupport",
+    "roofBars"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: external lighting front",
+   "changed": 110,
+   "total": 432480,
+   "highlight": [
+    "extLight:front"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: external lighting left",
+   "changed": 112,
+   "total": 432480,
+   "highlight": [
+    "extLight:left"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: external lighting right",
+   "changed": 102,
+   "total": 432480,
+   "highlight": [
+    "extLight:right"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: external lighting back",
+   "changed": 109,
+   "total": 432480,
+   "highlight": [
+    "extLight:back"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: sauna left",
+   "changed": 218049,
+   "total": 432480,
+   "highlight": [
+    "sauna"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: sauna right",
+   "changed": 223476,
+   "total": 432480,
+   "highlight": [
+    "sauna"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: foundation frame",
+   "changed": 13794,
+   "total": 432480,
+   "highlight": [
+    "foundation"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: floor panels",
+   "changed": 216039,
+   "total": 432480,
+   "highlight": [
+    "floorPlate"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: threshold ramp",
+   "changed": 58972,
+   "total": 432480,
+   "highlight": [
+    "ramp"
+   ],
+   "view": "outside"
+  },
+  {
+   "name": "casanova: shelves",
+   "changed": 4372,
+   "total": 432480,
+   "highlight": [
+    "shelves:std"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: deepShelves",
+   "changed": 5155,
+   "total": 432480,
+   "highlight": [
+    "shelves:deep"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: cornerShelves",
+   "changed": 4372,
+   "total": 432480,
+   "highlight": [
+    "shelves:std"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: cornerDeepShelves",
+   "changed": 5155,
+   "total": 432480,
+   "highlight": [
+    "shelves:deep"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: rails",
+   "changed": 1814,
+   "total": 432480,
+   "highlight": [
+    "rails"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: hookSet",
+   "changed": 2813,
+   "total": 432480,
+   "highlight": [
+    "hooks"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: cornerHookSet",
+   "changed": 683,
+   "total": 432480,
+   "highlight": [
+    "hooks"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: mountPanel",
+   "changed": 22992,
+   "total": 432480,
+   "highlight": [
+    "mountPanel"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: mountPanelCoated",
+   "changed": 11237,
+   "total": 432480,
+   "highlight": [
+    "mountPanel"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: table",
+   "changed": 2433,
+   "total": 432480,
+   "highlight": [
+    "table"
+   ],
+   "view": "inside"
+  },
+  {
+   "name": "casanova: bikeMax",
+   "changed": 5884,
+   "total": 432480,
+   "highlight": [
+    "bikeMax"
+   ],
+   "view": "inside"
+  }
+ ]
+}

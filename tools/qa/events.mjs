@@ -1,5 +1,5 @@
 // Analytics: every call to action and every step must send an event. Clicks every [data-cta] the
-// page shows (header, menu, price step, dialogs), walks all seven steps, and reads window.__events.
+// page shows (header, menu, price step, dialogs), walks all eight steps, and reads window.__events.
 //   BASE=... node tools/qa/events.mjs
 import {launch, openDesigner, check, failures, sleep, waitFor} from './pw.mjs';
 const browser = await launch();
@@ -8,7 +8,7 @@ for (const [label, viewport] of [['desktop', {width: 1440, height: 900}], ['phon
   const {ctx, page, errors} = await openDesigner(browser, {viewport, query: '?qa=layout'});
   await waitFor(page, () => window.__cfg && document.querySelector('#step-content').children.length);
   await page.evaluate(() => { window.open = () => null; document.addEventListener('click', e => { const a = e.target.closest('a[href]'); if (a) e.preventDefault(); }, true); });
-  for (let i = 0; i < 7; i++) await page.click(`#steps [data-step="${i}"]`);
+  for (let i = 0; i < 8; i++) await page.click(`#steps [data-step="${i}"]`);
   await page.click('#back'); await page.click('#next');
   const ctas = new Set();
   const clickAll = async () => {
@@ -21,15 +21,16 @@ for (const [label, viewport] of [['desktop', {width: 1440, height: 900}], ['phon
     }
   };
   await clickAll();
-  await page.evaluate(() => window.__cfg.selectStep(6, {focusHeading: false})); await clickAll();
+  await page.evaluate(() => window.__cfg.selectStep(0, {focusHeading: false})); await clickAll();
+  await page.evaluate(() => window.__cfg.selectStep(7, {focusHeading: false})); await clickAll();
   if (label === 'phone') { await page.click('#menu-toggle'); await clickAll(); }
-  await page.evaluate(() => window.__cfg.change({use: 'gym'}, {key: 'use'}));
+  await page.evaluate(() => window.__cfg.change({colour: 'quartz'}, {key: 'colour'}));
   const ev = await page.evaluate(() => window.__events);
   const fired = new Set(ev.filter(e => e.event === 'bh_cta_click').map(e => e.cta));
   const missing = [...ctas].filter(c => !fired.has(c));
-  check(!missing.length && ctas.size >= 8, `${label}: every call to action sends mr_cta_click`, `${ctas.size} CTAs: ${[...ctas].join(', ')}${missing.length ? ' | missing ' + missing.join(', ') : ''}`);
+  check(!missing.length && ctas.size >= 8, `${label}: every call to action sends bh_cta_click`, `${ctas.size} CTAs: ${[...ctas].join(', ')}${missing.length ? ' | missing ' + missing.join(', ') : ''}`);
   const steps = new Set(ev.filter(e => e.event === 'bh_step_view').map(e => e.step));
-  check([1, 2, 3, 4, 5, 6, 7].every(s => steps.has(s)), `${label}: every step sends mr_step_view`, [...steps].join(','));
+  check([1, 2, 3, 4, 5, 6, 7, 8].every(s => steps.has(s)), `${label}: every step sends bh_step_view`, [...steps].join(','));
   const kinds = new Set(ev.map(e => e.event));
   check(['bh_form_open', 'bh_option_change', 'bh_configurator_view'].every(k => kinds.has(k)), `${label}: form opens and option changes are tracked`, [...kinds].join(', '));
   check(ev.every(e => !JSON.stringify(e).includes('@')), `${label}: no contact details in analytics events`);

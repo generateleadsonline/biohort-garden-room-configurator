@@ -9,7 +9,7 @@
 // the crash guard, ?debug3d, 2D canvases refused, PDF capture size, Android. Live WebGL contexts
 // are counted throughout: a step down must never leave one behind.
 import {createRequire} from 'module';
-import {CLADDINGS, CLADDING_ORDER, RANGE_ORDER} from '../../src/catalog.js';
+import {RANGES, RANGE_ORDER, sizeOrder} from '../../src/catalog.js';
 
 const require = createRequire(import.meta.url);
 const {webkit, chromium, devices} = require(process.env.PLAYWRIGHT_CORE || 'playwright-core');
@@ -122,13 +122,13 @@ const scenarios = {
     check(s.ready && !s.fallbackShown, 'iPhone: 3D starts', JSON.stringify(s.quality));
     check(s.quality?.tier === 'medium' && s.quality.scale === .5 && s.quality.ratio <= 1.5, 'iPhone: phone tier (half-size textures, ratio <= 1.5)');
     check(s.canvasMB < 4, 'iPhone: canvases released after upload', `${s.canvasMB}MB live`);
-    // Both ranges, then every cladding in every colour, the way a shopper browses.
-    const designs = [...RANGE_ORDER.map(range => ({range})), ...CLADDING_ORDER.flatMap(cladding => CLADDINGS[cladding].colours.map(c => ({cladding, colour: c.id, direction: CLADDINGS[cladding].direction})))];
+    // Every range in every colour, then every range at its biggest size, the way a shopper browses.
+    const designs = [...RANGE_ORDER.flatMap(range => RANGES[range].colours.map(colour => ({range, colour}))), ...RANGE_ORDER.map(range => ({range, size: sizeOrder(range).slice(-1)[0]}))];
     const peak = await page.evaluate(async designs => {
       const {scene} = window.__cfg; let peak = 0, maxTextures = 0;
       const frame = () => new Promise(r => requestAnimationFrame(() => r()));
       for (const d of designs) {
-        scene.update({...window.__cfg.state, ...d}); await frame();
+        window.__cfg.setState({...window.__cfg.state, ...d, size: d.size || null}); await frame();
         peak = Math.max(peak, window.__liveCanvasMB()); maxTextures = Math.max(maxTextures, scene.quality().textures);
       }
       return {designs: designs.length, peak, maxTextures, after: window.__liveCanvasMB(), lost: scene.quality().lost};

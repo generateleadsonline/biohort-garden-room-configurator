@@ -1,5 +1,5 @@
-// Renders a matrix of designs (every range and every published size, the smallest and largest
-// rooms, each cladding and coverage, overhangs, extensions, decks and every door and window type)
+// Renders a matrix of designs (every range and every published size, double doors, canopies with
+// their walls, every wall element, foundation, roof extra and inside fitting)
 // in headless Chrome with real WebGL, and fails if two visible faces share a plane and overlap:
 // the z-fighting that shows as flicker and blotches on real GPUs. From the SMART configurator.
 //   node tools/qa/check-zfighting.mjs        (needs Google Chrome; several minutes)
@@ -17,24 +17,32 @@ const run = promisify(execFile);
 const BASE = (process.env.BASE || '').replace(/\/$/, '');
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const tmp = await mkdtemp(path.join(process.env.SHOT_TMP || os.tmpdir(), 'bh-zfight-'));
-const base = C.normalise({});
 const designs = [];
-const add = (name, patch) => designs.push([name, C.encodeDesign({...base, ...patch})]);
-for (const range of C.RANGE_ORDER) for (const [w, d] of C.PUBLISHED_SIZES) if (!(range === 'clifton' && w === 2.9 && d === 2.1)) add(`${range} ${w}x${d}`, {range, width: w, depth: d});
-add('ashton smallest 2.9x2.1 front only', {range: 'ashton', width: 2.9, depth: 2.1, cladding: 'thermowood', coverage: 'front', openings: [{wall: 'front', type: 'single', p: .35}, {wall: 'front', type: 'openS', p: .8}]});
-add('clifton widest 10.7x2.8', {width: 10.7, depth: 2.8, openings: [{wall: 'front', type: 'slide4l', p: .3}, {wall: 'front', type: 'bifold4', p: .72}]});
-add('clifton deepest 2.9x9.6', {width: 2.9, depth: 9.6, openings: [{wall: 'front', type: 'single', p: .5}, {wall: 'left', type: 'openTallM', p: .3}, {wall: 'right', type: 'fixedTallM', p: .7}]});
-for (const cl of C.CLADDING_ORDER) add(`cladding ${cl} all sides`, {cladding: cl, colour: C.CLADDINGS[cl].colours[0].id, coverage: 'all', direction: C.CLADDINGS[cl].direction});
-for (const cov of Object.keys(C.COVERAGE)) add(`ashton lap coverage ${cov}`, {range: 'ashton', cladding: 'lap', colour: 'c76', direction: 'horizontal', coverage: cov});
-add('vl vertical black', {range: 'ashton', cladding: 'vl', colour: 'c50', direction: 'vertical', frame: 'black'});
-add('clifton 300 overhang, both 300 extensions', {overhang: .3, extensions: {left: .3, right: .3}});
-add('clifton 600 overhang, 600 extensions, all side overhangs', {overhangSides: {left: true, right: true, back: true}, extensions: {left: .6, right: .6}});
-add('clifton decks all sides with extensions and sedum', {deck: {front: 2, left: 1, right: 1, back: 1.2}, extensions: {left: .6, right: .3}, extras: {...base.extras, sedum: true, aircon: true}});
-add('ashton decks and every upgrade', {range: 'ashton', deck: {front: 1.5, left: .6, right: 0, back: .8}, deckColour: 'black', electrics: 'premium', extras: {aircon: true, sedum: true, extSocket: true, data: true, usb: true, speakers: true, security: true}});
-add('every door type', {width: 10.7, depth: 2.8, openings: [{wall: 'front', type: 'french', p: .1}, {wall: 'front', type: 'frenchSide', p: .32}, {wall: 'front', type: 'slide2l', p: .6}, {wall: 'front', type: 'single', p: .88}, {wall: 'back', type: 'bifold3l', p: .25}, {wall: 'back', type: 'slide4m', p: .7}]});
-add('every window type', {width: 9.6, depth: 3.4, openings: [{wall: 'front', type: 'fixedS', p: .05}, {wall: 'front', type: 'fixedM', p: .17}, {wall: 'front', type: 'fixedTallS', p: .3}, {wall: 'front', type: 'fixedTallM', p: .42}, {wall: 'front', type: 'openS', p: .55}, {wall: 'front', type: 'openM', p: .67}, {wall: 'front', type: 'openHigh', p: .8}, {wall: 'front', type: 'openTallS', p: .91}, {wall: 'back', type: 'openTallM', p: .5}, {wall: 'left', type: 'bifold3', material: 'alu', p: .5}]});
-add('aluminium everything', {openings: [{wall: 'front', type: 'french', material: 'alu', p: .3}, {wall: 'front', type: 'openM', material: 'alu', p: .75}, {wall: 'right', type: 'fixedTallM', material: 'alu', p: .5}]});
-for (const u of Object.keys(C.USES)) add(`use ${u}`, {use: u});
+const add = (name, design) => designs.push([name, C.encodeDesign(design)]);
+const allItems = range => Object.fromEntries(C.itemsFor(range).map(k => [k, Math.min(2, C.ITEMS[k].max)]));
+for (const range of C.RANGE_ORDER) {
+  for (const size of C.sizeOrder(range)) {
+    add(`${range} ${size}`, {range, size});
+    const d = C.normalise({range, size, door: 'double'});
+    if (d.door === 'double' && !['europa', 'casanova'].includes(range)) add(`${range} ${size} double door`, d);
+  }
+  const big = C.sizeOrder(range).slice(-1)[0], small = C.sizeOrder(range)[0];
+  const can = C.canopyOptions(C.normalise({range, size: big}));
+  if (can.length) for (const v of can.filter(v => v !== 'none')) add(`${range} ${big} canopies ${v} both sides with walls`, {range, size: big, canopy: {left: v, right: v}, canopyWalls: {left: {back: true, side: true}, right: {back: true, side: true}}, canopyGlass: 3, canopyFlora: 2});
+  const kinds = C.kindsFor(C.normalise({range, size: big}));
+  add(`${range} ${big} every wall element`, {range, size: big, openings: kinds.flatMap((k, i) => [{kind: k, wall: ['left', 'right', 'back'][i % 3], p: .3}, {kind: k, wall: ['right', 'back', 'left'][i % 3], p: .75}])});
+  for (const f of C.foundationOptions(C.normalise({range}))) add(`${range} foundation ${f}`, {range, foundation: f, floorPlate: true, anchors: true});
+  add(`${range} ${big} every fitting inside`, {range, size: big, items: allItems(range), bikeLift: 'standard', led: 2, panelling: true, insulation: true});
+  add(`${range} ${small} every fitting inside`, {range, size: small, items: allItems(range), bikeLift: 'standard', led: 1});
+  add(`${range} roof extras and downpipes`, {range, downpipe: C.downpipeOptions(C.normalise({range})).slice(-1)[0], pv: true, floraboard: 3, solar: 2, ramp: true, door: 'double', foundation: 'frame', gasSpring: true});
+  for (const w of ['left', 'right', 'back']) if (C.doorWallOptions(C.normalise({range, size: big})).includes(w)) add(`${range} ${big} door on the ${w}`, {range, size: big, doorWall: w});
+}
+add('avantgarde ECO* double door', {range: 'avantgarde', model: 'eco', size: 'A8', door: 'double', gasSpring: true});
+add('casanova sectional door, electric, ramp', {range: 'casanova', size: '4x6', gate: 'electric', ramp: true});
+add('casanova double door left hinge, glass, sauna, light band, roof supports, spotlights', {range: 'casanova', size: '4x6', door: 'double', hinge: 'left', doorGlass: true, sauna: 'left', skylight: true, roofSupport: true, extLight: {front: true, left: true, right: true, back: true}, openings: [{kind: 'glassElement', wall: 'front', p: .15}, {kind: 'tiltWindow', wall: 'right', p: .3, hinge: 'left'}, {kind: 'door', wall: 'back', p: .5, glass: true}]});
+
+// ONLY=<text> re-checks just the designs whose name contains it (the JSON report is then not written).
+if (process.env.ONLY) designs.splice(0, designs.length, ...designs.filter(([name]) => name.includes(process.env.ONLY)));
 
 try {
   await build({entryPoints: [path.join(repo, 'tools/qa/harness.js')], outfile: path.join(tmp, 'harness.js'), bundle: true, format: 'esm', logLevel: 'silent'});
@@ -64,7 +72,7 @@ try {
   }
   server.close();
   await mkdir(path.join(repo, 'qa'), {recursive: true});
-  await writeFile(path.join(repo, BASE ? 'qa/zfighting-live.json' : 'qa/zfighting.json'), JSON.stringify({base: BASE || 'harness', at: new Date().toISOString(), designs: results}, null, 1));
+  if (!process.env.ONLY) await writeFile(path.join(repo, BASE ? 'qa/zfighting-live.json' : 'qa/zfighting.json'), JSON.stringify({base: BASE || 'harness', at: new Date().toISOString(), designs: results}, null, 1));
   if (failures) { console.error(`${failures} design(s) with z-fighting`); process.exitCode = 1; }
   else console.log(`No visible z-fighting in ${designs.length} designs.`);
 } finally { await rm(tmp, {recursive: true, force: true}); }

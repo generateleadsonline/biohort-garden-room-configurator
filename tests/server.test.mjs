@@ -6,7 +6,7 @@ import {handleDiagnostics} from '../server/diagnostics.mjs';
 import {encodeDesign, normalise} from '../src/catalog.js';
 
 const memory = () => { const m = new Map(); return {m, async setJSON(k, v) { m.set(k, v); }, async get(k) { return m.get(k) ?? null; }}; };
-const ORIGIN = 'https://my-retreat-garden-configurator.netlify.app';
+const ORIGIN = 'https://biohort-garden-room-configurator.netlify.app';
 const post = (body, headers = {}) => new Request(ORIGIN + '/api/enquiry', {method: 'POST', headers: {'content-type': 'application/json', origin: ORIGIN, ...headers}, body: JSON.stringify(body)});
 const good = (extra = {}) => ({type: 'quote', firstName: 'Sam', lastName: 'Taylor', phone: '07911 123456', email: 'sam@example.com', postcode: 'kt152qg', design: encodeDesign(normalise({})), extra: {notes: 'Side access only'}, ...extra});
 
@@ -14,15 +14,17 @@ test('a valid enquiry is stored with the specification, price status and links t
   const store = memory();
   const res = await handleEnquiry(post(good()), {store});
   const body = await res.json();
-  assert.equal(res.status, 200); assert.ok(body.ok); assert.match(body.reference, /^MRE-\d{8}-[A-Z2-9]{6}$/);
+  assert.equal(res.status, 200); assert.ok(body.ok); assert.match(body.reference, /^BHE-\d{8}-[A-Z2-9]{6}$/);
   const [key, rec] = [...store.m][0];
-  assert.match(key, /^enquiries\/\d{4}-\d{2}-\d{2}\/MRE-/);
+  assert.match(key, /^enquiries\/\d{4}-\d{2}-\d{2}\/BHE-/);
   assert.equal(rec.contact.firstName, 'Sam'); assert.equal(rec.contact.lastName, 'Taylor');
   assert.equal(rec.contact.phone, '+447911123456'); assert.equal(rec.contact.postcode, 'KT15 2QG');
-  assert.equal(rec.design.price.base, 33124); assert.equal(rec.design.price.status, 'published');
-  assert.ok(rec.design.url.startsWith(ORIGIN + '/configurator/#d=2~'));
+  assert.equal(rec.design.price.total, 2699); assert.equal(rec.design.price.status, 'published');
+  assert.deepEqual(rec.design.price.lines.map(l => l.sku), ['84040']);
+  assert.ok(rec.design.url.startsWith(ORIGIN + '/configurator/#d=b1.'));
   assert.ok(rec.design.bookingUrl.includes('?book=1#d='));
-  assert.ok(JSON.stringify(rec.design.specification).includes('Western Red Cedar'));
+  assert.ok(rec.design.shopUrl.includes('/garden-shed-highline/84040'));
+  assert.ok(JSON.stringify(rec.design.specification).includes('Metallic dark grey'));
   assert.equal(rec.extra.notes, 'Side access only');
 });
 

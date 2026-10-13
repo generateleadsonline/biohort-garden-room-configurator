@@ -1,38 +1,88 @@
-# Biohort CasaNova Design Studio
+# Biohort garden building designer (v2)
 
-A branded, responsive garden room configurator concept for Biohort, created by Generate Leads Online. Designed to reduce configuration friction and make the value of an enquiry tangible. Conversion uplift is a hypothesis to measure, not a guaranteed result.
+A 3D designer for Biohort's six walk-in metal garden buildings, built by Generate Leads Online as a concept for Biohort UK.
 
-## Experience
+**Live:** https://biohort-garden-room-configurator.netlify.app/configurator/
 
-- Four focused stages: space, style, details, quote.
-- Real width and depth sliders snap to Biohort's nine compatible CasaNova sizes. The unavailable 4 × 3 m combination is excluded.
-- Interactive 3D, a dimensioned floor plan, official product inspiration, front view, rotation, zoom, dimensions, and evening lighting.
-- Metallic dark grey and quartz grey, supported door/glazing options, accessories and foundation/assembly preferences.
-- Automatic local design saving and shareable links containing public design choices only.
-- Three required form fields, optional phone and project timeline, separate optional marketing consent.
-- Price is calculated on the server only after successful private enquiry storage. PDF download requires a valid, expiring quote token.
-- Six-page personalised PDF: design, dimensions, specification, itemised estimate, site readiness, next steps.
+## What it does
 
-## Product and price basis
+- **Eight steps:** range, size, colour, doors and windows, roof, base, inside, price.
+- **Six ranges, 54 sizes:** HighLine (7), AvantGarde (8), Europa (9), Panorama (5), Neo (16) and CasaNova (9), in every colour Biohort sells each one in.
+- **Options:** doors, double doors, windows and glass panels; roofs, canopies, light bands, PV and downpipes; SmartBase and other foundations; and the inside fittings (shelves, rails, bike holders, tool holders, lights, panelling, sauna).
+- **Prices:**
+  - Every option resolves to a Biohort article number and its published GB price.
+  - Anything Biohort doesn't price (assembly, your own concrete base, extra double doors on HighLine and AvantGarde, the electric gate on CasaNova 3 x 3) shows as **Quoted**. No price is invented.
+- **3D:**
+  - Each range is built to Biohort's dimension tables, drawings and their own configurator's grid.
+  - Textures are at true scale.
+  - Every option change turns the camera to the part and highlights it.
+  - Outside, inside and plan views. Zoom with buttons, scroll or pinch. The plan shows dimensions.
+- **Sales:**
+  - The header has Request a callback, Visit showroom (stockist search), Download brochure (Biohort's own catalogue) and the phone number.
+  - The price step adds Book a call, Download PDF and a link to the exact product in Biohort's GB shop.
+  - Verified selling points sit beside each step.
+  - A first-visit tour can be replayed from Help.
+- **Forms:**
+  - Fields: first name, last name, a UK phone checked against Ofcom's numbering plan, email and postcode.
+  - Each enquiry carries the full specification, the priced lines and links that reopen the design.
+- **PDF:** cover render, every side, inside and plan renders, a dimensioned plan, the specification, an itemised price with article numbers, and next steps with a booking link and QR code.
 
-Official [CasaNova product documentation](https://www.biohort.com/gb-en/p/casanova) and [2026 UK price list](https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf). Prices are GBP including 20% VAT and transport to the dealer warehouse. Home delivery, assembly, foundations, electrical work, roof insulation and permissions are separate. Estimates require dealer confirmation.
+Points to confirm with Biohort, including every place their sources disagree, are in [docs/CONFIRMATIONS.md](docs/CONFIRMATIONS.md). The QA results are in [docs/QA-REPORT.md](docs/QA-REPORT.md).
 
-CasaNova has insulated walls; it is not advertised here as a fully finished, year-round office. The 3D and plan are concept illustrations, not manufacturing or construction drawings. Furniture, vegetation and site styling are illustrative. See `docs/` for research and competitor findings. The competitor quote attachment was not available in the supplied workspace, so no attachment-specific comparison is claimed.
+## Where the data comes from
 
-## Run and deploy
+`research/` holds the sources:
 
-Node 22 recommended. Install with `npm install`, validate with `npm test`, build with `npm run build`. Netlify settings are in `netlify.toml`. Continuous deployment follows `main`; static files publish from `dist` and server functions from `netlify/functions`.
+- the GB product pages;
+- Biohort's Roomle configurator and the GB price index it prices from;
+- the 2026 GB price lists;
+- the English catalogue and the CasaNova brochure;
+- photographs and measurements.
 
-Serve the source locally for UI QA; quote/PDF APIs require Netlify function context. Netlify Blobs are private and configured for strong consistency in the EU region. Failed storage prevents price unlock. Expired quote access returns 410. A scheduled function removes expired records daily.
+`npm run data` (`tools/build-catalog-data.mjs`) turns them into `src/data/{sizes,prices,accessories}.js`. `src/catalog.js` holds the ranges, options, the article-number resolver and the price lines. `npm test` checks every option resolves on more than 1,000 designs and compares all 741 article prices against the price-list text.
 
-## Enquiries, privacy and measurement
+## Code
 
-The live concept stores enquiries privately in the Netlify site, not in Biohort's CRM. It sends no automated email or sales follow-up. The operator must connect and verify the authorised CRM/email destination before adopting the tool as a production sales channel. Download links expire after 30 days and expired enquiries are removed daily. Site owners can manage records through authenticated Netlify administration; no public listing endpoint exists.
+- `src/app.js`: steps, panels, forms, analytics (`bh_*` events on `window.dataLayer`), share links (`b1.` codes).
+- `src/scene/`:
+  - `boot.js`: the SMART start-up ladder. Quality tiers, WebGL 1 build, safe tier, SVG drawing, crash guard, `?debug3d`.
+  - `scene.js`: camera, views, focus and highlight, plan overlay.
+  - `building.js`: walls, doors, roofs, canopies, bases.
+  - `fittings.js`: inside fittings.
+  - `textures.js`: textures.
+  - `svg.js`: last-resort drawing.
+- `src/pdf.js`: the PDF (jsPDF; fonts and logo in `src/pdf-assets.js`, built by `tools/build-pdf-assets.py`).
+- `server/` and `netlify/functions/`:
+  - `enquiry`: stores enquiries in the private Netlify Blobs store `biohort-enquiries`.
+  - `diagnostics`: stores 3D device reports in `biohort-3d-diagnostics`.
+- `three` 0.170 for the main build. `three-webgl1` (three r162) for the WebGL 1 build in `dist/legacy/`.
 
-`window.dataLayer` receives events `biohort_studio_start`, `biohort_step_view`, `biohort_design_change`, `biohort_design_save`, `biohort_design_share`, `biohort_preview_view`, `biohort_quote_request`, `biohort_quote_unlocked`, `biohort_quote_error`, and `biohort_pdf_download`. Events contain no contact details. A production analytics integration should compare valid enquiries, qualified leads, dealer appointments and sales against the original experience. No analytics vendor is installed in this concept.
+## Run, test, deploy
 
-## Quality checks
+```bash
+npm install
+npm test
+npm run build
+PORT=4841 STATIC_DIR=dist node tools/dev-api.mjs
+```
 
-Automated checks cover the official size/price matrix, compatibility, VAT arithmetic, validation, persistence failure, PDF gating/expiry and six-page PDF generation. Browser QA covers desktop/mobile layout, continuous sliders, finish and accessory changes, floor plan, share/resume, quote submission, and PDF download. PDF pages are visually rendered and reviewed.
+`tools/dev-api.mjs` serves `dist` with the production headers and CSP plus the two functions, so forms work locally. Netlify is Git-linked: a push to `main` builds and deploys. Docs-only commits use `[skip netlify]`.
 
-Branding and product photography belong to Biohort. Dependencies are pinned. No credentials, enquiry records, price tables in browser assets, or build output are committed.
+## QA tools (`tools/qa/`)
+
+Set `BASE` to the local or live origin. Set `GPU=1` to render on the Mac GPU.
+
+| Script | Checks |
+|---|---|
+| `option-sweep.mjs` | Every option changes the 3D, the camera turns to it and the right part is highlighted |
+| `check-zfighting.mjs` | No coplanar overlapping faces across ranges, sizes and options (`zfight.js` runs in the page) |
+| `check-mobile-3d.mjs` | iPhone (WebKit) and Android (Chrome) with forced failures: dropped context, no WebGL, WebGL 1 only, shader failures, crash guard |
+| `layout.mjs` | 320 to 1440px: no sideways scroll, 44px targets |
+| `a11y.mjs` | axe-core over every step, form, dialog and the tour |
+| `events.mjs`, `forms.mjs`, `links.mjs` | Analytics, form validation and storage (`LIVE=1` never submits), PDF links |
+| `example-pdf.mjs` | Generates the reviewed example PDF |
+| `verify-live.mjs` | Live files match the build by MD5 |
+
+The 3D checks reuse SMART Modular's `check-mobile-3d.mjs`, `check-zfighting.mjs` and `configurator-boot.js`.
+
+Product photographs, the logo and range names belong to Biohort GmbH.

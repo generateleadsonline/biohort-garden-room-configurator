@@ -19,7 +19,10 @@ for (const [label, opts] of [['desktop', {viewport: {width: 1440, height: 900}}]
     all.push({label, state, violations: r});
     check(!r.length, `${label} ${state}: no axe violations`, r.map(v => `${v.id} (${v.impact}) ${v.nodes.join(', ')}`).join(' | '));
   };
-  for (let i = 0; i < 7; i++) { await page.evaluate(i => window.__cfg.selectStep(i, {focusHeading: false}), i); await sleep(150); await run(`step ${i + 1}`); }
+  for (const range of ['highline', 'casanova', 'neo']) {
+    await page.evaluate(r => window.__cfg.change({range: r, size: r === 'casanova' ? '4x6' : r === 'neo' ? '3C' : 'H5', openings: [{id: 'q1', kind: r === 'casanova' ? 'tiltWindow' : 'door', wall: 'left', p: .5}]}, {}), range);
+    for (let i = 0; i < 8; i++) { await page.evaluate(i => window.__cfg.selectStep(i, {focusHeading: false}), i); await sleep(150); await run(`${range} step ${i + 1}`); }
+  }
   for (const mode of ['callback', 'showroom', 'brochure', 'book', 'quote']) {
     await page.evaluate(m => document.querySelector(`[data-open="${m}"]`).click(), mode); await sleep(150);
     await run(`${mode} form`);
@@ -28,9 +31,9 @@ for (const [label, opts] of [['desktop', {viewport: {width: 1440, height: 900}}]
     }
     await page.evaluate(() => document.getElementById('form-dialog').close());
   }
-  await page.evaluate(() => { window.__cfg.selectStep(0, {focusHeading: false}); document.querySelector('[data-action="westbury"]').click(); }); await sleep(150); await run('Westbury dialog');
-  await page.evaluate(() => document.getElementById('westbury-dialog').close());
-  await page.evaluate(() => { window.__cfg.selectStep(6, {focusHeading: false}); document.querySelector('[data-action="share"]').click(); }); await sleep(150); await run('share dialog');
+  await page.evaluate(() => { window.__cfg.selectStep(0, {focusHeading: false}); document.querySelector('[data-action="compare"]').click(); }); await sleep(150); await run('compare dialog');
+  await page.evaluate(() => document.getElementById('info-dialog').close());
+  await page.evaluate(() => { window.__cfg.selectStep(7, {focusHeading: false}); document.querySelector('[data-action="share"]').click(); }); await sleep(150); await run('share dialog');
   await page.evaluate(() => document.getElementById('share-dialog').close());
   if (label === 'phone') { await page.click('#menu-toggle'); await sleep(100); await run('menu open'); await page.click('#menu-toggle'); }
   await page.evaluate(() => document.getElementById(innerWidth < 720 ? 'help-menu' : 'help').click()); await sleep(200); await run('tour open');

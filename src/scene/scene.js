@@ -819,6 +819,15 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
       const out = {};
       const wasPulse = pulse, wasHl = hl.visible;
       hl.visible = false;
+      // Each elevation is lit as the hero is, the sun just beside the camera, so the back and the
+      // sides show their true colour instead of standing in shade.
+      const sun0 = sun.position.clone(), fill0 = fill.position.clone(), aimAt = sun.target.position.clone();
+      const heroAz = Math.atan2(-.62, 1), up = new THREE.Vector3(0, 1, 0);
+      const aimLights = dir => {
+        const a = dir ? Math.atan2(dir.x, dir.z) - heroAz : 0;
+        sun.position.copy(sun0).sub(aimAt).applyAxisAngle(up, a).add(aimAt);
+        fill.position.copy(fill0).sub(aimAt).applyAxisAngle(up, a).add(aimAt);
+      };
       try {
         renderer.setPixelRatio(1);
         renderer.setSize(width, height, false);
@@ -827,7 +836,8 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
           const isDusk = name === 'dusk';
           if (night !== isDusk) { night = isDusk; applyLighting(); }
           let pose;
-          const side = (x, yy, z) => poseFor('outside', {dir: new THREE.Vector3(x, yy, z), margin: 1.08});
+          const side = (x, yy, z) => { const dir = new THREE.Vector3(x, yy, z); aimLights(dir); return poseFor('outside', {dir, margin: 1.08}); };
+          aimLights(null);
           if (name === 'hero' || name === 'dusk') pose = side(-.62, .2, 1);
           else if (name === 'front') pose = side(0, .14, 1);
           else if (name === 'back') pose = side(0, .16, -1);
@@ -852,6 +862,7 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
         size = prevSize;
       } catch { /* The PDF falls back to photography and drawings for any missing view. */ }
       finally {
+        sun.position.copy(sun0); fill.position.copy(fill0);
         if (night !== saved.night) { night = saved.night; applyLighting(); }
         view = saved.view; applyViewVisibility();
         renderer.setPixelRatio(saved.ratio);

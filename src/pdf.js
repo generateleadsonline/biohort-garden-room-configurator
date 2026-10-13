@@ -166,9 +166,10 @@ export async function downloadPDF(input, views = {}, options = {}) {
   for (const q of price.quoted) {
     if (y > 246) break;
     set(8.6, false, C.ink2); pdf.text(q.name, M, y);
-    set(8, false, C.muted); pdf.text(pdf.splitTextToSize(q.note, 70)[0], W - M - 52 - 30, y);
     set(8.6, true, C.green); pdf.text('Quoted', W - M, y, {align: 'right'});
-    y += 5.6;
+    const noteLines = pdf.splitTextToSize(q.note, CW - 62);
+    set(7.8, false, C.muted); pdf.text(noteLines, M, y + 3.7);
+    y += 3.7 + noteLines.length * 3.4 + 2.2;
   }
   pdf.setDrawColor(C.ink); pdf.setLineWidth(.4); pdf.line(M, y, W - M, y); y += 6;
   set(11, true, C.ink); pdf.text('Total, including 20% VAT', M, y); pdf.text(pounds(price.total), W - M, y, {align: 'right'}); y += 8;
@@ -181,7 +182,7 @@ export async function downloadPDF(input, views = {}, options = {}) {
   const steps = [
     ['Send your design or book a call', 'Biohort\'s UK team checks every part with you, confirms the price and answers questions about your site.'],
     ['Prepare the base', `A level concrete slab or point foundations to Biohort's foundation plan${d.base ? ` (${d.base[0]} x ${d.base[1]}cm)` : ''}, or a Biohort SmartBase that needs no concrete.`],
-    ['Free kerbside delivery', `To mainland Great Britain, ${s.range === 'casanova' ? 'within about 6 weeks' : 'usually within 3 weeks'}. The parts come in labelled boxes.`],
+    s.range === 'casanova' ? ['Delivery', 'Biohort\'s site shows free shipping within 6 weeks; your dealer confirms the delivery date and any charge.'] : ['Free kerbside delivery', 'To mainland Great Britain, usually within 3 weeks. The parts come in labelled boxes.'],
     ['Build it', 'With Biohort\'s photo-illustrated manual and assembly videos, or with an assembly partner Biohort finds near you.'],
     ['Enjoy it for decades', 'Maintenance-free steel with a 20-year guarantee, subject to Biohort\'s warranty terms and conditions.']
   ];
@@ -212,9 +213,12 @@ function drawPlan(pdf, s, x, y, w, h, set) {
   const g = geom(s), d = dims(s);
   const cl = canopyWidth(s, s.canopy.left), cr = canopyWidth(s, s.canopy.right);
   const roofW = d.W, roofD = d.D;
-  const totalW = roofW + cl + cr + 1.6, totalD = roofD + 1.8;
-  const k = Math.min(w / totalW, h / totalD);
-  const ox = x + (w - totalW * k) / 2 + (cl + .8) * k + (roofW - g.ww) / 2 * k, oy = y + (h - totalD * k) / 2 + .9 * k + (roofD - g.wd) / 2 * k;
+  // Label room in millimetres of page, not metres of plan, so the labels fit at any scale:
+  // left 4, right 22 (two dimension lines, labels along them), top 9 (BACK), bottom 26 (two lines, FRONT).
+  const PL = 4, PR = 22, PT = 9, PB = 26;
+  const k = Math.min((w - PL - PR) / (roofW + cl + cr), (h - PT - PB) / roofD, 60);
+  const left = x + (w - PL - PR - (roofW + cl + cr) * k) / 2 + PL, top = y + (h - PT - PB - roofD * k) / 2 + PT;
+  const ox = left + (cl + (roofW - g.ww) / 2) * k, oy = top + (roofD - g.wd) / 2 * k;
   const X = v => ox + v * k, Y = v => oy + v * k; // plan x from the left wall, y from the back wall
   const ovx = (roofW - g.ww) / 2, ovz = (roofD - g.wd) / 2;
   // Canopies, hatched.
@@ -244,20 +248,22 @@ function drawPlan(pdf, s, x, y, w, h, set) {
     if (horiz) pdf.rect(X(a), Y(at) - .05, (b - a) * k, t * k + .1, 'F'); else pdf.rect(X(at) - .05, Y(a), t * k + .1, (b - a) * k, 'F');
     pdf.setDrawColor(door ? '#4e7a2b' : '#2a4d8a'); pdf.setLineWidth(door ? .5 : .3);
     if (horiz) { const yy = Y(at + t / 2); pdf.line(X(a), yy, X(b), yy); } else { const xx = X(at + t / 2); pdf.line(xx, Y(a), xx, Y(b)); }
+    // Clear widths sit just inside the wall, clear of the roof edge and the canopies.
     const label = String(Math.round((h1 - h0) * 1000));
-    if (o.wall === 'front') pdf.text(label, X((a + b) / 2), Y(g.wd) + 3.4, {align: 'center'});
-    else if (o.wall === 'back') pdf.text(label, X((a + b) / 2), Y(0) - 1.6, {align: 'center'});
-    else if (o.wall === 'left') pdf.text(label, X(0) - 1.4, Y((a + b) / 2) + 1, {align: 'right'});
-    else pdf.text(label, X(g.ww) + 1.4, Y((a + b) / 2) + 1);
+    if (o.wall === 'front') pdf.text(label, X((a + b) / 2), Y(g.wd - t) - 1.6, {align: 'center'});
+    else if (o.wall === 'back') pdf.text(label, X((a + b) / 2), Y(t) + 3.2, {align: 'center'});
+    else if (o.wall === 'left') pdf.text(label, X(t) + 1.4, Y((a + b) / 2) + 1);
+    else pdf.text(label, X(g.ww - t) - 1.4, Y((a + b) / 2) + 1, {align: 'right'});
   }
   // Dimensions: walls and roof.
   pdf.setDrawColor('#1b1b1b'); pdf.setLineWidth(.25);
   const dimH = (x0, x1, yy, label) => { pdf.line(X(x0), yy, X(x1), yy); pdf.line(X(x0), yy - 1.2, X(x0), yy + 1.2); pdf.line(X(x1), yy - 1.2, X(x1), yy + 1.2); set(7.2, true, '#1b1b1b'); pdf.text(label, X((x0 + x1) / 2), yy + 3.6, {align: 'center'}); };
-  const dimV = (y0, y1, xx, label, right = true) => { pdf.line(xx, Y(y0), xx, Y(y1)); pdf.line(xx - 1.2, Y(y0), xx + 1.2, Y(y0)); pdf.line(xx - 1.2, Y(y1), xx + 1.2, Y(y1)); set(7.2, true, '#1b1b1b'); pdf.text(label, xx + (right ? 1.8 : -1.8), Y((y0 + y1) / 2) + 1.2, {align: right ? 'left' : 'right'}); };
+  // Vertical dimensions read bottom to top along their line, as on a drawing.
+  const dimV = (y0, y1, xx, label) => { pdf.line(xx, Y(y0), xx, Y(y1)); pdf.line(xx - 1.2, Y(y0), xx + 1.2, Y(y0)); pdf.line(xx - 1.2, Y(y1), xx + 1.2, Y(y1)); set(7.2, true, '#1b1b1b'); pdf.text(label, xx + 3.2, Y((y0 + y1) / 2) + pdf.getTextWidth(label) / 2, {angle: 90}); };
   const fy = Y(g.wd + ovz) + 6, fy2 = fy + 7;
   dimH(0, g.ww, fy, `${metres(g.ww)} walls`);
   dimH(-ovx, g.ww + ovx, fy2, `${metres(roofW)} roof`);
-  const rx = X(g.ww + ovx + cr) + 5, rx2 = rx + 16;
+  const rx = X(g.ww + ovx + cr) + 5, rx2 = rx + 10;
   dimV(0, g.wd, rx, `${metres(g.wd)} walls`);
   dimV(-ovz, g.wd + ovz, rx2, `${metres(roofD)} roof`);
   if (cl) { set(6.2, false, '#4e7a2b'); pdf.text(`${metres(cl)} canopy`, X(-ovx - cl / 2), Y(g.wd / 2), {align: 'center'}); }

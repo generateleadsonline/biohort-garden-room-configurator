@@ -6,15 +6,19 @@ import {mkdir} from 'node:fs/promises';
 import path from 'node:path';
 import {launch, openDesigner, settled} from './pw.mjs';
 import * as C from '../../src/catalog.js';
-const out = process.argv[2] || 'docs/examples/my-retreat-garden-rooms-reviewed-example.pdf';
-const LIVE = 'https://my-retreat-garden-configurator.netlify.app';
-const design = C.normalise({range: 'clifton', use: 'office', width: 5.8, depth: 4, cladding: 'cedar', coverage: 'front-left', metal: 'anthracite', frame: 'anthracite', overhang: .6, extensions: {left: 0, right: .6}, deck: {front: 1.2}, deckColour: 'dark-grey',
-  openings: [{id: 'd1', wall: 'front', type: 'slide4m', material: 'upvc', p: .45}, {id: 'w1', wall: 'left', type: 'openM', material: 'upvc', p: .55}]});
+const out = process.argv[2] || 'docs/examples/biohort-reviewed-example.pdf';
+const LIVE = 'https://biohort-garden-room-configurator.netlify.app';
+// A full HighLine H5: double door, a window and an extra door, an L canopy with both walls,
+// downpipes, floor frame and panels, storage, bikes and the BikeLift.
+const design = C.normalise(process.env.DESIGN ? JSON.parse(process.env.DESIGN) : {range: 'highline', size: 'H5', colour: 'quartz', door: 'double',
+  openings: [{id: 'w1', kind: 'window', wall: 'left', p: .35}, {id: 'd2', kind: 'door', wall: 'back', p: .5}],
+  canopy: {left: 'none', right: 'L'}, canopyWalls: {left: {back: false, side: false}, right: {back: true, side: false}}, downpipe: 'front',
+  foundation: 'frame', floorPlate: true, floraboard: 1, items: {shelves: 1, deepShelves: 1, rails: 1, hookSet: 1, table: 1, bikeMax: 2, doorBaskets: 1}});
 await mkdir(path.dirname(out), {recursive: true});
-const browser = await launch();
+const browser = await launch('chromium', process.env.GPU ? {args: ['--use-angle=metal', '--enable-gpu', '--ignore-gpu-blocklist']} : {});
 const {page, errors} = await openDesigner(browser, {viewport: {width: 1440, height: 900}, query: `?qa=1&tier=high&pdforigin=${encodeURIComponent(LIVE)}`, hash: '#d=' + C.encodeDesign(design)});
 await settled(page);
-await page.evaluate(() => window.__cfg.selectStep(6, {focusHeading: false}));
+await page.evaluate(() => window.__cfg.selectStep(7, {focusHeading: false}));
 const download = page.waitForEvent('download', {timeout: 900000});
 await page.evaluate(() => window.__cfg.makePDF());
 const d = await download;

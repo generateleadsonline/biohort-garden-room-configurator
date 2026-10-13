@@ -167,7 +167,7 @@ a{color:var(--blue);text-underline-offset:3px}
 .choice.is-on{border-color:var(--green);background:var(--green-mist)}
 .choice .t{display:block;font-weight:600;font-size:15px}
 .choice .d{display:block;font-size:13.5px;color:var(--muted)}
-.choice .tag{margin-left:auto;flex:none;align-self:center;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--sand);color:var(--ink-2);white-space:nowrap}
+.choice .tag{margin-left:auto;flex:none;align-self:center;max-width:46%;font-size:12px;font-weight:600;line-height:1.35;padding:2px 8px;border-radius:999px;background:var(--sand);color:var(--ink-2);text-align:right}
 .choice .tag.inc{background:#e5efe8;color:var(--good)}
 .choice .mark{flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;border:1.5px solid var(--line-2);display:grid;place-items:center}
 .choice input[type=checkbox] ~ .mark{border-radius:5px}

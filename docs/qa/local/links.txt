@@ -1,0 +1,7 @@
+PASS  design link: reopens the exact design and its price (£12,990)  Neo 3C£12,990inc VAT
+PASS  design link: no form, a welcome note  This shared design is ready to make your own.
+PASS  design link: no page errors
+PASS  booking link: reopens the exact design and its price (£12,990)  Neo 3C£12,990inc VAT
+PASS  booking link: opens the booking form  Book a design call
+PASS  booking link: no page errors
+All link checks passed

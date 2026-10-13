@@ -1,0 +1,11 @@
+PASS  desktop: every call to action sends bh_cta_click  12 CTAs: logo, callback, showroom, brochure, phone, help, send-design, book-call, download-pdf, shop, share, compare-ranges
+PASS  desktop: every step sends bh_step_view  1,2,3,4,5,6,7,8
+PASS  desktop: form opens and option changes are tracked  bh_configurator_view, bh_step_view, bh_3d_start, bh_3d_shown, bh_3d_ready, bh_price_view, bh_cta_click, bh_form_open, bh_tour_start, bh_tour_step, bh_tour_skip, bh_share_open, bh_compare_open, bh_option_change
+PASS  desktop: no contact details in analytics events
+PASS  desktop: no page errors
+PASS  phone: every call to action sends bh_cta_click  13 CTAs: logo, phone, menu, send-design, book-call, download-pdf, shop, share, compare-ranges, callback, showroom, brochure, help
+PASS  phone: every step sends bh_step_view  1,2,3,4,5,6,7,8
+PASS  phone: form opens and option changes are tracked  bh_configurator_view, bh_step_view, bh_3d_start, bh_3d_shown, bh_3d_ready, bh_price_view, bh_cta_click, bh_form_open, bh_share_open, bh_compare_open, bh_tour_start, bh_tour_step, bh_tour_skip, bh_option_change
+PASS  phone: no contact details in analytics events
+PASS  phone: no page errors
+All analytics checks passed

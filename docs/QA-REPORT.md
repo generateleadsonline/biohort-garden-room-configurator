@@ -1,32 +1,32 @@
 # QA report: Biohort garden building designer v2
 
 **Date:** 13 October 2026
-**Build:** commit `COMMIT`, Netlify deploy `DEPLOY`
+**Build:** commit `7e6cbb5`, Netlify deploy `6ace3a424f51756fbf427910`
 **Live:** https://biohort-garden-room-configurator.netlify.app/configurator/
 
 ## How the QA was run
 
 - **One pass, local.** The QA ran on the local build, served with the production headers and CSP by `tools/dev-api.mjs`. Everything it found was fixed in one batch (listed below), and every suite was run again on the final build. The site was then deployed once.
-- **After the deploy.** `tools/qa/verify-live.mjs` checked the live files against the build by MD5. Every suite was then run again against the live URL.
+- **After the deploy.** `tools/qa/verify-live.mjs` confirmed that all 31 live files are byte-identical to the build. Every suite was then run again against the live URL.
 - **Nothing real submitted.**
   - No live form was submitted and no call was booked: the live forms run checks validation only.
-  - The live enquiry endpoint was checked only with requests it refuses, so nothing was stored.
+  - The live enquiry endpoint was checked only with requests it refuses, so nothing was stored: an incomplete enquiry gets 400 naming all five missing fields, and a cross-site request gets 403.
 
 ## Results
 
 | Suite | What it proves | Local | Live |
 |---|---|---|---|
 | Unit tests (`npm test`) | **Prices:** every option resolves to a Biohort article number on more than 1,000 designs; 739 of 741 article prices match the 2026 GB price list text, and the other two are not printed in it. **Nothing invented:** unpriced items are Quoted. **Validation:** UK phone numbers follow Ofcom's numbering, plus postcodes, share codes and both functions. | 12/12, 739/741 | n/a |
-| Every option changes the 3D (`option-sweep.mjs`) | 293 options across all six ranges, each applied the way the panel applies it. The camera turns to the part and the right part is highlighted. The image changes from that camera (full-resolution pixel diff). | 293/293 | LIVE_SWEEP |
-| No flicker or blotches (`check-zfighting.mjs`) | 146 designs with no overlapping coplanar faces: every range at its smallest and largest sizes, every colour, every door, window and glass element on every wall, canopies with walls, roofs, bases, and every inside fitting. | 146/146 clean | LIVE_ZF |
-| Phones and forced failures (`check-mobile-3d.mjs`) | 42 checks on iPhone (WebKit, Safari's engine) and Android (Chrome). Scenarios below. | 42/42 | LIVE_MOBILE |
-| Layout (`layout.mjs`) | At 320, 360, 375, 390, 768, 1024 and 1440px, for HighLine, Neo and CasaNova: no sideways scroll on any step, form, the compare dialog, the menu or the tour. Every touch target is at least 44px. | 7/7 widths | LIVE_LAYOUT |
-| Accessibility (`a11y.mjs`) | axe-core over all 8 steps, every form (including one showing errors), the compare and share dialogs, the menu and the tour, on desktop and phone. | 0 violations | LIVE_A11Y |
-| Analytics (`events.mjs`) | Every call to action sends `bh_cta_click`, every step sends `bh_step_view`, and option changes, forms, the tour and the 3D send their own `bh_*` events. No contact details are sent. | pass | LIVE_EVENTS |
-| Forms (`forms.mjs`) | **All six forms** (callback, showroom, brochure, book a call, send design, PDF): an empty submit names all five required fields and focuses the first. **Phone numbers:** an unallocated 021 number and an Ofcom drama number are refused. **Locally,** each submission stores the names, E.164 phone, postcode, full specification, priced lines and the design and booking links. | 34/34 | LIVE_FORMS |
-| PDF links (`links.mjs`) | "Reopen your design" restores the exact design and its price. "Book a call" also opens the booking form. | pass | LIVE_LINKS |
-| Lighthouse, mobile (3 runs) | Performance, accessibility, best practices, SEO | 99, 98, 99 / 100 / 100 / 100. TBT 0ms, CLS 0.049 | LIVE_LH |
-| Live files (`verify-live.mjs`) | Every deployed file matches the build by MD5; CSP header present | n/a | LIVE_FILES |
+| Every option changes the 3D (`option-sweep.mjs`) | 293 options across all six ranges, each applied the way the panel applies it. The camera turns to the part and the right part is highlighted. The image changes from that camera (full-resolution pixel diff). | 293/293 | 293/293 |
+| No flicker or blotches (`check-zfighting.mjs`) | 146 designs with no overlapping coplanar faces: all 54 sizes, with double doors where offered; every canopy with both walls; every door, window and glass element on the side and back walls; every foundation; every inside fitting in the smallest and largest size; roof extras and downpipes; and the main door on each other wall. | 146/146 clean | 146/146 clean |
+| Phones and forced failures (`check-mobile-3d.mjs`) | 42 checks on iPhone (WebKit, Safari's engine) and Android (Chrome). Scenarios below. | 42/42 | 42/42 |
+| Layout (`layout.mjs`) | At 320, 360, 375, 390, 768, 1024 and 1440px, for HighLine, Neo and CasaNova: no sideways scroll on any step, form, the compare dialog, the menu or the tour. Every touch target is at least 44px. | 7/7 widths | 7/7 widths |
+| Accessibility (`a11y.mjs`) | axe-core over all 8 steps, every form (including one showing errors), the compare and share dialogs, the menu and the tour, on desktop and phone. | 0 violations (67 states) | 0 violations (67 states) |
+| Analytics (`events.mjs`) | Every call to action sends `bh_cta_click`, every step sends `bh_step_view`, and option changes, forms, the tour and the 3D send their own `bh_*` events. No contact details are sent. | pass | pass |
+| Forms (`forms.mjs`) | **All six forms** (callback, showroom, brochure, book a call, send design, PDF): an empty submit names all five required fields and focuses the first. **Phone numbers:** an unallocated 021 number and an Ofcom drama number are refused. **Locally,** each submission stores the names, E.164 phone, postcode, full specification, priced lines and the design and booking links. | 34/34 | 19/19 (validation only) |
+| PDF links (`links.mjs`) | "Reopen your design" restores the exact design and its price. "Book a call" also opens the booking form. | pass | pass |
+| Lighthouse, mobile (3 runs) | Performance, accessibility, best practices, SEO | 99, 98, 99 / 100 / 100 / 100. TBT 0ms, CLS 0.049 | 100 / 100 / 100 / 100 in all three runs. FCP 0.8 to 1.1s, LCP 1.4 to 1.5s, TBT 0ms, CLS ≤0.049 |
+| Live files (`verify-live.mjs`) | Every deployed file matches the build by MD5; CSP header present | n/a | 31/31 |
 
 ### Phone and failure scenarios (all pass)
 

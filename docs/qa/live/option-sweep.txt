@@ -1,0 +1,295 @@
+PASS  highline: range  75761 of 432480 pixels changed (17.52%), outside view, highlight [] on 0 parts
+PASS  highline: size HS  201368 of 432480 pixels changed (46.56%), outside view, highlight [] on 0 parts
+PASS  highline: size H1  154665 of 432480 pixels changed (35.76%), outside view, highlight [] on 0 parts
+PASS  highline: size H2  113290 of 432480 pixels changed (26.20%), outside view, highlight [] on 0 parts
+PASS  highline: size H4  98837 of 432480 pixels changed (22.85%), outside view, highlight [] on 0 parts
+PASS  highline: size H5  121476 of 432480 pixels changed (28.09%), outside view, highlight [] on 0 parts
+PASS  highline: size H6  154921 of 432480 pixels changed (35.82%), outside view, highlight [] on 0 parts
+PASS  highline: colour silver  164753 of 432480 pixels changed (38.09%), outside view, highlight [walls] on 40 parts
+PASS  highline: colour quartz  164598 of 432480 pixels changed (38.06%), outside view, highlight [walls] on 40 parts
+PASS  highline: double door  26280 of 432480 pixels changed (6.08%), outside view, highlight [door:main] on 10 parts
+PASS  highline: door on the left  16276 of 432480 pixels changed (3.76%), outside view, highlight [door:main] on 9 parts
+PASS  highline: door on the right  3092 of 432480 pixels changed (0.71%), outside view, highlight [door:main] on 9 parts
+PASS  highline: door position  39040 of 432480 pixels changed (9.03%), outside view, highlight [door:main] on 9 parts
+PASS  highline: add door  11232 of 432480 pixels changed (2.60%), outside view, highlight [opening:n1] on 7 parts
+PASS  highline: add double  20015 of 432480 pixels changed (4.63%), outside view, highlight [opening:n1] on 8 parts
+PASS  highline: add window  44464 of 432480 pixels changed (10.28%), outside view, highlight [opening:n1] on 9 parts
+PASS  highline: move an element along its wall  16257 of 432480 pixels changed (3.76%), outside view, highlight [opening:n1] on 7 parts
+PASS  highline: remove an element  7133 of 432480 pixels changed (1.65%), outside view, highlight [wall:left] on 7 parts
+PASS  highline: canopy left S  102678 of 432480 pixels changed (23.74%), outside view, highlight [canopy:left] on 5 parts
+PASS  highline: canopy left S back wall  33594 of 432480 pixels changed (7.77%), outside view, highlight [canopyWall:left:back] on 1 parts
+PASS  highline: canopy left S side wall  68750 of 432480 pixels changed (15.90%), outside view, highlight [canopyWall:left:side] on 1 parts
+PASS  highline: canopy left L  97708 of 432480 pixels changed (22.59%), outside view, highlight [canopy:left] on 5 parts
+PASS  highline: canopy left L back wall  46189 of 432480 pixels changed (10.68%), outside view, highlight [canopyWall:left:back] on 1 parts
+PASS  highline: canopy left L side wall  66140 of 432480 pixels changed (15.29%), outside view, highlight [canopyWall:left:side] on 1 parts
+PASS  highline: canopy right S  62205 of 432480 pixels changed (14.38%), outside view, highlight [canopy:right] on 5 parts
+PASS  highline: canopy right S back wall  34457 of 432480 pixels changed (7.97%), outside view, highlight [canopyWall:right:back] on 1 parts
+PASS  highline: canopy right S side wall  46199 of 432480 pixels changed (10.68%), outside view, highlight [canopyWall:right:side] on 1 parts
+PASS  highline: canopy right L  71379 of 432480 pixels changed (16.50%), outside view, highlight [canopy:right] on 5 parts
+PASS  highline: canopy right L back wall  49181 of 432480 pixels changed (11.37%), outside view, highlight [canopyWall:right:back] on 1 parts
+PASS  highline: canopy right L side wall  59242 of 432480 pixels changed (13.70%), outside view, highlight [canopyWall:right:side] on 1 parts
+PASS  highline: downpipe front  4481 of 432480 pixels changed (1.04%), outside view, highlight [downpipe] on 4 parts
+PASS  highline: downpipe rear  9406 of 432480 pixels changed (2.17%), outside view, highlight [downpipe] on 4 parts
+PASS  highline: PV mounting  3605 of 432480 pixels changed (0.83%), outside view, highlight [pv] on 6 parts
+PASS  highline: FloraBoard  12947 of 432480 pixels changed (2.99%), outside view, highlight [floraboard] on 16 parts
+PASS  highline: foundation frame  18152 of 432480 pixels changed (4.20%), outside view, highlight [foundation] on 7 parts
+PASS  highline: foundation smartbase  24774 of 432480 pixels changed (5.73%), outside view, highlight [foundation] on 27 parts
+PASS  highline: foundation smartbaseplus  30454 of 432480 pixels changed (7.04%), outside view, highlight [foundation] on 27 parts
+PASS  highline: floor panels  210862 of 432480 pixels changed (48.76%), inside view, highlight [floorPlate] on 1 parts
+PASS  highline: ground anchors  466 of 432480 pixels changed (0.11%), outside view, highlight [anchors] on 30 parts
+PASS  highline: shelves  7792 of 432480 pixels changed (1.80%), inside view, highlight [shelves:std] on 16 parts
+PASS  highline: deepShelves  19300 of 432480 pixels changed (4.46%), inside view, highlight [shelves:deep] on 8 parts
+PASS  highline: rails  21791 of 432480 pixels changed (5.04%), inside view, highlight [rails] on 4 parts
+PASS  highline: toolHangers  17679 of 432480 pixels changed (4.09%), inside view, highlight [toolHangers] on 24 parts
+PASS  highline: toolHolders  2719 of 432480 pixels changed (0.63%), inside view, highlight [toolHolders] on 4 parts
+PASS  highline: doorBaskets  5817 of 432480 pixels changed (1.35%), inside view, highlight [doorBaskets] on 18 parts
+PASS  highline: shelfBaskets  5179 of 432480 pixels changed (1.20%), inside view, highlight [shelfBaskets] on 18 parts
+PASS  highline: hookSet  1279 of 432480 pixels changed (0.30%), inside view, highlight [hooks] on 8 parts
+PASS  highline: suspension  4425 of 432480 pixels changed (1.02%), inside view, highlight [suspension] on 2 parts
+PASS  highline: mountPanel  36945 of 432480 pixels changed (8.54%), inside view, highlight [mountPanel] on 3 parts
+PASS  highline: table  7067 of 432480 pixels changed (1.63%), inside view, highlight [table] on 4 parts
+PASS  highline: bikeMax  19600 of 432480 pixels changed (4.53%), inside view, highlight [bikeMax] on 14 parts
+PASS  highline: bikeHolder  32809 of 432480 pixels changed (7.59%), inside view, highlight [bikeHolder] on 28 parts
+PASS  highline: binBag  23734 of 432480 pixels changed (5.49%), inside view, highlight [binBag] on 2 parts
+PASS  highline: BikeLift standard  36647 of 432480 pixels changed (8.47%), inside view, highlight [bikeLift] on 14 parts
+PASS  avantgarde: range  71218 of 432480 pixels changed (16.47%), outside view, highlight [] on 0 parts
+PASS  avantgarde: model ECO*  1482 of 432480 pixels changed (0.34%), outside view, highlight [] on 0 parts
+PASS  avantgarde: size A1  194958 of 432480 pixels changed (45.08%), outside view, highlight [] on 0 parts
+PASS  avantgarde: size A2  154734 of 432480 pixels changed (35.78%), outside view, highlight [] on 0 parts
+PASS  avantgarde: size A3  168367 of 432480 pixels changed (38.93%), outside view, highlight [] on 0 parts
+PASS  avantgarde: size A4  165449 of 432480 pixels changed (38.26%), outside view, highlight [] on 0 parts
+PASS  avantgarde: size A5  113141 of 432480 pixels changed (26.16%), outside view, highlight [] on 0 parts
+PASS  avantgarde: size A7  98570 of 432480 pixels changed (22.79%), outside view, highlight [] on 0 parts
+PASS  avantgarde: size A8  150880 of 432480 pixels changed (34.89%), outside view, highlight [] on 0 parts
+PASS  avantgarde: colour silver  150874 of 432480 pixels changed (34.89%), outside view, highlight [walls] on 40 parts
+PASS  avantgarde: colour quartz  150779 of 432480 pixels changed (34.86%), outside view, highlight [walls] on 40 parts
+PASS  avantgarde: double door  13000 of 432480 pixels changed (3.01%), outside view, highlight [door:main] on 10 parts
+PASS  avantgarde: door position  29459 of 432480 pixels changed (6.81%), outside view, highlight [door:main] on 9 parts
+PASS  avantgarde: add door  11387 of 432480 pixels changed (2.63%), outside view, highlight [opening:n1] on 7 parts
+PASS  avantgarde: add double  19903 of 432480 pixels changed (4.60%), outside view, highlight [opening:n1] on 8 parts
+PASS  avantgarde: add window  44450 of 432480 pixels changed (10.28%), outside view, highlight [opening:n1] on 9 parts
+PASS  avantgarde: move an element along its wall  16146 of 432480 pixels changed (3.73%), outside view, highlight [opening:n1] on 7 parts
+PASS  avantgarde: remove an element  6199 of 432480 pixels changed (1.43%), outside view, highlight [wall:left] on 7 parts
+PASS  avantgarde: canopy left L  103989 of 432480 pixels changed (24.04%), outside view, highlight [canopy:left] on 7 parts
+PASS  avantgarde: canopy left L back wall  37376 of 432480 pixels changed (8.64%), outside view, highlight [canopyWall:left:back] on 1 parts
+PASS  avantgarde: canopy left L side wall  63840 of 432480 pixels changed (14.76%), outside view, highlight [canopyWall:left:side] on 1 parts
+PASS  avantgarde: canopy right L  71768 of 432480 pixels changed (16.59%), outside view, highlight [canopy:right] on 7 parts
+PASS  avantgarde: canopy right L back wall  42941 of 432480 pixels changed (9.93%), outside view, highlight [canopyWall:right:back] on 1 parts
+PASS  avantgarde: canopy right L side wall  51480 of 432480 pixels changed (11.90%), outside view, highlight [canopyWall:right:side] on 1 parts
+PASS  avantgarde: downpipe rear  8734 of 432480 pixels changed (2.02%), outside view, highlight [downpipe] on 4 parts
+PASS  avantgarde: PV mounting  7264 of 432480 pixels changed (1.68%), outside view, highlight [pv] on 6 parts
+PASS  avantgarde: FloraBoard  12604 of 432480 pixels changed (2.91%), outside view, highlight [floraboard] on 16 parts
+PASS  avantgarde: foundation frame  16400 of 432480 pixels changed (3.79%), outside view, highlight [foundation] on 7 parts
+PASS  avantgarde: foundation smartbase  22543 of 432480 pixels changed (5.21%), outside view, highlight [foundation] on 27 parts
+PASS  avantgarde: foundation smartbaseplus  27728 of 432480 pixels changed (6.41%), outside view, highlight [foundation] on 27 parts
+PASS  avantgarde: floor panels  213813 of 432480 pixels changed (49.44%), inside view, highlight [floorPlate] on 1 parts
+PASS  avantgarde: ground anchors  453 of 432480 pixels changed (0.10%), outside view, highlight [anchors] on 30 parts
+PASS  avantgarde: gas spring  472 of 432480 pixels changed (0.11%), inside view, highlight [gasSpring] on 2 parts
+PASS  avantgarde: shelves  8116 of 432480 pixels changed (1.88%), inside view, highlight [shelves:std] on 16 parts
+PASS  avantgarde: deepShelves  19842 of 432480 pixels changed (4.59%), inside view, highlight [shelves:deep] on 8 parts
+PASS  avantgarde: rails  21922 of 432480 pixels changed (5.07%), inside view, highlight [rails] on 4 parts
+PASS  avantgarde: toolHangers  16501 of 432480 pixels changed (3.82%), inside view, highlight [toolHangers] on 24 parts
+PASS  avantgarde: toolHolders  2860 of 432480 pixels changed (0.66%), inside view, highlight [toolHolders] on 4 parts
+PASS  avantgarde: doorBaskets  6062 of 432480 pixels changed (1.40%), inside view, highlight [doorBaskets] on 18 parts
+PASS  avantgarde: shelfBaskets  5347 of 432480 pixels changed (1.24%), inside view, highlight [shelfBaskets] on 18 parts
+PASS  avantgarde: hookSet  1294 of 432480 pixels changed (0.30%), inside view, highlight [hooks] on 8 parts
+PASS  avantgarde: suspension  4334 of 432480 pixels changed (1.00%), inside view, highlight [suspension] on 2 parts
+PASS  avantgarde: mountPanel  35955 of 432480 pixels changed (8.31%), inside view, highlight [mountPanel] on 3 parts
+PASS  avantgarde: table  7927 of 432480 pixels changed (1.83%), inside view, highlight [table] on 4 parts
+PASS  avantgarde: bikeMax  20287 of 432480 pixels changed (4.69%), inside view, highlight [bikeMax] on 14 parts
+PASS  avantgarde: bikeHolder  34224 of 432480 pixels changed (7.91%), inside view, highlight [bikeHolder] on 28 parts
+PASS  avantgarde: binBag  23851 of 432480 pixels changed (5.51%), inside view, highlight [binBag] on 2 parts
+PASS  avantgarde: BikeLift standard  37554 of 432480 pixels changed (8.68%), inside view, highlight [bikeLift] on 14 parts
+PASS  europa: range  172362 of 432480 pixels changed (39.85%), outside view, highlight [] on 0 parts
+PASS  europa: size 1  230309 of 432480 pixels changed (53.25%), outside view, highlight [] on 0 parts
+PASS  europa: size 2  174713 of 432480 pixels changed (40.40%), outside view, highlight [] on 0 parts
+PASS  europa: size 2A  157774 of 432480 pixels changed (36.48%), outside view, highlight [] on 0 parts
+PASS  europa: size 4  129091 of 432480 pixels changed (29.85%), outside view, highlight [] on 0 parts
+PASS  europa: size 4A  135823 of 432480 pixels changed (31.41%), outside view, highlight [] on 0 parts
+PASS  europa: size 5  170260 of 432480 pixels changed (39.37%), outside view, highlight [] on 0 parts
+PASS  europa: size 6  175093 of 432480 pixels changed (40.49%), outside view, highlight [] on 0 parts
+PASS  europa: size 7  181926 of 432480 pixels changed (42.07%), outside view, highlight [] on 0 parts
+PASS  europa: colour silver  180957 of 432480 pixels changed (41.84%), outside view, highlight [walls] on 21 parts
+PASS  europa: colour quartz  180944 of 432480 pixels changed (41.84%), outside view, highlight [walls] on 21 parts
+PASS  europa: colour darkgreen  175537 of 432480 pixels changed (40.59%), outside view, highlight [walls] on 21 parts
+PASS  europa: door position  33344 of 432480 pixels changed (7.71%), outside view, highlight [door:main] on 7 parts
+PASS  europa: add double  11137 of 432480 pixels changed (2.58%), outside view, highlight [opening:n1] on 7 parts
+PASS  europa: add window  42369 of 432480 pixels changed (9.80%), outside view, highlight [opening:n1] on 9 parts
+PASS  europa: canopy left on  99555 of 432480 pixels changed (23.02%), outside view, highlight [canopy:left] on 5 parts
+PASS  europa: canopy right on  66403 of 432480 pixels changed (15.35%), outside view, highlight [canopy:right] on 5 parts
+PASS  europa: downpipe front  8466 of 432480 pixels changed (1.96%), outside view, highlight [downpipe] on 4 parts
+PASS  europa: downpipe rear  13478 of 432480 pixels changed (3.12%), outside view, highlight [downpipe] on 4 parts
+PASS  europa: PV mounting  9930 of 432480 pixels changed (2.30%), outside view, highlight [pv] on 6 parts
+PASS  europa: foundation frame  17341 of 432480 pixels changed (4.01%), outside view, highlight [foundation] on 6 parts
+PASS  europa: foundation smartbase  24184 of 432480 pixels changed (5.59%), outside view, highlight [foundation] on 23 parts
+PASS  europa: foundation smartbaseplus  28393 of 432480 pixels changed (6.57%), outside view, highlight [foundation] on 23 parts
+PASS  europa: floor panels  183391 of 432480 pixels changed (42.40%), inside view, highlight [floorPlate] on 1 parts
+PASS  europa: ground anchors  547 of 432480 pixels changed (0.13%), outside view, highlight [anchors] on 24 parts
+PASS  europa: gas spring  904 of 432480 pixels changed (0.21%), inside view, highlight [gasSpring] on 2 parts
+PASS  europa: shelves  23721 of 432480 pixels changed (5.48%), inside view, highlight [shelves:std] on 16 parts
+PASS  europa: deepShelves  52829 of 432480 pixels changed (12.22%), inside view, highlight [shelves:deep] on 8 parts
+PASS  europa: rails  39113 of 432480 pixels changed (9.04%), inside view, highlight [rails] on 4 parts
+PASS  europa: toolHangers  12565 of 432480 pixels changed (2.91%), inside view, highlight [toolHangers] on 24 parts
+PASS  europa: doorBaskets  18377 of 432480 pixels changed (4.25%), inside view, highlight [doorBaskets] on 18 parts
+PASS  europa: shelfBaskets  14484 of 432480 pixels changed (3.35%), inside view, highlight [shelfBaskets] on 18 parts
+PASS  europa: hookSet  2208 of 432480 pixels changed (0.51%), inside view, highlight [hooks] on 8 parts
+PASS  europa: suspension  7248 of 432480 pixels changed (1.68%), inside view, highlight [suspension] on 2 parts
+PASS  europa: mountPanel  39065 of 432480 pixels changed (9.03%), inside view, highlight [mountPanel] on 3 parts
+PASS  europa: table  26182 of 432480 pixels changed (6.05%), inside view, highlight [table] on 4 parts
+PASS  europa: bikeMax  49209 of 432480 pixels changed (11.38%), inside view, highlight [bikeMax] on 14 parts
+PASS  europa: bikeHolder  56731 of 432480 pixels changed (13.12%), inside view, highlight [bikeHolder] on 28 parts
+PASS  europa: binBag  15577 of 432480 pixels changed (3.60%), inside view, highlight [binBag] on 2 parts
+PASS  europa: BikeLift standard  96514 of 432480 pixels changed (22.32%), inside view, highlight [bikeLift] on 14 parts
+PASS  panorama: range  63558 of 432480 pixels changed (14.70%), outside view, highlight [] on 0 parts
+PASS  panorama: size P1  150745 of 432480 pixels changed (34.86%), outside view, highlight [] on 0 parts
+PASS  panorama: size P2  106197 of 432480 pixels changed (24.56%), outside view, highlight [] on 0 parts
+PASS  panorama: size P4  92261 of 432480 pixels changed (21.33%), outside view, highlight [] on 0 parts
+PASS  panorama: size P5  119665 of 432480 pixels changed (27.67%), outside view, highlight [] on 0 parts
+PASS  panorama: colour silver  156972 of 432480 pixels changed (36.30%), outside view, highlight [walls] on 40 parts
+PASS  panorama: colour quartz  156799 of 432480 pixels changed (36.26%), outside view, highlight [walls] on 40 parts
+PASS  panorama: double door  25972 of 432480 pixels changed (6.01%), outside view, highlight [door:main] on 10 parts
+PASS  panorama: door position  39434 of 432480 pixels changed (9.12%), outside view, highlight [door:main] on 9 parts
+PASS  panorama: left hinge  668 of 432480 pixels changed (0.15%), outside view, highlight [door:main] on 9 parts
+PASS  panorama: add door  10945 of 432480 pixels changed (2.53%), outside view, highlight [opening:n1] on 7 parts
+PASS  panorama: add double  19487 of 432480 pixels changed (4.51%), outside view, highlight [opening:n1] on 8 parts
+PASS  panorama: add window  44470 of 432480 pixels changed (10.28%), outside view, highlight [opening:n1] on 9 parts
+PASS  panorama: move an element along its wall  15685 of 432480 pixels changed (3.63%), outside view, highlight [opening:n1] on 7 parts
+PASS  panorama: remove an element  6857 of 432480 pixels changed (1.59%), outside view, highlight [wall:left] on 7 parts
+PASS  panorama: downpipe front  4180 of 432480 pixels changed (0.97%), outside view, highlight [downpipe] on 4 parts
+PASS  panorama: downpipe rear  8879 of 432480 pixels changed (2.05%), outside view, highlight [downpipe] on 4 parts
+PASS  panorama: PV mounting  8660 of 432480 pixels changed (2.00%), outside view, highlight [pv] on 6 parts
+PASS  panorama: FloraBoard  13105 of 432480 pixels changed (3.03%), outside view, highlight [floraboard] on 16 parts
+PASS  panorama: solar light  3478 of 432480 pixels changed (0.80%), outside view, highlight [solar] on 3 parts
+PASS  panorama: LED light  1450 of 432480 pixels changed (0.34%), inside view, highlight [led] on 2 parts
+PASS  panorama: foundation frame  20720 of 432480 pixels changed (4.79%), outside view, highlight [foundation] on 7 parts
+PASS  panorama: foundation smartbase  25855 of 432480 pixels changed (5.98%), outside view, highlight [foundation] on 27 parts
+PASS  panorama: foundation smartbaseplus  30538 of 432480 pixels changed (7.06%), outside view, highlight [foundation] on 27 parts
+PASS  panorama: floor panels  212696 of 432480 pixels changed (49.18%), inside view, highlight [floorPlate] on 1 parts
+PASS  panorama: threshold ramp  62363 of 432480 pixels changed (14.42%), outside view, highlight [ramp] on 1 parts
+PASS  panorama: shelves  7701 of 432480 pixels changed (1.78%), inside view, highlight [shelves:std] on 16 parts
+PASS  panorama: deepShelves  19066 of 432480 pixels changed (4.41%), inside view, highlight [shelves:deep] on 8 parts
+PASS  panorama: rails  21666 of 432480 pixels changed (5.01%), inside view, highlight [rails] on 4 parts
+PASS  panorama: toolHangers  17526 of 432480 pixels changed (4.05%), inside view, highlight [toolHangers] on 24 parts
+PASS  panorama: toolHolders  2701 of 432480 pixels changed (0.62%), inside view, highlight [toolHolders] on 4 parts
+PASS  panorama: doorBaskets  5793 of 432480 pixels changed (1.34%), inside view, highlight [doorBaskets] on 18 parts
+PASS  panorama: shelfBaskets  5125 of 432480 pixels changed (1.19%), inside view, highlight [shelfBaskets] on 18 parts
+PASS  panorama: hookSet  1239 of 432480 pixels changed (0.29%), inside view, highlight [hooks] on 8 parts
+PASS  panorama: suspension  4403 of 432480 pixels changed (1.02%), inside view, highlight [suspension] on 2 parts
+PASS  panorama: mountPanel  37404 of 432480 pixels changed (8.65%), inside view, highlight [mountPanel] on 3 parts
+PASS  panorama: table  6983 of 432480 pixels changed (1.61%), inside view, highlight [table] on 4 parts
+PASS  panorama: bikeMax  19391 of 432480 pixels changed (4.48%), inside view, highlight [bikeMax] on 14 parts
+PASS  panorama: bikeHolder  32179 of 432480 pixels changed (7.44%), inside view, highlight [bikeHolder] on 28 parts
+PASS  panorama: binBag  24004 of 432480 pixels changed (5.55%), inside view, highlight [binBag] on 2 parts
+PASS  panorama: BikeLift standard  36129 of 432480 pixels changed (8.35%), inside view, highlight [bikeLift] on 14 parts
+PASS  panorama: BikeLift swivel  36129 of 432480 pixels changed (8.35%), inside view, highlight [bikeLift] on 14 parts
+PASS  neo: range  107961 of 432480 pixels changed (24.96%), outside view, highlight [] on 0 parts
+PASS  neo: size 1A  182133 of 432480 pixels changed (42.11%), outside view, highlight [] on 0 parts
+PASS  neo: size 2A  132288 of 432480 pixels changed (30.59%), outside view, highlight [] on 0 parts
+PASS  neo: size 3A  131009 of 432480 pixels changed (30.29%), outside view, highlight [] on 0 parts
+PASS  neo: size 4A  148349 of 432480 pixels changed (34.30%), outside view, highlight [] on 0 parts
+PASS  neo: size 1B  114645 of 432480 pixels changed (26.51%), outside view, highlight [] on 0 parts
+PASS  neo: size 3B  95040 of 432480 pixels changed (21.98%), outside view, highlight [] on 0 parts
+PASS  neo: size 4B  134651 of 432480 pixels changed (31.13%), outside view, highlight [] on 0 parts
+PASS  neo: size 1C  132758 of 432480 pixels changed (30.70%), outside view, highlight [] on 0 parts
+PASS  neo: size 2C  115290 of 432480 pixels changed (26.66%), outside view, highlight [] on 0 parts
+PASS  neo: size 3C  145060 of 432480 pixels changed (33.54%), outside view, highlight [] on 0 parts
+PASS  neo: size 4C  160140 of 432480 pixels changed (37.03%), outside view, highlight [] on 0 parts
+PASS  neo: size 1D  172973 of 432480 pixels changed (40.00%), outside view, highlight [] on 0 parts
+PASS  neo: size 2D  141077 of 432480 pixels changed (32.62%), outside view, highlight [] on 0 parts
+PASS  neo: size 3D  156707 of 432480 pixels changed (36.23%), outside view, highlight [] on 0 parts
+PASS  neo: size 4D  167271 of 432480 pixels changed (38.68%), outside view, highlight [] on 0 parts
+PASS  neo: colour silver  192228 of 432480 pixels changed (44.45%), outside view, highlight [walls] on 31 parts
+PASS  neo: colour quartz  192228 of 432480 pixels changed (44.45%), outside view, highlight [walls] on 31 parts
+PASS  neo: double door  23917 of 432480 pixels changed (5.53%), outside view, highlight [door:main] on 16 parts
+PASS  neo: door on the left  17147 of 432480 pixels changed (3.96%), outside view, highlight [door:main] on 12 parts
+PASS  neo: door on the right  8936 of 432480 pixels changed (2.07%), outside view, highlight [door:main] on 12 parts
+PASS  neo: door position  42636 of 432480 pixels changed (9.86%), outside view, highlight [door:main] on 12 parts
+PASS  neo: add door  12251 of 432480 pixels changed (2.83%), outside view, highlight [opening:n1] on 10 parts
+PASS  neo: add double  4588 of 432480 pixels changed (1.06%), outside view, highlight [opening:n1] on 14 parts
+PASS  neo: add glassPanel  26533 of 432480 pixels changed (6.14%), outside view, highlight [opening:n1] on 4 parts
+PASS  neo: move an element along its wall  23373 of 432480 pixels changed (5.40%), outside view, highlight [opening:n1] on 10 parts
+PASS  neo: remove an element  9453 of 432480 pixels changed (2.19%), outside view, highlight [wall:left] on 5 parts
+PASS  neo: canopy left on  97064 of 432480 pixels changed (22.44%), outside view, highlight [canopy:left] on 5 parts
+PASS  neo: canopy left on back wall  39123 of 432480 pixels changed (9.05%), outside view, highlight [canopyWall:left:back] on 1 parts
+PASS  neo: canopy left on side wall  64443 of 432480 pixels changed (14.90%), outside view, highlight [canopyWall:left:side] on 1 parts
+PASS  neo: canopy right on  71825 of 432480 pixels changed (16.61%), outside view, highlight [canopy:right] on 5 parts
+PASS  neo: canopy right on back wall  46245 of 432480 pixels changed (10.69%), outside view, highlight [canopyWall:right:back] on 1 parts
+PASS  neo: canopy right on side wall  54306 of 432480 pixels changed (12.56%), outside view, highlight [canopyWall:right:side] on 1 parts
+PASS  neo: canopy glass panel  11243 of 432480 pixels changed (2.60%), outside view, highlight [canopyGlass] on 8 parts
+PASS  neo: canopy FloraBoard  8895 of 432480 pixels changed (2.06%), outside view, highlight [canopyFlora] on 16 parts
+PASS  neo: PV mounting  8764 of 432480 pixels changed (2.03%), outside view, highlight [pv] on 6 parts
+PASS  neo: FloraBoard  14595 of 432480 pixels changed (3.37%), outside view, highlight [floraboard] on 16 parts
+PASS  neo: solar light  3638 of 432480 pixels changed (0.84%), outside view, highlight [solar] on 3 parts
+PASS  neo: LED light  1092 of 432480 pixels changed (0.25%), inside view, highlight [led] on 2 parts
+PASS  neo: foundation frame  10826 of 432480 pixels changed (2.50%), outside view, highlight [foundation] on 7 parts
+PASS  neo: foundation smartbase  16085 of 432480 pixels changed (3.72%), outside view, highlight [foundation] on 27 parts
+PASS  neo: foundation smartbaseplus  19706 of 432480 pixels changed (4.56%), outside view, highlight [foundation] on 27 parts
+PASS  neo: floor panels  186763 of 432480 pixels changed (43.18%), inside view, highlight [floorPlate] on 1 parts
+PASS  neo: threshold ramp  70085 of 432480 pixels changed (16.21%), outside view, highlight [ramp] on 1 parts
+PASS  neo: interior panelling  277791 of 432480 pixels changed (64.23%), inside view, highlight [panelling] on 5 parts
+PASS  neo: insulation  8291 of 432480 pixels changed (1.92%), inside view, highlight [insulation] on 5 parts
+PASS  neo: shelves  4991 of 432480 pixels changed (1.15%), inside view, highlight [shelves:std] on 16 parts
+PASS  neo: deepShelves  13957 of 432480 pixels changed (3.23%), inside view, highlight [shelves:deep] on 8 parts
+PASS  neo: toolHangers  2581 of 432480 pixels changed (0.60%), inside view, highlight [toolHangers] on 12 parts
+PASS  neo: toolHolders  1135 of 432480 pixels changed (0.26%), inside view, highlight [toolHolders] on 4 parts
+PASS  neo: doorBaskets  551 of 432480 pixels changed (0.13%), inside view, highlight [doorBaskets] on 18 parts
+PASS  neo: shelfBaskets  1173 of 432480 pixels changed (0.27%), inside view, highlight [shelfBaskets] on 18 parts
+PASS  neo: hookSet  947 of 432480 pixels changed (0.22%), inside view, highlight [hooks] on 8 parts
+PASS  neo: suspension  4105 of 432480 pixels changed (0.95%), inside view, highlight [suspension] on 2 parts
+PASS  neo: mountPanel  2327 of 432480 pixels changed (0.54%), inside view, highlight [mountPanel] on 3 parts
+PASS  neo: bikeMax  14021 of 432480 pixels changed (3.24%), inside view, highlight [bikeMax] on 14 parts
+PASS  neo: bikeHolder  22533 of 432480 pixels changed (5.21%), inside view, highlight [bikeHolder] on 27 parts
+PASS  neo: binBag  23286 of 432480 pixels changed (5.38%), inside view, highlight [binBag] on 2 parts
+PASS  neo: BikeLift standard  25922 of 432480 pixels changed (5.99%), inside view, highlight [bikeLift] on 14 parts
+PASS  neo: BikeLift swivel  25922 of 432480 pixels changed (5.99%), inside view, highlight [bikeLift] on 14 parts
+PASS  casanova: range  136859 of 432480 pixels changed (31.65%), outside view, highlight [] on 0 parts
+PASS  casanova: size 3x2  167553 of 432480 pixels changed (38.74%), outside view, highlight [] on 0 parts
+PASS  casanova: size 3x3  109903 of 432480 pixels changed (25.41%), outside view, highlight [] on 0 parts
+PASS  casanova: size 3x5  85860 of 432480 pixels changed (19.85%), outside view, highlight [] on 0 parts
+PASS  casanova: size 3x6  109856 of 432480 pixels changed (25.40%), outside view, highlight [] on 0 parts
+PASS  casanova: size 4x2  170121 of 432480 pixels changed (39.34%), outside view, highlight [] on 0 parts
+PASS  casanova: size 4x4  93485 of 432480 pixels changed (21.62%), outside view, highlight [] on 0 parts
+PASS  casanova: size 4x5  113462 of 432480 pixels changed (26.24%), outside view, highlight [] on 0 parts
+PASS  casanova: size 4x6  121377 of 432480 pixels changed (28.07%), outside view, highlight [] on 0 parts
+PASS  casanova: colour quartz  131858 of 432480 pixels changed (30.49%), outside view, highlight [walls] on 43 parts
+PASS  casanova: door on the left  2228 of 432480 pixels changed (0.52%), outside view, highlight [door:main] on 12 parts
+PASS  casanova: door on the right  1249 of 432480 pixels changed (0.29%), outside view, highlight [door:main] on 12 parts
+PASS  casanova: door on the back  1834 of 432480 pixels changed (0.42%), outside view, highlight [door:main] on 12 parts
+PASS  casanova: door position  23892 of 432480 pixels changed (5.52%), outside view, highlight [door:main] on 12 parts
+PASS  casanova: left hinge  591 of 432480 pixels changed (0.14%), outside view, highlight [door:main] on 12 parts
+PASS  casanova: double door  16215 of 432480 pixels changed (3.75%), outside view, highlight [door:main] on 16 parts
+PASS  casanova: glass insert  3795 of 432480 pixels changed (0.88%), outside view, highlight [door:main] on 10 parts
+PASS  casanova: sectional door  163982 of 432480 pixels changed (37.92%), outside view, highlight [door:main] on 8 parts
+PASS  casanova: sectional door, electric  1915 of 432480 pixels changed (0.44%), outside view, highlight [door:main] on 9 parts
+PASS  casanova: add door  2048 of 432480 pixels changed (0.47%), outside view, highlight [opening:n1] on 10 parts
+PASS  casanova: add glassElement  78970 of 432480 pixels changed (18.26%), outside view, highlight [opening:n1] on 8 parts
+PASS  casanova: add tiltWindow  60514 of 432480 pixels changed (13.99%), outside view, highlight [opening:n1] on 9 parts
+PASS  casanova: move an element along its wall  3054 of 432480 pixels changed (0.71%), outside view, highlight [opening:n1] on 10 parts
+PASS  casanova: remove an element  755 of 432480 pixels changed (0.17%), outside view, highlight [wall:left] on 9 parts
+PASS  casanova: additional door left hinge  590 of 432480 pixels changed (0.14%), outside view, highlight [opening:n1] on 10 parts
+PASS  casanova: additional door glass  58146 of 432480 pixels changed (13.44%), outside view, highlight [opening:n1] on 8 parts
+PASS  casanova: downpipe front  5329 of 432480 pixels changed (1.23%), outside view, highlight [downpipe] on 4 parts
+PASS  casanova: double glazed light band  163 of 432480 pixels changed (0.04%), outside view, highlight [doubleGlazing] on 18 parts
+PASS  casanova: grey white roof supports  32871 of 432480 pixels changed (7.60%), inside view, highlight [roofSupport, roofBars] on 3 parts
+PASS  casanova: external lighting front  110 of 432480 pixels changed (0.03%), outside view, highlight [extLight:front] on 6 parts
+PASS  casanova: external lighting left  112 of 432480 pixels changed (0.03%), outside view, highlight [extLight:left] on 8 parts
+PASS  casanova: external lighting right  102 of 432480 pixels changed (0.02%), outside view, highlight [extLight:right] on 8 parts
+PASS  casanova: external lighting back  109 of 432480 pixels changed (0.03%), outside view, highlight [extLight:back] on 6 parts
+PASS  casanova: sauna left  218049 of 432480 pixels changed (50.42%), inside view, highlight [sauna] on 7 parts
+PASS  casanova: sauna right  223476 of 432480 pixels changed (51.67%), inside view, highlight [sauna] on 7 parts
+PASS  casanova: foundation frame  13794 of 432480 pixels changed (3.19%), outside view, highlight [foundation] on 7 parts
+PASS  casanova: floor panels  216039 of 432480 pixels changed (49.95%), inside view, highlight [floorPlate] on 1 parts
+PASS  casanova: threshold ramp  58972 of 432480 pixels changed (13.64%), outside view, highlight [ramp] on 1 parts
+PASS  casanova: shelves  4372 of 432480 pixels changed (1.01%), inside view, highlight [shelves:std] on 8 parts
+PASS  casanova: deepShelves  5155 of 432480 pixels changed (1.19%), inside view, highlight [shelves:deep] on 8 parts
+PASS  casanova: cornerShelves  4372 of 432480 pixels changed (1.01%), inside view, highlight [shelves:std] on 8 parts
+PASS  casanova: cornerDeepShelves  5155 of 432480 pixels changed (1.19%), inside view, highlight [shelves:deep] on 8 parts
+PASS  casanova: rails  1814 of 432480 pixels changed (0.42%), inside view, highlight [rails] on 2 parts
+PASS  casanova: hookSet  2813 of 432480 pixels changed (0.65%), inside view, highlight [hooks] on 8 parts
+PASS  casanova: cornerHookSet  683 of 432480 pixels changed (0.16%), inside view, highlight [hooks] on 8 parts
+PASS  casanova: mountPanel  22992 of 432480 pixels changed (5.32%), inside view, highlight [mountPanel] on 3 parts
+PASS  casanova: mountPanelCoated  11237 of 432480 pixels changed (2.60%), inside view, highlight [mountPanel] on 3 parts
+PASS  casanova: table  2433 of 432480 pixels changed (0.56%), inside view, highlight [table] on 4 parts
+PASS  casanova: bikeMax  5884 of 432480 pixels changed (1.36%), inside view, highlight [bikeMax] on 14 parts
+PASS  no page errors during the sweep
+293 options checked, 0 failed

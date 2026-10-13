@@ -1,0 +1,43 @@
+PASS  iPhone: 3D starts  {"tier":"medium","ratio":1.5,"highlight":0,"lost":false,"broken":null,"textures":10,"failures":0,"scale":0.5,"webgl":2}
+PASS  iPhone: phone tier (half-size textures, ratio <= 1.5)
+PASS  iPhone: canvases released after upload  0MB live
+PASS  iPhone: canvas memory stays small across every range and colour  {"designs":24,"peak":0.5,"maxTextures":18,"after":0.5,"lost":false}
+PASS  iPhone: texture cache stays bounded  18 textures at most
+PASS  iPhone: PDF capture at 1440 x 900  1440 x 900
+PASS  iPhone: no page errors
+PASS  Lost context: preview rebuilds itself  {"tier":"low","ratio":1.25,"highlight":0,"lost":false,"broken":null,"textures":10,"failures":0,"scale":0.5,"webgl":2}
+PASS  Lost context: rebuilt at the light tier
+PASS  Lost context: old canvas removed, one live context  1 canvases, 1 contexts
+PASS  Repeated loss: low, then safe, then the SVG 3D  medium -> low: context lost in view / low -> safe: context lost in view / safe -> svg: context lost in view
+PASS  No WebGL: the 3D is drawn as SVG  {"tier":"svg","ratio":1,"highlight":0,"lost":false,"broken":null,"textures":10,"failures":0,"scale":0.5,"webgl":0,"svg":{"faces":1789,"paths":1563,"ms":10}}
+PASS  No WebGL: outside, inside and plan all draw  {"inside":780,"plan":1132,"outside":1563}
+PASS  No WebGL: an SVG frame draws fast enough to orbit  10ms
+PASS  No WebGL: no page errors (CSP allows the SVG)
+PASS  WebGL1 only: 3D starts on the r162 build  {"tier":"low","ratio":1.25,"highlight":0,"lost":false,"broken":null,"textures":10,"failures":0,"scale":0.5,"webgl":1}
+PASS  WebGL1 only: no page errors
+PASS  Canvas budget spent: 3D still starts with flat colours  {"tier":"medium","ratio":1.5,"highlight":0,"lost":false,"broken":null,"textures":10,"failures":9,"scale":0.5,"webgl":2}
+PASS  No shader links: safe tier tried, then the SVG 3D  medium -> safe: shader / safe -> svg: shader
+PASS  No shader links: no WebGL context left behind  0 live
+PASS  Full shaders fail, simple ones link: real 3D on the safe tier  medium -> safe: shader
+PASS  Full shaders fail: one live context, one canvas  1 contexts, 1 canvases
+PASS  Safe tier: the PDF still gets real renders
+PASS  GPU draws nothing: detected, safe tried, then the SVG 3D  medium -> safe: blank / safe -> svg: blank
+PASS  GPU draws nothing: no WebGL context left behind  0 live
+PASS  Setup fault after the context exists: one rung down, still WebGL  medium -> low: setup failed
+PASS  Setup fault: the failed attempt left no context or canvas behind  1 contexts, 1 canvases
+PASS  Early reloads are not crashes: full phone 3D on the next load  medium
+PASS  Early reloads: one live context (the probe releases its own)  1 live
+PASS  Crash guard: the tab died building medium -> starts at low  low
+PASS  Crash guard: cleared after a good frame; low is this device's ceiling for a day  [null,"low"]
+PASS  Crash guard: the tab died building low -> starts at safe  safe
+PASS  Crash guard: cleared after a good frame; safe is this device's ceiling for a day  [null,"safe"]
+PASS  ?debug3d: panel names the tier, WebGL level, GPU and each boot step  3D: medium | WebGL 2 | GPU: Apple GPU
+PASS  Low memory (1GB): starts on the light tier, real 3D  {"tier":"low","ratio":1.25,"highlight":0,"lost":false,"broken":null,"textures":10,"failures":0,"scale":0.5,"webgl":2}
+PASS  Low memory: no page errors
+PASS  Android, no WebGL: the 3D is drawn as SVG  {"tier":"svg","ratio":1,"highlight":0,"lost":false,"broken":null,"textures":10,"failures":0,"scale":0.5,"webgl":0,"svg":{"faces":1807,"paths":1589,"ms":10}}
+PASS  Android, no WebGL: no page errors
+PASS  Android, dropped 3D: rebuilt with one live context  low, 1 contexts
+PASS  Android, full shaders won't load: real 3D on the safe tier  medium -> safe: shader
+PASS  Android Chrome: 3D starts at the phone tier  {"tier":"medium","ratio":1.5,"highlight":0,"lost":false,"broken":null,"textures":10,"failures":0,"scale":0.5,"webgl":2}
+PASS  Android Chrome: no page errors
+All mobile 3D checks passed

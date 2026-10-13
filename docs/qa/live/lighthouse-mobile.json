@@ -1,0 +1,74 @@
+[
+ {
+  "run": 1,
+  "scores": {
+   "performance": 100,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100,
+   "agentic-browsing": 100
+  },
+  "first-contentful-paint": "1.1 s",
+  "largest-contentful-paint": "1.4 s",
+  "total-blocking-time": "0 ms",
+  "cumulative-layout-shift": "0",
+  "speed-index": "1.7 s",
+  "lighthouse": "13.4.1",
+  "url": "https://biohort-garden-room-configurator.netlify.app/configurator/#d=b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkifQ",
+  "formFactor": "mobile",
+  "failing": [
+   "image-delivery-insight",
+   "legacy-javascript-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ]
+ },
+ {
+  "run": 2,
+  "scores": {
+   "performance": 100,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100,
+   "agentic-browsing": 100
+  },
+  "first-contentful-paint": "0.8 s",
+  "largest-contentful-paint": "1.4 s",
+  "total-blocking-time": "0 ms",
+  "cumulative-layout-shift": "0.049",
+  "speed-index": "1.7 s",
+  "lighthouse": "13.4.1",
+  "url": "https://biohort-garden-room-configurator.netlify.app/configurator/#d=b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkifQ",
+  "formFactor": "mobile",
+  "failing": [
+   "image-delivery-insight",
+   "legacy-javascript-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ]
+ },
+ {
+  "run": 3,
+  "scores": {
+   "performance": 100,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100,
+   "agentic-browsing": 100
+  },
+  "first-contentful-paint": "1.1 s",
+  "largest-contentful-paint": "1.5 s",
+  "total-blocking-time": "0 ms",
+  "cumulative-layout-shift": "0",
+  "speed-index": "2.6 s",
+  "lighthouse": "13.4.1",
+  "url": "https://biohort-garden-room-configurator.netlify.app/configurator/#d=b1.eyJyIjoiaGlnaGxpbmUiLCJ6IjoiSDMiLCJjIjoiZGFya2dyZXkifQ",
+  "formFactor": "mobile",
+  "failing": [
+   "image-delivery-insight",
+   "legacy-javascript-insight",
+   "network-dependency-tree-insight",
+   "render-blocking-insight"
+  ]
+ }
+]

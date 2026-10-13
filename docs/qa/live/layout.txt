@@ -1,0 +1,35 @@
+PASS  320x568: no sideways scroll, every target 44px+
+PASS  320x568: no page errors
+PASS  320x568 neo: no sideways scroll, every target 44px+
+PASS  320x568 neo: no page errors
+PASS  320x568 casanova: no sideways scroll, every target 44px+
+PASS  320x568 casanova: no page errors
+PASS  360x740: no sideways scroll, every target 44px+
+PASS  360x740: no page errors
+PASS  360x740 neo: no sideways scroll, every target 44px+
+PASS  360x740 neo: no page errors
+PASS  360x740 casanova: no sideways scroll, every target 44px+
+PASS  360x740 casanova: no page errors
+PASS  375x812: no sideways scroll, every target 44px+
+PASS  375x812: no page errors
+PASS  375x812 neo: no sideways scroll, every target 44px+
+PASS  375x812 neo: no page errors
+PASS  375x812 casanova: no sideways scroll, every target 44px+
+PASS  375x812 casanova: no page errors
+PASS  390x844: no sideways scroll, every target 44px+
+PASS  390x844: no page errors
+PASS  390x844 neo: no sideways scroll, every target 44px+
+PASS  390x844 neo: no page errors
+PASS  390x844 casanova: no sideways scroll, every target 44px+
+PASS  390x844 casanova: no page errors
+PASS  768x1024: no sideways scroll, every target 44px+
+PASS  768x1024: no page errors
+PASS  768x1024 neo: no sideways scroll, every target 44px+
+PASS  768x1024 neo: no page errors
+PASS  768x1024 casanova: no sideways scroll, every target 44px+
+PASS  768x1024 casanova: no page errors
+PASS  1024x768: no sideways scroll, every target 44px+
+PASS  1024x768: no page errors
+PASS  1440x900: no sideways scroll, every target 44px+
+PASS  1440x900: no page errors
+All layout checks passed

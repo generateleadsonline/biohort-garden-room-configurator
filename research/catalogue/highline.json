@@ -1,0 +1,2405 @@
+{
+ "range": "HighLine",
+ "tagline": "Stylish metal garden shed with flat roof",
+ "sourceUrls": [
+  "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+  "https://www.biohort.com/gb-en/p/garden-shed-highline/83010?country_id=gb (variant pages carry the same content; variant names come from embedded url_key, e.g. highline-garden-shed-hs-metallic-silver-standard-door)",
+  "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+  "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf",
+  "https://www.biohort.com/asset/downloads/files/sonstige/HighLine_Einreichplan_H1-H2.pdf",
+  "https://www.biohort.com/asset/downloads/files/sonstige/HighLine_Einreichplan_H3-H4-H5-H6.pdf"
+ ],
+ "checked": "2026-10-13",
+ "priceBasis": "GBP incl. 20% VAT as shown (\"Incl. 20 % VAT, price valid in GB\"); per-SKU prices from the page JSON-LD Product offers, cross-checked against the embedded variant data (no differences).",
+ "fromPriceGBP": 2029,
+ "colours": [
+  {
+   "name": "Metallic silver",
+   "skuPrefix": "83",
+   "dataSheetColumnLabel": "Silver-metallic",
+   "note": "shop variant data and image filenames (83xxx_..._silber) map 83xxx to silver; the data sheet prints 83xxx under the \"Quartz grey-metallic\" column - see CONFLICTS-a.md H1"
+  },
+  {
+   "name": "Metallic dark grey",
+   "skuPrefix": "84",
+   "dataSheetColumnLabel": "Dark grey-metallic",
+   "note": "shop/variant data and image filename 84039_HighLine_H2_dunkelgrau map 84xxx to dark grey; data sheet prints 84xxx under \"Silver-metallic\""
+  },
+  {
+   "name": "Metallic quartz grey",
+   "skuPrefix": "88",
+   "dataSheetColumnLabel": "Quartz grey-metallic",
+   "note": "shop variant data and image filenames (88xxx_..._quarzgrau) map 88xxx to quartz grey; data sheet prints 88xxx under \"Dark grey-metallic\""
+  }
+ ],
+ "colourNotes": [
+  "The interior of the HighLine garden shed is always grey white and the roof surface is always metallic quartz grey (Colours & Sizes tab).",
+  "Last two SKU digits: x0 = standard door, x9 = double door (from EAN/SKU pairs in the data sheet). Size digit: 1=HS, 2=H1, 3=H2, 4=H3, 5=H4, 6=H5, 7=H6."
+ ],
+ "sellingPoints": [
+  "Flat Roof Aesthetics for Your Storage Space",
+  "Modern flat roof with acrylic glass panel for optimal light incidence",
+  "Double the sheet steel thickness compared to low-cost providers",
+  "Optional side canopy available",
+  "Maintenance-free for life - 20-year guarantee subject to Biohort's warranty terms and conditions."
+ ],
+ "advantages": {
+  "Functionality": [
+   "360° acrylic glass panels provide sufficient light inside from all sides",
+   "Integrated gutter with a connection for a 1 1/4\" hose",
+   "Gutter with integrated leaf traps on both sides",
+   "Comfortable door opening with gas spring"
+  ],
+  "Security": [
+   "3-way locking mechanism complete with stainless steel door handle",
+   "Robust roof construction for a snow load of up to 150 kg/m²",
+   "Storm-proof up to wind force 12 (according to the Beaufort Scale: hurricane)* (* with professional assembly and anchoring)"
+  ],
+  "Quality at its best": [
+   "Top quality materials: galvanised, polyamide enamel coated steel plate, screws and hinges made of stainless steel",
+   "Maintenance-free for life",
+   "20-year guarantee subject to Biohort's warranty terms and conditions."
+  ]
+ },
+ "standardEquipment": [
+  "Stainless steel door handle, complete with standard cylinder; 3-way locking mechanism; with spare key",
+  "Gas spring: assists opening and closing, holds the door open or closed",
+  "Gutters with integrated leaf traps, with hose connection",
+  "Ventilation slots",
+  "Acrylic glass skylight: 360° acrylic glass panels",
+  "Shelves / support rails: two shelves (length 24.5 cm, width 72 cm) and two support rails; galvanised steel plate; max. load 15 kg per shelf",
+  "Tool hangers: 4 pcs.",
+  "Tool holder on the inside of the door panel: 2 pcs. (max. five per door panel)"
+ ],
+ "guarantee": "20-year guarantee subject to Biohort's warranty terms and conditions. FAQ: covers corrosion of metal parts and defective or unusable parts; statutory 24-month warranty only for wear, moving parts, colour changes, electrical, plastic and rubber parts.",
+ "delivery": "Free Shipping within 3 weeks (product page and every variant's delivery_message). FAQ: free kerbside delivery; Great Britain listed among free-kerbside countries (mainland, road passable for a 38-tonne lorry).",
+ "packaging": "Packed in seven to eleven boxes, photo-illustrated assembly manual included",
+ "steelThickness": "No figure published. Page says \"Double the sheet steel thickness compared to low-cost providers\"; comparison table: \"Galvanised with protective zinc layer of at least 150 g/m² and polyamide enamel coating (same for all garden sheds)\".",
+ "roof": "Modern flat roof with 360° acrylic glass skylight panels; roof surface always metallic quartz grey. Snow load 150 kg/m². Wind load 150 km/h | wind force 12 (with professional assembly and anchoring).",
+ "doors": [
+  {
+   "variant": "standard door",
+   "openingCm": {
+    "w": 76,
+    "h": 182
+   },
+   "hinge": "right door hinge",
+   "sizes": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (Colours & Sizes; comparison table \"SD: 76 x 182 cm\")"
+  },
+  {
+   "variant": "double door",
+   "openingCm": {
+    "w": 155,
+    "h": 182
+   },
+   "sizes": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (Colours & Sizes \"Double doors: 155 x 182 cm\"; comparison table \"DD: 155 x 182 cm\")",
+   "conflict": "Dimension table gives \"Clearance - Width (optional 2nd door) (156)\""
+  }
+ ],
+ "doorPlacement": "Tip (Colours & Sizes): You can rotate the HighLine from size H2 onwards and the standard door can be installed in any side wall. From size H4 onwards, you can also install the double doors in the side wall (off-centre). No double door for HS (no data-sheet row, no offer).",
+ "sideCanopy": "Optional side/front roof can attach from size H2 on the gutter side (one or both sides). Sizes S (150 cm wide) and L (282 cm wide) per the side canopy description; roof surface always metallic quartz grey; only a concrete or point foundation is suitable for the canopy supports.",
+ "groundAnchorsOnGravel": "For size HS, H: 8 pcs. in total; for size H2, H3: 10 pcs. in total; for size H4, H5, H6: 12 pcs. in total (data sheet note, as printed - \"H\" presumably H1).",
+ "bicycleCapacityFAQ": "HighLine/Panorama (max. rim 29\"): H1 3-4, H2 4-5, H3 5-6, H4 6-7, H5 7-8 bicycles (FAQ table; H6 not listed).",
+ "sizes": [
+  {
+   "code": "HS",
+   "variant": "standard door",
+   "dataSheetGroup": "HighLine® with standard door",
+   "exteriorCm": [
+    155,
+    275,
+    222
+   ],
+   "exteriorRaw": "155 x 275 x 222**",
+   "interiorCm": [
+    132,
+    252,
+    210
+   ],
+   "effectiveM2": 3.33,
+   "foundationCm": [
+    137,
+    257
+   ],
+   "weightKg": 213,
+   "skus": {
+    "Metallic silver": "83010",
+    "Metallic quartz grey": "88010",
+    "Metallic dark grey": "84010"
+   },
+   "priceGBP": {
+    "83010": 2029,
+    "88010": 2029,
+    "84010": 2029
+   },
+   "ean": {
+    "83010": "9003414830103",
+    "88010": "9003414880108",
+    "84010": "9003414840102"
+   },
+   "dataSheetColourColumn": {
+    "83010": "Quartz grey-metallic",
+    "88010": "Dark grey-metallic",
+    "84010": "Silver-metallic"
+   },
+   "shopOptionLabel": "HS (155 x 275 x 222 cm) | 3.33 m²",
+   "urlKeys": {
+    "83010": "highline-garden-shed-hs-metallic-silver-standard-door",
+    "88010": "highline-garden-shed-hs-metallic-quartz-grey-standard-door",
+    "84010": "highline-garden-shed-hs-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "source": "Colours & Sizes text \"Standard door (right door hinge): 76 x 182 cm\"; dimension table F=76, clearance height 182"
+   }
+  },
+  {
+   "code": "H1",
+   "variant": "standard door",
+   "dataSheetGroup": "HighLine® with standard door",
+   "exteriorCm": [
+    275,
+    155,
+    222
+   ],
+   "exteriorRaw": "275 x 155 x 222**",
+   "interiorCm": [
+    252,
+    132,
+    210
+   ],
+   "effectiveM2": 3.33,
+   "foundationCm": [
+    257,
+    137
+   ],
+   "weightKg": 205.7,
+   "skus": {
+    "Metallic silver": "83020",
+    "Metallic quartz grey": "88020",
+    "Metallic dark grey": "84020"
+   },
+   "priceGBP": {
+    "83020": 2029,
+    "88020": 2029,
+    "84020": 2029
+   },
+   "ean": {
+    "83020": "9003414830202",
+    "88020": "9003414880207",
+    "84020": "9003414840201"
+   },
+   "dataSheetColourColumn": {
+    "83020": "Quartz grey-metallic",
+    "88020": "Dark grey-metallic",
+    "84020": "Silver-metallic"
+   },
+   "shopOptionLabel": "H1 (275 x 155 x 222 cm) | 3,33 m²",
+   "urlKeys": {
+    "83020": "highline-garden-shed-h1-metallic-silver-standard-door",
+    "88020": "highline-garden-shed-h1-metallic-quartz-grey-standard-door",
+    "84020": "highline-garden-shed-h1-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "source": "Colours & Sizes text \"Standard door (right door hinge): 76 x 182 cm\"; dimension table F=76, clearance height 182"
+   }
+  },
+  {
+   "code": "H2",
+   "variant": "standard door",
+   "dataSheetGroup": "HighLine® with standard door",
+   "exteriorCm": [
+    275,
+    195,
+    222
+   ],
+   "exteriorRaw": "275 x 195 x 222**",
+   "interiorCm": [
+    252,
+    172,
+    210
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    257,
+    177
+   ],
+   "weightKg": 220.2,
+   "skus": {
+    "Metallic silver": "83030",
+    "Metallic quartz grey": "88030",
+    "Metallic dark grey": "84030"
+   },
+   "priceGBP": {
+    "83030": 2319,
+    "88030": 2319,
+    "84030": 2319
+   },
+   "ean": {
+    "83030": "9003414830301",
+    "88030": "9003414880306",
+    "84030": "9003414840300"
+   },
+   "dataSheetColourColumn": {
+    "83030": "Quartz grey-metallic",
+    "88030": "Dark grey-metallic",
+    "84030": "Silver-metallic"
+   },
+   "shopOptionLabel": "H2 (275 x 195 x 222 cm) | 4,33 m²",
+   "urlKeys": {
+    "83030": "highline-garden-shed-h2-metallic-silver-standard-door",
+    "88030": "highline-garden-shed-h2-metallic-quartz-grey-standard-door",
+    "84030": "highline-garden-shed-h2-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "source": "Colours & Sizes text \"Standard door (right door hinge): 76 x 182 cm\"; dimension table F=76, clearance height 182"
+   }
+  },
+  {
+   "code": "H3",
+   "variant": "standard door",
+   "dataSheetGroup": "HighLine® with standard door",
+   "exteriorCm": [
+    275,
+    235,
+    222
+   ],
+   "exteriorRaw": "275 x 235 x 222**",
+   "interiorCm": [
+    252,
+    212,
+    210
+   ],
+   "effectiveM2": 5.34,
+   "foundationCm": [
+    257,
+    217
+   ],
+   "weightKg": 256.6,
+   "skus": {
+    "Metallic silver": "83040",
+    "Metallic quartz grey": "88040",
+    "Metallic dark grey": "84040"
+   },
+   "priceGBP": {
+    "83040": 2699,
+    "88040": 2699,
+    "84040": 2699
+   },
+   "ean": {
+    "83040": "9003414830400",
+    "88040": "9003414880405",
+    "84040": "9003414840409"
+   },
+   "dataSheetColourColumn": {
+    "83040": "Quartz grey-metallic",
+    "88040": "Dark grey-metallic",
+    "84040": "Silver-metallic"
+   },
+   "shopOptionLabel": "H3 (275 x 235 x 222 cm) | 5,34 m²",
+   "urlKeys": {
+    "83040": "highline-garden-shed-h3-metallic-silver-standard-door",
+    "88040": "highline-garden-shed-h3-metallic-quartz-grey-standard-door",
+    "84040": "highline-garden-shed-h3-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "source": "Colours & Sizes text \"Standard door (right door hinge): 76 x 182 cm\"; dimension table F=76, clearance height 182"
+   }
+  },
+  {
+   "code": "H4",
+   "variant": "standard door",
+   "dataSheetGroup": "HighLine® with standard door",
+   "exteriorCm": [
+    275,
+    275,
+    222
+   ],
+   "exteriorRaw": "275 x 275 x 222**",
+   "interiorCm": [
+    252,
+    252,
+    210
+   ],
+   "effectiveM2": 6.35,
+   "foundationCm": [
+    257,
+    257
+   ],
+   "weightKg": 271.8,
+   "skus": {
+    "Metallic silver": "83050",
+    "Metallic quartz grey": "88050",
+    "Metallic dark grey": "84050"
+   },
+   "priceGBP": {
+    "83050": 2899,
+    "88050": 2899,
+    "84050": 2899
+   },
+   "ean": {
+    "83050": "9003414830509",
+    "88050": "9003414880504",
+    "84050": "9003414840508"
+   },
+   "dataSheetColourColumn": {
+    "83050": "Quartz grey-metallic",
+    "88050": "Dark grey-metallic",
+    "84050": "Silver-metallic"
+   },
+   "shopOptionLabel": "H4 (275 x 275 x 222 cm) | 6,35 m²",
+   "urlKeys": {
+    "83050": "highline-garden-shed-h4-metallic-silver-standard-door",
+    "88050": "highline-garden-shed-h4-metallic-quartz-grey-standard-door",
+    "84050": "highline-garden-shed-h4-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "source": "Colours & Sizes text \"Standard door (right door hinge): 76 x 182 cm\"; dimension table F=76, clearance height 182"
+   }
+  },
+  {
+   "code": "H5",
+   "variant": "standard door",
+   "dataSheetGroup": "HighLine® with standard door",
+   "exteriorCm": [
+    275,
+    315,
+    222
+   ],
+   "exteriorRaw": "275 x 315 x 222**",
+   "interiorCm": [
+    252,
+    292,
+    210
+   ],
+   "effectiveM2": 7.36,
+   "foundationCm": [
+    257,
+    297
+   ],
+   "weightKg": 303.8,
+   "skus": {
+    "Metallic silver": "83060",
+    "Metallic quartz grey": "88060",
+    "Metallic dark grey": "84060"
+   },
+   "priceGBP": {
+    "83060": 3199,
+    "88060": 3199,
+    "84060": 3199
+   },
+   "ean": {
+    "83060": "9003414830608",
+    "88060": "9003414880603",
+    "84060": "9003414840607"
+   },
+   "dataSheetColourColumn": {
+    "83060": "Quartz grey-metallic",
+    "88060": "Dark grey-metallic",
+    "84060": "Silver-metallic"
+   },
+   "shopOptionLabel": "H5 (275 x 315 x 222 cm) | 7,36 m²",
+   "urlKeys": {
+    "83060": "highline-garden-shed-h5-metallic-silver-standard-door",
+    "88060": "highline-garden-shed-h5-metallic-quartz-grey-standard-door",
+    "84060": "highline-garden-shed-h5-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "source": "Colours & Sizes text \"Standard door (right door hinge): 76 x 182 cm\"; dimension table F=76, clearance height 182"
+   }
+  },
+  {
+   "code": "H6",
+   "variant": "standard door",
+   "dataSheetGroup": "HighLine® with standard door",
+   "exteriorCm": [
+    314.3,
+    314.3,
+    221
+   ],
+   "exteriorRaw": "314.3 x 314.3 x 221**",
+   "interiorCm": [
+    292,
+    292,
+    210
+   ],
+   "effectiveM2": 8.53,
+   "foundationCm": [
+    297,
+    297
+   ],
+   "weightKg": 347.9,
+   "skus": {
+    "Metallic silver": "83070",
+    "Metallic quartz grey": "88070",
+    "Metallic dark grey": "84070"
+   },
+   "priceGBP": {
+    "83070": 3499,
+    "88070": 3499,
+    "84070": 3499
+   },
+   "ean": {
+    "83070": "9003414830707",
+    "88070": "9003414880702",
+    "84070": "9003414840706"
+   },
+   "dataSheetColourColumn": {
+    "83070": "Quartz grey-metallic",
+    "88070": "Dark grey-metallic",
+    "84070": "Silver-metallic"
+   },
+   "shopOptionLabel": "H6 (314.3 x 314.3 x 222 cm) | 8,53 m²",
+   "urlKeys": {
+    "83070": "highline-garden-shed-h6-metallic-silver-standard-door",
+    "88070": "highline-garden-shed-h6-metallic-quartz-grey-standard-door",
+    "84070": "highline-garden-shed-h6-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "source": "Colours & Sizes text \"Standard door (right door hinge): 76 x 182 cm\"; dimension table F=76, clearance height 182"
+   }
+  },
+  {
+   "code": "H1",
+   "variant": "double door",
+   "dataSheetGroup": "HighLine® with double door",
+   "exteriorCm": [
+    275,
+    155,
+    222
+   ],
+   "exteriorRaw": "275 x 155 x 222**",
+   "interiorCm": [
+    252,
+    132,
+    210
+   ],
+   "effectiveM2": 3.33,
+   "foundationCm": [
+    257,
+    137
+   ],
+   "weightKg": 211.8,
+   "skus": {
+    "Metallic silver": "83029",
+    "Metallic quartz grey": "88029",
+    "Metallic dark grey": "84029"
+   },
+   "priceGBP": {
+    "83029": 2319,
+    "88029": 2319,
+    "84029": 2319
+   },
+   "ean": {
+    "83029": "9003414830295",
+    "88029": "9003414880290",
+    "84029": "9003414840294"
+   },
+   "dataSheetColourColumn": {
+    "83029": "Quartz grey-metallic",
+    "88029": "Dark grey-metallic",
+    "84029": "Silver-metallic"
+   },
+   "shopOptionLabel": "H1 (275 x 155 x 222 cm) | 3,33 m²",
+   "urlKeys": {
+    "83029": "highline-garden-shed-h1-metallic-silver-double-door",
+    "88029": "highline-garden-shed-h1-metallic-quartz-grey-double-door",
+    "84029": "highline-garden-shed-h1-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 155,
+    "h": 182,
+    "source": "Colours & Sizes text \"Double doors: 155 x 182 cm\"; dimension table says \"Clearance - Width (optional 2nd door) (156)\" - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "H2",
+   "variant": "double door",
+   "dataSheetGroup": "HighLine® with double door",
+   "exteriorCm": [
+    275,
+    195,
+    222
+   ],
+   "exteriorRaw": "275 x 195 x 222**",
+   "interiorCm": [
+    252,
+    172,
+    210
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    257,
+    177
+   ],
+   "weightKg": 226.3,
+   "skus": {
+    "Metallic silver": "83039",
+    "Metallic quartz grey": "88039",
+    "Metallic dark grey": "84039"
+   },
+   "priceGBP": {
+    "83039": 2609,
+    "88039": 2609,
+    "84039": 2609
+   },
+   "ean": {
+    "83039": "9003414830394",
+    "88039": "9003414880399",
+    "84039": "9003414840393"
+   },
+   "dataSheetColourColumn": {
+    "83039": "Quartz grey-metallic",
+    "88039": "Dark grey-metallic",
+    "84039": "Silver-metallic"
+   },
+   "shopOptionLabel": "H2 (275 x 195 x 222 cm) | 4,33 m²",
+   "urlKeys": {
+    "83039": "highline-garden-shed-h2-metallic-silver-double-door",
+    "88039": "highline-garden-shed-h2-metallic-quartz-grey-double-door",
+    "84039": "highline-garden-shed-h2-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 155,
+    "h": 182,
+    "source": "Colours & Sizes text \"Double doors: 155 x 182 cm\"; dimension table says \"Clearance - Width (optional 2nd door) (156)\" - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "H3",
+   "variant": "double door",
+   "dataSheetGroup": "HighLine® with double door",
+   "exteriorCm": [
+    275,
+    235,
+    222
+   ],
+   "exteriorRaw": "275 x 235 x 222**",
+   "interiorCm": [
+    252,
+    212,
+    210
+   ],
+   "effectiveM2": 5.34,
+   "foundationCm": [
+    257,
+    217
+   ],
+   "weightKg": 262.7,
+   "skus": {
+    "Metallic silver": "83049",
+    "Metallic quartz grey": "88049",
+    "Metallic dark grey": "84049"
+   },
+   "priceGBP": {
+    "83049": 2949,
+    "88049": 2949,
+    "84049": 2949
+   },
+   "ean": {
+    "83049": "9003414830493",
+    "88049": "9003414880498",
+    "84049": "9003414840492"
+   },
+   "dataSheetColourColumn": {
+    "83049": "Quartz grey-metallic",
+    "88049": "Dark grey-metallic",
+    "84049": "Silver-metallic"
+   },
+   "shopOptionLabel": "H3 (275 x 235 x 222 cm) | 5,34 m²",
+   "urlKeys": {
+    "83049": "highline-garden-shed-h3-metallic-silver-double-door",
+    "88049": "highline-garden-shed-h3-metallic-quartz-grey-double-door",
+    "84049": "highline-garden-shed-h3-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 155,
+    "h": 182,
+    "source": "Colours & Sizes text \"Double doors: 155 x 182 cm\"; dimension table says \"Clearance - Width (optional 2nd door) (156)\" - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "H4",
+   "variant": "double door",
+   "dataSheetGroup": "HighLine® with double door",
+   "exteriorCm": [
+    275,
+    275,
+    222
+   ],
+   "exteriorRaw": "275 x 275 x 222**",
+   "interiorCm": [
+    252,
+    252,
+    210
+   ],
+   "effectiveM2": 6.35,
+   "foundationCm": [
+    257,
+    257
+   ],
+   "weightKg": 277.9,
+   "skus": {
+    "Metallic silver": "83059",
+    "Metallic quartz grey": "88059",
+    "Metallic dark grey": "84059"
+   },
+   "priceGBP": {
+    "83059": 3179,
+    "88059": 3179,
+    "84059": 3179
+   },
+   "ean": {
+    "83059": "9003414830592",
+    "88059": "9003414880597",
+    "84059": "9003414840591"
+   },
+   "dataSheetColourColumn": {
+    "83059": "Quartz grey-metallic",
+    "88059": "Dark grey-metallic",
+    "84059": "Silver-metallic"
+   },
+   "shopOptionLabel": "H4 (275 x 275 x 222 cm) | 6,35 m²",
+   "urlKeys": {
+    "83059": "highline-garden-shed-h4-metallic-silver-double-door",
+    "88059": "highline-garden-shed-h4-metallic-quartz-grey-double-door",
+    "84059": "highline-garden-shed-h4-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 155,
+    "h": 182,
+    "source": "Colours & Sizes text \"Double doors: 155 x 182 cm\"; dimension table says \"Clearance - Width (optional 2nd door) (156)\" - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "H5",
+   "variant": "double door",
+   "dataSheetGroup": "HighLine® with double door",
+   "exteriorCm": [
+    275,
+    315,
+    222
+   ],
+   "exteriorRaw": "275 x 315 x 222**",
+   "interiorCm": [
+    252,
+    292,
+    210
+   ],
+   "effectiveM2": 7.36,
+   "foundationCm": [
+    257,
+    297
+   ],
+   "weightKg": 309.9,
+   "skus": {
+    "Metallic silver": "83069",
+    "Metallic quartz grey": "88069",
+    "Metallic dark grey": "84069"
+   },
+   "priceGBP": {
+    "83069": 3449,
+    "88069": 3449,
+    "84069": 3449
+   },
+   "ean": {
+    "83069": "9003414830691",
+    "88069": "9003414880696",
+    "84069": "9003414840690"
+   },
+   "dataSheetColourColumn": {
+    "83069": "Quartz grey-metallic",
+    "88069": "Dark grey-metallic",
+    "84069": "Silver-metallic"
+   },
+   "shopOptionLabel": "H5 (275 x 315 x 222 cm) | 7,36 m²",
+   "urlKeys": {
+    "83069": "highline-garden-shed-h5-metallic-silver-double-door",
+    "88069": "highline-garden-shed-h5-metallic-quartz-grey-double-door",
+    "84069": "highline-garden-shed-h5-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 155,
+    "h": 182,
+    "source": "Colours & Sizes text \"Double doors: 155 x 182 cm\"; dimension table says \"Clearance - Width (optional 2nd door) (156)\" - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "H6",
+   "variant": "double door",
+   "dataSheetGroup": "HighLine® with double door",
+   "exteriorCm": [
+    314.3,
+    314.3,
+    221
+   ],
+   "exteriorRaw": "314.3 x 314.3 x 221**",
+   "interiorCm": [
+    292,
+    292,
+    210
+   ],
+   "effectiveM2": 8.53,
+   "foundationCm": [
+    297,
+    297
+   ],
+   "weightKg": 354.2,
+   "skus": {
+    "Metallic silver": "83079",
+    "Metallic quartz grey": "88079",
+    "Metallic dark grey": "84079"
+   },
+   "priceGBP": {
+    "83079": 3749,
+    "88079": 3749,
+    "84079": 3749
+   },
+   "ean": {
+    "83079": "9003414830790",
+    "88079": "9003414880795",
+    "84079": "9003414840799"
+   },
+   "dataSheetColourColumn": {
+    "83079": "Quartz grey-metallic",
+    "88079": "Dark grey-metallic",
+    "84079": "Silver-metallic"
+   },
+   "shopOptionLabel": "H6 (314.3 x 314.3 x 222 cm) | 8,53 m²",
+   "urlKeys": {
+    "83079": "highline-garden-shed-h6-metallic-silver-double-door",
+    "88079": "highline-garden-shed-h6-metallic-quartz-grey-double-door",
+    "84079": "highline-garden-shed-h6-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 155,
+    "h": 182,
+    "source": "Colours & Sizes text \"Double doors: 155 x 182 cm\"; dimension table says \"Clearance - Width (optional 2nd door) (156)\" - see CONFLICTS-a.md"
+   }
+  }
+ ],
+ "dimensionTable": {
+  "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (Technical Data: \"Detailed dimensions of the Biohort HighLine Garden Shed and side canopy\", letters refer to sketches)",
+  "columns": [
+   "HS",
+   "H1",
+   "H2",
+   "H3",
+   "H4",
+   "H5",
+   "H6"
+  ],
+  "rows": {
+   "A Width of garden shed (without roof overhang)": [
+    134,
+    254,
+    254,
+    254,
+    254,
+    254,
+    294
+   ],
+   "B Length of garden shed (without roof overhang)": [
+    254,
+    134,
+    174,
+    214,
+    254,
+    294,
+    294
+   ],
+   "C Height of garden shed up to roof flashing": [
+    209.5,
+    209.5,
+    209.5,
+    209.5,
+    209.5,
+    209.5,
+    209.5
+   ],
+   "D Height of roof flashing": [
+    12.5,
+    12.5,
+    12.5,
+    12.5,
+    12.5,
+    12.5,
+    12.5
+   ],
+   "E Overall height of garden shed": [
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222
+   ],
+   "F Clearance - Width": [
+    76,
+    76,
+    76,
+    76,
+    76,
+    76,
+    76
+   ],
+   "F Clearance - Width (optional 2nd door)": [
+    null,
+    156,
+    156,
+    156,
+    156,
+    156,
+    156
+   ],
+   "Clearance - Height": [
+    182,
+    182,
+    182,
+    182,
+    182,
+    182,
+    182
+   ],
+   "H Width of right side": [
+    31,
+    51,
+    51,
+    51,
+    51,
+    51,
+    51
+   ],
+   "J Width of left side": [
+    27,
+    127,
+    127,
+    127,
+    127,
+    127,
+    167
+   ],
+   "K Width of roof": [
+    155,
+    275,
+    275,
+    275,
+    275,
+    275,
+    315
+   ],
+   "K1 Width of roof with side canopy": [
+    null,
+    null,
+    "S: 414 / L: 548",
+    "S: 414 / L: 548",
+    "S: 414 / L: 548",
+    "S: 414 / L: 548",
+    "S: 455 / L: 588"
+   ],
+   "L Length of roof": [
+    275,
+    155,
+    195,
+    235,
+    275,
+    315,
+    315
+   ],
+   "M Required door space on opening": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80
+   ],
+   "N Width of garden shed incl. corner profile (without roof overhang)": [
+    137,
+    257,
+    257,
+    257,
+    257,
+    257,
+    297
+   ],
+   "P Space required for rainwater downpipe incl. outlet elbow (optional)": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
+   ]
+  },
+  "notes": "Values as published; the page writes some H6 values with a decimal comma (209,5 / 12,5). \"(156)\" is printed in brackets."
+ },
+ "submissionPlanFloorspaceM2": {
+  "HS": 3.4,
+  "H1": 3.4,
+  "H2": 4.4,
+  "H3": 5.4,
+  "H4": 6.45,
+  "H5": 7.45,
+  "H6": 8.64,
+  "source": "HighLine_Einreichplan_H1-H2.pdf and HighLine_Einreichplan_H3-H4-H5-H6.pdf (\"Floorspace of biohort garden shed\") - a footprint figure, not the data sheet \"effective space\""
+ },
+ "accessories": [
+  {
+   "name": "Aluminium Floor Panel, Garden Shed",
+   "skus": [
+    "48022",
+    "48041",
+    "48042",
+    "48043",
+    "48051",
+    "48062"
+   ],
+   "variants": [
+    {
+     "sku": "48022",
+     "priceGBP": 409,
+     "options": {
+      "size": "HS, H1, P1"
+     }
+    },
+    {
+     "sku": "48041",
+     "priceGBP": 509,
+     "options": {
+      "size": "H2, P2, A3, A5"
+     }
+    },
+    {
+     "sku": "48042",
+     "priceGBP": 579,
+     "options": {
+      "size": "H3, P3, A6"
+     }
+    },
+    {
+     "sku": "48043",
+     "priceGBP": 959,
+     "options": {
+      "size": "H6"
+     }
+    },
+    {
+     "sku": "48051",
+     "priceGBP": 679,
+     "options": {
+      "size": "H4, P4, A7"
+     }
+    },
+    {
+     "sku": "48062",
+     "priceGBP": 819,
+     "options": {
+      "size": "H5, P5"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/aluminium-floor-panel-garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "HS, H1, P1": 409,
+    "H2, P2, A3, A5": 509,
+    "H3, P3, A6": 579,
+    "H6": 959,
+    "H4, P4, A7": 679,
+    "H5, P5": 819
+   },
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "BikeLift",
+   "skus": [
+    "49050"
+   ],
+   "variants": [
+    {
+     "sku": "49050",
+     "priceGBP": 519,
+     "options": {
+      "swivelling": "Standard"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/bikelift-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 519
+  },
+  {
+   "name": "Bin bag holder for equipment locker, Europa, HighLine, AvantGarde and Panorama",
+   "skus": [
+    "45016"
+   ],
+   "variants": [
+    {
+     "sku": "45016",
+     "priceGBP": 109
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/bin-bag-holder-equipment-locker-europa-highline-avantgarde-panorama-45016?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 109
+  },
+  {
+   "name": "Side Wall for HighLine Side Canopy",
+   "skus": [
+    "83038",
+    "83048",
+    "83058",
+    "83068",
+    "84038",
+    "84048",
+    "84058",
+    "84068",
+    "88038",
+    "88048",
+    "88058",
+    "88068"
+   ],
+   "variants": [
+    {
+     "sku": "83038",
+     "priceGBP": 459,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H2"
+     }
+    },
+    {
+     "sku": "83048",
+     "priceGBP": 509,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H3"
+     }
+    },
+    {
+     "sku": "83058",
+     "priceGBP": 559,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H4"
+     }
+    },
+    {
+     "sku": "83068",
+     "priceGBP": 619,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H6"
+     }
+    },
+    {
+     "sku": "84038",
+     "priceGBP": 459,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H2"
+     }
+    },
+    {
+     "sku": "84048",
+     "priceGBP": 509,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H3"
+     }
+    },
+    {
+     "sku": "84058",
+     "priceGBP": 559,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H4"
+     }
+    },
+    {
+     "sku": "84068",
+     "priceGBP": 619,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H6"
+     }
+    },
+    {
+     "sku": "88038",
+     "priceGBP": 459,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H2"
+     }
+    },
+    {
+     "sku": "88048",
+     "priceGBP": 509,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H3"
+     }
+    },
+    {
+     "sku": "88058",
+     "priceGBP": 559,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H4"
+     }
+    },
+    {
+     "sku": "88068",
+     "priceGBP": 619,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H6"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/side-wall-for-side-canopy?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "H2": 459,
+    "H3": 509,
+    "H4": 559,
+    "H6": 619
+   },
+   "fits": [
+    "H2",
+    "H3",
+    "H4",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "PV mounting system",
+   "skus": [
+    "47022",
+    "47023",
+    "47024"
+   ],
+   "variants": [
+    {
+     "sku": "47022",
+     "priceGBP": 89,
+     "options": {
+      "size": "Europa"
+     }
+    },
+    {
+     "sku": "47023",
+     "priceGBP": 89,
+     "options": {
+      "size": "HighLine, AvantGarde, Panorama"
+     }
+    },
+    {
+     "sku": "47024",
+     "priceGBP": 89,
+     "options": {
+      "size": "Neo"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/pv-mounting-system?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 89,
+   "pricesBySize": {
+    "Europa": 89,
+    "HighLine, AvantGarde, Panorama": 89,
+    "Neo": 89
+   }
+  },
+  {
+   "name": "Rainwater Downpipe Set HighLine Garden Shed",
+   "skus": [
+    "44025",
+    "44065",
+    "44085"
+   ],
+   "variants": [
+    {
+     "sku": "44025",
+     "priceGBP": 99,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "44065",
+     "priceGBP": 99,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "44085",
+     "priceGBP": 99,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/rainwater-downpipe-set-highline-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 99,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ]
+  },
+  {
+   "name": "Additional Door Garden Shed",
+   "skus": [
+    "83002",
+    "84002",
+    "88002"
+   ],
+   "variants": [
+    {
+     "sku": "83002",
+     "priceGBP": 619,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "84002",
+     "priceGBP": 619,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "88002",
+     "priceGBP": 619,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/additional-door-highline-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 619
+  },
+  {
+   "name": "Tool Holder",
+   "skus": [
+    "47031",
+    "47051",
+    "47081"
+   ],
+   "variants": [
+    {
+     "sku": "47031",
+     "priceGBP": 39,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "47051",
+     "priceGBP": 39,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "47081",
+     "priceGBP": 39,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/tool-holder?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 39,
+   "fits": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "bundledOnlyWithDoor": [
+    "Double door"
+   ],
+   "notes": "A more effective storage option for your tools with the Biohort tool holder for the inside of the door. One packaging unit contains two tool holders . You can install up to two tool holders per door in the garden shed. Choose the tool holder to match the colour of your garden shed. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed HighBoard"
+  },
+  {
+   "name": "\"BikeMax\" Bicycle Hanger",
+   "skus": [
+    "49011",
+    "49021"
+   ],
+   "variants": [
+    {
+     "sku": "49011",
+     "priceGBP": 59,
+     "options": {
+      "package-unit": "1 pc"
+     }
+    },
+    {
+     "sku": "49021",
+     "priceGBP": 89,
+     "options": {
+      "package-unit": "2 pcs"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/bikemax?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)"
+  },
+  {
+   "name": "Window Unit Garden Shed",
+   "skus": [
+    "43055",
+    "43065",
+    "43085"
+   ],
+   "variants": [
+    {
+     "sku": "43055",
+     "priceGBP": 339,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "43065",
+     "priceGBP": 339,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "43085",
+     "priceGBP": 339,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/window-unit-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 339,
+   "fits": [
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ]
+  },
+  {
+   "name": "Side Canopy HighLine Garden Shed",
+   "skus": [
+    "83036",
+    "83046",
+    "83056",
+    "83066",
+    "83836",
+    "83846",
+    "83856",
+    "83866",
+    "84036",
+    "84046",
+    "84056",
+    "84066",
+    "84836",
+    "84846",
+    "84856",
+    "84866",
+    "88036",
+    "88046",
+    "88056",
+    "88066",
+    "88836",
+    "88846",
+    "88856",
+    "88866"
+   ],
+   "variants": [
+    {
+     "sku": "83036",
+     "priceGBP": 1439,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H2",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "83046",
+     "priceGBP": 1539,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H3",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "83056",
+     "priceGBP": 1639,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H4",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "83066",
+     "priceGBP": 1749,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H6",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "83836",
+     "priceGBP": 1129,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H2",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "83846",
+     "priceGBP": 1229,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H3",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "83856",
+     "priceGBP": 1339,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H4",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "83866",
+     "priceGBP": 1439,
+     "options": {
+      "color": "Metallic silver",
+      "size": "H6",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "84036",
+     "priceGBP": 1439,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H2",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "84046",
+     "priceGBP": 1539,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H3",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "84056",
+     "priceGBP": 1639,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H4",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "84066",
+     "priceGBP": 1749,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H6",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "84836",
+     "priceGBP": 1129,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H2",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "84846",
+     "priceGBP": 1229,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H3",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "84856",
+     "priceGBP": 1339,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H4",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "84866",
+     "priceGBP": 1439,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "H6",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "88036",
+     "priceGBP": 1439,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H2",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "88046",
+     "priceGBP": 1539,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H3",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "88056",
+     "priceGBP": 1639,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H4",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "88066",
+     "priceGBP": 1749,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H6",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "88836",
+     "priceGBP": 1129,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H2",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "88846",
+     "priceGBP": 1229,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H3",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "88856",
+     "priceGBP": 1339,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H4",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "88866",
+     "priceGBP": 1439,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "H6",
+      "side-canopy-size": "S"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/side-canopy-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "H2 / L": 1439,
+    "H3 / L": 1539,
+    "H4 / L": 1639,
+    "H6 / L": 1749,
+    "H2 / S": 1129,
+    "H3 / S": 1229,
+    "H4 / S": 1339,
+    "H6 / S": 1439
+   },
+   "fits": [
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Side canopy"
+   ],
+   "notes": "The side canopy can be attached to the HighLine garden shed (from size H2 onwards) on the side with the rain gutter - either on one or both sides. It is available in two different sizes. The width of the size S side canopy is 150 cm and for size L 282 cm. The aluminium supports are equipped with height-adjustable feet. The rainwater downpipe is included. The roof surface of the side canopy is always metallic quartz grey. Important! Please note that only a concrete or point foundation is suitable for the mounting points of the roof supports for the side canopy."
+  },
+  {
+   "name": "Ground Anchor",
+   "skus": [
+    "41004",
+    "41006"
+   ],
+   "variants": [
+    {
+     "sku": "41004",
+     "priceGBP": 20,
+     "options": {
+      "package-unit": "4 pcs"
+     }
+    },
+    {
+     "sku": "41006",
+     "priceGBP": 29,
+     "options": {
+      "package-unit": "6 pcs"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/ground-anchor?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "notes": "If the floor frame is laid directly on a gravel base (approx. 10 cm gravel, without foundation or slabs), ground anchors are required for securing to the ground. These are available as accessories – please refer to the technical data for the number of anchors. Storm resistance must be ensured by the customer for this foundation solution."
+  },
+  {
+   "name": "Aluminium Floor Frame Garden Shed",
+   "skus": [
+    "41022",
+    "41041",
+    "41042",
+    "41043",
+    "41051",
+    "41062"
+   ],
+   "variants": [
+    {
+     "sku": "41022",
+     "priceGBP": 199,
+     "options": {
+      "size": "HS, H1, P1"
+     }
+    },
+    {
+     "sku": "41041",
+     "priceGBP": 219,
+     "options": {
+      "size": "H2, P2, A3, A5"
+     }
+    },
+    {
+     "sku": "41042",
+     "priceGBP": 229,
+     "options": {
+      "size": "H3, P3, A6"
+     }
+    },
+    {
+     "sku": "41043",
+     "priceGBP": 289,
+     "options": {
+      "size": "H6"
+     }
+    },
+    {
+     "sku": "41051",
+     "priceGBP": 249,
+     "options": {
+      "size": "H4, P4, A7"
+     }
+    },
+    {
+     "sku": "41062",
+     "priceGBP": 279,
+     "options": {
+      "size": "H5, P5"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/aluminium-floor-frame-highline-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "HS, H1, P1": 199,
+    "H2, P2, A3, A5": 219,
+    "H3, P3, A6": 229,
+    "H6": 289,
+    "H4, P4, A7": 249,
+    "H5, P5": 279
+   },
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "notes": "Gives the garden shed the necessary stability even without a concrete foundation. Four plastic corner joints enable precise assembly. The aluminium floor frame measures 40 x 40 mm. Suitable for: HighLine Garden Shed, Panorama Garden Shed"
+  },
+  {
+   "name": "Shelves",
+   "skus": [
+    "45010",
+    "45020",
+    "45030"
+   ],
+   "variants": [
+    {
+     "sku": "45010",
+     "priceGBP": 69,
+     "options": {
+      "package-unit": "2 pcs standard"
+     }
+    },
+    {
+     "sku": "45020",
+     "priceGBP": 89,
+     "options": {
+      "package-unit": "4 pcs standard"
+     }
+    },
+    {
+     "sku": "45030",
+     "priceGBP": 99,
+     "options": {
+      "package-unit": "2 pcs deep"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/shelves?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "notes": "Choose any position for the shelf. Choose from two different shelf depths. The standard depth is 24.5 cm. For those requiring extra storage space, we have developed a shelf with a depth of 43.5 cm. The standard width is 72 cm. The shelf set for the garden shed is also galvanised for an extra-long service life. Easy to retrofit with load bearing capacity of up to 15 kg per shelf. The set includes only the shelves. The support rails must be ordered separately. Suitable for: HighLine Garden Shed \\t AvantGarde Garden Shed \\t Panorama Garden Shed \\t Europa \\t Equipment Locker | Choose any position for the shelf. Choose from two different shelf depths. The standard depth is 24.5 cm. For those requiring extra storage space, we have developed a shelf with a depth of 43.5 cm. The standard width is 72 cm. The shelf set for the garden shed is also galvanised for an extra-long service life. Easy to retrofit with load bearing capacity of up to 15 kg per shelf. The set includes only the shelves. The support rails must be ordered separately. Suitable for: \\t HighLine Garden Shed \\t AvantGarde Garden Shed \\t Panorama Garden Shed \\t Europa \\t Equipment Locker \\t Alex"
+  },
+  {
+   "name": "FloraBoard",
+   "skus": [
+    "47030",
+    "47050",
+    "47080"
+   ],
+   "variants": [
+    {
+     "sku": "47030",
+     "priceGBP": 199,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "47050",
+     "priceGBP": 199,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "47080",
+     "priceGBP": 199,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/floraboard?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 199,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "notes": "Two rails in the same colour as the garden shed are attached to the outer wall. The flower boxes can be hung on these at a suitable height. Plastic inserts for easier planting are included in the standard delivery. Exterior dimensions (W x L): 82 x 25 cm, rail height: 188 cm Two flower boxes incl. two rails are supplied. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed"
+  },
+  {
+   "name": "Back Wall for HighLine Side Canopy",
+   "skus": [
+    "83097",
+    "83098",
+    "84097",
+    "84098",
+    "88097",
+    "88098"
+   ],
+   "variants": [
+    {
+     "sku": "83097",
+     "priceGBP": 509,
+     "options": {
+      "color": "Metallic silver",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "83098",
+     "priceGBP": 719,
+     "options": {
+      "color": "Metallic silver",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "84097",
+     "priceGBP": 509,
+     "options": {
+      "color": "Metallic dark grey",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "84098",
+     "priceGBP": 719,
+     "options": {
+      "color": "Metallic dark grey",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "88097",
+     "priceGBP": 509,
+     "options": {
+      "color": "Metallic quartz grey",
+      "side-canopy-size": "S"
+     }
+    },
+    {
+     "sku": "88098",
+     "priceGBP": 719,
+     "options": {
+      "color": "Metallic quartz grey",
+      "side-canopy-size": "L"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/back-wall-for-side-canopy?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)"
+  },
+  {
+   "name": "SmartBasePLUS for Garden Shed",
+   "skus": [
+    "43452",
+    "43458",
+    "43463",
+    "43468",
+    "43473",
+    "43495"
+   ],
+   "variants": [
+    {
+     "sku": "43452",
+     "priceGBP": 1349,
+     "options": {
+      "size": "HS, H1, P1"
+     }
+    },
+    {
+     "sku": "43458",
+     "priceGBP": 1589,
+     "options": {
+      "size": "H2, P2, A3, A5"
+     }
+    },
+    {
+     "sku": "43463",
+     "priceGBP": 1829,
+     "options": {
+      "size": "H3, P3, A6"
+     }
+    },
+    {
+     "sku": "43468",
+     "priceGBP": 2019,
+     "options": {
+      "size": "H4, P4, A7"
+     }
+    },
+    {
+     "sku": "43473",
+     "priceGBP": 2409,
+     "options": {
+      "size": "H5, P5"
+     }
+    },
+    {
+     "sku": "43495",
+     "priceGBP": 2789,
+     "options": {
+      "size": "H6"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/smartbaseplus-ghh?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "HS, H1, P1": 1349,
+    "H2, P2, A3, A5": 1589,
+    "H3, P3, A6": 1829,
+    "H4, P4, A7": 2019,
+    "H5, P5": 2409,
+    "H6": 2789
+   },
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "SmartBase Garden Shed Foundation",
+   "skus": [
+    "43952",
+    "43958",
+    "43963",
+    "43968",
+    "43973",
+    "43995"
+   ],
+   "variants": [
+    {
+     "sku": "43952",
+     "priceGBP": 1159,
+     "options": {
+      "size": "HS, H1, P1"
+     }
+    },
+    {
+     "sku": "43958",
+     "priceGBP": 1399,
+     "options": {
+      "size": "H2, P2, A3, A5"
+     }
+    },
+    {
+     "sku": "43963",
+     "priceGBP": 1589,
+     "options": {
+      "size": "H3, P3, A6"
+     }
+    },
+    {
+     "sku": "43968",
+     "priceGBP": 1779,
+     "options": {
+      "size": "H4, P4, A7"
+     }
+    },
+    {
+     "sku": "43973",
+     "priceGBP": 2019,
+     "options": {
+      "size": "H5, P5"
+     }
+    },
+    {
+     "sku": "43995",
+     "priceGBP": 2309,
+     "options": {
+      "size": "H6"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/smartbase-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "HS, H1, P1": 1159,
+    "H2, P2, A3, A5": 1399,
+    "H3, P3, A6": 1589,
+    "H4, P4, A7": 1779,
+    "H5, P5": 2019,
+    "H6": 2309
+   },
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "Garden Shed Support Rail (2 pieces)",
+   "sku": "46021",
+   "priceGBP": 49.0,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "The most important facts about the Biohort support rails at a glance: \\t DIN support rails with slots to hang shelves, shelf baskets, suspension basket, hook set or folding table \\t Choose any position for shelves \\t Galvanised for extra-long service life \\t Length approx. 185 cm \\t Content: Two support rails per pack \\t Suitable for all garden sheds except CasaNova, Neo, Europa and Equipment Locker Suitable for: \\t HighLine Garden Shed \\t AvantGarde Garden Shed \\t Panorama Garden Shed"
+  },
+  {
+   "name": "Tool Hanger (4 pieces)",
+   "sku": "47020",
+   "priceGBP": 29.0,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "The Biohort tool hangers are also galvanised to guarantee durability. Use the tool hangers for: spades rakes hoses tools Many other things Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Equipment Locker"
+  },
+  {
+   "name": "Door baskets",
+   "sku": "46025",
+   "priceGBP": 49.0,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "The door baskets can be easily fixed onto the inside of the door. Ideal for storing garden tools, gloves etc. with in easy reach (2 pieces per package). Size (W x L x H): 34 x 10 x 9.5 cm, load capacity: 1 kg per door basket"
+  },
+  {
+   "name": "Shelf baskets",
+   "sku": "46026",
+   "priceGBP": 79.0,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Shelf baskets are suspended in 2 support rails*. Ideal for storing pesticides, lawn seeds, tins and tools. (2 pieces per package). Size (W x L x H): 72 x 16 x 11 cm, load capacity: 3 kg per shelf basket *Support rails not included in the delivery"
+  },
+  {
+   "name": "Hook Set",
+   "sku": "47070",
+   "priceGBP": 89.0,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Set consists of a combination hook, a handle hook and a shovel hook on a wall bracket, which is hung between two support rails. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Garden Shed"
+  },
+  {
+   "name": "Suspension Basket",
+   "sku": "47071",
+   "priceGBP": 69.0,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Ideal for storing small objects. Includes wall bracket for hanging on two support rails*. The basket is made of black polyester mesh. Size (W x L x H): 67 x 34 x 20 cm *Support rails not included. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Equipment Locker"
+  },
+  {
+   "name": "Electrical Mounting Panel",
+   "sku": "46031",
+   "priceGBP": 69.0,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Discreetly concealed cable routing and easy installation of switches and sockets (electrical equipment in photo not included). Suitable for: HighLine Garden Shed Panorama Garden Shed AvantGarde Garden Shed"
+  },
+  {
+   "name": "CleanLine Saver Set",
+   "sku": "99200",
+   "priceGBP": 49.0,
+   "fits": [
+    "HS",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Care"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Buy the Biohort CleanLine Universal Cleaner and the Biohort CleanLine Preservation together and save money!"
+  },
+  {
+   "name": "Folding Table",
+   "sku": "40011",
+   "priceGBP": 139.0,
+   "fits": [
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-highline?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Provides a stable working area, can be swiftly folded away. The Biohort folding table is also galvanised to make it durable. Advantages of the folding table: Convenient and space-saving Easy to use Galvanised steel plate The folding table is slotted into two support rails (not included) Max. load bearing capacity of 30 kg Size: 69 x 58 cm (W x L) Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Garden Shed Equipment Locker"
+  }
+ ],
+ "pageBundles": "The product page offers per-size packages \"Basic\", \"Premium\", \"Care\" and (H2+) \"Side canopy\"; the accessories with inPageBundles come from them.",
+ "downloads": {
+  "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf (Product Variety 2026; no prices or dimension tables; \"Available in 7 sizes and 3 colours. Side canopy optionally available.\")",
+  "assemblyManuals": [
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/YH025000_Aufbauanleitung_HighLine_H1H2_Paketteilung_0118_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/YH025010_Aufbauanleitung-HighLine-H3-H4-H5_H6_0923_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/YH080009_Aufbauanleitung_Seitendach_GHH_0219_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/YH080008_Aufbauanleitung_Seitendach_GHH_Sichtschutz_1019_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/YH080518_Aufbauanleitung-Regenfallrohr_HighLine_0118_WEB.pdf"
+  ],
+  "submissionPlans": [
+   "https://www.biohort.com/asset/downloads/files/sonstige/HighLine_Einreichplan_H1-H2.pdf",
+   "https://www.biohort.com/asset/downloads/files/sonstige/HighLine_Einreichplan_H3-H4-H5-H6.pdf"
+  ],
+  "partsLists": [
+   "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_Highline_HS-H1-H2_Paketteilung_Web.pdf",
+   "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_Highline_H3-H4-H5_H6.pdf",
+   "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_Seitendach_GHH_Groesse_S_0219_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_Seitendach_GHH_Groesse_L_1022_WEB.pdf"
+  ],
+  "foundationPlans": [
+   "https://www.biohort.com/asset/downloads/files/Fundamentplaene/punktfundamentplan_ghh_h1.pdf",
+   "https://www.biohort.com/asset/downloads/files/Fundamentplaene/punktfundamentplan_ghh_h2.pdf",
+   "https://www.biohort.com/asset/downloads/files/Fundamentplaene/punktfundamentplan_ghh_h3.pdf",
+   "https://www.biohort.com/asset/downloads/files/Fundamentplaene/punktfundamentplan_ghh_h4.pdf",
+   "https://www.biohort.com/asset/downloads/files/Fundamentplaene/punktfundamentplan_ghh_h5.pdf",
+   "https://www.biohort.com/asset/downloads/files/Fundamentplaene/punktfundamentplan_ghh_h6.pdf",
+   "https://www.biohort.com/asset/downloads/files/Fundamentplaene/betonfundament_gesamt_h6.pdf",
+   "https://www.biohort.com/asset/downloads/files/Fundamentplaene/Punktfundament_H6_Seitendach.pdf"
+  ],
+  "priceList": "None linked from the GB HighLine page (only CasaNova has a known Endkundenpreisliste_cn_GB.pdf)."
+ },
+ "notes": [
+  "Prices are the live GB web prices on 2026-10-13; no HighLine GB price-list PDF was found to cross-check against.",
+  "Assembly manuals, parts lists and foundation plans were listed but not downloaded/read (time-boxed); dimensions here come from the web data sheet and the two submission-plan PDFs."
+ ],
+ "buildIssues": []
+}

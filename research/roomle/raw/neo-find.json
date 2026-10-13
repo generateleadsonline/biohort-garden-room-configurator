@@ -1,0 +1,89 @@
+{
+    "code": 200,
+    "result": {
+        "hash": "biohort:neo_master:10165960BD811D0DBE492EB9A46F756AB743FA78B61DBB3B991ADC5E4501B3C6",
+        "data": [
+            {
+                "display": true,
+                "title": "ALU-Bodenrahmen",
+                "price": 202.9,
+                "qty": 1,
+                "sku": "41040",
+                "ean": "9003414410404",
+                "image": "/products/41040/neo-alu-bodenrahmen_1.jpg",
+                "parameters": [
+                    {
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "2B, 4"
+                    }
+                ]
+            },
+            {
+                "display": true,
+                "title": "Ger\u00e4tehaus Neo 2B dunkelgrau-metallic Doppelt\u00fcr",
+                "price": 3249,
+                "qty": 1,
+                "sku": "85063",
+                "ean": "9003414850637",
+                "image": "/products/85063/neo_2b_doppeltuer_dunkelgrau_metallic.jpg",
+                "parameters": [
+                    {
+                        "title": "Dach- und T\u00fcrfarbe",
+                        "value": "Dunkelgrau-metallic"
+                    },
+                    {
+                        "title": "T\u00fcroption",
+                        "value": "Doppelt\u00fcr"
+                    },
+                    {
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "2B"
+                    },
+                    {
+                        "title": "Wandfarbe",
+                        "value": "Dunkelgrau-metallic"
+                    }
+                ]
+            }
+        ],
+        "confirmed": false,
+        "confirmedBy": null,
+        "confirmationDate": null,
+        "restrictionLevel": null,
+        "featureFlagAnimation": false,
+        "roomDesigner": false,
+        "roomDesignerId": null,
+        "roomDesignerMoc": false,
+        "roomDesignerCatalogTag": null,
+        "createPlan": false,
+        "image": false,
+        "customer": {
+            "customerFirstname": "",
+            "customerTitle": "",
+            "customerLastname": "",
+            "customerStreet": "",
+            "customerZip": "",
+            "customerHouseNumber": "",
+            "customerPlace": "",
+            "customerCountry": "---",
+            "customerPhone": "",
+            "customerMail": "",
+            "customerSalutation": ""
+        },
+        "company": {
+            "companyDebitorNumber": "",
+            "companyOrderNumber": "",
+            "companyMail": "",
+            "companyConsultant": "",
+            "companyVatNo": "",
+            "companyName": "",
+            "companyStreet": "",
+            "companyHouseNumber": "",
+            "companyZip": "",
+            "companyCity": "",
+            "companyCountry": "---",
+            "companyPhone": "",
+            "companyBiohortOrderNumber": ""
+        }
+    }
+}

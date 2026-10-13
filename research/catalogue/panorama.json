@@ -1,0 +1,1306 @@
+{
+  "range": "Panorama",
+  "sourceUrls": [
+    "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+    "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf",
+    "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf"
+  ],
+  "checked": "2026-10-13",
+  "priceListMeta": {
+    "title": "PRICE LIST 2026 No. 71 gb, Version 02",
+    "valid": "Valid from 01.01.2026 until 31.12.2026 or until revoked for the UK",
+    "pages": "12-14 (Panorama; p14 top block), 36",
+    "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p1"
+  },
+  "colours": [
+    {
+      "name": "Metallic silver",
+      "skuDigit": "13xxx",
+      "webLabel": "Silver-metallic"
+    },
+    {
+      "name": "Metallic quartz grey",
+      "skuDigit": "18xxx",
+      "webLabel": "Quartz grey-metallic"
+    },
+    {
+      "name": "Metallic dark grey",
+      "skuDigit": "14xxx",
+      "webLabel": "Dark grey-metallic"
+    }
+  ],
+  "coloursNote": "Interior always grey white (price list p12). Colour references as Neo (DB 701/702/703 similar; no RAL).",
+  "sellingPoints": [
+    "Interior Illumination",
+    "360° acrylic glass panels for optimal light incidence",
+    "Double the sheet steel thickness compared to low-cost providers",
+    "Lockable and rainwater-proof",
+    "Maintenance-free for life - 20-year guarantee subject to Biohort’s warranty terms and conditions",
+    "Integrated gutter with a connection for a 1 1/4\" hose",
+    "Gutter with integrated leaf traps on both sides",
+    "Comfortable door opening with gas spring",
+    "3-way locking mechanism complete with stainless steel door handle",
+    "Robust roof construction for a snow load of up to 150 kg/m²",
+    "Storm-proof up to wind force 12 (according to the Beaufort Scale: hurricane)* (* with professional assembly and anchoring)",
+    "Top quality materials: galvanised, polyamide enamel coated steel plate, screws and hinges made of stainless steel"
+  ],
+  "guarantee": "20-year guarantee subject to Biohort’s warranty terms and conditions (product page); terms www.biohort.com/terms-of-guarantee (price list p1).",
+  "delivery": "Web: \"Free Shipping within 3 weeks\". Price list p1: transport to dealer's warehouse or DDP kerbside within mainland; stock items ready for dispatch within 2 to 4 working days after order clarification.",
+  "steelThickness": "No millimetre figure published. Product page: \"Double the sheet steel thickness compared to low-cost providers\"; zinc layer at least 150 g/m² + polyamide enamel coating (comparison table).",
+  "roof": "Gable roof with full encircling acrylic glass skylight (web). Roof pitch 10° (web FAQ). Snow load 150 kg/m². Roof overhang (mm, web FAQ table): front 160, rear 80, right/left 100 (column alignment of that FAQ table is ambiguous). Interior roof insulation possible with 3 cm XPS (FAQ).",
+  "standardEquipment": {
+    "web": [
+      "Stainless steel door handle complete with standard cylinder, 3-way locking mechanism, spare key",
+      "Gas spring",
+      "Acrylic glass skylight",
+      "Tool holders: two on the inside of the door (max. five per door panel)",
+      "Tool hangers: 4 pcs.",
+      "Shelves / support rails: two shelves (length: 24.5 cm, width: 72 cm) and two support rails, galvanised, max. load 15 kg per shelf"
+    ],
+    "priceList": [
+      "2 shelves and 2 support rails",
+      "4 tool hangers",
+      "2 tool holders on the inside of the door panels",
+      "Gas spring assisted door",
+      "Triple locking mechanism with stainless steel door handle, standard cylinder and spare key",
+      "Integrated gutter with a connection for a 1 1/4'' hose",
+      "Screws and anchors for mounting to the foundation"
+    ],
+    "sources": [
+      "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+      "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+    ]
+  },
+  "sizes": [
+    {
+      "code": "P1",
+      "variant": "standard door",
+      "exteriorCm": [
+        273,
+        158,
+        227
+      ],
+      "interiorCm": [
+        252,
+        132,
+        220
+      ],
+      "effectiveM2": 3.33,
+      "foundationCm": [
+        257,
+        137
+      ],
+      "weightKg": 199.7,
+      "weightKgGrossPriceList": 202.2,
+      "volumeM3PriceList": 7.3,
+      "packagesPriceList": 8,
+      "skus": {
+        "Metallic silver": "13020",
+        "Metallic quartz grey": "18020",
+        "Metallic dark grey": "14020"
+      },
+      "priceGBP": {
+        "13020": 2409,
+        "18020": 2409,
+        "14020": 2409
+      },
+      "doorOpeningCm": [
+        76,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    },
+    {
+      "code": "P2",
+      "variant": "standard door",
+      "exteriorCm": [
+        273,
+        198,
+        227
+      ],
+      "interiorCm": [
+        252,
+        172,
+        220
+      ],
+      "effectiveM2": 4.33,
+      "foundationCm": [
+        257,
+        177
+      ],
+      "weightKg": 220.1,
+      "weightKgGrossPriceList": 225.7,
+      "volumeM3PriceList": 9.5,
+      "packagesPriceList": 7,
+      "skus": {
+        "Metallic silver": "13030",
+        "Metallic quartz grey": "18030",
+        "Metallic dark grey": "14030"
+      },
+      "priceGBP": {
+        "13030": 2699,
+        "18030": 2699,
+        "14030": 2699
+      },
+      "doorOpeningCm": [
+        76,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    },
+    {
+      "code": "P3",
+      "variant": "standard door",
+      "exteriorCm": [
+        273,
+        238,
+        227
+      ],
+      "interiorCm": [
+        252,
+        212,
+        220
+      ],
+      "effectiveM2": 5.34,
+      "foundationCm": [
+        257,
+        217
+      ],
+      "weightKg": 243.6,
+      "weightKgGrossPriceList": 250,
+      "volumeM3PriceList": 11.8,
+      "packagesPriceList": 8,
+      "skus": {
+        "Metallic silver": "13040",
+        "Metallic quartz grey": "18040",
+        "Metallic dark grey": "14040"
+      },
+      "priceGBP": {
+        "13040": 2989,
+        "18040": 2989,
+        "14040": 2989
+      },
+      "doorOpeningCm": [
+        76,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    },
+    {
+      "code": "P4",
+      "variant": "standard door",
+      "exteriorCm": [
+        273,
+        278,
+        227
+      ],
+      "interiorCm": [
+        252,
+        252,
+        220
+      ],
+      "effectiveM2": 6.35,
+      "foundationCm": [
+        257,
+        257
+      ],
+      "weightKg": 267.8,
+      "weightKgGrossPriceList": 271.9,
+      "volumeM3PriceList": 14,
+      "packagesPriceList": 8,
+      "skus": {
+        "Metallic silver": "13050",
+        "Metallic quartz grey": "18050",
+        "Metallic dark grey": "14050"
+      },
+      "priceGBP": {
+        "13050": 3179,
+        "18050": 3179,
+        "14050": 3179
+      },
+      "doorOpeningCm": [
+        76,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    },
+    {
+      "code": "P5",
+      "variant": "standard door",
+      "exteriorCm": [
+        273,
+        318,
+        227
+      ],
+      "interiorCm": [
+        252,
+        292,
+        220
+      ],
+      "effectiveM2": 7.36,
+      "foundationCm": [
+        257,
+        297
+      ],
+      "weightKg": 289.9,
+      "weightKgGrossPriceList": 293.9,
+      "volumeM3PriceList": 16.2,
+      "packagesPriceList": 9,
+      "skus": {
+        "Metallic silver": "13060",
+        "Metallic quartz grey": "18060",
+        "Metallic dark grey": "14060"
+      },
+      "priceGBP": {
+        "13060": 3469,
+        "18060": 3469,
+        "14060": 3469
+      },
+      "doorOpeningCm": [
+        76,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    },
+    {
+      "code": "P1",
+      "variant": "double door",
+      "exteriorCm": [
+        273,
+        158,
+        227
+      ],
+      "interiorCm": [
+        252,
+        132,
+        220
+      ],
+      "effectiveM2": 3.33,
+      "foundationCm": [
+        257,
+        137
+      ],
+      "weightKg": 205.8,
+      "weightKgGrossPriceList": 214.6,
+      "volumeM3PriceList": 7.3,
+      "packagesPriceList": 8,
+      "skus": {
+        "Metallic silver": "13029",
+        "Metallic quartz grey": "18029",
+        "Metallic dark grey": "14029"
+      },
+      "priceGBP": {
+        "13029": 2699,
+        "18029": 2699,
+        "14029": 2699
+      },
+      "doorOpeningCm": [
+        155,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    },
+    {
+      "code": "P2",
+      "variant": "double door",
+      "exteriorCm": [
+        273,
+        198,
+        227
+      ],
+      "interiorCm": [
+        252,
+        172,
+        220
+      ],
+      "effectiveM2": 4.33,
+      "foundationCm": [
+        257,
+        177
+      ],
+      "weightKg": 226.2,
+      "weightKgGrossPriceList": 238.1,
+      "volumeM3PriceList": 9.5,
+      "packagesPriceList": 7,
+      "skus": {
+        "Metallic silver": "13039",
+        "Metallic quartz grey": "18039",
+        "Metallic dark grey": "14039"
+      },
+      "priceGBP": {
+        "13039": 2989,
+        "18039": 2989,
+        "14039": 2989
+      },
+      "doorOpeningCm": [
+        155,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    },
+    {
+      "code": "P3",
+      "variant": "double door",
+      "exteriorCm": [
+        273,
+        238,
+        227
+      ],
+      "interiorCm": [
+        252,
+        212,
+        220
+      ],
+      "effectiveM2": 5.34,
+      "foundationCm": [
+        257,
+        217
+      ],
+      "weightKg": 249.7,
+      "weightKgGrossPriceList": 262.4,
+      "volumeM3PriceList": 11.8,
+      "packagesPriceList": 8,
+      "skus": {
+        "Metallic silver": "13049",
+        "Metallic quartz grey": "18049",
+        "Metallic dark grey": "14049"
+      },
+      "priceGBP": {
+        "13049": 3279,
+        "18049": 3279,
+        "14049": 3279
+      },
+      "doorOpeningCm": [
+        155,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    },
+    {
+      "code": "P4",
+      "variant": "double door",
+      "exteriorCm": [
+        273,
+        278,
+        227
+      ],
+      "interiorCm": [
+        252,
+        252,
+        220
+      ],
+      "effectiveM2": 6.35,
+      "foundationCm": [
+        257,
+        257
+      ],
+      "weightKg": 273.9,
+      "weightKgGrossPriceList": 284.3,
+      "volumeM3PriceList": 14,
+      "packagesPriceList": 8,
+      "skus": {
+        "Metallic silver": "13059",
+        "Metallic quartz grey": "18059",
+        "Metallic dark grey": "14059"
+      },
+      "priceGBP": {
+        "13059": 3469,
+        "18059": 3469,
+        "14059": 3469
+      },
+      "doorOpeningCm": [
+        155,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    },
+    {
+      "code": "P5",
+      "variant": "double door",
+      "exteriorCm": [
+        273,
+        318,
+        227
+      ],
+      "interiorCm": [
+        252,
+        292,
+        220
+      ],
+      "effectiveM2": 7.36,
+      "foundationCm": [
+        257,
+        297
+      ],
+      "weightKg": 296,
+      "weightKgGrossPriceList": 306.3,
+      "volumeM3PriceList": 16.2,
+      "packagesPriceList": 9,
+      "skus": {
+        "Metallic silver": "13069",
+        "Metallic quartz grey": "18069",
+        "Metallic dark grey": "14069"
+      },
+      "priceGBP": {
+        "13069": 3759,
+        "18069": 3759,
+        "14069": 3759
+      },
+      "doorOpeningCm": [
+        155,
+        182
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12"
+      }
+    }
+  ],
+  "doors": [
+    {
+      "type": "standard door",
+      "doorOpeningCm": [
+        76,
+        182
+      ],
+      "hinge": "right door hinge",
+      "notes": "Left door hinge available for GBP 79 (price list p13; not for double doors).",
+      "source": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb"
+    },
+    {
+      "type": "double door",
+      "doorOpeningCm": [
+        155,
+        182
+      ],
+      "source": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb"
+    },
+    {
+      "type": "Additional Door",
+      "priceGBP": 619,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13"
+    },
+    {
+      "type": "Additional Door Double",
+      "priceGBP": 979,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13"
+    }
+  ],
+  "detailedDimensionsCm": {
+    "A_widthOfShed": 254,
+    "B_lengthOfShed": {
+      "P1": 134,
+      "P2": 174,
+      "P3": 214,
+      "P4": 254,
+      "P5": 294
+    },
+    "C_heightToGutter": 196,
+    "D_gutterToRidge": 31,
+    "E_overallHeight": 227,
+    "F_clearanceWidth": 76,
+    "G_clearanceHeight": 182,
+    "H_rightSide": 51,
+    "J_leftSide": 127,
+    "K_roofWidth": {
+      "P1": 273,
+      "P2": 273,
+      "P3": 273,
+      "P4": 273,
+      "P5": "2730 (as published; see conflicts)"
+    },
+    "L_roofLength": {
+      "P1": 158,
+      "P2": 198,
+      "P3": 238,
+      "P4": 278,
+      "P5": 318
+    },
+    "M_doorSpace": 80,
+    "N_widthInclCornerProfile": 257,
+    "P_downpipeSpace": 9,
+    "source": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb"
+  },
+  "accessories": [
+    {
+      "name": "Aluminium Floor Frame",
+      "pricesBySize": {
+        "P1": 199,
+        "P2": 219,
+        "P3": 229,
+        "P4": 249,
+        "P5": 279
+      },
+      "skusBySize": {
+        "P1": "41022",
+        "P2": "41041",
+        "P3": "41042",
+        "P4": "41051",
+        "P5": "41062"
+      },
+      "notes": "Aluminium square tubing (40 x 40 mm). Dimensions W x L x H cm: P1 252x132x4, P2 252x172x4, P3 252x212x4, P4 252x252x4, P5 252x292x4. On gravel: ground anchors P1 8 pcs, P2/P3 10 pcs, P4/P5 12 pcs. Same SKUs are shared with HighLine/AvantGarde sizes (web names e.g. \"H1, HS, P1\").",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12",
+      "webMatchingAccessories": {
+        "41022": [
+          {
+            "name": "Aluminium Floor Frame H1, HS, P1",
+            "priceGBP": 199
+          }
+        ],
+        "41041": [
+          {
+            "name": "Aluminium Floor Frame H2, P2, A3, A5",
+            "priceGBP": 219
+          }
+        ],
+        "41042": [
+          {
+            "name": "Aluminium Floor Frame H3, P3, A6",
+            "priceGBP": 229
+          }
+        ],
+        "41051": [
+          {
+            "name": "Aluminium Floor Frame H4, P4, A7",
+            "priceGBP": 249
+          }
+        ],
+        "41062": [
+          {
+            "name": "Aluminium Floor Frame H5, P5",
+            "priceGBP": 279
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Ground Anchor 4 pieces per package",
+      "sku": "41004",
+      "priceGBP": 20,
+      "dimensionsCm": [
+        1.5,
+        4.5,
+        53
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12",
+      "webMatchingAccessories": {
+        "41004": [
+          {
+            "name": "Ground Anchor 4 pieces per package",
+            "priceGBP": 20
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Ground Anchor 6 pieces per package",
+      "sku": "41006",
+      "priceGBP": 29,
+      "dimensionsCm": [
+        1.5,
+        4.5,
+        53
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12",
+      "webMatchingAccessories": {
+        "41006": [
+          {
+            "name": "Ground Anchor 6 pieces per package",
+            "priceGBP": 29
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Aluminium Floor Panels",
+      "pricesBySize": {
+        "P1": 409,
+        "P2": 509,
+        "P3": 579,
+        "P4": 679,
+        "P5": 819
+      },
+      "skusBySize": {
+        "P1": "48022",
+        "P2": "48041",
+        "P3": "48042",
+        "P4": "48051",
+        "P5": "48062"
+      },
+      "notes": "2 mm aluminium chequer plate; floor frame required. Dimensions: P1 243.6x123.6x0.2, P2 163.6x243.6x0.2, P3 243.6x203.6x0.2, P4 243.6x243.6x0.2, P5 243.6x283.6x0.2 cm.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "SmartBase",
+      "pricesBySize": {
+        "P1": 1159,
+        "P2": 1399,
+        "P3": 1589,
+        "P4": 1779,
+        "P5": 2019
+      },
+      "skusBySize": {
+        "P1": "43952",
+        "P2": "43958",
+        "P3": "43963",
+        "P4": "43968",
+        "P5": "43973"
+      },
+      "notes": "Dimensions 252 x 132/172/212/252/292 x 10 cm (P1-P5).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "SmartBasePLUS",
+      "pricesBySize": {
+        "P1": 1349,
+        "P2": 1589,
+        "P3": 1829,
+        "P4": 2019,
+        "P5": 2409
+      },
+      "skusBySize": {
+        "P1": "43452",
+        "P2": "43458",
+        "P3": "43463",
+        "P4": "43468",
+        "P5": "43473"
+      },
+      "notes": "Dimensions 252 x 132/172/212/252/292 x 65 cm (P1-P5).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Drill Bit for SDS-MAX chuck (for SmartBasePLUS)",
+      "sku": "43410",
+      "priceGBP": 89,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Extension for SmartBasePLUS 500 mm",
+      "sku": "43411",
+      "priceGBP": 99,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p12",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Standard Door with Left Door Hinge",
+      "sku": "89001",
+      "priceGBP": 79,
+      "dimensionsCm": [
+        76,
+        4,
+        182
+      ],
+      "notes": "Not available for double doors; note \"left door hinge\" on the order. Same EAN for all three colours.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Additional Door Double",
+      "skusByColour": {
+        "Metallic silver": "83004",
+        "Metallic quartz grey": "88004",
+        "Metallic dark grey": "84004"
+      },
+      "priceGBP": 979,
+      "dimensionsCm": [
+        155,
+        4,
+        182
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Additional Door",
+      "skusByColour": {
+        "Metallic silver": "83002",
+        "Metallic quartz grey": "88002",
+        "Metallic dark grey": "84002"
+      },
+      "priceGBP": 619,
+      "dimensionsCm": [
+        79.2,
+        3,
+        185
+      ],
+      "notes": "Right door hinge; with SmartBase/SmartBasePLUS an additional package is required.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "SmartBase Foundation Additional Package (for additional door)",
+      "sku": "43505",
+      "priceGBP": 89,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "SmartBasePLUS Foundation Additional Package (for additional door)",
+      "sku": "43405",
+      "priceGBP": 89,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "PV Mounting System",
+      "sku": "47023",
+      "priceGBP": 89,
+      "dimensionsCm": [
+        3,
+        3.5,
+        187
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Window Unit",
+      "skusByColour": {
+        "Metallic silver": "43065",
+        "Metallic quartz grey": "43085",
+        "Metallic dark grey": "43055"
+      },
+      "priceGBP": 339,
+      "dimensionsCm": [
+        188,
+        81.4,
+        2.5
+      ],
+      "notes": "Complete side wall panel (81.5 x 188 cm) with hinged window, plexiglass, metal frame (window opening 50 x 60 cm).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": {
+        "43055": [
+          {
+            "name": "Window Unit Garden Shed metallic dark grey",
+            "priceGBP": 339
+          }
+        ],
+        "43065": [
+          {
+            "name": "Window Unit Garden Shed metallic silver",
+            "priceGBP": 339
+          }
+        ],
+        "43085": [
+          {
+            "name": "Window Unit Garden Shed metallic quartz grey",
+            "priceGBP": 339
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Rainwater Downpipe Set (2 pieces)",
+      "skusByColour": {
+        "Metallic silver": "44024",
+        "Metallic quartz grey": "44084",
+        "Metallic dark grey": "44064"
+      },
+      "priceGBP": 99,
+      "dimensionsCm": [
+        4,
+        4,
+        193.5
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": {
+        "44024": [
+          {
+            "name": "Rainwater Downpipe Set Panorama® Garden Shed metallic silver (2 pieces)",
+            "priceGBP": 99
+          }
+        ],
+        "44064": [
+          {
+            "name": "Rainwater Downpipe Set Panorama® Garden Shed metallic dark grey (2 pieces)",
+            "priceGBP": 99
+          }
+        ],
+        "44084": [
+          {
+            "name": "Rainwater Downpipe Set Panorama® Garden Shed metallic quartz grey (2 pieces)",
+            "priceGBP": 99
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "FloraBoard",
+      "skusByColour": {
+        "Metallic silver": "47030",
+        "Metallic quartz grey": "47080",
+        "Metallic dark grey": "47050"
+      },
+      "priceGBP": 199,
+      "dimensionsCm": [
+        82,
+        25,
+        188
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": {
+        "47030": [
+          {
+            "name": "FloraBoard silver",
+            "priceGBP": 199
+          }
+        ],
+        "47050": [
+          {
+            "name": "FloraBoard dark grey",
+            "priceGBP": 199
+          }
+        ],
+        "47080": [
+          {
+            "name": "FloraBoard quartz grey",
+            "priceGBP": 199
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Tool Holder (2 pieces per package)",
+      "skusByColour": {
+        "Metallic silver": "47031",
+        "Metallic quartz grey": "47081",
+        "Metallic dark grey": "47051"
+      },
+      "priceGBP": 39,
+      "dimensionsCm": [
+        51.6,
+        3.5,
+        5
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": {
+        "47031": [
+          {
+            "name": "Tool Holder metallic silver (2 pieces)",
+            "priceGBP": 39
+          }
+        ],
+        "47051": [
+          {
+            "name": "Tool Holder metallic dark grey (2 pieces)",
+            "priceGBP": 39
+          }
+        ],
+        "47081": [
+          {
+            "name": "Tool Holder metallic quartz grey (2 pieces)",
+            "priceGBP": 39
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "LED Light",
+      "sku": "46041",
+      "priceGBP": 79,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Solar Light",
+      "sku": "46042",
+      "priceGBP": 49,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p13",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Shelf Support Rails 2 pieces per package",
+      "sku": "46021",
+      "priceGBP": 49,
+      "dimensionsCm": [
+        4,
+        4,
+        185
+      ],
+      "notes": "Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": {
+        "46021": [
+          {
+            "name": "Garden Shed Support Rail (2 pieces)",
+            "priceGBP": 49
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Shelves 2 pieces per package",
+      "sku": "45010",
+      "priceGBP": 69,
+      "dimensionsCm": [
+        72,
+        25.5,
+        7.5
+      ],
+      "notes": "support rails not included. Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Shelves 4 pieces per package",
+      "sku": "45020",
+      "priceGBP": 89,
+      "dimensionsCm": [
+        72,
+        24.5,
+        7.5
+      ],
+      "notes": "support rails not included. Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Shelves 2 pieces per package (deep)",
+      "sku": "45030",
+      "priceGBP": 99,
+      "dimensionsCm": [
+        72,
+        43.5,
+        12.5
+      ],
+      "notes": "support rails not included. Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": {
+        "45030": [
+          {
+            "name": "Shelves 2 pieces per package, deep",
+            "priceGBP": 99
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Folding Table",
+      "sku": "40011",
+      "priceGBP": 139,
+      "dimensionsCm": [
+        69.2,
+        57.5,
+        40
+      ],
+      "notes": "support rails not included. Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": {
+        "40011": [
+          {
+            "name": "Folding Table",
+            "priceGBP": 139
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Suspension Basket",
+      "sku": "47071",
+      "priceGBP": 69,
+      "dimensionsCm": [
+        67,
+        34,
+        20
+      ],
+      "notes": "support rails not included. Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": {
+        "47071": [
+          {
+            "name": "Suspension Basket",
+            "priceGBP": 69
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Hook Set",
+      "sku": "47070",
+      "priceGBP": 89,
+      "dimensionsCm": [
+        72,
+        17,
+        73
+      ],
+      "notes": "support rails not included. Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": {
+        "47070": [
+          {
+            "name": "Hook Set",
+            "priceGBP": 89
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Tool Hangers 4 pieces per package",
+      "sku": "47020",
+      "priceGBP": 29,
+      "dimensionsCm": [
+        13,
+        9.5,
+        30
+      ],
+      "notes": "Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": {
+        "47020": [
+          {
+            "name": "Tool Hanger (4 pieces)",
+            "priceGBP": 29
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Door Baskets 2 pieces per package",
+      "sku": "46025",
+      "priceGBP": 49,
+      "dimensionsCm": [
+        34,
+        10,
+        9.5
+      ],
+      "notes": "Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": {
+        "46025": [
+          {
+            "name": "Door baskets",
+            "priceGBP": 49
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Shelf Baskets 2 pieces per package",
+      "sku": "46026",
+      "priceGBP": 79,
+      "dimensionsCm": [
+        72,
+        16,
+        11
+      ],
+      "notes": "support rails not included. Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": {
+        "46026": [
+          {
+            "name": "Shelf baskets",
+            "priceGBP": 79
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Threshold Access Ramp",
+      "sku": "41000",
+      "priceGBP": 99,
+      "dimensionsCm": [
+        135,
+        14.5,
+        7
+      ],
+      "notes": "only possible with double door and aluminium floor frame. Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Bike Rack BikeHolder, set for 3 bikes",
+      "sku": "49012",
+      "priceGBP": 79,
+      "dimensionsCm": [
+        72,
+        10,
+        33
+      ],
+      "notes": "support rails not included. Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Bicycle Hanger BikeMax 1 piece per package",
+      "sku": "49011",
+      "priceGBP": 59,
+      "dimensionsCm": [
+        6,
+        14.5,
+        185
+      ],
+      "notes": "Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Bicycle Hanger BikeMax 2 pieces per package",
+      "sku": "49021",
+      "priceGBP": 89,
+      "dimensionsCm": [
+        6,
+        14.5,
+        185
+      ],
+      "notes": "Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "BikeLift Standard",
+      "sku": "49050",
+      "priceGBP": 519,
+      "dimensionsCm": [
+        16.9,
+        43.1,
+        185.4
+      ],
+      "notes": "Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "BikeLift Swivelling",
+      "sku": "49051",
+      "priceGBP": 619,
+      "dimensionsCm": [
+        16.9,
+        57.4,
+        184.6
+      ],
+      "notes": "Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Electric Mounting Panel",
+      "sku": "46031",
+      "priceGBP": 69,
+      "dimensionsCm": [
+        28,
+        6,
+        190
+      ],
+      "notes": "Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": {
+        "46031": [
+          {
+            "name": "Electrical Mounting Panel",
+            "priceGBP": 69
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Bin Bag Holder",
+      "sku": "45016",
+      "priceGBP": 109,
+      "dimensionsCm": [
+        72,
+        44.6,
+        16.2
+      ],
+      "notes": "Galvanised steel interior accessory block printed at the top of price-list p14, above the Neo heading (assigned to Panorama by page position; identical block appears for HighLine on p10).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "BikeLift Mounting Kit Garden Shed (HighLine, Panorama, AvantGarde, Europa)",
+      "sku": "49057",
+      "priceGBP": 100,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p36",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "CleanLine Saver Set (Universal Cleaner + Conservation)",
+      "sku": "99200",
+      "priceGBP": 49,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p36",
+      "webMatchingAccessories": {
+        "99200": [
+          {
+            "name": "CleanLine Saver Set",
+            "priceGBP": 49
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-panorama?country_id=gb (embedded \"Matching accessories\" data)"
+    }
+  ],
+  "downloads": {
+    "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf",
+    "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf",
+    "assemblyAndPlans": [
+      "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/YP013000_Aufbauanleitung_Panorama_0424_WEB.pdf",
+      "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_GH_Panorama_Abmessungen_0818.pdf",
+      "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_Panorama_0718_WEB.pdf",
+      "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/YP080518_Aufbauanleitung-Regenfallrohr_Panorama_0118_WEB.pdf"
+    ]
+  },
+  "notes": [
+    "5 sizes x 2 door types = 10 configurations x 3 colours = 30 SKUs, all priced on the GB page (JSON-LD) and identical to the price list.",
+    "Web data sheet weights are lower than price-list (gross) weights for every size.",
+    "Price list p14 top block (galvanised steel accessories) sits above the Neo heading; recorded here as Panorama accessories by page position. Same items/prices as the HighLine block on p10.",
+    "Assembly time (web FAQ): HighLine/Panorama/AvantGarde 5 to 8 hours (depending on size).",
+    "Bikes (web FAQ, 29in rims): P1 3-4, P2 4-5, P3 5-6, P4 6-7, P5 7-8.",
+    "Door opening angle (FAQ): 90°, 115° (gas spring position)."
+  ]
+}

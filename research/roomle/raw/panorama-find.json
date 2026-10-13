@@ -1,0 +1,85 @@
+{
+    "code": 200,
+    "result": {
+        "hash": "biohort:Panorama_Master:DA817C0B2516DF920AABA7F8167F7CD4B58B086A273CA135102199663D7D849F",
+        "data": [
+            {
+                "display": true,
+                "title": "ALU-Bodenrahmen",
+                "price": 207.9,
+                "qty": 1,
+                "sku": "41041",
+                "ean": "9003414410411",
+                "image": "/products/41041/gh_detail_bodenrahmen_1_1.jpg",
+                "parameters": [
+                    {
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "H2, P2, A3, A5"
+                    }
+                ]
+            },
+            {
+                "display": true,
+                "title": "Ger\u00e4tehaus Panorama\u00ae P2 dunkelgrau-metallic Doppelt\u00fcre",
+                "price": 2449,
+                "qty": 1,
+                "sku": "14039",
+                "ean": "9003414140394",
+                "image": "/products/14039/14039_panorama_p2_dunkelgrau_dt_rgb.jpg",
+                "parameters": [
+                    {
+                        "title": "Farbe",
+                        "value": "Dunkelgrau-metallic"
+                    },
+                    {
+                        "title": "T\u00fcroption",
+                        "value": "Doppelt\u00fcr"
+                    },
+                    {
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "P2 (273 x 198 cm)"
+                    }
+                ]
+            }
+        ],
+        "confirmed": false,
+        "confirmedBy": null,
+        "confirmationDate": null,
+        "restrictionLevel": null,
+        "featureFlagAnimation": false,
+        "roomDesigner": false,
+        "roomDesignerId": null,
+        "roomDesignerMoc": false,
+        "roomDesignerCatalogTag": null,
+        "createPlan": false,
+        "image": false,
+        "customer": {
+            "customerFirstname": "",
+            "customerTitle": "",
+            "customerLastname": "",
+            "customerStreet": "",
+            "customerZip": "",
+            "customerHouseNumber": "",
+            "customerPlace": "",
+            "customerCountry": "",
+            "customerPhone": "",
+            "customerMail": "",
+            "customerSalutation": ""
+        },
+        "company": {
+            "companyDebitorNumber": "",
+            "companyOrderNumber": "",
+            "companyMail": "",
+            "companyConsultant": "",
+            "companyVatNo": "",
+            "companyName": "",
+            "companyStreet": "",
+            "companyHouseNumber": "",
+            "companyZip": "",
+            "companyCity": "",
+            "companyCountry": "",
+            "companyPhone": "",
+            "companyBiohortOrderNumber": ""
+        }
+    }
+}

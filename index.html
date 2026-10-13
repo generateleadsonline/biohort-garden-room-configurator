@@ -1,31 +1,171 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#607d3b"><meta name="description" content="Explore your Biohort CasaNova in an interactive design studio. Choose your space, finish and details, then unlock your personalised estimate and PDF design guide.">
-<title>CasaNova Design Studio | Biohort</title>
-<link rel="icon" href="/assets/biohort-logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/style.css">
-<script type="importmap">{"imports":{"three":"/vendor/three.module.js"}}</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Design your Biohort garden shed in 3D | Biohort UK</title>
+  <meta name="description" content="Design your Biohort metal garden shed or CasaNova garden house in 3D: HighLine, AvantGarde, Europa, Panorama, Neo and CasaNova, every size, colour and accessory, with Biohort's published UK prices.">
+  <link rel="canonical" href="https://biohort-garden-room-configurator.netlify.app/configurator/">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Design your Biohort garden shed in 3D">
+  <meta property="og:description" content="Six Biohort ranges in 3D, every size, colour and accessory, with published UK prices.">
+  <meta property="og:image" content="https://biohort-garden-room-configurator.netlify.app/assets/poster-1200.webp">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-<header class="header"><a href="/" class="brand" aria-label="Biohort design studio"><img src="/assets/biohort-logo.svg" alt="Biohort" width="107" height="64"></a><div class="header-title">CASANOVA <span>DESIGN STUDIO</span></div><nav><button id="help" class="text-button">Need a little guidance? <span class="help-circle">?</span></button><div class="austria"><i></i> Made in Austria</div></nav></header>
-<main>
-<section class="intro"><div><div class="eyebrow">YOUR GARDEN. YOUR POSSIBILITIES.</div><h1>Make room for <em>more.</em></h1><p>Bring your CasaNova to life. A little space, entirely your own.</p></div><div class="intro-trust"><span>✓ 20-year guarantee*</span><span>✓ Premium steel construction</span><span>✓ No-obligation estimate</span></div></section>
-<nav class="steps" aria-label="Design steps"><button data-step="0" class="step active" aria-current="step"><b>01</b><span>Your space</span></button><button data-step="1" class="step"><b>02</b><span>Your style</span></button><button data-step="2" class="step"><b>03</b><span>The details</span></button><button data-step="3" class="step"><b>04</b><span>Your quote</span><svg viewBox="0 0 20 20" width="14"><path d="M6 9V6a4 4 0 018 0v3M4 9h12v9H4z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button></nav>
-<div class="studio">
-<section class="visual" aria-label="Your live design preview"><div class="scene-wrap"><div class="scene-top"><div><span class="live-dot"></span> <strong>CasaNova</strong><span class="scene-size" id="scene-size">3 × 4 m</span></div><button id="save" class="saved" title="Save this design on your device">✓ <span>Design saved</span></button></div><div id="scene" tabindex="0" role="img" aria-label="Interactive 3D preview of your CasaNova. Drag to rotate; use the view controls for front and side views."></div><div id="plan" hidden></div><div id="inspiration" hidden><img src="/assets/casanova-reference.webp" alt="Biohort CasaNova in a landscaped garden"><span>Real CasaNova inspiration · styling shown for illustration</span></div><div class="canvas-fallback" id="canvas-fallback" hidden><img src="/assets/casanova-reference.webp" alt="CasaNova reference"><p>3D preview unavailable on this device. Explore your exact dimensions in Floor plan.</p></div><div class="scene-side"><button id="rotate-left" aria-label="Rotate view left" title="Rotate left">↶</button><button id="rotate-right" aria-label="Rotate view right" title="Rotate right">↷</button><button id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button><button id="reset-view" aria-label="Reset view" title="Reset view">⌂</button></div><div class="scene-bottom"><span id="drag-hint"><svg viewBox="0 0 24 24" width="17"><path d="M7 8v7m3-9v8m3-7v7m3-4v5M7 11l-3-1 1 7 5 4h5l4-6-3-4" fill="none" stroke="currentColor" stroke-linecap="round"/></svg> Drag to explore</span><button id="measure" class="measure" aria-pressed="false">↔ Show dimensions</button></div></div>
-<div class="visual-footer"><div class="view-tabs" role="group" aria-label="Preview mode"><button aria-pressed="true" data-view="3d">◈ <span>3D view</span></button><button aria-pressed="false" data-view="plan">▱ <span>Floor plan</span></button><button aria-pressed="false" data-view="inspiration">▧ <span>Inspiration</span></button></div><div class="scene-toggle"><button data-camera="front" title="Front view">Front</button><button id="daylight" aria-pressed="false" title="Toggle evening view">☀ <span>Daylight</span></button></div></div>
-<div class="design-stats"><div><span>YOUR FOOTPRINT</span><strong id="footprint">3.04 × 4.04 m</strong></div><div><span>USABLE SPACE</span><strong id="area">11.45 m²</strong></div><div><span>OVERALL HEIGHT</span><strong>2.51 m</strong></div><button id="share">Share your design <span>↗</span></button></div>
-</section>
-<aside class="controls"><div id="panel"></div><div class="panel-footer"><div class="quote-teaser"><span class="lock-icon">▣</span><div><strong>Your design. Your personal estimate.</strong><span>Unlock your price & PDF in the final step.</span></div></div><div class="panel-actions"><button id="back" class="back-button" hidden>← Back</button><button id="next" class="primary">Continue to style <span>→</span></button></div><div class="footer-note">Free to explore. No commitment.</div></div></aside>
-</div>
-<section class="below"><div class="quality"><div class="eyebrow">BUILT TO STAY BEAUTIFUL</div><h2>More life outdoors.<br>Less looking after it.</h2><p>A contemporary silhouette. Durable, hot-dip galvanised steel. Thoughtful details that make your space work harder.</p><a href="https://www.biohort.com/gb-en/p/casanova" target="_blank" rel="noopener">Discover the CasaNova story <span>↗</span></a></div><div class="quality-item"><span class="quality-icon">20</span><h3>Confidence for years</h3><p>A 20-year guarantee, subject to Biohort’s guarantee conditions and intended use.</p></div><div class="quality-item"><span class="quality-icon">◫</span><h3>Made for your garden</h3><p>Nine modular sizes. Two metallic finishes. A carefully chosen collection of accessories.</p></div><div class="quality-item"><span class="quality-icon">♧</span><h3>Lasting quality</h3><p>40 mm insulated wall panels, an integrated light strip and a maintenance-free steel exterior.</p></div></section>
-<section class="faq"><h2>A few things you might be wondering.</h2><details><summary>Can I choose any size?</summary><p>CasaNova has nine compatible modular sizes. The sliders snap to those sizes, so every combination you see is available. A 4 × 3 m model is not part of the range. Footprint and usable internal area are shown separately.</p></details><details><summary>What will my estimate include?</summary><p>Your itemised estimate uses Biohort’s published 2026 UK price list, including 20% VAT and transport to the dealer’s warehouse. Your chosen accessories are included. Home delivery, assembly, foundations, electrics, roof insulation, permissions and site works require separate confirmation. It is a budgeting guide, subject to dealer confirmation.</p></details><details><summary>Is CasaNova suitable as a year-round office?</summary><p>CasaNova is a designer outbuilding with 40 mm insulated walls. Heating, ventilation, roof and floor insulation, electrics and suitability for your intended use need specialist advice. These are not included as a fully finished office package.</p></details><details><summary>What happens when I request my quote?</summary><p>Submit your name, email and project postcode to unlock your estimate and download your personalised PDF immediately. Your design and enquiry are securely saved for this demonstration. No automated email or sales follow-up is sent. Optional marketing consent is separate.</p></details></section>
-</main>
-<footer class="site-footer"><img src="/assets/biohort-logo.svg" alt="Biohort" width="88"><p>CasaNova Design Studio <span>·</span> An independent concept for Biohort by Generate Leads Online.</p><div><button id="privacy">Privacy</button><a href="https://www.biohort.com/gb-en/guarantee-conditions" target="_blank" rel="noopener">*Guarantee conditions</a><a href="https://www.biohort.com/gb-en/contact" target="_blank" rel="noopener">Biohort contact</a></div></footer>
-<div id="toast" role="status" aria-live="polite"></div>
-<dialog id="modal"><button class="modal-close" aria-label="Close dialog">×</button><div id="modal-content"></div></dialog>
-<script type="module" src="/app.js"></script>
+  <a class="skip" href="#panel-title">Skip to the designer</a>
+  <header class="site-header">
+    <a class="brand" href="https://www.biohort.com/gb-en/" data-cta="logo" aria-label="Biohort UK home">
+      <img src="/assets/biohort-logo.svg" width="78" height="46" alt="Biohort">
+    </a>
+    <p class="header-title">Garden shed designer</p>
+    <nav class="header-ctas" aria-label="Talk to Biohort">
+      <button type="button" class="hbtn" data-open="callback" data-cta="callback" data-placement="header"><svg class="icon" aria-hidden="true"><use href="#i-phone-in"/></svg><span>Request a callback</span></button>
+      <button type="button" class="hbtn" data-open="showroom" data-cta="showroom" data-placement="header"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>Visit showroom</span></button>
+      <button type="button" class="hbtn" data-open="brochure" data-cta="brochure" data-placement="header"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><span>Download brochure</span></button>
+      <a class="hphone" href="tel:+43728277880" data-cta="phone" data-placement="header"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>+43 7282 7788 0</span></a>
+      <button type="button" class="hbtn help" id="help" data-cta="help" aria-label="Help: replay the tour"><svg class="icon" aria-hidden="true"><use href="#i-help"/></svg><span>Help</span></button>
+    </nav>
+    <a class="hphone-mini" href="tel:+43728277880" data-cta="phone" data-placement="header-mobile" aria-label="Call Biohort on +43 7282 7788 0"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+    <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu" data-cta="menu"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg><span>Menu</span></button>
+    <div class="menu" id="menu" hidden>
+      <button type="button" data-open="callback" data-cta="callback" data-placement="menu"><svg class="icon" aria-hidden="true"><use href="#i-phone-in"/></svg>Request a callback</button>
+      <button type="button" data-open="showroom" data-cta="showroom" data-placement="menu"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Visit showroom</button>
+      <button type="button" data-open="brochure" data-cta="brochure" data-placement="menu"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>Download brochure</button>
+      <a href="tel:+43728277880" data-cta="phone" data-placement="menu"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call +43 7282 7788 0</a>
+      <button type="button" id="help-menu" data-cta="help" data-placement="menu"><svg class="icon" aria-hidden="true"><use href="#i-help"/></svg>Help: replay the tour</button>
+    </div>
+  </header>
+
+  <main class="designer" id="designer">
+    <section class="stage" id="stage" aria-label="3D view of your Biohort building">
+      <div class="scene" id="scene"></div>
+      <img class="poster" id="poster" src="/assets/poster-1200.webp" srcset="/assets/poster-640.webp 640w, /assets/poster-1200.webp 1200w" sizes="(min-width: 1024px) 64vw, 100vw" width="1200" height="750" alt="A Biohort HighLine garden shed in 3D" fetchpriority="high">
+      <div class="stage-loader" id="stage-loader" hidden><span class="spinner" aria-hidden="true"></span><span id="stage-loader-text">Loading your 3D shed</span></div>
+      <div class="stage-fallback" id="stage-fallback" hidden>
+        <img src="/assets/photos/fallback-960.webp" width="960" height="720" alt="A Biohort garden shed in a garden" loading="lazy">
+        <p id="fallback-caption">The 3D view couldn't start this time.</p>
+        <button type="button" class="btn small" id="fallback-retry" hidden>Load the 3D again</button>
+      </div>
+      <div class="view-switch" role="group" aria-label="View">
+        <button type="button" data-view="outside" aria-pressed="true" aria-label="Outside view"><svg class="icon" aria-hidden="true"><use href="#i-outside"/></svg><span>Outside</span></button>
+        <button type="button" data-view="inside" aria-pressed="false" aria-label="Inside view"><svg class="icon" aria-hidden="true"><use href="#i-inside"/></svg><span>Inside</span></button>
+        <button type="button" data-view="plan" aria-pressed="false" aria-label="Plan view"><svg class="icon" aria-hidden="true"><use href="#i-plan"/></svg><span>Plan</span></button>
+      </div>
+      <div class="stage-tools" role="group" aria-label="3D view controls">
+        <button type="button" id="zoom-in" aria-label="Zoom in"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+        <button type="button" id="zoom-out" aria-label="Zoom out"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg></button>
+        <button type="button" id="reset-view" aria-label="Reset the view"><svg class="icon" aria-hidden="true"><use href="#i-reset"/></svg></button>
+        <button type="button" id="dusk" aria-pressed="false" aria-label="See it at dusk"><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+      </div>
+      <div class="history" role="group" aria-label="Undo and redo">
+        <button type="button" id="undo" aria-label="Undo" disabled><svg class="icon" aria-hidden="true"><use href="#i-undo"/></svg></button>
+        <button type="button" id="redo" aria-label="Redo" disabled><svg class="icon" aria-hidden="true"><use href="#i-redo"/></svg></button>
+      </div>
+      <p class="stage-hint" id="stage-hint">Drag to turn · Scroll or pinch to zoom · Tap a part to edit it</p>
+      <p class="toast" id="toast" role="status" hidden></p>
+    </section>
+
+    <section class="panel" id="panel" aria-labelledby="panel-title">
+      <nav class="steps" id="steps" aria-label="Design steps"></nav>
+      <div class="panel-body" id="panel-body">
+        <h1 class="panel-title" id="panel-title" tabindex="-1">Choose your range</h1>
+        <p class="panel-lede" id="panel-lede">Six ranges of Biohort steel garden buildings, made in Austria.</p>
+        <div id="step-content"></div>
+        <div class="usps" id="usps"></div>
+      </div>
+      <footer class="panel-foot">
+        <div class="price-chip" id="price-chip" aria-live="polite">Guide price<strong>£33,124</strong></div>
+        <div class="nav-buttons">
+          <button type="button" class="btn ghost" id="back" aria-label="Back to the previous step" hidden><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg><span class="txt">Back</span></button>
+          <button type="button" class="btn" id="next">Next: Size</button>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <dialog class="form-dialog" id="form-dialog" aria-labelledby="form-title">
+    <form method="dialog" class="dialog-close-form"><button class="close" aria-label="Close" value="cancel"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></form>
+    <div id="form-view">
+      <h2 id="form-title">Request a callback</h2>
+      <p class="form-lede" id="form-lede"></p>
+      <div class="form-extra" id="form-extra"></div>
+      <form id="lead-form" novalidate>
+        <div class="field-row">
+          <div class="field"><label for="f-first">First name</label><input id="f-first" name="firstName" autocomplete="given-name" required maxlength="60"><p class="error" id="f-first-error" hidden></p></div>
+          <div class="field"><label for="f-last">Last name</label><input id="f-last" name="lastName" autocomplete="family-name" required maxlength="60"><p class="error" id="f-last-error" hidden></p></div>
+        </div>
+        <div class="field"><label for="f-phone">Phone number</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="24" placeholder="07700 123456" aria-describedby="f-phone-hint"><p class="hint" id="f-phone-hint">A UK mobile or landline. Biohort's UK team will call you on it.</p><p class="error" id="f-phone-error" hidden></p></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com"><p class="error" id="f-email-error" hidden></p></div>
+        <div class="field"><label for="f-postcode">Postcode of the garden</label><input id="f-postcode" name="postcode" autocomplete="postal-code" required maxlength="8" placeholder="SW1A 1AA" class="short"><p class="error" id="f-postcode-error" hidden></p></div>
+        <div id="form-mode-fields"></div>
+        <div class="field hp" aria-hidden="true"><label for="f-company">Company</label><input id="f-company" name="company" tabindex="-1" autocomplete="off"></div>
+        <label class="check"><input type="checkbox" id="f-marketing" name="marketing"><span>Send me occasional news and offers from Biohort. Optional.</span></label>
+        <p class="small-print">Your design, its full specification and a link to it are sent with your details. We use them only to reply to you. <a href="https://www.biohort.com/gb-en/data-protection" target="_blank" rel="noopener">Privacy policy</a>.</p>
+        <p class="error form-error" id="form-error" hidden></p>
+        <button type="submit" class="btn wide" id="form-submit">Request a callback</button>
+      </form>
+    </div>
+    <div id="form-done" hidden>
+      <h2 id="done-title" tabindex="-1">Thank you</h2>
+      <p id="done-text"></p>
+      <p class="ref" id="done-ref"></p>
+      <div class="done-actions" id="done-actions"></div>
+    </div>
+  </dialog>
+
+  <dialog class="form-dialog info-dialog" id="info-dialog" aria-labelledby="info-title">
+    <form method="dialog" class="dialog-close-form"><button class="close" aria-label="Close" value="cancel"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></form>
+    <div id="info-body"></div>
+  </dialog>
+
+  <dialog class="form-dialog share-dialog" id="share-dialog" aria-labelledby="share-title">
+    <form method="dialog" class="dialog-close-form"><button class="close" aria-label="Close" value="cancel"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></form>
+    <h2 id="share-title">Share your design</h2>
+    <p>Anyone with this link sees your design exactly as it is now. It holds no contact details.</p>
+    <label class="field" for="share-link"><span>Your design link</span><input id="share-link" readonly></label>
+    <button type="button" class="btn wide" id="share-copy">Copy link</button>
+    <p class="hint" id="share-status" role="status"></p>
+  </dialog>
+
+  <div class="tour" id="tour" hidden>
+    <div class="tour-shade" id="tour-shade"></div>
+    <div class="tour-card" id="tour-card" role="dialog" aria-modal="true" aria-labelledby="tour-title" aria-describedby="tour-text">
+      <p class="tour-count" id="tour-count"></p>
+      <h2 id="tour-title" tabindex="-1"></h2>
+      <p id="tour-text"></p>
+      <div class="tour-actions"><button type="button" class="btn ghost small" id="tour-skip">Skip tour</button><button type="button" class="btn small" id="tour-next"><span>Next</span></button></div>
+    </div>
+  </div>
+  <p class="visually-hidden" id="announce" aria-live="polite"></p>
+
+  <svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></symbol>
+    <symbol id="i-phone-in" viewBox="0 0 24 24"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/><path d="M20 3l-5 5m0-4v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4v4h4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 7L4 12l5 5M4 12h11a5 5 0 0 1 0 10h-2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="M15 7l5 5-5 5M20 12H9a5 5 0 0 0 0 10h2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-outside" viewBox="0 0 24 24"><path d="M3 10h18M5 10v10h14V10M3 10l2-5h14l2 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 20v-6h4v6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-inside" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 15l5-3 5 3 6-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plan" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 11h7V4M14 20v-6h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m-4.5-4.5L12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M4 6.5h16V20H4zM4 10.5h16M8 4v4M16 4v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2.5-6.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M5 7h14M10 7V5h4v2M7 7l1 13h8l1-13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  </svg>
+  <script type="module" src="/src/app.js"></script>
 </body>
 </html>

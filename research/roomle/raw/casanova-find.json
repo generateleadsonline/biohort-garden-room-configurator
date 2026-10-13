@@ -1,0 +1,46 @@
+{
+    "code": 200,
+    "result": {
+        "hash": "biohort:CasaNova_Master:2632C3D0CD7357D8F7339DA0A023F0C987728931661D5F12DBA5A326FF499CEA",
+        "data": null,
+        "confirmed": true,
+        "confirmedBy": "Nina",
+        "confirmationDate": "17.08.2023",
+        "restrictionLevel": null,
+        "featureFlagAnimation": false,
+        "roomDesigner": false,
+        "roomDesignerId": null,
+        "roomDesignerMoc": false,
+        "roomDesignerCatalogTag": null,
+        "createPlan": false,
+        "image": false,
+        "customer": {
+            "customerFirstname": "",
+            "customerTitle": "",
+            "customerLastname": "",
+            "customerStreet": "",
+            "customerZip": "",
+            "customerHouseNumber": "",
+            "customerPlace": "",
+            "customerCountry": "AT",
+            "customerPhone": "",
+            "customerMail": "",
+            "customerSalutation": ""
+        },
+        "company": {
+            "companyDebitorNumber": "",
+            "companyOrderNumber": "",
+            "companyMail": "",
+            "companyConsultant": "",
+            "companyVatNo": "",
+            "companyName": "",
+            "companyStreet": "",
+            "companyHouseNumber": "",
+            "companyZip": "",
+            "companyCity": "",
+            "companyCountry": "AT",
+            "companyPhone": "",
+            "companyBiohortOrderNumber": ""
+        }
+    }
+}

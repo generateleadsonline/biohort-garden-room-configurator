@@ -1,0 +1,2661 @@
+{
+  "range": "Neo",
+  "sourceUrls": [
+    "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+    "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf",
+    "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf"
+  ],
+  "checked": "2026-10-13",
+  "priceListMeta": {
+    "title": "PRICE LIST 2026 No. 71 gb, Version 02",
+    "valid": "Valid from 01.01.2026 until 31.12.2026 or until revoked for the UK",
+    "pages": "14-17 (Neo), 36 (BikeLift kit, cleaning)",
+    "pricesNote": "Prices are in GBP include transport cost to the dealer's warehouse or DDP to the customer's address (kerbside) within mainland; recommended retail price GBP incl. VAT and shipping costs",
+    "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p1"
+  },
+  "colours": [
+    {
+      "name": "Metallic silver",
+      "skuDigit": "81xxx / 82xxx",
+      "webLabel": "Silver-metallic"
+    },
+    {
+      "name": "Metallic quartz grey",
+      "skuDigit": "87xxx / 89xxx",
+      "webLabel": "Quartz grey-metallic"
+    },
+    {
+      "name": "Metallic dark grey",
+      "skuDigit": "85xxx / 86xxx",
+      "webLabel": "Dark grey-metallic"
+    }
+  ],
+  "coloursNote": "Interior always grey white (price list p14). Web colour FAQ: metallic silver similar to DB 701, metallic quartz grey similar to DB 702, metallic dark grey similar to DB 703, grey white (interior) similar to RAL 9002; no RAL equivalents for the metallics. SKU colour prefix: silver 81/82, quartz grey 87/89, dark grey 85/86 (82/89/86 are used for standard-door 1D-4D and double-door C/D sizes).",
+  "sellingPoints": [
+    "Modern design: Smooth wall surfaces and elegant acrylic glass panel in the door",
+    "Double the sheet steel thickness compared to low-cost providers",
+    "Individually configurable",
+    "Maintenance-free for life - 20-year guarantee subject to Biohort’s warranty terms and conditions",
+    "Comfortable door opening with gas spring",
+    "Built-in accessory mounting",
+    "Optional interior panelling and insulation",
+    "Integrated gully",
+    "3-way locking mechanism complete with stainless steel door handle",
+    "Robust roof construction for a snow load of up to 150 kg/m²",
+    "Storm-proof up to wind force 12 (according to the Beaufort Scale: hurricane)* (* with professional assembly and anchoring)",
+    "Top quality materials: galvanised, polyamide enamel coated steel plate, screws and hinges made of stainless steel"
+  ],
+  "guarantee": "20-year guarantee subject to Biohort’s warranty terms and conditions (product page); FAQ: 20-year guarantee against corrosion. Terms: www.biohort.com/terms-of-guarantee (price list p1).",
+  "delivery": "Web: \"Free Shipping within 3 weeks\"; FAQ: stock products delivered within 3 weeks of order confirmation, free kerbside (road passable for a 38-tonne lorry). Price list p1: prices include transport to dealer's warehouse or DDP kerbside within mainland; stock items ready for dispatch within 2 to 4 working days after order clarification; address must be accessible for a 38 ton lorry (3 m minimum width of access).",
+  "steelThickness": "No millimetre figure published for Neo. Product page: \"Double the sheet steel thickness compared to low-cost providers\". Comparison table: \"Galvanised with protective zinc layer of at least 150 g/m² and polyamide enamel coating (same for all garden sheds)\".",
+  "roof": "Flat roof (product page heading \"Modern Metal Garden Shed with Flat Roof\"; comparison-table special feature for Neo: \"Smooth side walls, glass panel in the door, wooden ceiling\"). Wooden ceiling made of 19 mm plywood with a 1.5 mm EPDM roofing membrane (price list p14); exposed wooden ceiling inside, full-surface EPDM membrane thickness 1.5 mm (web). Roof pitch 1° (web FAQ table). Snow load 150 kg/m². Roof overhang 47 mm (web FAQ table). EPDM roof should be weighted with terrace tiles (30 x 30 x 2/3/4 cm); tiles per size in web FAQ: 1A/1B 12, 1C/1D 16, 2A/2B 15, 2C/2D 20, 3A/3B 21, 3C/3D 28, 4A/4B 27, 4C/4D 36; side canopy 2: 24, 3: 28, 4: 28.",
+  "standardEquipment": {
+    "web": [
+      "2 pcs. Shelves: galvanised steel plate, grey white coated, 56 x 26 x 17.3 cm (W x L x H)",
+      "Tool hanger: two pieces",
+      "Tool holder for the inside of the door (max. 4 per door): two pieces",
+      "Rainwater downpipes",
+      "Luminous element (lightly tinted) in the standard door"
+    ],
+    "priceList": [
+      "Comfortable door opening with gas spring",
+      "Tinted glass in the standard door",
+      "Wooden ceiling made of 19 mm plywood with a 1.5 mm EPDM roofing membrane",
+      "2 rainwater downpipes with 90° adjustable outlet",
+      "2 tool holders on the inside of the door panels",
+      "2 tool hangers",
+      "2 shelves",
+      "Triple locking mechanism with stainless steel door handle, standard cylinder and spare key",
+      "Screws and anchors for mounting to the foundation"
+    ],
+    "sources": [
+      "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+      "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+    ]
+  },
+  "sizes": [
+    {
+      "code": "1A",
+      "variant": "standard door",
+      "exteriorCm": [
+        180,
+        180,
+        222
+      ],
+      "interiorCm": [
+        164,
+        164,
+        208
+      ],
+      "effectiveM2": 2.69,
+      "foundationCm": [
+        173,
+        173
+      ],
+      "weightKg": 211.2,
+      "weightKgGrossPriceList": 211.5,
+      "volumeM3PriceList": 5.6,
+      "packagesPriceList": 10,
+      "skus": {
+        "Metallic silver": "81003",
+        "Metallic quartz grey": "87003",
+        "Metallic dark grey": "85003"
+      },
+      "priceGBP": {
+        "81003": 2699,
+        "87003": 2699,
+        "85003": 2699
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "2A",
+      "variant": "standard door",
+      "exteriorCm": [
+        180,
+        236,
+        222
+      ],
+      "interiorCm": [
+        164,
+        220,
+        208
+      ],
+      "effectiveM2": 3.61,
+      "foundationCm": [
+        173,
+        229
+      ],
+      "weightKg": 239,
+      "weightKgGrossPriceList": 243.7,
+      "volumeM3PriceList": 7.5,
+      "packagesPriceList": 10,
+      "skus": {
+        "Metallic silver": "81006",
+        "Metallic quartz grey": "87006",
+        "Metallic dark grey": "85006"
+      },
+      "priceGBP": {
+        "81006": 2999,
+        "87006": 2999,
+        "85006": 2999
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "3A",
+      "variant": "standard door",
+      "exteriorCm": [
+        180,
+        292,
+        222
+      ],
+      "interiorCm": [
+        164,
+        276,
+        208
+      ],
+      "effectiveM2": 4.53,
+      "foundationCm": [
+        173,
+        285
+      ],
+      "weightKg": 302.2,
+      "weightKgGrossPriceList": 304.4,
+      "volumeM3PriceList": 9.4,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "81009",
+        "Metallic quartz grey": "87009",
+        "Metallic dark grey": "85009"
+      },
+      "priceGBP": {
+        "81009": 3369,
+        "87009": 3369,
+        "85009": 3369
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "4A",
+      "variant": "standard door",
+      "exteriorCm": [
+        180,
+        348,
+        222
+      ],
+      "interiorCm": [
+        164,
+        332,
+        208
+      ],
+      "effectiveM2": 5.45,
+      "foundationCm": [
+        173,
+        341
+      ],
+      "weightKg": 327.3,
+      "weightKgGrossPriceList": 335.8,
+      "volumeM3PriceList": 11.3,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "81014",
+        "Metallic quartz grey": "87014",
+        "Metallic dark grey": "85014"
+      },
+      "priceGBP": {
+        "81014": 3799,
+        "87014": 3799,
+        "85014": 3799
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "1B",
+      "variant": "standard door",
+      "exteriorCm": [
+        236,
+        180,
+        222
+      ],
+      "interiorCm": [
+        220,
+        164,
+        208
+      ],
+      "effectiveM2": 3.61,
+      "foundationCm": [
+        229,
+        173
+      ],
+      "weightKg": 239.1,
+      "weightKgGrossPriceList": 245.9,
+      "volumeM3PriceList": 7.5,
+      "packagesPriceList": 10,
+      "skus": {
+        "Metallic silver": "81029",
+        "Metallic quartz grey": "87029",
+        "Metallic dark grey": "85029"
+      },
+      "priceGBP": {
+        "81029": 2999,
+        "87029": 2999,
+        "85029": 2999
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "2B",
+      "variant": "standard door",
+      "exteriorCm": [
+        236,
+        236,
+        222
+      ],
+      "interiorCm": [
+        220,
+        220,
+        208
+      ],
+      "effectiveM2": 4.84,
+      "foundationCm": [
+        229,
+        229
+      ],
+      "weightKg": 283.4,
+      "weightKgGrossPriceList": 284.7,
+      "volumeM3PriceList": 10.1,
+      "packagesPriceList": 11,
+      "skus": {
+        "Metallic silver": "81034",
+        "Metallic quartz grey": "87034",
+        "Metallic dark grey": "85034"
+      },
+      "priceGBP": {
+        "81034": 3469,
+        "87034": 3469,
+        "85034": 3469
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "3B",
+      "variant": "standard door",
+      "exteriorCm": [
+        236,
+        292,
+        222
+      ],
+      "interiorCm": [
+        276,
+        208,
+        220
+      ],
+      "effectiveM2": 4.58,
+      "foundationCm": [
+        229,
+        217
+      ],
+      "weightKg": 339.9,
+      "weightKgGrossPriceList": 349.2,
+      "volumeM3PriceList": 12.6,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "81040",
+        "Metallic quartz grey": "87040",
+        "Metallic dark grey": "85040"
+      },
+      "priceGBP": {
+        "81040": 3949,
+        "87040": 3949,
+        "85040": 3949
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "4B",
+      "variant": "standard door",
+      "exteriorCm": [
+        236,
+        348,
+        222
+      ],
+      "interiorCm": [
+        220,
+        332,
+        208
+      ],
+      "effectiveM2": 7.3,
+      "foundationCm": [
+        229,
+        341
+      ],
+      "weightKg": 382.6,
+      "weightKgGrossPriceList": 392.9,
+      "volumeM3PriceList": 15.2,
+      "packagesPriceList": 14,
+      "skus": {
+        "Metallic silver": "81044",
+        "Metallic quartz grey": "87044",
+        "Metallic dark grey": "85044"
+      },
+      "priceGBP": {
+        "81044": 4339,
+        "87044": 4339,
+        "85044": 4339
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "1C",
+      "variant": "standard door",
+      "exteriorCm": [
+        292,
+        180,
+        222
+      ],
+      "interiorCm": [
+        276,
+        164,
+        208
+      ],
+      "effectiveM2": 4.53,
+      "foundationCm": [
+        285,
+        173
+      ],
+      "weightKg": 303.8,
+      "weightKgGrossPriceList": 311.9,
+      "volumeM3PriceList": 9.4,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "81082",
+        "Metallic quartz grey": "87082",
+        "Metallic dark grey": "85082"
+      },
+      "priceGBP": {
+        "81082": 3369,
+        "87082": 3369,
+        "85082": 3369
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      },
+      "notes": "Web data-sheet table for this row has no door-type heading; door type taken from the GB price list, which lists these EANs under \"With standard door, door opening: 83 x 200 cm (W x H), right door hinge\""
+    },
+    {
+      "code": "2C",
+      "variant": "standard door",
+      "exteriorCm": [
+        292,
+        236,
+        222
+      ],
+      "interiorCm": [
+        276,
+        220,
+        208
+      ],
+      "effectiveM2": 6.07,
+      "foundationCm": [
+        285,
+        229
+      ],
+      "weightKg": 335.6,
+      "weightKgGrossPriceList": 348.7,
+      "volumeM3PriceList": 12.6,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "81085",
+        "Metallic quartz grey": "87085",
+        "Metallic dark grey": "85085"
+      },
+      "priceGBP": {
+        "81085": 3949,
+        "87085": 3949,
+        "85085": 3949
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      },
+      "notes": "Web data-sheet table for this row has no door-type heading; door type taken from the GB price list, which lists these EANs under \"With standard door, door opening: 83 x 200 cm (W x H), right door hinge\""
+    },
+    {
+      "code": "3C",
+      "variant": "standard door",
+      "exteriorCm": [
+        292,
+        292,
+        222
+      ],
+      "interiorCm": [
+        276,
+        276,
+        208
+      ],
+      "effectiveM2": 7.62,
+      "foundationCm": [
+        285,
+        285
+      ],
+      "weightKg": 418.5,
+      "weightKgGrossPriceList": 433.9,
+      "volumeM3PriceList": 15.8,
+      "packagesPriceList": 16,
+      "skus": {
+        "Metallic silver": "81089",
+        "Metallic quartz grey": "87089",
+        "Metallic dark grey": "85089"
+      },
+      "priceGBP": {
+        "81089": 4429,
+        "87089": 4429,
+        "85089": 4429
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      },
+      "notes": "Web data-sheet table for this row has no door-type heading; door type taken from the GB price list, which lists these EANs under \"With standard door, door opening: 83 x 200 cm (W x H), right door hinge\""
+    },
+    {
+      "code": "4C",
+      "variant": "standard door",
+      "exteriorCm": [
+        292,
+        348,
+        222
+      ],
+      "interiorCm": [
+        276,
+        332,
+        208
+      ],
+      "effectiveM2": 9.16,
+      "foundationCm": [
+        285,
+        341
+      ],
+      "weightKg": 457.6,
+      "weightKgGrossPriceList": 474.7,
+      "volumeM3PriceList": 19.1,
+      "packagesPriceList": 16,
+      "skus": {
+        "Metallic silver": "81092",
+        "Metallic quartz grey": "87092",
+        "Metallic dark grey": "85092"
+      },
+      "priceGBP": {
+        "81092": 4909,
+        "87092": 4909,
+        "85092": 4909
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      },
+      "notes": "Web data-sheet table for this row has no door-type heading; door type taken from the GB price list, which lists these EANs under \"With standard door, door opening: 83 x 200 cm (W x H), right door hinge\""
+    },
+    {
+      "code": "1D",
+      "variant": "standard door",
+      "exteriorCm": [
+        348,
+        180,
+        222
+      ],
+      "interiorCm": [
+        332,
+        164,
+        208
+      ],
+      "effectiveM2": 5.45,
+      "foundationCm": [
+        341,
+        173
+      ],
+      "weightKg": 331.8,
+      "weightKgGrossPriceList": 340.1,
+      "volumeM3PriceList": 11.3,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "82024",
+        "Metallic quartz grey": "89024",
+        "Metallic dark grey": "86024"
+      },
+      "priceGBP": {
+        "82024": 3799,
+        "89024": 3799,
+        "86024": 3799
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      },
+      "notes": "Web data-sheet table for this row has no door-type heading; door type taken from the GB price list, which lists these EANs under \"With standard door, door opening: 83 x 200 cm (W x H), right door hinge\""
+    },
+    {
+      "code": "2D",
+      "variant": "standard door",
+      "exteriorCm": [
+        348,
+        236,
+        222
+      ],
+      "interiorCm": [
+        332,
+        220,
+        208
+      ],
+      "effectiveM2": 7.3,
+      "foundationCm": [
+        341,
+        229
+      ],
+      "weightKg": 380.1,
+      "weightKgGrossPriceList": 383.5,
+      "volumeM3PriceList": 15.2,
+      "packagesPriceList": 14,
+      "skus": {
+        "Metallic silver": "82028",
+        "Metallic quartz grey": "89028",
+        "Metallic dark grey": "86028"
+      },
+      "priceGBP": {
+        "82028": 4199,
+        "89028": 4199,
+        "86028": 4199
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      },
+      "notes": "Web data-sheet table for this row has no door-type heading; door type taken from the GB price list, which lists these EANs under \"With standard door, door opening: 83 x 200 cm (W x H), right door hinge\""
+    },
+    {
+      "code": "3D",
+      "variant": "standard door",
+      "exteriorCm": [
+        348,
+        292,
+        222
+      ],
+      "interiorCm": [
+        332,
+        276,
+        208
+      ],
+      "effectiveM2": 9.16,
+      "foundationCm": [
+        341,
+        285
+      ],
+      "weightKg": 463.6,
+      "weightKgGrossPriceList": 468.6,
+      "volumeM3PriceList": 19.1,
+      "packagesPriceList": 16,
+      "skus": {
+        "Metallic silver": "82031",
+        "Metallic quartz grey": "89031",
+        "Metallic dark grey": "86031"
+      },
+      "priceGBP": {
+        "82031": 4909,
+        "89031": 4909,
+        "86031": 4909
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      },
+      "notes": "Web data-sheet table for this row has no door-type heading; door type taken from the GB price list, which lists these EANs under \"With standard door, door opening: 83 x 200 cm (W x H), right door hinge\""
+    },
+    {
+      "code": "4D",
+      "variant": "standard door",
+      "exteriorCm": [
+        348,
+        348,
+        222
+      ],
+      "interiorCm": [
+        332,
+        332,
+        208
+      ],
+      "effectiveM2": 11.02,
+      "foundationCm": [
+        341,
+        341
+      ],
+      "weightKg": 495.2,
+      "weightKgGrossPriceList": 515,
+      "volumeM3PriceList": 22.9,
+      "packagesPriceList": 16,
+      "skus": {
+        "Metallic silver": "82034",
+        "Metallic quartz grey": "89034",
+        "Metallic dark grey": "86034"
+      },
+      "priceGBP": {
+        "82034": 5299,
+        "89034": 5299,
+        "86034": 5299
+      },
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      },
+      "notes": "Web data-sheet table for this row has no door-type heading; door type taken from the GB price list, which lists these EANs under \"With standard door, door opening: 83 x 200 cm (W x H), right door hinge\""
+    },
+    {
+      "code": "1B",
+      "variant": "double door",
+      "exteriorCm": [
+        236,
+        180,
+        222
+      ],
+      "interiorCm": [
+        220,
+        164,
+        208
+      ],
+      "effectiveM2": 3.61,
+      "foundationCm": [
+        229,
+        173
+      ],
+      "weightKg": 250.6,
+      "weightKgGrossPriceList": 257.6,
+      "volumeM3PriceList": 7.5,
+      "packagesPriceList": 10,
+      "skus": {
+        "Metallic silver": "81060",
+        "Metallic quartz grey": "87060",
+        "Metallic dark grey": "85060"
+      },
+      "priceGBP": {
+        "81060": 3279,
+        "87060": 3279,
+        "85060": 3279
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "2B",
+      "variant": "double door",
+      "exteriorCm": [
+        236,
+        236,
+        222
+      ],
+      "interiorCm": [
+        220,
+        220,
+        208
+      ],
+      "effectiveM2": 4.84,
+      "foundationCm": [
+        229,
+        229
+      ],
+      "weightKg": 292.9,
+      "weightKgGrossPriceList": 296.7,
+      "volumeM3PriceList": 10.1,
+      "packagesPriceList": 11,
+      "skus": {
+        "Metallic silver": "81063",
+        "Metallic quartz grey": "87063",
+        "Metallic dark grey": "85063"
+      },
+      "priceGBP": {
+        "81063": 3759,
+        "87063": 3759,
+        "85063": 3759
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "3B",
+      "variant": "double door",
+      "exteriorCm": [
+        236,
+        292,
+        222
+      ],
+      "interiorCm": [
+        220,
+        276,
+        208
+      ],
+      "effectiveM2": 6.07,
+      "foundationCm": [
+        229,
+        217
+      ],
+      "weightKg": 353.8,
+      "weightKgGrossPriceList": 361,
+      "volumeM3PriceList": 12.6,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "81069",
+        "Metallic quartz grey": "87069",
+        "Metallic dark grey": "85069"
+      },
+      "priceGBP": {
+        "81069": 4239,
+        "87069": 4239,
+        "85069": 4239
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "4B",
+      "variant": "double door",
+      "exteriorCm": [
+        236,
+        348,
+        222
+      ],
+      "interiorCm": [
+        220,
+        332,
+        208
+      ],
+      "effectiveM2": 7.3,
+      "foundationCm": [
+        229,
+        341
+      ],
+      "weightKg": 382.5,
+      "weightKgGrossPriceList": 399.9,
+      "volumeM3PriceList": 15.2,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "81072",
+        "Metallic quartz grey": "87072",
+        "Metallic dark grey": "85072"
+      },
+      "priceGBP": {
+        "81072": 4619,
+        "87072": 4619,
+        "85072": 4619
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "1C",
+      "variant": "double door",
+      "exteriorCm": [
+        292,
+        180,
+        222
+      ],
+      "interiorCm": [
+        276,
+        164,
+        208
+      ],
+      "effectiveM2": 4.53,
+      "foundationCm": [
+        285,
+        173
+      ],
+      "weightKg": 313.3,
+      "weightKgGrossPriceList": 323.9,
+      "volumeM3PriceList": 9.4,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "82005",
+        "Metallic quartz grey": "89005",
+        "Metallic dark grey": "86005"
+      },
+      "priceGBP": {
+        "82005": 3659,
+        "89005": 3659,
+        "86005": 3659
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "2C",
+      "variant": "double door",
+      "exteriorCm": [
+        292,
+        236,
+        222
+      ],
+      "interiorCm": [
+        276,
+        220,
+        208
+      ],
+      "effectiveM2": 6.07,
+      "foundationCm": [
+        285,
+        229
+      ],
+      "weightKg": 349.5,
+      "weightKgGrossPriceList": 360.5,
+      "volumeM3PriceList": 12.6,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "82008",
+        "Metallic quartz grey": "89008",
+        "Metallic dark grey": "86008"
+      },
+      "priceGBP": {
+        "82008": 4239,
+        "89008": 4239,
+        "86008": 4239
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "3C",
+      "variant": "double door",
+      "exteriorCm": [
+        292,
+        292,
+        222
+      ],
+      "interiorCm": [
+        276,
+        276,
+        208
+      ],
+      "effectiveM2": 7.62,
+      "foundationCm": [
+        285,
+        285
+      ],
+      "weightKg": 418.4,
+      "weightKgGrossPriceList": 440.9,
+      "volumeM3PriceList": 15.8,
+      "packagesPriceList": 15,
+      "skus": {
+        "Metallic silver": "82011",
+        "Metallic quartz grey": "89011",
+        "Metallic dark grey": "86011"
+      },
+      "priceGBP": {
+        "82011": 4719,
+        "89011": 4719,
+        "86011": 4719
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "4C",
+      "variant": "double door",
+      "exteriorCm": [
+        292,
+        348,
+        222
+      ],
+      "interiorCm": [
+        276,
+        332,
+        208
+      ],
+      "effectiveM2": 9.16,
+      "foundationCm": [
+        285,
+        341
+      ],
+      "weightKg": 465.9,
+      "weightKgGrossPriceList": 485.5,
+      "volumeM3PriceList": 19.1,
+      "packagesPriceList": 16,
+      "skus": {
+        "Metallic silver": "82014",
+        "Metallic quartz grey": "89014",
+        "Metallic dark grey": "86014"
+      },
+      "priceGBP": {
+        "82014": 5199,
+        "89014": 5199,
+        "86014": 5199
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "1D",
+      "variant": "double door",
+      "exteriorCm": [
+        348,
+        180,
+        222
+      ],
+      "interiorCm": [
+        332,
+        164,
+        208
+      ],
+      "effectiveM2": 5.45,
+      "foundationCm": [
+        341,
+        173
+      ],
+      "weightKg": 345.7,
+      "weightKgGrossPriceList": 351.9,
+      "volumeM3PriceList": 11.3,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "82044",
+        "Metallic quartz grey": "89044",
+        "Metallic dark grey": "86044"
+      },
+      "priceGBP": {
+        "82044": 4049,
+        "89044": 4049,
+        "86044": 4049
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "2D",
+      "variant": "double door",
+      "exteriorCm": [
+        348,
+        236,
+        222
+      ],
+      "interiorCm": [
+        332,
+        220,
+        208
+      ],
+      "effectiveM2": 7.3,
+      "foundationCm": [
+        341,
+        229
+      ],
+      "weightKg": 380,
+      "weightKgGrossPriceList": 390.5,
+      "volumeM3PriceList": 15.2,
+      "packagesPriceList": 13,
+      "skus": {
+        "Metallic silver": "82048",
+        "Metallic quartz grey": "89048",
+        "Metallic dark grey": "86048"
+      },
+      "priceGBP": {
+        "82048": 4499,
+        "89048": 4499,
+        "86048": 4499
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "3D",
+      "variant": "double door",
+      "exteriorCm": [
+        348,
+        292,
+        222
+      ],
+      "interiorCm": [
+        332,
+        276,
+        208
+      ],
+      "effectiveM2": 9.16,
+      "foundationCm": [
+        341,
+        285
+      ],
+      "weightKg": 471.9,
+      "weightKgGrossPriceList": 479.4,
+      "volumeM3PriceList": 19.1,
+      "packagesPriceList": 16,
+      "skus": {
+        "Metallic silver": "82051",
+        "Metallic quartz grey": "89051",
+        "Metallic dark grey": "86051"
+      },
+      "priceGBP": {
+        "82051": 5199,
+        "89051": 5199,
+        "86051": 5199
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    },
+    {
+      "code": "4D",
+      "variant": "double door",
+      "exteriorCm": [
+        348,
+        348,
+        222
+      ],
+      "interiorCm": [
+        332,
+        332,
+        208
+      ],
+      "effectiveM2": 11.02,
+      "foundationCm": [
+        341,
+        341
+      ],
+      "weightKg": 506.7,
+      "weightKgGrossPriceList": 526.7,
+      "volumeM3PriceList": 22.9,
+      "packagesPriceList": 16,
+      "skus": {
+        "Metallic silver": "82054",
+        "Metallic quartz grey": "89054",
+        "Metallic dark grey": "86054"
+      },
+      "priceGBP": {
+        "82054": 5589,
+        "89054": 5589,
+        "86054": 5589
+      },
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p14"
+      }
+    }
+  ],
+  "doors": [
+    {
+      "type": "standard door",
+      "doorOpeningCm": [
+        83,
+        200
+      ],
+      "hinge": "right door hinge",
+      "notes": "The standard door can be fitted on the side (web). FAQ: \"The door opening cannot be changed on the Neo Garden Shed\" (in answer to left-hinge question). Available on all 16 sizes.",
+      "source": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb"
+    },
+    {
+      "type": "double door",
+      "doorOpeningCm": [
+        167,
+        200
+      ],
+      "notes": "From a width of 236 cm onwards (B, C, D widths) the double door can also be fitted on the side (web). Not available for A sizes (180 cm wide): no double-door SKUs for 1A-4A.",
+      "source": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb"
+    },
+    {
+      "type": "Additional Door",
+      "priceGBP": 659,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "note": "see accessories"
+    },
+    {
+      "type": "Additional Double Door",
+      "priceGBP": 959,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "note": "see accessories"
+    }
+  ],
+  "sideCanopy": {
+    "dataSheet": [
+      {
+        "sizes": "2A - 2D",
+        "exteriorCm": [
+          300,
+          235,
+          220
+        ],
+        "weightKg": 226.8
+      },
+      {
+        "sizes": "3A - 3D",
+        "exteriorCm": [
+          300,
+          291,
+          220
+        ],
+        "weightKg": 287.3
+      },
+      {
+        "sizes": "4A - 4D",
+        "exteriorCm": [
+          300,
+          347,
+          220
+        ],
+        "weightKg": 319.3
+      }
+    ],
+    "notes": "Optional side canopy can be attached from size 2A on the gutter side (web). Prices under accessories.",
+    "source": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb"
+  },
+  "detailedDimensionsCm": {
+    "note": "Web \"Detailed dimensions\" tables (letters refer to the drawing). A width without roof overhang; B length without roof overhang; C height to roof flashing 205; D roof flashing 15.5; E overall height 220.5; F clearance width 80; G downpipe distance; H right side 33; J left side; K roof width; L roof length; M door space on opening 84; N width incl. corner profile; P downpipe space 8.",
+    "A": {
+      "1A": 170,
+      "1B": 226,
+      "1C": 282,
+      "1D": 338
+    },
+    "B": {
+      "1x": 170,
+      "2x": 226,
+      "3x": 282,
+      "4x": 338
+    },
+    "K": {
+      "xA": 179.5,
+      "xB": 235.5,
+      "xC": 291.5,
+      "xD": 347.5
+    },
+    "L": {
+      "1x": 179.5,
+      "2x": 235.5,
+      "3x": 291.5,
+      "4x": 347.5
+    },
+    "G": {
+      "xA": 139.5,
+      "xB": 195.5,
+      "xC": 251.5,
+      "xD": 307.5
+    },
+    "J": {
+      "xA": 57,
+      "xB": 113,
+      "xC": 169,
+      "xD": 225
+    },
+    "source": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb"
+  },
+  "accessories": [
+    {
+      "name": "Aluminium Floor Frame",
+      "pricesBySize": {
+        "1A": 169,
+        "1B": 199,
+        "2A": 199,
+        "1C": 219,
+        "3A": 219,
+        "1D": 249,
+        "4A": 249,
+        "2B": 219,
+        "2C": 259,
+        "3B": 259,
+        "2D": 309,
+        "4B": 309,
+        "3C": 329,
+        "3D": 369,
+        "4C": 369,
+        "4D": 429
+      },
+      "skusBySize": {
+        "1A": "41014",
+        "1B": "41024",
+        "2A": "41024",
+        "1C": "41034",
+        "3A": "41034",
+        "1D": "41044",
+        "4A": "41044",
+        "2B": "41040",
+        "2C": "41054",
+        "3B": "41054",
+        "2D": "41067",
+        "4B": "41067",
+        "3C": "41074",
+        "3D": "41084",
+        "4C": "41084",
+        "4D": "41094"
+      },
+      "notes": "Aluminium square tubing (40 x 40 mm) with corner joints and fixing material (screws). Dimensions W x L x H cm by size: {\"1A\": [166, 166, 4], \"1B\": [222, 166, 4], \"2A\": [222, 166, 4], \"1C\": [278, 166, 4], \"3A\": [278, 166, 4], \"1D\": [334, 166, 4], \"4A\": [334, 166, 4], \"2B\": [222, 222, 4], \"2C\": [278, 222, 4], \"3B\": [278, 222, 4], \"2D\": [334, 222, 4], \"4B\": [334, 222, 4], \"3C\": [278, 278, 4], \"3D\": [334, 278, 4], \"4C\": [334, 278, 4], \"4D\": [334, 334, 4]}. On gravel without foundation, ground anchors required: 1A/1B/2A/2B 8 pcs; 1C/3A/1D/4A 10 pcs; 2C/3B/2D/4B 14 pcs; 3C/3D/4C/4D 16 pcs.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p15",
+      "webMatchingAccessories": {
+        "41014": [
+          {
+            "name": "Aluminium Floor Frame 1A",
+            "priceGBP": 169
+          }
+        ],
+        "41024": [
+          {
+            "name": "Aluminium Floor Frame 1B/2A",
+            "priceGBP": 199
+          }
+        ],
+        "41034": [
+          {
+            "name": "Floor Frame Neo Garden Shed 1C/3A",
+            "priceGBP": 219
+          }
+        ],
+        "41040": [
+          {
+            "name": "Aluminium Floor Frame Neo 2B",
+            "priceGBP": 219
+          }
+        ],
+        "41044": [
+          {
+            "name": "Floor Frame Neo Garden Shed 1D/4A",
+            "priceGBP": 249
+          }
+        ],
+        "41054": [
+          {
+            "name": "Floor Frame Neo Garden Shed 2C/3B",
+            "priceGBP": 259
+          }
+        ],
+        "41067": [
+          {
+            "name": "Floor Frame Neo Garden Shed 2D/4B",
+            "priceGBP": 309
+          }
+        ],
+        "41074": [
+          {
+            "name": "Floor Frame Neo Garden Shed 3C",
+            "priceGBP": 329
+          }
+        ],
+        "41084": [
+          {
+            "name": "Floor Frame Neo Garden Shed 3D/4C",
+            "priceGBP": 369
+          }
+        ],
+        "41094": [
+          {
+            "name": "Floor Frame Neo Garden Shed 4D",
+            "priceGBP": 429
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Ground Anchor 4 pieces per package",
+      "sku": "41004",
+      "priceGBP": 20,
+      "dimensionsCm": [
+        1.5,
+        4.5,
+        53
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p15",
+      "webMatchingAccessories": {
+        "41004": [
+          {
+            "name": "Ground Anchor 4 pieces per package",
+            "priceGBP": 20
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Ground Anchor 6 pieces per package",
+      "sku": "41006",
+      "priceGBP": 29,
+      "dimensionsCm": [
+        1.5,
+        4.5,
+        53
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p15",
+      "webMatchingAccessories": {
+        "41006": [
+          {
+            "name": "Ground Anchor 6 pieces per package",
+            "priceGBP": 29
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Aluminium Floor Panels",
+      "pricesBySize": {
+        "1A": 349,
+        "1B": 439,
+        "2A": 439,
+        "1C": 579,
+        "3A": 579,
+        "1D": 689,
+        "4A": 689,
+        "2B": 529,
+        "2C": 679,
+        "3B": 679,
+        "2D": 869,
+        "4B": 869,
+        "3C": 1029,
+        "3D": 1159,
+        "4C": 1159,
+        "4D": 1349
+      },
+      "skusBySize": {
+        "1A": "48014",
+        "1B": "48024",
+        "2A": "48024",
+        "1C": "48034",
+        "3A": "48034",
+        "1D": "48044",
+        "4A": "48044",
+        "2B": "48040",
+        "2C": "48054",
+        "3B": "48054",
+        "2D": "48064",
+        "4B": "48064",
+        "3C": "48074",
+        "3D": "48084",
+        "4C": "48084",
+        "4D": "48094"
+      },
+      "notes": "2 mm aluminium chequer plate in segments incl. connecting profiles; aluminium floor frame required; 2-3 cm XPS underlay recommended (not included). Dimensions by size: {\"1A\": [157.5, 157.5, 0.2], \"1B\": [213.5, 157.5, 0.2], \"2A\": [213.5, 157.5, 0.2], \"1C\": [269.5, 157.5, 0.2], \"3A\": [269.5, 157.5, 0.2], \"1D\": [325.5, 157.5, 0.2], \"4A\": [325.5, 157.5, 0.2], \"2B\": [213, 213, 0.2], \"2C\": [269.5, 213.5, 0.2], \"3B\": [269.5, 213.5, 0.2], \"2D\": [325.5, 213.5, 0.2], \"4B\": [325.5, 213.5, 0.2], \"3C\": [269.5, 269.5, 0.2], \"3D\": [325.5, 269.5, 0.2], \"4C\": [325.5, 269.5, 0.2], \"4D\": [325.5, 325.5, 0.2]}",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p15",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "SmartBase",
+      "pricesBySize": {
+        "1A": 1049,
+        "1B": 1199,
+        "2A": 1199,
+        "1C": 1449,
+        "3A": 1449,
+        "1D": 1679,
+        "4A": 1679,
+        "2B": 1439,
+        "2C": 1779,
+        "3B": 1779,
+        "2D": 2119,
+        "4B": 2119,
+        "3C": 2509,
+        "3D": 2889,
+        "4C": 2889,
+        "4D": 3469
+      },
+      "skusBySize": {
+        "1A": "43950",
+        "1B": "43954",
+        "2A": "43954",
+        "1C": "43955",
+        "3A": "43955",
+        "1D": "43956",
+        "4A": "43956",
+        "2B": "43918",
+        "2C": "43960",
+        "3B": "43960",
+        "2D": "43962",
+        "4B": "43962",
+        "3C": "43965",
+        "3D": "43970",
+        "4C": "43970",
+        "4D": "43974"
+      },
+      "notes": "Aluminium boards, aluminium frame and adjustable feet (4 cm height adjustable), max. load 200 kg/m2. Dimensions by size: {\"1A\": [166, 166, 10], \"1B\": [222, 166, 10], \"2A\": [222, 166, 10], \"1C\": [278, 166, 10], \"3A\": [278, 166, 10], \"1D\": [344, 166, 10], \"4A\": [344, 166, 10], \"2B\": [222, 222, 10], \"2C\": [278, 222, 10], \"3B\": [278, 222, 10], \"2D\": [334, 222, 10], \"4B\": [334, 222, 10], \"3C\": [278, 278, 10], \"3D\": [334, 278, 10], \"4C\": [334, 278, 10], \"4D\": [334, 334, 10]}",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p15",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "SmartBasePLUS",
+      "pricesBySize": {
+        "1A": 1249,
+        "1B": 1489,
+        "2A": 1489,
+        "1C": 1999,
+        "3A": 1999,
+        "1D": 2219,
+        "4A": 2219,
+        "2B": 1829,
+        "2C": 2449,
+        "3B": 2449,
+        "2D": 2699,
+        "4B": 2699,
+        "3C": 2999,
+        "3D": 3849,
+        "4C": 3849,
+        "4D": 4239
+      },
+      "skusBySize": {
+        "1A": "43450",
+        "1B": "43454",
+        "2A": "43454",
+        "1C": "43455",
+        "3A": "43455",
+        "1D": "43456",
+        "4A": "43456",
+        "2B": "43418",
+        "2C": "43460",
+        "3B": "43460",
+        "2D": "43462",
+        "4B": "43462",
+        "3C": "43465",
+        "3D": "43470",
+        "4C": "43470",
+        "4D": "43474"
+      },
+      "notes": "Aluminium boards, aluminium frame and galvanised ground screws (15 cm height adjustable), incl. manual screw-in driver, max. load 200 kg/m2. Dimensions by size: {\"1A\": [166, 166, 65], \"1B\": [222, 166, 65], \"2A\": [222, 166, 65], \"1C\": [278, 166, 65], \"3A\": [278, 166, 65], \"1D\": [334, 166, 65], \"4A\": [334, 166, 65], \"2B\": [222, 222, 65], \"2C\": [278, 222, 65], \"3B\": [278, 222, 65], \"2D\": [334, 222, 65], \"4B\": [334, 222, 65], \"3C\": [278, 278, 65], \"3D\": [334, 278, 65], \"4C\": [334, 278, 65], \"4D\": [334, 334, 65]}",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p15",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Drill Bit for SDS-MAX chuck (for SmartBasePLUS)",
+      "sku": "43410",
+      "priceGBP": 89,
+      "dimensionsCm": "Ø 40 x 570 mm",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p15",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Extension for SmartBasePLUS 500 mm",
+      "sku": "43411",
+      "priceGBP": 99,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p15",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Additional Double Door",
+      "skusByColour": {
+        "Metallic silver": "81001",
+        "Metallic quartz grey": "87001",
+        "Metallic dark grey": "85001"
+      },
+      "priceGBP": 959,
+      "dimensionsCm": [
+        167,
+        4,
+        200
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Additional Door",
+      "skusByColour": {
+        "Metallic silver": "81002",
+        "Metallic quartz grey": "87002",
+        "Metallic dark grey": "85002"
+      },
+      "priceGBP": 659,
+      "dimensionsCm": [
+        83,
+        3,
+        203
+      ],
+      "notes": "With stainless steel door handle, triple locking mechanism, gas spring, hinges, 2 tool holders and door jamb, right door hinge. With SmartBase/SmartBasePLUS an additional package is required.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "SmartBase Foundation Additional Package (for additional door)",
+      "sku": "43505",
+      "priceGBP": 89,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "SmartBasePLUS Foundation Additional Package (for additional door)",
+      "sku": "43405",
+      "priceGBP": 89,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Acrylic Glass Panel",
+      "skusByColour": {
+        "Metallic silver": "47034",
+        "Metallic quartz grey": "47084",
+        "Metallic dark grey": "47054"
+      },
+      "priceGBP": 199,
+      "dimensionsCm": [
+        32,
+        3.3,
+        207
+      ],
+      "notes": "Tinted glass panel in a metal frame; any side wall, but not next to a door, corner panel or another glass panel.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": {
+        "47034": [
+          {
+            "name": "Neo Glass Panel metallic silver",
+            "priceGBP": 199
+          }
+        ],
+        "47054": [
+          {
+            "name": "Neo Glass Panel metallic dark grey",
+            "priceGBP": 199
+          }
+        ],
+        "47084": [
+          {
+            "name": "Neo Glass Panel metallic quartz grey",
+            "priceGBP": 199
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "PV Mounting System",
+      "sku": "47024",
+      "priceGBP": 89,
+      "dimensionsCm": [
+        4.5,
+        3.5,
+        206
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Side Canopy 2A, 2B, 2C, 2D",
+      "skusByColour": {
+        "Metallic silver": "81026",
+        "Metallic quartz grey": "87026",
+        "Metallic dark grey": "85026"
+      },
+      "priceGBP": 2409,
+      "dimensionsCm": [
+        300,
+        235,
+        220
+      ],
+      "fits": [
+        "2A",
+        "2B",
+        "2C",
+        "2D"
+      ],
+      "notes": "Installed on one or both sides; kit with supports and two rainwater downpipes; weight 226.8 kg (price list).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": {
+        "81026": [
+          {
+            "name": "Side Canopy for Neo Garden Shed size 2A/2B/2C/2D metallic silver",
+            "priceGBP": 2409
+          }
+        ],
+        "85026": [
+          {
+            "name": "Side Canopy for Neo Garden Shed size 2A/2B/2C/2D metallic dark grey",
+            "priceGBP": 2409
+          }
+        ],
+        "87026": [
+          {
+            "name": "Side Canopy for Neo Garden Shed size 2A/2B/2C/2D metallic quartz grey",
+            "priceGBP": 2409
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Side Canopy 3A, 3B, 3C, 3D",
+      "skusByColour": {
+        "Metallic silver": "81036",
+        "Metallic quartz grey": "87036",
+        "Metallic dark grey": "85036"
+      },
+      "priceGBP": 3009,
+      "dimensionsCm": [
+        300,
+        291,
+        220
+      ],
+      "fits": [
+        "3A",
+        "3B",
+        "3C",
+        "3D"
+      ],
+      "notes": "Installed on one or both sides; kit with supports and two rainwater downpipes; weight 287.3 kg (price list). Metallic silver 81036 is in the price list but missing from the web Matching accessories data (see CONFLICTS-b.md N7).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": {
+        "85036": [
+          {
+            "name": "Side Canopy for Neo Garden Shed size 3A/3B/3C/3D metallic dark grey",
+            "priceGBP": 3009
+          }
+        ],
+        "87036": [
+          {
+            "name": "Side Canopy for Neo Garden Shed size 3A/3B/3C/3D metallic quartz grey",
+            "priceGBP": 3009
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Side Canopy 4A, 4B, 4C, 4D",
+      "skusByColour": {
+        "Metallic silver": "81046",
+        "Metallic quartz grey": "87046",
+        "Metallic dark grey": "85046"
+      },
+      "priceGBP": 3409,
+      "dimensionsCm": [
+        300,
+        347,
+        220
+      ],
+      "fits": [
+        "4A",
+        "4B",
+        "4C",
+        "4D"
+      ],
+      "notes": "Installed on one or both sides; kit with supports and two rainwater downpipes; weight 319.3 kg (price list).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": {
+        "81046": [
+          {
+            "name": "Side Canopy for Neo Garden Shed size 4A/4B/4C/4D metallic silver",
+            "priceGBP": 3409
+          }
+        ],
+        "85046": [
+          {
+            "name": "Side Canopy for Neo Garden Shed size 4A/4B/4C/4D metallic dark grey",
+            "priceGBP": 3409
+          }
+        ],
+        "87046": [
+          {
+            "name": "Side Canopy for Neo Garden Shed size 4A/4B/4C/4D metallic quartz grey",
+            "priceGBP": 3409
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Side Wall for Side Canopy 2A, 2B, 2C, 2D",
+      "skusByColour": {
+        "Metallic silver": "81028",
+        "Metallic quartz grey": "87028",
+        "Metallic dark grey": "85028"
+      },
+      "priceGBP": 719,
+      "dimensionsCm": [
+        203,
+        4.3,
+        200
+      ],
+      "fits": [
+        "2A",
+        "2B",
+        "2C",
+        "2D"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Side Wall for Side Canopy 3A, 3B, 3C, 3D",
+      "skusByColour": {
+        "Metallic silver": "81038",
+        "Metallic quartz grey": "87038",
+        "Metallic dark grey": "85038"
+      },
+      "priceGBP": 819,
+      "dimensionsCm": [
+        259,
+        4.3,
+        200
+      ],
+      "fits": [
+        "3A",
+        "3B",
+        "3C",
+        "3D"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Side Wall for Side Canopy 4A, 4B, 4C, 4D",
+      "skusByColour": {
+        "Metallic silver": "81048",
+        "Metallic quartz grey": "87048",
+        "Metallic dark grey": "85048"
+      },
+      "priceGBP": 919,
+      "dimensionsCm": [
+        315,
+        4.3,
+        200
+      ],
+      "fits": [
+        "4A",
+        "4B",
+        "4C",
+        "4D"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Back Wall for Side Canopy",
+      "skusByColour": {
+        "Metallic silver": "81098",
+        "Metallic quartz grey": "87098",
+        "Metallic dark grey": "85098"
+      },
+      "priceGBP": 909,
+      "dimensionsCm": [
+        299,
+        4.3,
+        200
+      ],
+      "fits": [
+        "2A",
+        "2B",
+        "2C",
+        "2D",
+        "3A",
+        "3B",
+        "3C",
+        "3D",
+        "4A",
+        "4B",
+        "4C",
+        "4D"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Glass Panel for Side Canopy",
+      "skusByColour": {
+        "Metallic silver": "47934",
+        "Metallic quartz grey": "47984",
+        "Metallic dark grey": "47954"
+      },
+      "priceGBP": 199,
+      "dimensionsCm": [
+        31.8,
+        4.2,
+        200
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "FloraBoard for Side Canopy",
+      "skusByColour": {
+        "Metallic silver": "47036",
+        "Metallic quartz grey": "47086",
+        "Metallic dark grey": "47056"
+      },
+      "priceGBP": 199,
+      "dimensionsCm": [
+        84.1,
+        25,
+        197.2
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "FloraBoard",
+      "skusByColour": {
+        "Metallic silver": "47035",
+        "Metallic quartz grey": "47085",
+        "Metallic dark grey": "47055"
+      },
+      "priceGBP": 199,
+      "dimensionsCm": [
+        84,
+        24,
+        205
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": {
+        "47035": [
+          {
+            "name": "FloraBoard for Neo Garden Shed metallic silver",
+            "priceGBP": 199
+          }
+        ],
+        "47055": [
+          {
+            "name": "FloraBoard for Neo Garden Shed metallic dark grey",
+            "priceGBP": 199
+          }
+        ],
+        "47085": [
+          {
+            "name": "FloraBoard for Neo Garden Shed metallic quartz grey",
+            "priceGBP": 199
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Tool Holder (2 pieces per package)",
+      "skusByColour": {
+        "Metallic silver": "47032",
+        "Metallic quartz grey": "47082",
+        "Metallic dark grey": "47052"
+      },
+      "priceGBP": 39,
+      "dimensionsCm": [
+        30,
+        5,
+        3.5
+      ],
+      "notes": "For the inside of the door, max. 4 per door.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "LED Light",
+      "sku": "46041",
+      "priceGBP": 79,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Solar Light",
+      "sku": "46042",
+      "priceGBP": 49,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p16",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Interior Panelling",
+      "pricesBySize": {
+        "1A standard door": 749,
+        "1B standard door": 869,
+        "2A standard door": 869,
+        "1B double door": 779,
+        "1C standard door": 1029,
+        "3A standard door": 1029,
+        "1C double door": 1029,
+        "1D standard door": 1159,
+        "4A standard door": 1159,
+        "1D double door": 1059,
+        "2B standard door": 1029,
+        "2B double door": 919,
+        "2C standard door": 1159,
+        "3B standard door": 1159,
+        "2C double door": 1059,
+        "3B double door": 1059,
+        "2D standard door": 1279,
+        "4B standard door": 1279,
+        "2D double door": 1159,
+        "4B double door": 1159,
+        "3C standard door": 1279,
+        "3C double door": 1159,
+        "3D standard door": 1399,
+        "4C standard door": 1399,
+        "3D double door": 1349,
+        "4C double door": 1349,
+        "4D standard door": 1539,
+        "4D double door": 1439
+      },
+      "skusBySize": {
+        "1A standard door": "46051",
+        "1B standard door": "46052",
+        "2A standard door": "46052",
+        "1B double door": "46053",
+        "1C standard door": "46056",
+        "3A standard door": "46056",
+        "1C double door": "46057",
+        "1D standard door": "46058",
+        "4A standard door": "46058",
+        "1D double door": "46061",
+        "2B standard door": "46054",
+        "2B double door": "46055",
+        "2C standard door": "46059",
+        "3B standard door": "46059",
+        "2C double door": "46060",
+        "3B double door": "46060",
+        "2D standard door": "46062",
+        "4B standard door": "46062",
+        "2D double door": "46064",
+        "4B double door": "46064",
+        "3C standard door": "46063",
+        "3C double door": "46065",
+        "3D standard door": "46066",
+        "4C standard door": "46066",
+        "3D double door": "46067",
+        "4C double door": "46067",
+        "4D standard door": "46068",
+        "4D double door": "46069"
+      },
+      "notes": "Grey white interior wall panels hooked into the side walls. Price differs by door type. Standard-door vs double-door column assignment follows the web accessory names (ST/DT, \"Standard Door\"/\"Double Door\"); the PDF text extraction loses the column.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": {
+        "46051": [
+          {
+            "name": "Neo Interior Panelling 1A ST",
+            "priceGBP": 749
+          }
+        ],
+        "46052": [
+          {
+            "name": "Neo Interior Panelling 1B / 2A ST",
+            "priceGBP": 869
+          }
+        ],
+        "46053": [
+          {
+            "name": "Neo Interior Panelling 1B DT",
+            "priceGBP": 779
+          }
+        ],
+        "46054": [
+          {
+            "name": "Neo Interior Panelling 2B ST",
+            "priceGBP": 1029
+          }
+        ],
+        "46055": [
+          {
+            "name": "Neo Interior Panelling 2B DT",
+            "priceGBP": 919
+          }
+        ],
+        "46056": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 1C/3A Standard Door",
+            "priceGBP": 1029
+          }
+        ],
+        "46057": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 1C Double Door",
+            "priceGBP": 1029
+          }
+        ],
+        "46058": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 1D/4A Standard Door",
+            "priceGBP": 1159
+          }
+        ],
+        "46059": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 2C/3B Standard Door",
+            "priceGBP": 1159
+          }
+        ],
+        "46060": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 2C/3B Double Door",
+            "priceGBP": 1059
+          }
+        ],
+        "46061": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 1D Double Door",
+            "priceGBP": 1059
+          }
+        ],
+        "46062": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 2D/4B Standard Door",
+            "priceGBP": 1279
+          }
+        ],
+        "46063": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 3C Standard Door",
+            "priceGBP": 1279
+          }
+        ],
+        "46064": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 2D/4B Double Door",
+            "priceGBP": 1159
+          }
+        ],
+        "46065": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 3C Double Door",
+            "priceGBP": 1159
+          }
+        ],
+        "46066": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 3D/4C Standard Door",
+            "priceGBP": 1399
+          }
+        ],
+        "46067": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 3D/4C Double Door",
+            "priceGBP": 1349
+          }
+        ],
+        "46068": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 4D Standard Door",
+            "priceGBP": 1539
+          }
+        ],
+        "46069": [
+          {
+            "name": "Neo Garden Shed Interior Panelling 4D Double Door",
+            "priceGBP": 1439
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Insulation",
+      "pricesBySize": {
+        "1A standard door": 159,
+        "1B double door": 159,
+        "1B standard door": 169,
+        "2A standard door": 169,
+        "1C double door": 169,
+        "2B double door": 169,
+        "1C standard door": 189,
+        "2B standard door": 189,
+        "3A standard door": 189,
+        "1D double door": 189,
+        "2C double door": 189,
+        "3B double door": 189,
+        "1D standard door": 239,
+        "2C standard door": 239,
+        "3B standard door": 239,
+        "4A standard door": 239,
+        "2D double door": 239,
+        "3C double door": 239,
+        "4B double door": 239,
+        "2D standard door": 299,
+        "3C standard door": 299,
+        "4B standard door": 299,
+        "3D double door": 299,
+        "4C double door": 299,
+        "3D standard door": 359,
+        "4C standard door": 359,
+        "4D double door": 359,
+        "4D standard door": 429
+      },
+      "skusBySize": {
+        "1A standard door": "46081",
+        "1B double door": "46081",
+        "1B standard door": "46082",
+        "2A standard door": "46082",
+        "1C double door": "46082",
+        "2B double door": "46082",
+        "1C standard door": "46084",
+        "2B standard door": "46084",
+        "3A standard door": "46084",
+        "1D double door": "46084",
+        "2C double door": "46084",
+        "3B double door": "46084",
+        "1D standard door": "46086",
+        "2C standard door": "46086",
+        "3B standard door": "46086",
+        "4A standard door": "46086",
+        "2D double door": "46086",
+        "3C double door": "46086",
+        "4B double door": "46086",
+        "2D standard door": "46088",
+        "3C standard door": "46088",
+        "4B standard door": "46088",
+        "3D double door": "46088",
+        "4C double door": "46088",
+        "3D standard door": "46090",
+        "4C standard door": "46090",
+        "4D double door": "46090",
+        "4D standard door": "46093"
+      },
+      "notes": "Inserted between outer wall and interior panelling; 40 mm pre-cut polystyrene boards (PS 15). Price differs by door type.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": {
+        "46081": [
+          {
+            "name": "Neo Insulation 1A / 1B Double Door",
+            "priceGBP": 159
+          }
+        ],
+        "46082": [
+          {
+            "name": "Neo Insulation 1B / 2A Standard Door, 2B / 1C Double Door",
+            "priceGBP": 169
+          }
+        ],
+        "46084": [
+          {
+            "name": "Neo Insulation 2B / 1C / 3A Standard Door and 1D / 2C / 3B Double Door",
+            "priceGBP": 189
+          }
+        ],
+        "46086": [
+          {
+            "name": "Neo Garden Shed Insulation 1D / 2C / 3B / 4A Standard Door, 2D / 3C / 4B Double Door",
+            "priceGBP": 239
+          }
+        ],
+        "46088": [
+          {
+            "name": "Neo Garden Shed Insulation 2D / 3C / 4B Standard Door, 3D / 4C Double Door",
+            "priceGBP": 299
+          }
+        ],
+        "46090": [
+          {
+            "name": "Neo Garden Shed Insulation 3D / 4C Standard Door, 4D Double Door",
+            "priceGBP": 359
+          }
+        ],
+        "46093": [
+          {
+            "name": "Neo Garden Shed Insulation 4D Standard Door",
+            "priceGBP": 429
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Shelves 2 pieces per package (grey white)",
+      "sku": "45040",
+      "priceGBP": 89,
+      "dimensionsCm": [
+        56,
+        26,
+        17.3
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Shelves 4 pieces per package (grey white)",
+      "sku": "45050",
+      "priceGBP": 109,
+      "dimensionsCm": [
+        56,
+        26,
+        17.3
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Shelves 2 pieces per package, deep (grey white)",
+      "sku": "45060",
+      "priceGBP": 99,
+      "dimensionsCm": [
+        56,
+        44.5,
+        17.3
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": {
+        "45060": [
+          {
+            "name": "Shelves Neo 2 pieces per package, deep",
+            "priceGBP": 99
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Suspension Basket",
+      "sku": "47073",
+      "priceGBP": 79,
+      "dimensionsCm": [
+        56,
+        34,
+        20
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": {
+        "47073": [
+          {
+            "name": "Neo Suspension Basket",
+            "priceGBP": 79
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Hook Set",
+      "sku": "47072",
+      "priceGBP": 79,
+      "dimensionsCm": [
+        56,
+        23,
+        10
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": {
+        "47072": [
+          {
+            "name": "Neo Hook Set",
+            "priceGBP": 79
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Tool Hangers 2 pieces per package",
+      "sku": "47021",
+      "priceGBP": 39,
+      "dimensionsCm": [
+        28,
+        10.4,
+        17.2
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": {
+        "47021": [
+          {
+            "name": "Neo Tool Hanger 2-piece",
+            "priceGBP": 39
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Door Baskets 2 pieces per package",
+      "sku": "46025",
+      "priceGBP": 49,
+      "dimensionsCm": [
+        34,
+        10,
+        9.5
+      ],
+      "notes": "galvanised only; Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": {
+        "46025": [
+          {
+            "name": "Door baskets Neo",
+            "priceGBP": 49
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Shelf Baskets 2 pieces per package",
+      "sku": "46026",
+      "priceGBP": 79,
+      "dimensionsCm": [
+        72,
+        16,
+        11
+      ],
+      "notes": "galvanised only; Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": {
+        "46026": [
+          {
+            "name": "Shelf baskets",
+            "priceGBP": 79
+          },
+          {
+            "name": "Shelf baskets Neo",
+            "priceGBP": 79
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Threshold Access Ramp",
+      "sku": "41001",
+      "priceGBP": 99,
+      "dimensionsCm": [
+        170.5,
+        9.1,
+        3
+      ],
+      "notes": "Only possible with double door and aluminium floor frame; galvanised only; Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Bike Rack BikeHolder, set for 2 bikes",
+      "sku": "49032",
+      "priceGBP": 69,
+      "dimensionsCm": [
+        56,
+        17.7,
+        33
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Bicycle Hanger BikeMax 1 piece per package",
+      "sku": "49030",
+      "priceGBP": 99,
+      "dimensionsCm": [
+        28,
+        14.5,
+        205.5
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "BikeLift Standard",
+      "sku": "49052",
+      "priceGBP": 519,
+      "dimensionsCm": [
+        28.2,
+        41.3,
+        184.7
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "BikeLift Swivelling",
+      "sku": "49053",
+      "priceGBP": 619,
+      "dimensionsCm": [
+        28.2,
+        55.6,
+        182.8
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "Electric Mounting Panel",
+      "sku": "46034",
+      "priceGBP": 89,
+      "dimensionsCm": [
+        28,
+        4,
+        204
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": {
+        "46034": [
+          {
+            "name": "Neo Electrical Mounting Panel",
+            "priceGBP": 89
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    },
+    {
+      "name": "Bin Bag Holder",
+      "sku": "45046",
+      "priceGBP": 109,
+      "dimensionsCm": [
+        56,
+        44.6,
+        21.2
+      ],
+      "notes": "Neo interior accessories, galvanised steel, grey white coated (price list p17).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p17",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "BikeLift Mounting Kit Garden Shed (for Neo)",
+      "sku": "49058",
+      "priceGBP": 100,
+      "notes": "Enables mounting a wall-mount BikeLift in a Neo shed.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p36",
+      "webMatchingAccessories": null
+    },
+    {
+      "name": "CleanLine Saver Set (Universal Cleaner + Conservation)",
+      "sku": "99200",
+      "priceGBP": 49,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf p36",
+      "webMatchingAccessories": {
+        "99200": [
+          {
+            "name": "CleanLine Saver Set",
+            "priceGBP": 49
+          }
+        ]
+      },
+      "webSource": "https://www.biohort.com/gb-en/p/garden-shed-neo?country_id=gb (embedded \"Matching accessories\" data)"
+    }
+  ],
+  "downloads": {
+    "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf",
+    "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_gb.pdf",
+    "assemblyAndPlans": [
+      "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_19_GHN_Neo_1A-1B-2A-2B_0424_WEB.pdf",
+      "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_19_GHN_Neo_1C-1D-2C-2D-3A-3B-3C-3D-4A-4B-4C-4D_0424_WEB.pdf",
+      "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_GHN_Neo_1A-2A-1B-2B.pdf",
+      "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_GHN_Neo_1C-1D-2C-2D-3A-3B-3C-3D-4A-4B-4C-4D_0122_WEB.pdf",
+      "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_Geraetehaus_NEO_1220_WEB_1A-1B-2A-2B.pdf",
+      "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_GHN_NEO_1C_1D_2C_2D_3A_3B_3C_3D_4A_4B_4C_4D_0322_WEB.pdf"
+    ]
+  },
+  "notes": [
+    "28 configurations (16 sizes with standard door, 12 sizes with double door) x 3 colours = 84 SKUs; every SKU has a JSON-LD GBP price on the GB page and the identical RRP in the GB price list.",
+    "Size code: digit = length step (1=180, 2=236, 3=292, 4=348 cm), letter = width step (A=180, B=236, C=292, D=348 cm) exterior incl. roof overhang.",
+    "Web data sheet weights are lower than the price list weights for every size; the price list states \"The weights shown are gross weights\".",
+    "The web data sheet table for 1C-4C and 1D-4D has no door-type heading; the EANs are listed under \"With standard door\" in the price list, so they are recorded as standard door.",
+    "Web \"Matching accessories\" for Neo are embedded in the product page HTML (per-SKU bundles). Items not offered there (floor panels, SmartBase, SmartBasePLUS, additional doors, side-canopy walls and glass, LED/solar light, PV mounting, BikeLift/BikeMax/BikeHolder, threshold ramp, 2- and 4-piece shelves, bin bag holder, tool holder) are priced from the price list only.",
+    "No GB Neo-specific price-list PDF exists; the GB price list is the full-range Endkundenpreisliste_gb.pdf (a guessed Neo-only URL returned 400).",
+    "Assembly time (web FAQ): Neo Garden Shed 6 to 12 hours (depending on size); HighLine/Neo Side Canopy 4 hours.",
+    "Neo bikes (web FAQ, 29in rims): side wall/back wall capacity per size published for 1C-4D; 1A none, 1B side wall 3-4, 2A side wall 3-4, 2B 5-6 both walls (second FAQ table)."
+  ]
+}

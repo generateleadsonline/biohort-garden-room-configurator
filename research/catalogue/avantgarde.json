@@ -1,0 +1,3536 @@
+{
+ "range": "AvantGarde",
+ "models": [
+  "AvantGarde",
+  "AvantGarde ECO*"
+ ],
+ "ecoFootnote": "*Product Line Model Designation. No environmental or sustainability claims.",
+ "tagline": "AvantGarde: Top Quality Pent Garden Shed",
+ "sourceUrls": [
+  "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+  "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+  "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf",
+  "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_GHA_M_L.pdf",
+  "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan-GHA-ECO.pdf",
+  "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_GHA-Eco-a4-a8.pdf"
+ ],
+ "checked": "2026-10-13",
+ "priceBasis": "GBP incl. 20% VAT as shown (\"Incl. 20 % VAT, price valid in GB\"); per-SKU prices from the page JSON-LD offers (96), cross-checked against embedded variant data (no differences). Prices do not vary by colour.",
+ "fromPriceGBP": 1349,
+ "colours": [
+  {
+   "name": "Metallic silver",
+   "skuPrefix": "15",
+   "dataSheetColumnLabel": "Silver-metallic / metallic silver"
+  },
+  {
+   "name": "Metallic dark grey",
+   "skuPrefix": "17",
+   "dataSheetColumnLabel": "Dark grey-metallic / metallic dark grey"
+  },
+  {
+   "name": "Metallic quartz grey",
+   "skuPrefix": "19",
+   "dataSheetColumnLabel": "Quartz grey-metallic / metallic quartz grey"
+  }
+ ],
+ "colourNotes": [
+  "Data sheet EAN columns and shop variant colours agree for AvantGarde.",
+  "SKU pattern: 1C0S0 = AvantGarde standard door, 1C0S9 = AvantGarde double door, 1C6S0 = ECO standard door, 1C6S9 = ECO double door (C = colour digit 5/7/9, S = size 1..8)."
+ ],
+ "sellingPoints": [
+  "Trendy sloping roof with acrylic glass skylight and roof overhang",
+  "Double the sheet steel thickness compared to low-cost providers",
+  "Lockable and rainwater-proof",
+  "Maintenance-free for life: 20-year guarantee subject to Biohort's warranty terms and conditions.",
+  "ECO* Version: at an Attractive Price - corrugated door and T-handle cylinder lock, integrated organiser system on the inside of the door and door hooks instead of the gas spring; the ECO* version does not include any standard equipment."
+ ],
+ "advantages": {
+  "Functionality": [
+   "Integrated gutter with a connection for 1 1/4\" hose",
+   "Acrylic glass skylight with roof overhang"
+  ],
+  "Security": [
+   "3-way locking mechanism complete with stainless steel door handle / 2-way locking mechanism in the ECO Version",
+   "Robust roof construction for a snow load of up to 150 kg/m²",
+   "Storm-proof up to wind force 12 (according to the Beaufort scale: hurricane) with professional assembly and anchoring"
+  ],
+  "Quality at its best": [
+   "Top quality materials: galvanised, polyamide enamel coated steel plate, screws and hinges made of stainless steel",
+   "Maintenance-free for life",
+   "20-year guarantee subject to Biohort's warranty terms and conditions.",
+   "Extensive range of standard equipment (not included in the ECO* version)"
+  ]
+ },
+ "standardEquipment": {
+  "AvantGarde": [
+   "Shelves / support rails: two shelves (length 24.5 cm, width 72 cm) and two support rails; galvanised; max. load 15 kg per shelf",
+   "Tool holders: two on the inside of the door (max. five per door panel)",
+   "Tool hangers: 4 pcs.",
+   "Gas spring: assists opening and closing, holds the door open or closed"
+  ],
+  "AvantGarde ECO*": [
+   "The Standard Equipment is not included in the ECO version (page). ECO has corrugated door, T-handle cylinder lock, 2-way locking, integrated organiser system on the inside of the door and door hooks instead of the gas spring."
+  ]
+ },
+ "guarantee": "20-year guarantee subject to Biohort's warranty terms and conditions (FAQ: corrosion of metal parts and defective/unusable parts; 24-month statutory warranty for wear, moving, electrical, plastic and rubber parts).",
+ "delivery": "Free Shipping within 3 weeks (product page and every variant's delivery_message).",
+ "packaging": "Packed in 5 to 8 cartons, easily understandable assembly manual included.",
+ "steelThickness": "No figure published. \"Double the sheet steel thickness compared to low-cost providers\"; galvanised with protective zinc layer of at least 150 g/m² and polyamide enamel coating.",
+ "roof": "Modern sloping (pent) roof with front acrylic glass skylight and roof overhang; snow load 150 kg/m²; wind 150 km/h | wind force 12 with professional assembly and anchoring.",
+ "doors": [
+  {
+   "variant": "standard door",
+   "openingCm": {
+    "w": 76,
+    "h": 182
+   },
+   "hinge": "right",
+   "sizes": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "models": [
+    "AvantGarde",
+    "AvantGarde ECO*"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb"
+  },
+  {
+   "variant": "double door",
+   "openingCm": {
+    "A1-A4": {
+     "w": 139,
+     "h": 182
+    },
+    "A5-A8": {
+     "w": 154.5,
+     "h": 182
+    }
+   },
+   "sizes": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "models": [
+    "AvantGarde",
+    "AvantGarde ECO*"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (data sheet headings + Colours & Sizes)",
+   "conflict": "Comparison table: \"DD: A1-A4: 138 x 182, A5-A8: 155 x 182 cm\"; dimension table clearance (optional double door panel): 144 (A1-A4) / 156 (A5-A8)"
+  }
+ ],
+ "sideCanopy": "Side canopy (size L) left, right or both sides; description says \"Width: 243cm\", aluminium supports with height-adjustable feet, A4/A8 delivery has three supports, two rainwater downpipes included, only suitable for models manufactured in 2020 or later. Side wall and back wall for the canopy sold separately. The brochure flags it as NEW \"with side canopy, rear and side wall\".",
+ "groundAnchorsOnGravel": "For size A1: 8 pcs. in total; for size A2, A3, A4, A5, A6: 10 pcs.; for size A7, A8: 12 pcs. (data sheet note).",
+ "bicycleCapacityFAQ": "AvantGarde (max. rim 29\" or max. length 185 cm): A1 and A2: 2-3; A3 and A5: 4-5; A4 and A7: 6-7; A6: 5-6; A8: 8-9 bicycles (FAQ table).",
+ "sizes": [
+  {
+   "code": "A1",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® mit Standardtüre (Türanschlag rechts, Türöffnung: 76 x 182 cm)",
+   "exteriorCm": [
+    180,
+    220,
+    218
+   ],
+   "exteriorRaw": "180 x 220 x 218",
+   "interiorCm": [
+    172,
+    172,
+    209
+   ],
+   "effectiveM2": 2.96,
+   "foundationCm": [
+    177,
+    177
+   ],
+   "weightKg": 152.7,
+   "skus": {
+    "Metallic silver": "15010",
+    "Metallic quartz grey": "19010",
+    "Metallic dark grey": "17010"
+   },
+   "priceGBP": {
+    "15010": 1589,
+    "19010": 1589,
+    "17010": 1589
+   },
+   "ean": {
+    "15010": "9003414150102",
+    "19010": "9003414190108",
+    "17010": "9003414170100"
+   },
+   "dataSheetColourColumn": {
+    "15010": "Silver-metallic",
+    "19010": "Quartz grey-metallic",
+    "17010": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A1 (180 x 220 x 218 cm) | 2,96 m²",
+   "urlKeys": {
+    "15010": "avantgarde-garden-shed-a1-metallic-silver-standard-door",
+    "19010": "avantgarde-garden-shed-a1-metallic-quartz-grey-standard-door",
+    "17010": "avantgarde-garden-shed-a1-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A2",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® mit Standardtüre (Türanschlag rechts, Türöffnung: 76 x 182 cm)",
+   "exteriorCm": [
+    180,
+    260,
+    218
+   ],
+   "exteriorRaw": "180 x 260 x 218",
+   "interiorCm": [
+    172,
+    212,
+    209
+   ],
+   "effectiveM2": 3.65,
+   "foundationCm": [
+    177,
+    217
+   ],
+   "weightKg": 169.6,
+   "skus": {
+    "Metallic silver": "15020",
+    "Metallic quartz grey": "19020",
+    "Metallic dark grey": "17020"
+   },
+   "priceGBP": {
+    "15020": 1779,
+    "19020": 1779,
+    "17020": 1779
+   },
+   "ean": {
+    "15020": "9003414150201",
+    "19020": "9003414190207",
+    "17020": "9003414170209"
+   },
+   "dataSheetColourColumn": {
+    "15020": "Silver-metallic",
+    "19020": "Quartz grey-metallic",
+    "17020": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A2 (180 x 260 x 218 cm) | 3,65 m²",
+   "urlKeys": {
+    "15020": "avantgarde-garden-shed-a2-metallic-silver-standard-door",
+    "19020": "avantgarde-garden-shed-a2-metallic-quartz-grey-standard-door",
+    "17020": "avantgarde-garden-shed-a2-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A3",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® mit Standardtüre (Türanschlag rechts, Türöffnung: 76 x 182 cm)",
+   "exteriorCm": [
+    180,
+    300,
+    217
+   ],
+   "exteriorRaw": "180 x 300 x 217",
+   "interiorCm": [
+    172,
+    252,
+    209
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    177,
+    257
+   ],
+   "weightKg": 184.2,
+   "skus": {
+    "Metallic silver": "15030",
+    "Metallic quartz grey": "19030",
+    "Metallic dark grey": "17030"
+   },
+   "priceGBP": {
+    "15030": 1969,
+    "19030": 1969,
+    "17030": 1969
+   },
+   "ean": {
+    "15030": "9003414150300",
+    "19030": "9003414190306",
+    "17030": "9003414170308"
+   },
+   "dataSheetColourColumn": {
+    "15030": "Silver-metallic",
+    "19030": "Quartz grey-metallic",
+    "17030": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A3 (180 x 300 x 217 cm) | 4,33 m²",
+   "urlKeys": {
+    "15030": "avantgarde-garden-shed-a3-metallic-silver-standard-door",
+    "19030": "avantgarde-garden-shed-a3-metallic-quartz-grey-standard-door",
+    "17030": "avantgarde-garden-shed-a3-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A4",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® mit Standardtüre (Türanschlag rechts, Türöffnung: 76 x 182 cm)",
+   "exteriorCm": [
+    180,
+    380,
+    222
+   ],
+   "exteriorRaw": "180 x 380 x 222",
+   "interiorCm": [
+    172,
+    332,
+    209
+   ],
+   "effectiveM2": 5.71,
+   "foundationCm": [
+    177,
+    337
+   ],
+   "weightKg": 230.5,
+   "skus": {
+    "Metallic silver": "15040",
+    "Metallic quartz grey": "19040",
+    "Metallic dark grey": "17040"
+   },
+   "priceGBP": {
+    "15040": 2259,
+    "19040": 2259,
+    "17040": 2259
+   },
+   "ean": {
+    "15040": "9003414150409",
+    "19040": "9003414190405",
+    "17040": "9003414170407"
+   },
+   "dataSheetColourColumn": {
+    "15040": "Silver-metallic",
+    "19040": "Quartz grey-metallic",
+    "17040": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A4 (180 x 380 x 222 cm) | 5,71 m²",
+   "urlKeys": {
+    "15040": "avantgarde-garden-shed-a4-metallic-silver-standard-door",
+    "19040": "avantgarde-garden-shed-a4-metallic-quartz-grey-standard-door",
+    "17040": "avantgarde-garden-shed-a4-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A5",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® mit Standardtüre (Türanschlag rechts, Türöffnung: 76 x 182 cm)",
+   "exteriorCm": [
+    260,
+    220,
+    218
+   ],
+   "exteriorRaw": "260 x 220 x 218",
+   "interiorCm": [
+    252,
+    172,
+    209
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    257,
+    177
+   ],
+   "weightKg": 184,
+   "skus": {
+    "Metallic silver": "15050",
+    "Metallic quartz grey": "19050",
+    "Metallic dark grey": "17050"
+   },
+   "priceGBP": {
+    "15050": 1969,
+    "19050": 1969,
+    "17050": 1969
+   },
+   "ean": {
+    "15050": "9003414150508",
+    "19050": "9003414190504",
+    "17050": "9003414170506"
+   },
+   "dataSheetColourColumn": {
+    "15050": "Silver-metallic",
+    "19050": "Quartz grey-metallic",
+    "17050": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A5 (260 x 220 x 218 cm) | 4,33 m²",
+   "urlKeys": {
+    "15050": "avantgarde-garden-shed-a5-metallic-silver-standard-door",
+    "19050": "avantgarde-garden-shed-a5-metallic-quartz-grey-standard-door",
+    "17050": "avantgarde-garden-shed-a5-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A6",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® mit Standardtüre (Türanschlag rechts, Türöffnung: 76 x 182 cm)",
+   "exteriorCm": [
+    260,
+    260,
+    218
+   ],
+   "exteriorRaw": "260 x 260 x 218",
+   "interiorCm": [
+    252,
+    212,
+    209
+   ],
+   "effectiveM2": 5.34,
+   "foundationCm": [
+    257,
+    217
+   ],
+   "weightKg": 203.7,
+   "skus": {
+    "Metallic silver": "15060",
+    "Metallic quartz grey": "19060",
+    "Metallic dark grey": "17060"
+   },
+   "priceGBP": {
+    "15060": 2169,
+    "19060": 2169,
+    "17060": 2169
+   },
+   "ean": {
+    "15060": "9003414150607",
+    "19060": "9003414190603",
+    "17060": "9003414170605"
+   },
+   "dataSheetColourColumn": {
+    "15060": "Silver-metallic",
+    "19060": "Quartz grey-metallic",
+    "17060": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A6 (260 x 260 x 218 cm) | 5,34 m²",
+   "urlKeys": {
+    "15060": "avantgarde-garden-shed-a6-metallic-silver-standard-door",
+    "19060": "avantgarde-garden-shed-a6-metallic-quartz-grey-standard-door",
+    "17060": "avantgarde-garden-shed-a6-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A7",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® mit Standardtüre (Türanschlag rechts, Türöffnung: 76 x 182 cm)",
+   "exteriorCm": [
+    260,
+    300,
+    217
+   ],
+   "exteriorRaw": "260 x 300 x 217",
+   "interiorCm": [
+    252,
+    252,
+    209
+   ],
+   "effectiveM2": 6.35,
+   "foundationCm": [
+    257,
+    257
+   ],
+   "weightKg": 226.1,
+   "skus": {
+    "Metallic silver": "15070",
+    "Metallic quartz grey": "19070",
+    "Metallic dark grey": "17070"
+   },
+   "priceGBP": {
+    "15070": 2459,
+    "19070": 2459,
+    "17070": 2459
+   },
+   "ean": {
+    "15070": "9003414150706",
+    "19070": "9003414190702",
+    "17070": "9003414170704"
+   },
+   "dataSheetColourColumn": {
+    "15070": "Silver-metallic",
+    "19070": "Quartz grey-metallic",
+    "17070": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A7 (260 x 300 x 217 cm) | 6,35 m²",
+   "urlKeys": {
+    "15070": "avantgarde-garden-shed-a7-metallic-silver-standard-door",
+    "19070": "avantgarde-garden-shed-a7-metallic-quartz-grey-standard-door",
+    "17070": "avantgarde-garden-shed-a7-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A8",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® mit Standardtüre (Türanschlag rechts, Türöffnung: 76 x 182 cm)",
+   "exteriorCm": [
+    260,
+    380,
+    222
+   ],
+   "exteriorRaw": "260 x 380 x 222",
+   "interiorCm": [
+    252,
+    332,
+    209
+   ],
+   "effectiveM2": 8.37,
+   "foundationCm": [
+    257,
+    337
+   ],
+   "weightKg": 270.7,
+   "skus": {
+    "Metallic silver": "15080",
+    "Metallic quartz grey": "19080",
+    "Metallic dark grey": "17080"
+   },
+   "priceGBP": {
+    "15080": 2749,
+    "19080": 2749,
+    "17080": 2749
+   },
+   "ean": {
+    "15080": "9003414150805",
+    "19080": "9003414190801",
+    "17080": "9003414170803"
+   },
+   "dataSheetColourColumn": {
+    "15080": "Silver-metallic",
+    "19080": "Quartz grey-metallic",
+    "17080": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A8 (260 x 380 x 222 cm) | 8,37 m²",
+   "urlKeys": {
+    "15080": "avantgarde-garden-shed-a8-metallic-silver-standard-door",
+    "19080": "avantgarde-garden-shed-a8-metallic-quartz-grey-standard-door",
+    "17080": "avantgarde-garden-shed-a8-metallic-dark-grey"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A1",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    180,
+    222,
+    218
+   ],
+   "exteriorRaw": "180 x 222 x 218",
+   "interiorCm": [
+    172,
+    172,
+    209
+   ],
+   "effectiveM2": 2.96,
+   "foundationCm": [
+    177,
+    177
+   ],
+   "weightKg": 156.6,
+   "skus": {
+    "Metallic silver": "15019",
+    "Metallic quartz grey": "19019",
+    "Metallic dark grey": "17019"
+   },
+   "priceGBP": {
+    "15019": 1879,
+    "19019": 1879,
+    "17019": 1879
+   },
+   "ean": {
+    "15019": "9003414150195",
+    "19019": "9003414190191",
+    "17019": "9003414170193"
+   },
+   "dataSheetColourColumn": {
+    "15019": "Silver-metallic",
+    "19019": "Quartz grey-metallic",
+    "17019": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A1 (180 x 220 x 218 cm) | 2,96 m²",
+   "urlKeys": {
+    "15019": "avantgarde-garden-shed-a1-metallic-silver-double-door",
+    "19019": "avantgarde-garden-shed-a1-metallic-quartz-grey-double-door",
+    "17019": "avantgarde-garden-shed-a1-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 139,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A2",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    180,
+    260,
+    218
+   ],
+   "exteriorRaw": "180 x 260 x 218",
+   "interiorCm": [
+    172,
+    212,
+    209
+   ],
+   "effectiveM2": 3.65,
+   "foundationCm": [
+    177,
+    217
+   ],
+   "weightKg": 173.6,
+   "skus": {
+    "Metallic silver": "15029",
+    "Metallic quartz grey": "19029",
+    "Metallic dark grey": "17029"
+   },
+   "priceGBP": {
+    "15029": 2069,
+    "19029": 2069,
+    "17029": 2069
+   },
+   "ean": {
+    "15029": "9003414150294",
+    "19029": "9003414190290",
+    "17029": "9003414170292"
+   },
+   "dataSheetColourColumn": {
+    "15029": "Silver-metallic",
+    "19029": "Quartz grey-metallic",
+    "17029": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A2 (180 x 260 x 218 cm) | 3,65 m²",
+   "urlKeys": {
+    "15029": "avantgarde-garden-shed-a2-metallic-silver-double-door",
+    "19029": "avantgarde-garden-shed-a2-metallic-quartz-grey-double-door",
+    "17029": "avantgarde-garden-shed-a2-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 139,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A3",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    180,
+    300,
+    217
+   ],
+   "exteriorRaw": "180 x 300 x 217",
+   "interiorCm": [
+    172,
+    252,
+    209
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    177,
+    257
+   ],
+   "weightKg": 190.8,
+   "skus": {
+    "Metallic silver": "15039",
+    "Metallic quartz grey": "19039",
+    "Metallic dark grey": "17039"
+   },
+   "priceGBP": {
+    "15039": 2259,
+    "19039": 2259,
+    "17039": 2259
+   },
+   "ean": {
+    "15039": "9003414150393",
+    "19039": "9003414190399",
+    "17039": "9003414170391"
+   },
+   "dataSheetColourColumn": {
+    "15039": "Silver-metallic",
+    "19039": "Quartz grey-metallic",
+    "17039": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A3 (180 x 300 x 217 cm) | 4,33 m²",
+   "urlKeys": {
+    "15039": "avantgarde-garden-shed-a3-metallic-silver-double-door",
+    "19039": "avantgarde-garden-shed-a3-metallic-quartz-grey-double-door",
+    "17039": "avantgarde-garden-shed-a3-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 139,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A4",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    180,
+    380,
+    222
+   ],
+   "exteriorRaw": "180 x 380 x 222",
+   "interiorCm": [
+    172,
+    332,
+    209
+   ],
+   "effectiveM2": 5.71,
+   "foundationCm": [
+    177,
+    337
+   ],
+   "weightKg": 236.5,
+   "skus": {
+    "Metallic silver": "15049",
+    "Metallic quartz grey": "19049",
+    "Metallic dark grey": "17049"
+   },
+   "priceGBP": {
+    "15049": 2549,
+    "19049": 2549,
+    "17049": 2549
+   },
+   "ean": {
+    "15049": "9003414150492",
+    "19049": "9003414190498",
+    "17049": "9003414170490"
+   },
+   "dataSheetColourColumn": {
+    "15049": "Silver-metallic",
+    "19049": "Quartz grey-metallic",
+    "17049": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A4 (180 x 380 x 222 cm) | 5,71 m²",
+   "urlKeys": {
+    "15049": "avantgarde-garden-shed-a4-metallic-silver-double-door",
+    "19049": "avantgarde-garden-shed-a4-metallic-quartz-grey-double-door",
+    "17049": "avantgarde-garden-shed-a4-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 139,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A5",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    260,
+    220,
+    218
+   ],
+   "exteriorRaw": "260 x 220 x 218",
+   "interiorCm": [
+    252,
+    172,
+    209
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    257,
+    177
+   ],
+   "weightKg": 190.1,
+   "skus": {
+    "Metallic silver": "15059",
+    "Metallic quartz grey": "19059",
+    "Metallic dark grey": "17059"
+   },
+   "priceGBP": {
+    "15059": 2259,
+    "19059": 2259,
+    "17059": 2259
+   },
+   "ean": {
+    "15059": "9003414150591",
+    "19059": "9003414190597",
+    "17059": "9003414170599"
+   },
+   "dataSheetColourColumn": {
+    "15059": "Silver-metallic",
+    "19059": "Quartz grey-metallic",
+    "17059": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A5 (260 x 220 x 218 cm) | 4,33 m²",
+   "urlKeys": {
+    "15059": "avantgarde-garden-shed-a5-metallic-silver-double-door",
+    "19059": "avantgarde-garden-shed-a5-metallic-quartz-grey-double-door",
+    "17059": "avantgarde-garden-shed-a5-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 154.5,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A6",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    260,
+    260,
+    218
+   ],
+   "exteriorRaw": "260 x 260 x 218",
+   "interiorCm": [
+    252,
+    212,
+    209
+   ],
+   "effectiveM2": 5.34,
+   "foundationCm": [
+    257,
+    217
+   ],
+   "weightKg": 209.8,
+   "skus": {
+    "Metallic silver": "15069",
+    "Metallic quartz grey": "19069",
+    "Metallic dark grey": "17069"
+   },
+   "priceGBP": {
+    "15069": 2459,
+    "19069": 2459,
+    "17069": 2459
+   },
+   "ean": {
+    "15069": "9003414150690",
+    "19069": "9003414190696",
+    "17069": "9003414170698"
+   },
+   "dataSheetColourColumn": {
+    "15069": "Silver-metallic",
+    "19069": "Quartz grey-metallic",
+    "17069": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A6 (260 x 260 x 218 cm) | 5,34 m²",
+   "urlKeys": {
+    "15069": "avantgarde-garden-shed-a6-metallic-silver-double-door",
+    "19069": "avantgarde-garden-shed-a6-metallic-quartz-grey-double-door",
+    "17069": "avantgarde-garden-shed-a6-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 154.5,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A7",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    260,
+    300,
+    217
+   ],
+   "exteriorRaw": "260 x 300 x 217",
+   "interiorCm": [
+    252,
+    252,
+    209
+   ],
+   "effectiveM2": 6.35,
+   "foundationCm": [
+    257,
+    257
+   ],
+   "weightKg": 232.2,
+   "skus": {
+    "Metallic silver": "15079",
+    "Metallic quartz grey": "19079",
+    "Metallic dark grey": "17079"
+   },
+   "priceGBP": {
+    "15079": 2749,
+    "19079": 2749,
+    "17079": 2749
+   },
+   "ean": {
+    "15079": "9003414150799",
+    "19079": "9003414190795",
+    "17079": "9003414170797"
+   },
+   "dataSheetColourColumn": {
+    "15079": "Silver-metallic",
+    "19079": "Quartz grey-metallic",
+    "17079": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A7 (260 x 300 x 217 cm) | 6,35 m²",
+   "urlKeys": {
+    "15079": "avantgarde-garden-shed-a7-metallic-silver-double-door",
+    "19079": "avantgarde-garden-shed-a7-metallic-quartz-grey-double-door",
+    "17079": "avantgarde-garden-shed-a7-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 154.5,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A8",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    260,
+    380,
+    222
+   ],
+   "exteriorRaw": "260 x 380 x 222",
+   "interiorCm": [
+    252,
+    332,
+    209
+   ],
+   "effectiveM2": 8.37,
+   "foundationCm": [
+    257,
+    337
+   ],
+   "weightKg": 276.8,
+   "skus": {
+    "Metallic silver": "15089",
+    "Metallic quartz grey": "19089",
+    "Metallic dark grey": "17089"
+   },
+   "priceGBP": {
+    "15089": 3039,
+    "19089": 3039,
+    "17089": 3039
+   },
+   "ean": {
+    "15089": "9003414150898",
+    "19089": "9003414190894",
+    "17089": "9003414170896"
+   },
+   "dataSheetColourColumn": {
+    "15089": "Silver-metallic",
+    "19089": "Quartz grey-metallic",
+    "17089": "Dark grey-metallic"
+   },
+   "model": "AvantGarde",
+   "shopOptionLabel": "A8 (260 x 380 x 222 cm) | 8,37 m²",
+   "urlKeys": {
+    "15089": "avantgarde-garden-shed-a8-metallic-silver-double-door",
+    "19089": "avantgarde-garden-shed-a8-metallic-quartz-grey-double-door",
+    "17089": "avantgarde-garden-shed-a8-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 154.5,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A1",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® ECO* with standard door (door hinge on right, door opening: 76 x 182 cm)",
+   "exteriorCm": [
+    180,
+    220,
+    218
+   ],
+   "exteriorRaw": "180 x 220 x 218",
+   "interiorCm": [
+    172,
+    172,
+    209
+   ],
+   "effectiveM2": 2.96,
+   "foundationCm": [
+    177,
+    177
+   ],
+   "weightKg": 141.7,
+   "skus": {
+    "Metallic silver": "15610",
+    "Metallic quartz grey": "19610",
+    "Metallic dark grey": "17610"
+   },
+   "priceGBP": {
+    "15610": 1349,
+    "19610": 1349,
+    "17610": 1349
+   },
+   "ean": {
+    "15610": "9003414156104",
+    "19610": "9003414196100",
+    "17610": "9003414176102"
+   },
+   "dataSheetColourColumn": {
+    "15610": "metallic silver",
+    "19610": "metallic quartz grey",
+    "17610": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A1 (180 x 220 x 218 cm) | 2,96 m²",
+   "urlKeys": {
+    "15610": "avantgarde-garden-shed-eco-a1-metallic-silver-standard-door",
+    "19610": "avantgarde-garden-shed-eco-a1-metallic-quartz-grey-standard-door",
+    "17610": "avantgarde-garden-shed-eco-a1-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A2",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® ECO* with standard door (door hinge on right, door opening: 76 x 182 cm)",
+   "exteriorCm": [
+    180,
+    260,
+    218
+   ],
+   "exteriorRaw": "180 x 260 x 218",
+   "interiorCm": [
+    172,
+    212,
+    209
+   ],
+   "effectiveM2": 3.65,
+   "foundationCm": [
+    177,
+    217
+   ],
+   "weightKg": 158.8,
+   "skus": {
+    "Metallic silver": "15620",
+    "Metallic quartz grey": "19620",
+    "Metallic dark grey": "17620"
+   },
+   "priceGBP": {
+    "15620": 1549,
+    "19620": 1549,
+    "17620": 1549
+   },
+   "ean": {
+    "15620": "9003414156203",
+    "19620": "9003414196209",
+    "17620": "9003414176201"
+   },
+   "dataSheetColourColumn": {
+    "15620": "metallic silver",
+    "19620": "metallic quartz grey",
+    "17620": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A2 (180 x 260 x 218 cm) | 3,65 m²",
+   "urlKeys": {
+    "15620": "avantgarde-garden-shed-eco-a2-metallic-silver-standard-door",
+    "19620": "avantgarde-garden-shed-eco-a2-metallic-quartz-grey-standard-door",
+    "17620": "avantgarde-garden-shed-eco-a2-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A3",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® ECO* with standard door (door hinge on right, door opening: 76 x 182 cm)",
+   "exteriorCm": [
+    180,
+    300,
+    217
+   ],
+   "exteriorRaw": "180 x 300 x 217",
+   "interiorCm": [
+    172,
+    252,
+    209
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    177,
+    257
+   ],
+   "weightKg": 176.1,
+   "skus": {
+    "Metallic silver": "15630",
+    "Metallic quartz grey": "19630",
+    "Metallic dark grey": "17630"
+   },
+   "priceGBP": {
+    "15630": 1739,
+    "19630": 1739,
+    "17630": 1739
+   },
+   "ean": {
+    "15630": "9003414156302",
+    "19630": "9003414196308",
+    "17630": "9003414176300"
+   },
+   "dataSheetColourColumn": {
+    "15630": "metallic silver",
+    "19630": "metallic quartz grey",
+    "17630": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A3 (180 x 300 x 217 cm) | 4,33 m²",
+   "urlKeys": {
+    "15630": "avantgarde-garden-shed-eco-a3-metallic-silver-standard-door",
+    "19630": "avantgarde-garden-shed-eco-a3-metallic-quartz-grey-standard-door",
+    "17630": "avantgarde-garden-shed-eco-a3-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A4",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® ECO* with standard door (door hinge on right, door opening: 76 x 182 cm)",
+   "exteriorCm": [
+    180,
+    380,
+    222
+   ],
+   "exteriorRaw": "180 x 380 x 222",
+   "interiorCm": [
+    172,
+    332,
+    209
+   ],
+   "effectiveM2": 5.71,
+   "foundationCm": [
+    177,
+    337
+   ],
+   "weightKg": 219.6,
+   "skus": {
+    "Metallic silver": "15640",
+    "Metallic quartz grey": "19640",
+    "Metallic dark grey": "17640"
+   },
+   "priceGBP": {
+    "15640": 2029,
+    "19640": 2029,
+    "17640": 2029
+   },
+   "ean": {
+    "15640": "9003414156401",
+    "19640": "9003414196407",
+    "17640": "9003414176409"
+   },
+   "dataSheetColourColumn": {
+    "15640": "metallic silver",
+    "19640": "metallic quartz grey",
+    "17640": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A4 (180 x 380 x 222 cm) | 5,71 m²",
+   "urlKeys": {
+    "15640": "avantgarde-garden-shed-eco-a4-metallic-silver-standard-door",
+    "19640": "avantgarde-garden-shed-eco-a4-metallic-quartz-grey-standard-door",
+    "17640": "avantgarde-garden-shed-eco-a4-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A5",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® ECO* with standard door (door hinge on right, door opening: 76 x 182 cm)",
+   "exteriorCm": [
+    260,
+    220,
+    218
+   ],
+   "exteriorRaw": "260 x 220 x 218",
+   "interiorCm": [
+    252,
+    172,
+    209
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    257,
+    177
+   ],
+   "weightKg": 173,
+   "skus": {
+    "Metallic silver": "15650",
+    "Metallic quartz grey": "19650",
+    "Metallic dark grey": "17650"
+   },
+   "priceGBP": {
+    "15650": 1739,
+    "19650": 1739,
+    "17650": 1739
+   },
+   "ean": {
+    "15650": "9003414156500",
+    "19650": "9003414196506",
+    "17650": "9003414176508"
+   },
+   "dataSheetColourColumn": {
+    "15650": "metallic silver",
+    "19650": "metallic quartz grey",
+    "17650": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A5 (260 x 220 x 218 cm) | 4,33 m²",
+   "urlKeys": {
+    "15650": "avantgarde-garden-shed-eco-a5-metallic-silver-standard-door",
+    "19650": "avantgarde-garden-shed-eco-a5-metallic-quartz-grey-standard-door",
+    "17650": "avantgarde-garden-shed-eco-a5-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A6",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® ECO* with standard door (door hinge on right, door opening: 76 x 182 cm)",
+   "exteriorCm": [
+    260,
+    260,
+    218
+   ],
+   "exteriorRaw": "260 x 260 x 218",
+   "interiorCm": [
+    252,
+    212,
+    209
+   ],
+   "effectiveM2": 5.34,
+   "foundationCm": [
+    257,
+    217
+   ],
+   "weightKg": 192.8,
+   "skus": {
+    "Metallic silver": "15660",
+    "Metallic quartz grey": "19660",
+    "Metallic dark grey": "17660"
+   },
+   "priceGBP": {
+    "15660": 1949,
+    "19660": 1949,
+    "17660": 1949
+   },
+   "ean": {
+    "15660": "9003414156609",
+    "19660": "9003414196605",
+    "17660": "9003414176607"
+   },
+   "dataSheetColourColumn": {
+    "15660": "metallic silver",
+    "19660": "metallic quartz grey",
+    "17660": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A6 (260 x 260 x 218 cm) | 5,34 m²",
+   "urlKeys": {
+    "15660": "avantgarde-garden-shed-eco-a6-metallic-silver-standard-door",
+    "19660": "avantgarde-garden-shed-eco-a6-metallic-quartz-grey-standard-door",
+    "17660": "avantgarde-garden-shed-eco-a6-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A7",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® ECO* with standard door (door hinge on right, door opening: 76 x 182 cm)",
+   "exteriorCm": [
+    260,
+    300,
+    217
+   ],
+   "exteriorRaw": "260 x 300 x 217",
+   "interiorCm": [
+    252,
+    252,
+    209
+   ],
+   "effectiveM2": 6.35,
+   "foundationCm": [
+    257,
+    257
+   ],
+   "weightKg": 211.8,
+   "skus": {
+    "Metallic silver": "15670",
+    "Metallic quartz grey": "19670",
+    "Metallic dark grey": "17670"
+   },
+   "priceGBP": {
+    "15670": 2219,
+    "19670": 2219,
+    "17670": 2219
+   },
+   "ean": {
+    "15670": "9003414156708",
+    "19670": "9003414196704",
+    "17670": "9003414176706"
+   },
+   "dataSheetColourColumn": {
+    "15670": "metallic silver",
+    "19670": "metallic quartz grey",
+    "17670": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A7 (260 x 300 x 217 cm) | 6,35 m²",
+   "urlKeys": {
+    "15670": "avantgarde-garden-shed-eco-a7-metallic-silver-standard-door",
+    "19670": "avantgarde-garden-shed-eco-a7-metallic-quartz-grey-standard-door",
+    "17670": "avantgarde-garden-shed-eco-a7-metallic-dark-grey-standard-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A8",
+   "variant": "standard door",
+   "dataSheetGroup": "AvantGarde® ECO* with standard door (door hinge on right, door opening: 76 x 182 cm)",
+   "exteriorCm": [
+    260,
+    380,
+    222
+   ],
+   "exteriorRaw": "260 x 380 x 222",
+   "interiorCm": [
+    252,
+    332,
+    209
+   ],
+   "effectiveM2": 8.37,
+   "foundationCm": [
+    257,
+    337
+   ],
+   "weightKg": 256.2,
+   "skus": {
+    "Metallic silver": "15680",
+    "Metallic quartz grey": "19680",
+    "Metallic dark grey": "17680"
+   },
+   "priceGBP": {
+    "15680": 2549,
+    "19680": 2549,
+    "17680": 2549
+   },
+   "ean": {
+    "15680": "9003414156807",
+    "19680": "9003414196803",
+    "17680": "9003414176805"
+   },
+   "dataSheetColourColumn": {
+    "15680": "metallic silver",
+    "19680": "metallic quartz grey",
+    "17680": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A8 (260 x 380 x 222 cm) | 8,37 m²",
+   "urlKeys": {
+    "15680": "avantgarde-garden-shed-eco-a8-metallic-silver-standard-door",
+    "19680": "avantgarde-garden-shed-eco-a8-metallic-quartz-grey-standard-door",
+    "17680": "avantgarde-garden-shed-eco-a8-metallic-dark-grey"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 76,
+    "h": 182,
+    "hinge": "right",
+    "source": "Data sheet group heading and Colours & Sizes \"Standard door (door hinge on right): 76 x 182 cm\""
+   }
+  },
+  {
+   "code": "A1",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® ECO* with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    180,
+    220,
+    218
+   ],
+   "exteriorRaw": "180 x 220 x 218",
+   "interiorCm": [
+    172,
+    172,
+    209
+   ],
+   "effectiveM2": 2.96,
+   "foundationCm": [
+    177,
+    177
+   ],
+   "weightKg": 144.8,
+   "skus": {
+    "Metallic silver": "15619",
+    "Metallic quartz grey": "19619",
+    "Metallic dark grey": "17619"
+   },
+   "priceGBP": {
+    "15619": 1639,
+    "19619": 1639,
+    "17619": 1639
+   },
+   "ean": {
+    "15619": "9003414156197",
+    "19619": "9003414196193",
+    "17619": "9003414176195"
+   },
+   "dataSheetColourColumn": {
+    "15619": "metallic silver",
+    "19619": "metallic quartz grey",
+    "17619": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A1 (180 x 220 x 218 cm) | 2,96 m²",
+   "urlKeys": {
+    "15619": "avantgarde-garden-shed-eco-a1-metallic-silver-double-door",
+    "19619": "avantgarde-garden-shed-eco-a1-metallic-quartz-grey-double-door",
+    "17619": "avantgarde-garden-shed-eco-a1-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 139,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A2",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® ECO* with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    180,
+    260,
+    218
+   ],
+   "exteriorRaw": "180 x 260 x 218",
+   "interiorCm": [
+    172,
+    212,
+    209
+   ],
+   "effectiveM2": 3.65,
+   "foundationCm": [
+    177,
+    217
+   ],
+   "weightKg": 161.9,
+   "skus": {
+    "Metallic silver": "15629",
+    "Metallic quartz grey": "19629",
+    "Metallic dark grey": "17629"
+   },
+   "priceGBP": {
+    "15629": 1839,
+    "19629": 1839,
+    "17629": 1839
+   },
+   "ean": {
+    "15629": "9003414156296",
+    "19629": "9003414196292",
+    "17629": "9003414176294"
+   },
+   "dataSheetColourColumn": {
+    "15629": "metallic silver",
+    "19629": "metallic quartz grey",
+    "17629": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A2 (180 x 260 x 218 cm) | 3,65 m²",
+   "urlKeys": {
+    "15629": "avantgarde-garden-shed-eco-a2-metallic-silver-double-door",
+    "19629": "avantgarde-garden-shed-eco-a2-metallic-quartz-grey-double-door",
+    "17629": "avantgarde-garden-shed-eco-a2-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 139,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A3",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® ECO* with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    180,
+    300,
+    217
+   ],
+   "exteriorRaw": "180 x 300 x 217",
+   "interiorCm": [
+    172,
+    252,
+    209
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    177,
+    257
+   ],
+   "weightKg": 181.8,
+   "skus": {
+    "Metallic silver": "15639",
+    "Metallic quartz grey": "19639",
+    "Metallic dark grey": "17639"
+   },
+   "priceGBP": {
+    "15639": 2029,
+    "19639": 2029,
+    "17639": 2029
+   },
+   "ean": {
+    "15639": "9003414156395",
+    "19639": "9003414196391",
+    "17639": "9003414176393"
+   },
+   "dataSheetColourColumn": {
+    "15639": "metallic silver",
+    "19639": "metallic quartz grey",
+    "17639": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A3 (180 x 300 x 217 cm) | 4,33 m²",
+   "urlKeys": {
+    "15639": "avantgarde-garden-shed-eco-a3-metallic-silver-double-door",
+    "19639": "avantgarde-garden-shed-eco-a3-metallic-quartz-grey-double-door",
+    "17639": "avantgarde-garden-shed-eco-a3-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 139,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A4",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® ECO* with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    180,
+    380,
+    222
+   ],
+   "exteriorRaw": "180 x 380 x 222",
+   "interiorCm": [
+    172,
+    332,
+    209
+   ],
+   "effectiveM2": 5.71,
+   "foundationCm": [
+    177,
+    337
+   ],
+   "weightKg": 224.7,
+   "skus": {
+    "Metallic silver": "15649",
+    "Metallic quartz grey": "19649",
+    "Metallic dark grey": "17649"
+   },
+   "priceGBP": {
+    "15649": 2319,
+    "19649": 2319,
+    "17649": 2319
+   },
+   "ean": {
+    "15649": "9003414156494",
+    "19649": "9003414196490",
+    "17649": "9003414176492"
+   },
+   "dataSheetColourColumn": {
+    "15649": "metallic silver",
+    "19649": "metallic quartz grey",
+    "17649": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A4 (180 x 380 x 222 cm) | 5,71 m²",
+   "urlKeys": {
+    "15649": "avantgarde-garden-shed-eco-a4-metallic-silver-double-door",
+    "19649": "avantgarde-garden-shed-eco-a4-metallic-quartz-grey-double-door",
+    "17649": "avantgarde-garden-shed-eco-a4-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 139,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A5",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® ECO* with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    260,
+    220,
+    218
+   ],
+   "exteriorRaw": "260 x 220 x 218",
+   "interiorCm": [
+    252,
+    172,
+    209
+   ],
+   "effectiveM2": 4.33,
+   "foundationCm": [
+    257,
+    177
+   ],
+   "weightKg": 175.9,
+   "skus": {
+    "Metallic silver": "15659",
+    "Metallic quartz grey": "19659",
+    "Metallic dark grey": "17659"
+   },
+   "priceGBP": {
+    "15659": 2029,
+    "19659": 2029,
+    "17659": 2029
+   },
+   "ean": {
+    "15659": "9003414156593",
+    "19659": "9003414196599",
+    "17659": "9003414176591"
+   },
+   "dataSheetColourColumn": {
+    "15659": "metallic silver",
+    "19659": "metallic quartz grey",
+    "17659": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A5 (260 x 220 x 218 cm) | 4,33 m²",
+   "urlKeys": {
+    "15659": "avantgarde-garden-shed-eco-a5-metallic-silver-double-door",
+    "19659": "avantgarde-garden-shed-eco-a5-metallic-quartz-grey-double-door",
+    "17659": "avantgarde-garden-shed-eco-a5-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 154.5,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A6",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® ECO* with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    260,
+    260,
+    218
+   ],
+   "exteriorRaw": "260 x 260 x 218",
+   "interiorCm": [
+    252,
+    212,
+    209
+   ],
+   "effectiveM2": 5.34,
+   "foundationCm": [
+    257,
+    217
+   ],
+   "weightKg": 195.7,
+   "skus": {
+    "Metallic silver": "15669",
+    "Metallic quartz grey": "19669",
+    "Metallic dark grey": "17669"
+   },
+   "priceGBP": {
+    "15669": 2219,
+    "19669": 2219,
+    "17669": 2219
+   },
+   "ean": {
+    "15669": "9003414156692",
+    "19669": "9003414196698",
+    "17669": "9003414176690"
+   },
+   "dataSheetColourColumn": {
+    "15669": "metallic silver",
+    "19669": "metallic quartz grey",
+    "17669": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A6 (260 x 260 x 218 cm) | 5,34 m²",
+   "urlKeys": {
+    "15669": "avantgarde-garden-shed-eco-a6-metallic-silver-double-door",
+    "19669": "avantgarde-garden-shed-eco-a6-metallic-quartz-grey-double-door",
+    "17669": "avantgarde-garden-shed-eco-a6-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 154.5,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A7",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® ECO* with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    260,
+    300,
+    217
+   ],
+   "exteriorRaw": "260 x 300 x 217",
+   "interiorCm": [
+    252,
+    252,
+    209
+   ],
+   "effectiveM2": 6.35,
+   "foundationCm": [
+    257,
+    257
+   ],
+   "weightKg": 214.7,
+   "skus": {
+    "Metallic silver": "15679",
+    "Metallic quartz grey": "19679",
+    "Metallic dark grey": "17679"
+   },
+   "priceGBP": {
+    "15679": 2509,
+    "19679": 2509,
+    "17679": 2509
+   },
+   "ean": {
+    "15679": "9003414156791",
+    "19679": "9003414196797",
+    "17679": "9003414176799"
+   },
+   "dataSheetColourColumn": {
+    "15679": "metallic silver",
+    "19679": "metallic quartz grey",
+    "17679": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A7 (260 x 300 x 217 cm) | 6,35 m²",
+   "urlKeys": {
+    "15679": "avantgarde-garden-shed-eco-a7-metallic-silver-double-door",
+    "19679": "avantgarde-garden-shed-eco-a7-metallic-quartz-grey-double-door",
+    "17679": "avantgarde-garden-shed-eco-a7-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 154.5,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "A8",
+   "variant": "double door",
+   "dataSheetGroup": "AvantGarde® ECO* with double door (door opening A1-A4: 139 x 182 cm | A5-A8: 154,5 x 182 cm)",
+   "exteriorCm": [
+    260,
+    380,
+    222
+   ],
+   "exteriorRaw": "260 x 380 x 222",
+   "interiorCm": [
+    252,
+    332,
+    209
+   ],
+   "effectiveM2": 8.37,
+   "foundationCm": [
+    257,
+    337
+   ],
+   "weightKg": 259.1,
+   "skus": {
+    "Metallic silver": "15689",
+    "Metallic quartz grey": "19689",
+    "Metallic dark grey": "17689"
+   },
+   "priceGBP": {
+    "15689": 2799,
+    "19689": 2799,
+    "17689": 2799
+   },
+   "ean": {
+    "15689": "9003414156890",
+    "19689": "9003414196896",
+    "17689": "9003414176898"
+   },
+   "dataSheetColourColumn": {
+    "15689": "metallic silver",
+    "19689": "metallic quartz grey",
+    "17689": "metallic dark grey"
+   },
+   "model": "AvantGarde ECO*",
+   "shopOptionLabel": "A8 (260 x 380 x 222 cm) | 8,37 m²",
+   "urlKeys": {
+    "15689": "avantgarde-garden-shed-eco-a8-metallic-silver-double-door",
+    "19689": "avantgarde-garden-shed-eco-a8-metallic-quartz-grey-double-door",
+    "17689": "avantgarde-garden-shed-eco-a8-metallic-dark-grey-double-door"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 154.5,
+    "h": 182,
+    "source": "Data sheet heading and Colours & Sizes \"Double door: size A1 to A4: 139 x 182 cm | size A5 to A8: 154,5 x 182 cm\"; comparison table says 138 / 155 and the dimension table clearance says 144 / 156 - see CONFLICTS-a.md"
+   }
+  }
+ ],
+ "dimensionTable": {
+  "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (Technical Data dimension table, letters refer to sketches)",
+  "columns": [
+   "A1",
+   "A2",
+   "A3",
+   "A4",
+   "A5",
+   "A6",
+   "A7",
+   "A8"
+  ],
+  "rows": {
+   "A Width of garden shed (without roof overhang)": [
+    174,
+    174,
+    174,
+    174,
+    254,
+    254,
+    254,
+    254
+   ],
+   "B Length of garden shed (without roof overhang)": [
+    174,
+    214,
+    254,
+    334,
+    174,
+    214,
+    254,
+    334
+   ],
+   "C Height of garden shed up to gutter": [
+    193,
+    193,
+    193,
+    193,
+    193,
+    193,
+    193,
+    193
+   ],
+   "D Height of rain gutter up to top edge of roof": [
+    25,
+    25,
+    25,
+    29,
+    25,
+    25,
+    25,
+    29
+   ],
+   "E Overall height of garden shed": [
+    218,
+    218,
+    218,
+    222,
+    218,
+    218,
+    218,
+    222
+   ],
+   "F Clearance - width": [
+    76,
+    76,
+    76,
+    76,
+    76,
+    76,
+    76,
+    76
+   ],
+   "Clearance - width (optional double door panel)": [
+    144,
+    144,
+    144,
+    144,
+    156,
+    156,
+    156,
+    156
+   ],
+   "G Clearance - height": [
+    182,
+    182,
+    182,
+    182,
+    182,
+    182,
+    182,
+    182
+   ],
+   "H Width of right side": [
+    49,
+    49,
+    49,
+    49,
+    49,
+    49,
+    49,
+    49
+   ],
+   "J Width of left side": [
+    49,
+    49,
+    49,
+    49,
+    129,
+    129,
+    129,
+    129
+   ],
+   "K Width of roof": [
+    180,
+    180,
+    180,
+    180,
+    260,
+    260,
+    260,
+    260
+   ],
+   "L Length of roof": [
+    220,
+    255,
+    300,
+    380,
+    220,
+    255,
+    300,
+    380
+   ],
+   "M Door space required when opening": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80
+   ]
+  },
+  "notes": "Values as published. Roof length L for A2/A6 is 255 here (and in Einreichplan_GHA_M_L.pdf) but exterior length is 260 in the data sheet and size selector."
+ },
+ "submissionPlanFloorspaceM2": {
+  "A1": 3.0,
+  "A2": 3.7,
+  "A3": 4.4,
+  "A4": 5.8,
+  "A5": 4.4,
+  "A6": 5.4,
+  "A7": 6.45,
+  "A8": 8.5,
+  "source": "Einreichplan_GHA_M_L.pdf (same values in Einreichplan-GHA-ECO.pdf and Einreichplan_GHA-Eco-a4-a8.pdf); footprint, not data sheet \"effective space\""
+ },
+ "accessories": [
+  {
+   "name": "Neo/Eco Tool Holder",
+   "skus": [
+    "47032",
+    "47052",
+    "47082"
+   ],
+   "variants": [
+    {
+     "sku": "47032",
+     "priceGBP": 39,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "47052",
+     "priceGBP": 39,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "47082",
+     "priceGBP": 39,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/tool-holder-neo?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 39,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "notes": "for the inside of the door (max. 4 tool holders per door ) Two pieces per package",
+   "bundledOnlyWithModel": [
+    "AvantGarde ECO*"
+   ]
+  },
+  {
+   "name": "BikeLift",
+   "skus": [
+    "49050"
+   ],
+   "variants": [
+    {
+     "sku": "49050",
+     "priceGBP": 519,
+     "options": {
+      "swivelling": "Standard"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/bikelift-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 519
+  },
+  {
+   "name": "Gas Spring Set",
+   "skus": [
+    "83608",
+    "83609"
+   ],
+   "variants": [
+    {
+     "sku": "83608",
+     "priceGBP": 29,
+     "options": {
+      "package-unit": "1 pc"
+     }
+    },
+    {
+     "sku": "83609",
+     "priceGBP": 49,
+     "options": {
+      "package-unit": "2 pcs"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/gas-spring-set?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)"
+  },
+  {
+   "name": "Bin bag holder for equipment locker, Europa, HighLine, AvantGarde and Panorama",
+   "skus": [
+    "45016"
+   ],
+   "variants": [
+    {
+     "sku": "45016",
+     "priceGBP": 109
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/bin-bag-holder-equipment-locker-europa-highline-avantgarde-panorama-45016?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 109
+  },
+  {
+   "name": "SmartBasePLUS AvantGarde Garden Shed",
+   "skus": [
+    "43446",
+    "43458",
+    "43463",
+    "43468",
+    "43476",
+    "43478",
+    "43488"
+   ],
+   "variants": [
+    {
+     "sku": "43446",
+     "priceGBP": 1249,
+     "options": {
+      "size": "A1 (180 x 220 cm)"
+     }
+    },
+    {
+     "sku": "43458",
+     "priceGBP": 1589,
+     "options": {
+      "size": "H2, P2, A3, A5"
+     }
+    },
+    {
+     "sku": "43463",
+     "priceGBP": 1829,
+     "options": {
+      "size": "H3, P3, A6"
+     }
+    },
+    {
+     "sku": "43468",
+     "priceGBP": 2019,
+     "options": {
+      "size": "H4, P4, A7"
+     }
+    },
+    {
+     "sku": "43476",
+     "priceGBP": 1929,
+     "options": {
+      "size": "A4"
+     }
+    },
+    {
+     "sku": "43478",
+     "priceGBP": 2699,
+     "options": {
+      "size": "A8"
+     }
+    },
+    {
+     "sku": "43488",
+     "priceGBP": 1349,
+     "options": {
+      "size": "A2 (180 x 260 cm)"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/smartbaseplus-gha?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "A1 (180 x 220 cm)": 1249,
+    "H2, P2, A3, A5": 1589,
+    "H3, P3, A6": 1829,
+    "H4, P4, A7": 2019,
+    "A4": 1929,
+    "A8": 2699,
+    "A2 (180 x 260 cm)": 1349
+   },
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "Additional Door Garden Shed AvantGarde Classic/ECO*",
+   "skus": [
+    "83002",
+    "83602",
+    "84002",
+    "84602",
+    "88002",
+    "88602"
+   ],
+   "variants": [
+    {
+     "sku": "83002",
+     "priceGBP": 619,
+     "options": {
+      "variante": "AvantGarde",
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "83602",
+     "priceGBP": 409,
+     "options": {
+      "variante": "AvantGarde ECO*",
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "84002",
+     "priceGBP": 619,
+     "options": {
+      "variante": "AvantGarde",
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "84602",
+     "priceGBP": 409,
+     "options": {
+      "variante": "AvantGarde ECO*",
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "88002",
+     "priceGBP": 619,
+     "options": {
+      "variante": "AvantGarde",
+      "color": "Metallic quartz grey"
+     }
+    },
+    {
+     "sku": "88602",
+     "priceGBP": 409,
+     "options": {
+      "variante": "AvantGarde ECO*",
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/additional-door-garden-shed-avantgarde-classic-eco?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)"
+  },
+  {
+   "name": "PV mounting system",
+   "skus": [
+    "47022",
+    "47023",
+    "47024"
+   ],
+   "variants": [
+    {
+     "sku": "47022",
+     "priceGBP": 89,
+     "options": {
+      "size": "Europa"
+     }
+    },
+    {
+     "sku": "47023",
+     "priceGBP": 89,
+     "options": {
+      "size": "HighLine, AvantGarde, Panorama"
+     }
+    },
+    {
+     "sku": "47024",
+     "priceGBP": 89,
+     "options": {
+      "size": "Neo"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/pv-mounting-system?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 89,
+   "pricesBySize": {
+    "Europa": 89,
+    "HighLine, AvantGarde, Panorama": 89,
+    "Neo": 89
+   }
+  },
+  {
+   "name": "Aluminium Floor Panel, AvantGarde Garden Shed",
+   "skus": [
+    "48031",
+    "48041",
+    "48042",
+    "48051",
+    "48061",
+    "48071",
+    "48081"
+   ],
+   "variants": [
+    {
+     "sku": "48031",
+     "priceGBP": 339,
+     "options": {
+      "size": "A1 (180 x 220 cm)"
+     }
+    },
+    {
+     "sku": "48041",
+     "priceGBP": 509,
+     "options": {
+      "size": "H2, P2, A3, A5"
+     }
+    },
+    {
+     "sku": "48042",
+     "priceGBP": 579,
+     "options": {
+      "size": "H3, P3, A6"
+     }
+    },
+    {
+     "sku": "48051",
+     "priceGBP": 679,
+     "options": {
+      "size": "H4, P4, A7"
+     }
+    },
+    {
+     "sku": "48061",
+     "priceGBP": 959,
+     "options": {
+      "size": "A8"
+     }
+    },
+    {
+     "sku": "48071",
+     "priceGBP": 409,
+     "options": {
+      "size": "A2 (180 x 260 cm)"
+     }
+    },
+    {
+     "sku": "48081",
+     "priceGBP": 609,
+     "options": {
+      "size": "A4"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/aluminium-floor-panel-garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "A1 (180 x 220 cm)": 339,
+    "H2, P2, A3, A5": 509,
+    "H3, P3, A6": 579,
+    "H4, P4, A7": 679,
+    "A8": 959,
+    "A2 (180 x 260 cm)": 409,
+    "A4": 609
+   },
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "Additional Door Garden Shed",
+   "skus": [
+    "83002",
+    "84002",
+    "88002"
+   ],
+   "variants": [
+    {
+     "sku": "83002",
+     "priceGBP": 619,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "84002",
+     "priceGBP": 619,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "88002",
+     "priceGBP": 619,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/additional-door-highline-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 619
+  },
+  {
+   "name": "Tool Holder",
+   "skus": [
+    "47031",
+    "47051",
+    "47081"
+   ],
+   "variants": [
+    {
+     "sku": "47031",
+     "priceGBP": 39,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "47051",
+     "priceGBP": 39,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "47081",
+     "priceGBP": 39,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/tool-holder?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 39,
+   "fits": [
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "notes": "A more effective storage option for your tools with the Biohort tool holder for the inside of the door. One packaging unit contains two tool holders . You can install up to two tool holders per door in the garden shed. Choose the tool holder to match the colour of your garden shed. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed HighBoard",
+   "bundledOnlyWithModel": [
+    "AvantGarde"
+   ]
+  },
+  {
+   "name": "Rainwater Downpipe Set AvantGarde® Garden Shed",
+   "skus": [
+    "44022",
+    "44062",
+    "44082"
+   ],
+   "variants": [
+    {
+     "sku": "44022",
+     "priceGBP": 99,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "44062",
+     "priceGBP": 99,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "44082",
+     "priceGBP": 99,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/rainwater-downpipe-set-avantgarde-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 99,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ]
+  },
+  {
+   "name": "\"BikeMax\" Bicycle Hanger",
+   "skus": [
+    "49011",
+    "49021"
+   ],
+   "variants": [
+    {
+     "sku": "49011",
+     "priceGBP": 59,
+     "options": {
+      "package-unit": "1 pc"
+     }
+    },
+    {
+     "sku": "49021",
+     "priceGBP": 89,
+     "options": {
+      "package-unit": "2 pcs"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/bikemax?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)"
+  },
+  {
+   "name": "Window Unit Garden Shed",
+   "skus": [
+    "43055",
+    "43065",
+    "43085"
+   ],
+   "variants": [
+    {
+     "sku": "43055",
+     "priceGBP": 339,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "43065",
+     "priceGBP": 339,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "43085",
+     "priceGBP": 339,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/window-unit-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 339,
+   "fits": [
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "bundledOnlyWithModel": [
+    "AvantGarde"
+   ]
+  },
+  {
+   "name": "Side wall for side canopy for garden shed AvantGarde",
+   "skus": [
+    "15058",
+    "15068",
+    "15078",
+    "15088",
+    "17058",
+    "17068",
+    "17078",
+    "17088",
+    "19058",
+    "19068",
+    "19078",
+    "19088"
+   ],
+   "variants": [
+    {
+     "sku": "15058",
+     "priceGBP": 429,
+     "options": {
+      "color": "Metallic silver",
+      "size": "A1, A5"
+     }
+    },
+    {
+     "sku": "15068",
+     "priceGBP": 479,
+     "options": {
+      "color": "Metallic silver",
+      "size": "A2, A6"
+     }
+    },
+    {
+     "sku": "15078",
+     "priceGBP": 529,
+     "options": {
+      "color": "Metallic silver",
+      "size": "A3, A7"
+     }
+    },
+    {
+     "sku": "15088",
+     "priceGBP": 579,
+     "options": {
+      "color": "Metallic silver",
+      "size": "A4, A8"
+     }
+    },
+    {
+     "sku": "17058",
+     "priceGBP": 429,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "A1, A5"
+     }
+    },
+    {
+     "sku": "17068",
+     "priceGBP": 479,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "A2, A6"
+     }
+    },
+    {
+     "sku": "17078",
+     "priceGBP": 529,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "A3, A7"
+     }
+    },
+    {
+     "sku": "17088",
+     "priceGBP": 579,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "A4, A8"
+     }
+    },
+    {
+     "sku": "19058",
+     "priceGBP": 429,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "A1, A5"
+     }
+    },
+    {
+     "sku": "19068",
+     "priceGBP": 479,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "A2, A6"
+     }
+    },
+    {
+     "sku": "19078",
+     "priceGBP": 529,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "A3, A7"
+     }
+    },
+    {
+     "sku": "19088",
+     "priceGBP": 579,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "A4, A8"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/side-wall-side-canopy-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "A1, A5": 429,
+    "A2, A6": 479,
+    "A3, A7": 529,
+    "A4, A8": 579
+   },
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "Back wall for side canopy for garden shed AvantGarde",
+   "skus": [
+    "15097",
+    "17097",
+    "19097"
+   ],
+   "variants": [
+    {
+     "sku": "15097",
+     "priceGBP": 669,
+     "options": {
+      "color": "Metallic silver",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "17097",
+     "priceGBP": 669,
+     "options": {
+      "color": "Metallic dark grey",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "19097",
+     "priceGBP": 669,
+     "options": {
+      "color": "Metallic quartz grey",
+      "side-canopy-size": "L"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/back-wall-canopy-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 669
+  },
+  {
+   "name": "Ground Anchor",
+   "skus": [
+    "41004",
+    "41006"
+   ],
+   "variants": [
+    {
+     "sku": "41004",
+     "priceGBP": 20,
+     "options": {
+      "package-unit": "4 pcs"
+     }
+    },
+    {
+     "sku": "41006",
+     "priceGBP": 29,
+     "options": {
+      "package-unit": "6 pcs"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/ground-anchor?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "notes": "If the floor frame is laid directly on a gravel base (approx. 10 cm gravel, without foundation or slabs), ground anchors are required for securing to the ground. These are available as accessories – please refer to the technical data for the number of anchors. Storm resistance must be ensured by the customer for this foundation solution."
+  },
+  {
+   "name": "Side canopy for garden shed AvantGarde",
+   "skus": [
+    "15056",
+    "15066",
+    "15076",
+    "15086",
+    "17056",
+    "17066",
+    "17076",
+    "17086",
+    "19056",
+    "19066",
+    "19076",
+    "19086"
+   ],
+   "variants": [
+    {
+     "sku": "15056",
+     "priceGBP": 1009,
+     "options": {
+      "color": "Metallic silver",
+      "size": "A1, A5",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "15066",
+     "priceGBP": 1109,
+     "options": {
+      "color": "Metallic silver",
+      "size": "A2, A6",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "15076",
+     "priceGBP": 1199,
+     "options": {
+      "color": "Metallic silver",
+      "size": "A3, A7",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "15086",
+     "priceGBP": 1299,
+     "options": {
+      "color": "Metallic silver",
+      "size": "A4, A8",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "17056",
+     "priceGBP": 1009,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "A1, A5",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "17066",
+     "priceGBP": 1109,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "A2, A6",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "17076",
+     "priceGBP": 1199,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "A3, A7",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "17086",
+     "priceGBP": 1299,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "A4, A8",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "19056",
+     "priceGBP": 1009,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "A1, A5",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "19066",
+     "priceGBP": 1109,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "A2, A6",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "19076",
+     "priceGBP": 1199,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "A3, A7",
+      "side-canopy-size": "L"
+     }
+    },
+    {
+     "sku": "19086",
+     "priceGBP": 1299,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "A4, A8",
+      "side-canopy-size": "L"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/side-canopy-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "A1, A5 / L": 1009,
+    "A2, A6 / L": 1109,
+    "A3, A7 / L": 1199,
+    "A4, A8 / L": 1299
+   },
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Side canopy"
+   ],
+   "notes": "Width: 243cm. The side canopy can optionally be installed on the left, right, or on both sides. The aluminium supports are equipped with height-adjustable feet. The scope of delivery for size A4/A8 includes three supports. Two rainwater downpipes are included. Only suitable for models manufactured in 2020 or later. For older models, please contact our customer service team."
+  },
+  {
+   "name": "Aluminium Floor Frame AvantGarde Garden Shed",
+   "skus": [
+    "41031",
+    "41041",
+    "41042",
+    "41051",
+    "41061",
+    "41071",
+    "41081"
+   ],
+   "variants": [
+    {
+     "sku": "41031",
+     "priceGBP": 189,
+     "options": {
+      "size": "A1 (180 x 220 cm)"
+     }
+    },
+    {
+     "sku": "41041",
+     "priceGBP": 219,
+     "options": {
+      "size": "H2, P2, A3, A5"
+     }
+    },
+    {
+     "sku": "41042",
+     "priceGBP": 229,
+     "options": {
+      "size": "H3, P3, A6"
+     }
+    },
+    {
+     "sku": "41051",
+     "priceGBP": 249,
+     "options": {
+      "size": "H4, P4, A7"
+     }
+    },
+    {
+     "sku": "41061",
+     "priceGBP": 289,
+     "options": {
+      "size": "A8"
+     }
+    },
+    {
+     "sku": "41071",
+     "priceGBP": 199,
+     "options": {
+      "size": "A2 (180 x 260 cm)"
+     }
+    },
+    {
+     "sku": "41081",
+     "priceGBP": 239,
+     "options": {
+      "size": "A4"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/aluminium-floor-frame-avantgarde-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "A1 (180 x 220 cm)": 189,
+    "H2, P2, A3, A5": 219,
+    "H3, P3, A6": 229,
+    "H4, P4, A7": 249,
+    "A8": 289,
+    "A2 (180 x 260 cm)": 199,
+    "A4": 239
+   },
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "notes": "Gives the garden shed the necessary stability even without a concrete foundation. Four plastic corner joints enable precise assembly. The aluminium floor frame measures 40 x 40 mm. | Gives the garden shed the necessary stability even without a concrete foundation. Four plastic corner joints enable precise assembly. The aluminium floor frame measures 40 x 40 mm. Suitable for: HighLine Garden Shed, Panorama Garden Shed"
+  },
+  {
+   "name": "Shelves",
+   "skus": [
+    "45010",
+    "45020",
+    "45030"
+   ],
+   "variants": [
+    {
+     "sku": "45010",
+     "priceGBP": 69,
+     "options": {
+      "package-unit": "2 pcs standard"
+     }
+    },
+    {
+     "sku": "45020",
+     "priceGBP": 89,
+     "options": {
+      "package-unit": "4 pcs standard"
+     }
+    },
+    {
+     "sku": "45030",
+     "priceGBP": 99,
+     "options": {
+      "package-unit": "2 pcs deep"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/shelves?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "notes": "Choose any position for the shelf. Choose from two different shelf depths. The standard depth is 24.5 cm. For those requiring extra storage space, we have developed a shelf with a depth of 43.5 cm. The standard width is 72 cm. The shelf set for the garden shed is also galvanised for an extra-long service life. Easy to retrofit with load bearing capacity of up to 15 kg per shelf. The set includes only the shelves. The support rails must be ordered separately. Suitable for: HighLine Garden Shed \\t AvantGarde Garden Shed \\t Panorama Garden Shed \\t Europa \\t Equipment Locker | Choose any position for the shelf. Choose from two different shelf depths. The standard depth is 24.5 cm. For those requiring extra storage space, we have developed a shelf with a depth of 43.5 cm. The standard width is 72 cm. The shelf set for the garden shed is also galvanised for an extra-long service life. Easy to retrofit with load bearing capacity of up to 15 kg per shelf. The set includes only the shelves. The support rails must be ordered separately. Suitable for: \\t HighLine Garden Shed \\t AvantGarde Garden Shed \\t Panorama Garden Shed \\t Europa \\t Equipment Locker \\t Alex"
+  },
+  {
+   "name": "FloraBoard",
+   "skus": [
+    "47030",
+    "47050",
+    "47080"
+   ],
+   "variants": [
+    {
+     "sku": "47030",
+     "priceGBP": 199,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "47050",
+     "priceGBP": 199,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "47080",
+     "priceGBP": 199,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/floraboard?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 199,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "notes": "Two rails in the same colour as the garden shed are attached to the outer wall. The flower boxes can be hung on these at a suitable height. Plastic inserts for easier planting are included in the standard delivery. Exterior dimensions (W x L): 82 x 25 cm, rail height: 188 cm Two flower boxes incl. two rails are supplied. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed",
+   "bundledOnlyWithModel": [
+    "AvantGarde"
+   ]
+  },
+  {
+   "name": "SmartBase AvantGarde",
+   "skus": [
+    "43946",
+    "43958",
+    "43963",
+    "43968",
+    "43976",
+    "43978",
+    "43988"
+   ],
+   "variants": [
+    {
+     "sku": "43946",
+     "priceGBP": 1049,
+     "options": {
+      "size": "A1 (180 x 220 cm)"
+     }
+    },
+    {
+     "sku": "43958",
+     "priceGBP": 1399,
+     "options": {
+      "size": "H2, P2, A3, A5"
+     }
+    },
+    {
+     "sku": "43963",
+     "priceGBP": 1589,
+     "options": {
+      "size": "H3, P3, A6"
+     }
+    },
+    {
+     "sku": "43968",
+     "priceGBP": 1779,
+     "options": {
+      "size": "H4, P4, A7"
+     }
+    },
+    {
+     "sku": "43976",
+     "priceGBP": 1679,
+     "options": {
+      "size": "A4"
+     }
+    },
+    {
+     "sku": "43978",
+     "priceGBP": 2219,
+     "options": {
+      "size": "A8"
+     }
+    },
+    {
+     "sku": "43988",
+     "priceGBP": 1199,
+     "options": {
+      "size": "A2 (180 x 260 cm)"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/smartbase-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "A1 (180 x 220 cm)": 1049,
+    "H2, P2, A3, A5": 1399,
+    "H3, P3, A6": 1589,
+    "H4, P4, A7": 1779,
+    "A4": 1679,
+    "A8": 2219,
+    "A2 (180 x 260 cm)": 1199
+   },
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "Garden Shed Support Rail (2 pieces)",
+   "sku": "46021",
+   "priceGBP": 49.0,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "The most important facts about the Biohort support rails at a glance: \\t DIN support rails with slots to hang shelves, shelf baskets, suspension basket, hook set or folding table \\t Choose any position for shelves \\t Galvanised for extra-long service life \\t Length approx. 185 cm \\t Content: Two support rails per pack \\t Suitable for all garden sheds except CasaNova, Neo, Europa and Equipment Locker Suitable for: \\t HighLine Garden Shed \\t AvantGarde Garden Shed \\t Panorama Garden Shed"
+  },
+  {
+   "name": "Tool Hanger (4 pieces)",
+   "sku": "47020",
+   "priceGBP": 29.0,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "The Biohort tool hangers are also galvanised to guarantee durability. Use the tool hangers for: spades rakes hoses tools Many other things Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Equipment Locker"
+  },
+  {
+   "name": "Door baskets",
+   "sku": "46025",
+   "priceGBP": 49.0,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "The door baskets can be easily fixed onto the inside of the door. Ideal for storing garden tools, gloves etc. with in easy reach (2 pieces per package). Size (W x L x H): 34 x 10 x 9.5 cm, load capacity: 1 kg per door basket"
+  },
+  {
+   "name": "Shelf baskets",
+   "sku": "46026",
+   "priceGBP": 79.0,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Shelf baskets are suspended in 2 support rails*. Ideal for storing pesticides, lawn seeds, tins and tools. (2 pieces per package). Size (W x L x H): 72 x 16 x 11 cm, load capacity: 3 kg per shelf basket *Support rails not included in the delivery"
+  },
+  {
+   "name": "Hook Set",
+   "sku": "47070",
+   "priceGBP": 89.0,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Set consists of a combination hook, a handle hook and a shovel hook on a wall bracket, which is hung between two support rails. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Garden Shed"
+  },
+  {
+   "name": "Suspension Basket",
+   "sku": "47071",
+   "priceGBP": 69.0,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Ideal for storing small objects. Includes wall bracket for hanging on two support rails*. The basket is made of black polyester mesh. Size (W x L x H): 67 x 34 x 20 cm *Support rails not included. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Equipment Locker"
+  },
+  {
+   "name": "Electrical Mounting Panel",
+   "sku": "46031",
+   "priceGBP": 69.0,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Discreetly concealed cable routing and easy installation of switches and sockets (electrical equipment in photo not included). Suitable for: HighLine Garden Shed Panorama Garden Shed AvantGarde Garden Shed",
+   "bundledOnlyWithModel": [
+    "AvantGarde"
+   ]
+  },
+  {
+   "name": "CleanLine Saver Set",
+   "sku": "99200",
+   "priceGBP": 49.0,
+   "fits": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Care"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Buy the Biohort CleanLine Universal Cleaner and the Biohort CleanLine Preservation together and save money!"
+  },
+  {
+   "name": "Folding Table",
+   "sku": "40011",
+   "priceGBP": 139.0,
+   "fits": [
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-avantgarde?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Provides a stable working area, can be swiftly folded away. The Biohort folding table is also galvanised to make it durable. Advantages of the folding table: Convenient and space-saving Easy to use Galvanised steel plate The folding table is slotted into two support rails (not included) Max. load bearing capacity of 30 kg Size: 69 x 58 cm (W x L) Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Garden Shed Equipment Locker",
+   "bundledOnlyWithModel": [
+    "AvantGarde"
+   ]
+  }
+ ],
+ "pageBundles": "The product page offers per-size packages \"Basic\", \"Premium\", \"Care\" and \"Side canopy\". For ECO* variants (both door options) the Basic package is only support rails 46021, shelves 45010 and tool hangers 47020 (the classic model's standard equipment), and the Premium package swaps in the Neo/Eco tool holder 47032/47052/47082.",
+ "downloads": {
+  "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf (\"Available in 8 sizes and 3 colours.\"; no prices)",
+  "assemblyManuals": [
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_3_GHA_AvantGarde_A1-A2-A3-A5-A6-A7_1019_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Y3025030_Aufbauanleitung-AvantGarde_A4-A8_1019_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_3_GHA_AvantGarde_Eco_A1-A2-A3-A5-A6-A7_0923_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_3_GHA_AvantGarde_Eco_A4-A8_0923_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung-Seitendach-fuer-Geraetehaus-AvantGarde.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_Seitenwand_und_R%C3%BCckwand_f%C3%BCr_Seitendach_AvantGarde.pdf"
+  ],
+  "submissionPlans": [
+   "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_GHA_M_L.pdf",
+   "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan-GHA-ECO.pdf",
+   "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_GHA-Eco-a4-a8.pdf",
+   "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_AvantGarde_Seitendach_1125%201.pdf"
+  ],
+  "partsLists": [
+   "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_GHA_A1_A2_A3_A5_A6_A7.pdf",
+   "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_GHA_A4_A8_A9.pdf",
+   "https://www.biohort.com/asset/downloads/files/Stuecklisten/St%C3%BCckliste_Seitendach_GHA_0126_WEB.pdf"
+  ],
+  "priceList": "None linked from the GB AvantGarde page."
+ },
+ "notes": [
+  "The standard-door AvantGarde data sheet heading is printed in German on the GB page (\"AvantGarde mit Standardtuere (Tueranschlag rechts, Tueroeffnung: 76 x 182 cm)\").",
+  "Additional Door SKUs 83002/84002/88002 (GBP 619) are listed in both the HighLine and AvantGarde accessory categories; the AvantGarde-specific listing adds ECO* doors 83602/84602/88602 (GBP 409).",
+  "Assembly manuals and parts lists were listed but not read (time-boxed); the side-canopy submission plan was not downloaded."
+ ],
+ "buildIssues": []
+}

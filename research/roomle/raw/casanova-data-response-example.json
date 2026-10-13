@@ -1,0 +1,69 @@
+{
+    "code": 200,
+    "result": {
+        "products": [
+            {
+                "title": "CasaNova\u00ae Outbuilding 3 x 4 m metallic dark grey",
+                "sku": "52012",
+                "ean": "9003414520127",
+                "image": "/products/casanova/Renderings/52012_CasaNova_3x4_dunkelgrau_ST_Rendering.jpg",
+                "price": 11569,
+                "discountPrice": 0,
+                "display": true,
+                "qty": 1,
+                "parameters": [
+                    {
+                        "title": "size",
+                        "value": "3 x 4 m"
+                    },
+                    {
+                        "title": "colour",
+                        "value": "Metallic dark grey"
+                    },
+                    {
+                        "title": "rain water downpipe",
+                        "value": "back side"
+                    }
+                ],
+                "position": 1
+            },
+            {
+                "title": "Double Glazed Acrylic Glass 3x4 (no sliding function)",
+                "sku": "50023",
+                "ean": "9003414500235",
+                "image": "/products/casanova/Detailbilder/Acrylglas-Lichtband_CasaNova_Quarzgrau_Detail.jpg",
+                "price": 319,
+                "discountPrice": 0,
+                "display": true,
+                "qty": 1,
+                "parameters": [
+                    {
+                        "title": "size",
+                        "value": "3 x 4 m"
+                    }
+                ],
+                "position": 300
+            },
+            {
+                "title": "CasaNova Coated Roof Support 3 x 4/4 x 4 grey white",
+                "sku": "50064",
+                "ean": "9003414500648",
+                "image": "/products/50064/cn-weisse-dachsteher_2__3_1_1_1_1_1_1_1_1_1_1_1_1.jpg",
+                "price": 329,
+                "discountPrice": 0,
+                "display": true,
+                "qty": 1,
+                "parameters": [],
+                "position": 400
+            }
+        ],
+        "price": 12217,
+        "error": [],
+        "notDeliverable": [],
+        "topView": true,
+        "taxPercent": 20,
+        "hasError": false,
+        "isDeliverable": true,
+        "hideProductPrice": false
+    }
+}

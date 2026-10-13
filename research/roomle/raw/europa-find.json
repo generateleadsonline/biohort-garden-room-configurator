@@ -1,0 +1,81 @@
+{
+    "code": 200,
+    "result": {
+        "hash": "biohort:Europa_Master:A9F88781D062664EBAE0A188745522042361F74DAE0D9AF83B8D3DCE1E2507FF",
+        "data": [
+            {
+                "display": true,
+                "title": "ALU-Bodenrahmen",
+                "price": 185.9,
+                "qty": 1,
+                "sku": "41030",
+                "ean": "9003414410305",
+                "image": "/products/41030/alubodenrahmen_8.jpg",
+                "parameters": [
+                    {
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "3"
+                    }
+                ]
+            },
+            {
+                "display": true,
+                "title": "Ger\u00e4tehaus Europa 3 dunkelgrau-metallic",
+                "price": 1099,
+                "qty": 1,
+                "sku": "24030",
+                "ean": "9003414240308",
+                "image": "/products/24030/europa_3_dunkelgrau0000.jpg",
+                "parameters": [
+                    {
+                        "title": "Farbe",
+                        "value": "Dunkelgrau-metallic"
+                    },
+                    {
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "3 (244 x 156 cm)"
+                    }
+                ]
+            }
+        ],
+        "confirmed": false,
+        "confirmedBy": null,
+        "confirmationDate": null,
+        "restrictionLevel": null,
+        "featureFlagAnimation": false,
+        "roomDesigner": false,
+        "roomDesignerId": null,
+        "roomDesignerMoc": false,
+        "roomDesignerCatalogTag": null,
+        "createPlan": false,
+        "image": false,
+        "customer": {
+            "customerFirstname": "",
+            "customerTitle": "",
+            "customerLastname": "",
+            "customerStreet": "",
+            "customerZip": "",
+            "customerHouseNumber": "",
+            "customerPlace": "",
+            "customerCountry": "",
+            "customerPhone": "",
+            "customerMail": "",
+            "customerSalutation": ""
+        },
+        "company": {
+            "companyDebitorNumber": "",
+            "companyOrderNumber": "",
+            "companyMail": "",
+            "companyConsultant": "",
+            "companyVatNo": "",
+            "companyName": "",
+            "companyStreet": "",
+            "companyHouseNumber": "",
+            "companyZip": "",
+            "companyCity": "",
+            "companyCountry": "",
+            "companyPhone": "",
+            "companyBiohortOrderNumber": ""
+        }
+    }
+}

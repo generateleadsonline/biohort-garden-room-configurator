@@ -7,25 +7,10 @@
 [functions]
   node_bundler = "esbuild"
 [[redirects]]
-  from = "/api/quote"
-  to = "/.netlify/functions/quote"
-  status = 200
-[[redirects]]
-  from = "/api/pdf"
-  to = "/.netlify/functions/pdf"
-  status = 200
+  from = "/"
+  to = "/configurator/"
+  status = 302
 [[redirects]]
   from = "/configurator/*"
   to = "/index.html"
   status = 200
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    X-Frame-Options = "SAMEORIGIN"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-[[headers]]
-  for = "/api/*"
-  [headers.values]
-    Cache-Control = "no-store"

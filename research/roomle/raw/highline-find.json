@@ -1,0 +1,85 @@
+{
+    "code": 200,
+    "result": {
+        "hash": "biohort:Highline_Master:F86801ECA4806817A3EEAD94666E2BA6C6A531B5D2AAE8821DFB78978F6227C5",
+        "data": [
+            {
+                "display": true,
+                "title": "ALU-Bodenrahmen",
+                "price": 207.9,
+                "qty": 1,
+                "sku": "41041",
+                "ean": "9003414410411",
+                "image": "/products/41041/gh_detail_bodenrahmen_1_1.jpg",
+                "parameters": [
+                    {
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "H2, P2, A3, A5"
+                    }
+                ]
+            },
+            {
+                "display": true,
+                "title": "Ger\u00e4tehaus HighLine\u00ae H2 dunkelgrau-metallic Doppelt\u00fcre",
+                "price": 2499,
+                "qty": 1,
+                "sku": "84039",
+                "ean": "9003414840393",
+                "image": "/products/84039/highline_gr1_silber_doppeltuer_83029_2_1.jpg",
+                "parameters": [
+                    {
+                        "title": "Farbe",
+                        "value": "Dunkelgrau-metallic"
+                    },
+                    {
+                        "title": "T\u00fcroption",
+                        "value": "Doppelt\u00fcr"
+                    },
+                    {
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "H2 (275 x 195 cm)"
+                    }
+                ]
+            }
+        ],
+        "confirmed": false,
+        "confirmedBy": null,
+        "confirmationDate": null,
+        "restrictionLevel": null,
+        "featureFlagAnimation": false,
+        "roomDesigner": false,
+        "roomDesignerId": null,
+        "roomDesignerMoc": false,
+        "roomDesignerCatalogTag": null,
+        "createPlan": false,
+        "image": false,
+        "customer": {
+            "customerFirstname": "",
+            "customerTitle": "",
+            "customerLastname": "",
+            "customerStreet": "",
+            "customerZip": "",
+            "customerHouseNumber": "",
+            "customerPlace": "",
+            "customerCountry": "---",
+            "customerPhone": "",
+            "customerMail": "",
+            "customerSalutation": ""
+        },
+        "company": {
+            "companyDebitorNumber": "",
+            "companyOrderNumber": "",
+            "companyMail": "",
+            "companyConsultant": "",
+            "companyVatNo": "",
+            "companyName": "",
+            "companyStreet": "",
+            "companyHouseNumber": "",
+            "companyZip": "",
+            "companyCity": "",
+            "companyCountry": "---",
+            "companyPhone": "",
+            "companyBiohortOrderNumber": ""
+        }
+    }
+}

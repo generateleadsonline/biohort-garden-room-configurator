@@ -1,0 +1,1909 @@
+{
+ "range": "Europa",
+ "tagline": "Quality Garden Steel Shed at a Reasonable Price",
+ "sourceUrls": [
+  "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb",
+  "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+  "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf",
+  "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_Gertehaus_Europa.pdf"
+ ],
+ "checked": "2026-10-13",
+ "priceBasis": "GBP incl. 20% VAT as shown (\"Incl. 20 % VAT, price valid in GB\"); per-SKU prices from the page JSON-LD offers, cross-checked against embedded variant data (no differences). Prices do not vary by colour.",
+ "fromPriceGBP": 889,
+ "colours": [
+  {
+   "name": "Metallic silver",
+   "skuPrefix": "29",
+   "dataSheetColumnLabel": "Silver-metallic"
+  },
+  {
+   "name": "Metallic quartz grey",
+   "skuPrefix": "22",
+   "dataSheetColumnLabel": "Quartz grey-metallic"
+  },
+  {
+   "name": "Metallic dark grey",
+   "skuPrefix": "24",
+   "dataSheetColumnLabel": "Dark grey-metallic"
+  },
+  {
+   "name": "Dark green",
+   "skuPrefix": "23",
+   "dataSheetColumnLabel": "Dark green"
+  }
+ ],
+ "colourNotes": [
+  "Standard colour interior: grey white (Colours & Sizes tab).",
+  "Data sheet EAN columns and the shop variant colours agree for Europa.",
+  "SKU middle digits: 2x0y0 where the 4th digit is the size (1..7, 8 = 2A, 9 = 4A)."
+ ],
+ "sellingPoints": [
+  "Quality at a Reasonable Price",
+  "Top value for money and tested for decades",
+  "Double the sheet steel thickness compared to low-cost providers",
+  "Lockable and rainwater-proof",
+  "Standard double doors provide generous access.",
+  "Maintenance-free for life - 20-year guarantee subject to Biohort's warranty terms and conditions."
+ ],
+ "advantages": {
+  "Functionality": [
+   "Integrated gutter with a connection for a 1\" hose",
+   "Additional door"
+  ],
+  "Security": [
+   "2-way locking mechanism with T-handle cylinder lock",
+   "Robust roof construction for a snow load of up to 150 kg/m²",
+   "Storm-proof up to wind force 12 (according to the Beaufort scale: hurricane)* (* with professional assembly and anchoring)"
+  ],
+  "Quality at its best": [
+   "Top quality materials: galvanised, polyamide enamel coated steel plate, screws and hinges made of stainless steel",
+   "Maintenance-free for life",
+   "20-year guarantee subject to Biohort's warranty terms and conditions."
+  ]
+ },
+ "standardEquipment": [
+  "Shelves / support rails: two shelves (length 24.5 cm, width 72 cm) and two support rails; galvanised; max. load 15 kg per shelf",
+  "Tool hangers: 4 pcs.",
+  "Organiser system on the inside of the door; six hooks included",
+  "Integrated gutters: two, with connector for 1-inch garden hose (rainwater downpipe set recommended as optional accessory)",
+  "T-handle cylinder lock; 2-way locking mechanism; incl. spare key",
+  "Door hooks to secure the opened door panels",
+  "Two additional mounting brackets for wall mounting (sizes 2A and 4A)"
+ ],
+ "guarantee": "20-year guarantee subject to Biohort's warranty terms and conditions (same FAQ wording as other sheds: corrosion of metal parts and defective/unusable parts; 24-month statutory warranty for wear, moving, electrical, plastic and rubber parts).",
+ "delivery": "Free Shipping within 3 weeks (product page and every variant's delivery_message).",
+ "steelThickness": "No figure published. \"Double the sheet steel thickness compared to low-cost providers\"; galvanised with protective zinc layer of at least 150 g/m² and polyamide enamel coating.",
+ "roof": "Classic pitched/gable-style roof (comparison table \"Classic, reasonably priced\"); light: window available as accessory; snow load 150 kg/m²; wind 150 km/h | wind force 12 with professional assembly and anchoring.",
+ "doors": [
+  {
+   "variant": "double door (standard)",
+   "openingCm": {
+    "w": 135,
+    "h": 170
+   },
+   "sizes": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb",
+   "conflict": "Dimension table clearance height G = 171"
+  }
+ ],
+ "doorPlacement": "For shed sizes 2A to 7, the double door can also be installed off-centre. The doors can also be installed on the side wall for shed sizes 4, 5, 6 and 7. Sizes 2A and 4A (short depth) suit attachment to a house or garage wall; two extra mounting brackets included.",
+ "sideCanopy": "Side canopy 150 cm wide, left, right or both sides; supports always galvanised (not roof colour); not available for size 1 and size 2A; concrete or point foundation needed for supports (side canopy description). Three SKUs per colour by size group: 2,3,4A / 4,5 / 6,7.",
+ "groundAnchorsOnGravel": "For size 1: 4 pcs. in total; for size 2, 2A: 6 pcs.; for size 3, 4, 4A: 8 pcs.; for size 5, 6, 7: 10 pcs. (data sheet note).",
+ "bicycleCapacityFAQ": "Europa (max. rim 26\"): size 1: 1, 2: 2, 2A: 2, 3: up to 4, 4: up to 6, 4A: 4, 5: 6, 6: up to 8, 7: 8 bicycles (FAQ table).",
+ "sizes": [
+  {
+   "code": "1",
+   "variant": "double door (standard on all Europa sizes)",
+   "dataSheetGroup": null,
+   "exteriorCm": [
+    172,
+    84,
+    196
+   ],
+   "exteriorRaw": "172 x 84 x 196",
+   "interiorCm": [
+    150,
+    78,
+    188
+   ],
+   "effectiveM2": 1.17,
+   "foundationCm": [
+    155,
+    83
+   ],
+   "weightKg": 82.1,
+   "skus": {
+    "Metallic silver": "29010",
+    "Metallic quartz grey": "22010",
+    "Metallic dark grey": "24010",
+    "Dark green": "23010"
+   },
+   "priceGBP": {
+    "29010": 889,
+    "22010": 889,
+    "24010": 889,
+    "23010": 889
+   },
+   "ean": {
+    "29010": "9003414290105",
+    "22010": "9003414220102",
+    "24010": "9003414240100",
+    "23010": "9003414230101"
+   },
+   "dataSheetColourColumn": {
+    "29010": "Silver-metallic",
+    "22010": "Quartz grey-metallic",
+    "24010": "Dark grey-metallic",
+    "23010": "Dark green"
+   },
+   "shopOptionLabel": "1 (172 x 84 x 196 cm) | 1,17 m²",
+   "urlKeys": {
+    "29010": "europa-garden-shed-1-metallic-silver",
+    "22010": "europa-garden-shed-1-metallic-quartz-grey",
+    "24010": "europa-garden-shed-1-metallic-dark-grey",
+    "23010": "europa-garden-shed-1-dark-green"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 135,
+    "h": 170,
+    "source": "Colours & Sizes \"door opening: 135 x 170 cm (W x H)\"; comparison table \"DD: 135 x 170 cm\"; dimension table gives clearance width F=135, height G=171 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "2",
+   "variant": "double door (standard on all Europa sizes)",
+   "dataSheetGroup": null,
+   "exteriorCm": [
+    172,
+    156,
+    196
+   ],
+   "exteriorRaw": "172 x 156 x 196",
+   "interiorCm": [
+    150,
+    150,
+    188
+   ],
+   "effectiveM2": 2.25,
+   "foundationCm": [
+    155,
+    155
+   ],
+   "weightKg": 104.8,
+   "skus": {
+    "Metallic silver": "29020",
+    "Metallic quartz grey": "22020",
+    "Metallic dark grey": "24020",
+    "Dark green": "23020"
+   },
+   "priceGBP": {
+    "29020": 1109,
+    "22020": 1109,
+    "24020": 1109,
+    "23020": 1109
+   },
+   "ean": {
+    "29020": "9003414290204",
+    "22020": "9003414220201",
+    "24020": "9003414240209",
+    "23020": "9003414230200"
+   },
+   "dataSheetColourColumn": {
+    "29020": "Silver-metallic",
+    "22020": "Quartz grey-metallic",
+    "24020": "Dark grey-metallic",
+    "23020": "Dark green"
+   },
+   "shopOptionLabel": "2 (172 x 156 x 196 cm) | 2,25 m²",
+   "urlKeys": {
+    "29020": "europa-garden-shed-2-metallic-silver",
+    "22020": "europa-garden-shed-2-metallic-quartz-grey",
+    "24020": "europa-garden-shed-2-metallic-dark-grey",
+    "23020": "europa-garden-shed-2-dark-green"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 135,
+    "h": 170,
+    "source": "Colours & Sizes \"door opening: 135 x 170 cm (W x H)\"; comparison table \"DD: 135 x 170 cm\"; dimension table gives clearance width F=135, height G=171 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "3",
+   "variant": "double door (standard on all Europa sizes)",
+   "dataSheetGroup": null,
+   "exteriorCm": [
+    244,
+    156,
+    203
+   ],
+   "exteriorRaw": "244 x 156 x 203",
+   "interiorCm": [
+    222,
+    150,
+    195
+   ],
+   "effectiveM2": 3.33,
+   "foundationCm": [
+    227,
+    155
+   ],
+   "weightKg": 127.8,
+   "skus": {
+    "Metallic silver": "29030",
+    "Metallic quartz grey": "22030",
+    "Metallic dark grey": "24030",
+    "Dark green": "23030"
+   },
+   "priceGBP": {
+    "29030": 1299,
+    "22030": 1299,
+    "24030": 1299,
+    "23030": 1299
+   },
+   "ean": {
+    "29030": "9003414290303",
+    "22030": "9003414220300",
+    "24030": "9003414240308",
+    "23030": "9003414230309"
+   },
+   "dataSheetColourColumn": {
+    "29030": "Silver-metallic",
+    "22030": "Quartz grey-metallic",
+    "24030": "Dark grey-metallic",
+    "23030": "Dark green"
+   },
+   "shopOptionLabel": "3 (244 x 156 x 203 cm) | 3,33 m²",
+   "urlKeys": {
+    "29030": "europa-garden-shed-3-metallic-silver",
+    "22030": "europa-garden-shed-3-metallic-quartz-grey",
+    "24030": "europa-garden-shed-3-metallic-dark-grey",
+    "23030": "europa-garden-shed-3-dark-green"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 135,
+    "h": 170,
+    "source": "Colours & Sizes \"door opening: 135 x 170 cm (W x H)\"; comparison table \"DD: 135 x 170 cm\"; dimension table gives clearance width F=135, height G=171 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "4",
+   "variant": "double door (standard on all Europa sizes)",
+   "dataSheetGroup": null,
+   "exteriorCm": [
+    244,
+    228,
+    203
+   ],
+   "exteriorRaw": "244 x 228 x 203",
+   "interiorCm": [
+    222,
+    222,
+    195
+   ],
+   "effectiveM2": 4.93,
+   "foundationCm": [
+    227,
+    227
+   ],
+   "weightKg": 154.7,
+   "skus": {
+    "Metallic silver": "29040",
+    "Metallic quartz grey": "22040",
+    "Metallic dark grey": "24040",
+    "Dark green": "23040"
+   },
+   "priceGBP": {
+    "29040": 1539,
+    "22040": 1539,
+    "24040": 1539,
+    "23040": 1539
+   },
+   "ean": {
+    "29040": "9003414290402",
+    "22040": "9003414220409",
+    "24040": "9003414240407",
+    "23040": "9003414230408"
+   },
+   "dataSheetColourColumn": {
+    "29040": "Silver-metallic",
+    "22040": "Quartz grey-metallic",
+    "24040": "Dark grey-metallic",
+    "23040": "Dark green"
+   },
+   "shopOptionLabel": "4 (244 x 228 x 203 cm) | 4,93 m²",
+   "urlKeys": {
+    "29040": "europa-garden-shed-4-metallic-silver",
+    "22040": "europa-garden-shed-4-metallic-quartz-grey",
+    "24040": "europa-garden-shed-4-metallic-dark-grey",
+    "23040": "europa-garden-shed-4-dark-green"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 135,
+    "h": 170,
+    "source": "Colours & Sizes \"door opening: 135 x 170 cm (W x H)\"; comparison table \"DD: 135 x 170 cm\"; dimension table gives clearance width F=135, height G=171 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "5",
+   "variant": "double door (standard on all Europa sizes)",
+   "dataSheetGroup": null,
+   "exteriorCm": [
+    316,
+    228,
+    209
+   ],
+   "exteriorRaw": "316 x 228 x 209",
+   "interiorCm": [
+    294,
+    222,
+    202
+   ],
+   "effectiveM2": 6.53,
+   "foundationCm": [
+    299,
+    227
+   ],
+   "weightKg": 188.2,
+   "skus": {
+    "Metallic silver": "29050",
+    "Metallic quartz grey": "22050",
+    "Metallic dark grey": "24050",
+    "Dark green": "23050"
+   },
+   "priceGBP": {
+    "29050": 1779,
+    "22050": 1779,
+    "24050": 1779,
+    "23050": 1779
+   },
+   "ean": {
+    "29050": "9003414290501",
+    "22050": "9003414220508",
+    "24050": "9003414240506",
+    "23050": "9003414230507"
+   },
+   "dataSheetColourColumn": {
+    "29050": "Silver-metallic",
+    "22050": "Quartz grey-metallic",
+    "24050": "Dark grey-metallic",
+    "23050": "Dark green"
+   },
+   "shopOptionLabel": "5 (316 x 228 x 209 cm) | 6,53 m²",
+   "urlKeys": {
+    "29050": "europa-garden-shed-5-metallic-silver",
+    "22050": "europa-garden-shed-5-metallic-quartz-grey",
+    "24050": "europa-garden-shed-5-metallic-dark-grey",
+    "23050": "europa-garden-shed-5-dark-green"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 135,
+    "h": 170,
+    "source": "Colours & Sizes \"door opening: 135 x 170 cm (W x H)\"; comparison table \"DD: 135 x 170 cm\"; dimension table gives clearance width F=135, height G=171 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "6",
+   "variant": "double door (standard on all Europa sizes)",
+   "dataSheetGroup": null,
+   "exteriorCm": [
+    244,
+    300,
+    203
+   ],
+   "exteriorRaw": "244 x 300 x 203",
+   "interiorCm": [
+    222,
+    294,
+    195
+   ],
+   "effectiveM2": 6.53,
+   "foundationCm": [
+    227,
+    299
+   ],
+   "weightKg": 181.7,
+   "skus": {
+    "Metallic silver": "29060",
+    "Metallic quartz grey": "22060",
+    "Metallic dark grey": "24060",
+    "Dark green": "23060"
+   },
+   "priceGBP": {
+    "29060": 1779,
+    "22060": 1779,
+    "24060": 1779,
+    "23060": 1779
+   },
+   "ean": {
+    "29060": "9003414290600",
+    "22060": "9003414220607",
+    "24060": "9003414240605",
+    "23060": "9003414230606"
+   },
+   "dataSheetColourColumn": {
+    "29060": "Silver-metallic",
+    "22060": "Quartz grey-metallic",
+    "24060": "Dark grey-metallic",
+    "23060": "Dark green"
+   },
+   "shopOptionLabel": "6 (244 x 300 x 203 cm) | 6,53 m²",
+   "urlKeys": {
+    "29060": "europa-garden-shed-6-metallic-silver",
+    "22060": "europa-garden-shed-6-metallic-quartz-grey",
+    "24060": "europa-garden-shed-6-metallic-dark-grey",
+    "23060": "europa-garden-shed-6-dark-green"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 135,
+    "h": 170,
+    "source": "Colours & Sizes \"door opening: 135 x 170 cm (W x H)\"; comparison table \"DD: 135 x 170 cm\"; dimension table gives clearance width F=135, height G=171 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "7",
+   "variant": "double door (standard on all Europa sizes)",
+   "dataSheetGroup": null,
+   "exteriorCm": [
+    316,
+    300,
+    209
+   ],
+   "exteriorRaw": "316 x 300 x 209",
+   "interiorCm": [
+    294,
+    294,
+    202
+   ],
+   "effectiveM2": 8.64,
+   "foundationCm": [
+    299,
+    299
+   ],
+   "weightKg": 218.1,
+   "skus": {
+    "Metallic silver": "29070",
+    "Metallic quartz grey": "22070",
+    "Metallic dark grey": "24070",
+    "Dark green": "23070"
+   },
+   "priceGBP": {
+    "29070": 2059,
+    "22070": 2059,
+    "24070": 2059,
+    "23070": 2059
+   },
+   "ean": {
+    "29070": "9003414290709",
+    "22070": "9003414220706",
+    "24070": "9003414240704",
+    "23070": "9003414230705"
+   },
+   "dataSheetColourColumn": {
+    "29070": "Silver-metallic",
+    "22070": "Quartz grey-metallic",
+    "24070": "Dark grey-metallic",
+    "23070": "Dark green"
+   },
+   "shopOptionLabel": "7 (316 x 300 x 209 cm) | 8,64 m²",
+   "urlKeys": {
+    "29070": "europa-garden-shed-7-metallic-silver",
+    "22070": "europa-garden-shed-7-metallic-quartz-grey",
+    "24070": "europa-garden-shed-7-metallic-dark-grey",
+    "23070": "europa-garden-shed-7-dark-green"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 135,
+    "h": 170,
+    "source": "Colours & Sizes \"door opening: 135 x 170 cm (W x H)\"; comparison table \"DD: 135 x 170 cm\"; dimension table gives clearance width F=135, height G=171 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "2A",
+   "variant": "double door (standard on all Europa sizes)",
+   "dataSheetGroup": null,
+   "exteriorCm": [
+    244,
+    84,
+    203
+   ],
+   "exteriorRaw": "244 x 84 x 203",
+   "interiorCm": [
+    222,
+    78,
+    195
+   ],
+   "effectiveM2": 1.73,
+   "foundationCm": [
+    227,
+    83
+   ],
+   "weightKg": 102.4,
+   "skus": {
+    "Metallic silver": "29080",
+    "Metallic quartz grey": "22080",
+    "Metallic dark grey": "24080",
+    "Dark green": "23080"
+   },
+   "priceGBP": {
+    "29080": 1059,
+    "22080": 1059,
+    "24080": 1059,
+    "23080": 1059
+   },
+   "ean": {
+    "29080": "9003414290808",
+    "22080": "9003414220805",
+    "24080": "9003414240803",
+    "23080": "9003414230804"
+   },
+   "dataSheetColourColumn": {
+    "29080": "Silver-metallic",
+    "22080": "Quartz grey-metallic",
+    "24080": "Dark grey-metallic",
+    "23080": "Dark green"
+   },
+   "shopOptionLabel": "2A (244 x 84 x 203 cm) | 1,73 m²",
+   "urlKeys": {
+    "29080": "europa-garden-shed-2a-metallic-silver",
+    "22080": "europa-garden-shed-2a-metallic-quartz-grey",
+    "24080": "europa-garden-shed-2a-metallic-dark-grey",
+    "23080": "europa-garden-shed-2a-dark-green"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 135,
+    "h": 170,
+    "source": "Colours & Sizes \"door opening: 135 x 170 cm (W x H)\"; comparison table \"DD: 135 x 170 cm\"; dimension table gives clearance width F=135, height G=171 - see CONFLICTS-a.md"
+   }
+  },
+  {
+   "code": "4A",
+   "variant": "double door (standard on all Europa sizes)",
+   "dataSheetGroup": null,
+   "exteriorCm": [
+    316,
+    156,
+    209
+   ],
+   "exteriorRaw": "316 x 156 x 209",
+   "interiorCm": [
+    294,
+    150,
+    202
+   ],
+   "effectiveM2": 4.41,
+   "foundationCm": [
+    299,
+    155
+   ],
+   "weightKg": 152.2,
+   "skus": {
+    "Metallic silver": "29090",
+    "Metallic quartz grey": "22090",
+    "Metallic dark grey": "24090",
+    "Dark green": "23090"
+   },
+   "priceGBP": {
+    "29090": 1449,
+    "22090": 1449,
+    "24090": 1449,
+    "23090": 1449
+   },
+   "ean": {
+    "29090": "9003414290907",
+    "22090": "9003414220904",
+    "24090": "9003414240902",
+    "23090": "9003414230903"
+   },
+   "dataSheetColourColumn": {
+    "29090": "Silver-metallic",
+    "22090": "Quartz grey-metallic",
+    "24090": "Dark grey-metallic",
+    "23090": "Dark green"
+   },
+   "shopOptionLabel": "4A (316 x 156 x 209 cm) | 4,41 m²",
+   "urlKeys": {
+    "29090": "europa-garden-shed-4a-metallic-silver",
+    "22090": "europa-garden-shed-4a-metallic-quartz-grey",
+    "24090": "europa-garden-shed-4a-metallic-dark-grey",
+    "23090": "europa-garden-shed-4a-dark-green"
+   },
+   "deliveryMessage": "Free Shipping within 3 weeks",
+   "doorOpeningCm": {
+    "w": 135,
+    "h": 170,
+    "source": "Colours & Sizes \"door opening: 135 x 170 cm (W x H)\"; comparison table \"DD: 135 x 170 cm\"; dimension table gives clearance width F=135, height G=171 - see CONFLICTS-a.md"
+   }
+  }
+ ],
+ "dimensionTable": {
+  "source": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb (Technical Data: \"Detailed dimensions of the Biohort Europa Garden Shed\"); cross-checked with https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_Gertehaus_Europa.pdf (mm)",
+  "columns": [
+   "1",
+   "2",
+   "2A",
+   "3",
+   "4",
+   "4A",
+   "5",
+   "6",
+   "7"
+  ],
+  "rows": {
+   "A Width of garden shed": [
+    152,
+    152,
+    224,
+    224,
+    224,
+    296,
+    296,
+    224,
+    296
+   ],
+   "B Length of garden shed": [
+    80,
+    152,
+    80,
+    152,
+    224,
+    152,
+    224,
+    296,
+    296
+   ],
+   "C Height of garden shed up to gutter": [
+    181,
+    181,
+    181,
+    181,
+    181,
+    181,
+    181,
+    181,
+    181
+   ],
+   "D Height of gutter up to first (ridge)": [
+    15.5,
+    15.5,
+    22,
+    22,
+    22,
+    28.5,
+    28.5,
+    22,
+    28.5
+   ],
+   "E Overall height of garden shed": [
+    196.5,
+    196.5,
+    203,
+    203,
+    203,
+    209.5,
+    209.5,
+    203,
+    209.5
+   ],
+   "F Clearance - width": [
+    135,
+    135,
+    135,
+    135,
+    135,
+    135,
+    135,
+    135,
+    135
+   ],
+   "G Clearance - height": [
+    171,
+    171,
+    171,
+    171,
+    171,
+    171,
+    171,
+    171,
+    171
+   ],
+   "H Side width right (possible door positions)": [
+    "8.5",
+    "8.5",
+    "8.5/44.5/80.5",
+    "8.5/44.5/80.5",
+    "8.5/44.5/80.5",
+    "8.5/80.5/152.5",
+    "8.5/80.5/152.5",
+    "8.5/44.5/80.5",
+    "8.5/80.5/152.5"
+   ],
+   "J Side width left (possible door positions)": [
+    "8.5",
+    "8.5",
+    "80.5/44.5/8.5",
+    "80.5/44.5/8.5",
+    "80.5/44.5/8.5",
+    "152.5/80.5/8.5",
+    "152.5/80.5/8.5",
+    "80.5/44.5/8.5",
+    "152.5/80.5/8.5"
+   ],
+   "K Width of roof": [
+    172,
+    172,
+    244,
+    244,
+    244,
+    316,
+    316,
+    244,
+    316
+   ],
+   "L Length of roof": [
+    84,
+    156,
+    84,
+    156,
+    228,
+    156,
+    228,
+    300,
+    300
+   ],
+   "M Space needed to open door": [
+    70,
+    70,
+    70,
+    70,
+    70,
+    70,
+    70,
+    70,
+    70
+   ],
+   "N Width of roof, side canopy": [
+    null,
+    144.5,
+    null,
+    144.5,
+    144.5,
+    144.5,
+    144.5,
+    144.5,
+    144.5
+   ],
+   "O Width of side canopy to support": [
+    null,
+    144.5,
+    null,
+    144.5,
+    144.5,
+    144.5,
+    144.5,
+    144.5,
+    144.5
+   ],
+   "P Roof overhang, side canopy": [
+    null,
+    10,
+    null,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+   ],
+   "R Height of side canopy": [
+    null,
+    156,
+    null,
+    156,
+    156,
+    156,
+    156,
+    156,
+    156
+   ]
+  },
+  "notes": "The web table cells for H and J are printed without separators (e.g. \"8.544.580.5\"); the separated values come from the submission plan (85/445/805 mm etc.). The web table columns are ordered 1,2,2A,3,4,4A,5,6,7 (data sheet orders 1..7 then 2A, 4A)."
+ },
+ "submissionPlanFloorspaceM2": {
+  "1": 1.22,
+  "2": 2.31,
+  "2A": 1.8,
+  "3": 3.4,
+  "4": 5.02,
+  "4A": 4.62,
+  "5": 6.63,
+  "6": 6.63,
+  "7": 8.76,
+  "volumeM3": {
+   "1": 2.32,
+   "2": 4.4,
+   "2A": 3.42,
+   "3": 6.46,
+   "4": 9.54,
+   "4A": 8.8,
+   "5": 12.6,
+   "6": 12.6,
+   "7": 16.65
+  },
+  "source": "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_Gertehaus_Europa.pdf (footprint, not the data sheet \"effective space\")"
+ },
+ "accessories": [
+  {
+   "name": "BikeLift",
+   "skus": [
+    "49050"
+   ],
+   "variants": [
+    {
+     "sku": "49050",
+     "priceGBP": 519,
+     "options": {
+      "swivelling": "Standard"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/bikelift-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 519
+  },
+  {
+   "name": "Bin bag holder for equipment locker, Europa, HighLine, AvantGarde and Panorama",
+   "skus": [
+    "45016"
+   ],
+   "variants": [
+    {
+     "sku": "45016",
+     "priceGBP": 109
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/bin-bag-holder-equipment-locker-europa-highline-avantgarde-panorama-45016?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 109
+  },
+  {
+   "name": "Aluminium Floor Panel, Europa Garden Shed",
+   "skus": [
+    "48010",
+    "48020",
+    "48030",
+    "48040",
+    "48050",
+    "48070",
+    "48080",
+    "48090"
+   ],
+   "variants": [
+    {
+     "sku": "48010",
+     "priceGBP": 169,
+     "options": {
+      "size": "1"
+     }
+    },
+    {
+     "sku": "48020",
+     "priceGBP": 289,
+     "options": {
+      "size": "2"
+     }
+    },
+    {
+     "sku": "48030",
+     "priceGBP": 389,
+     "options": {
+      "size": "3"
+     }
+    },
+    {
+     "sku": "48040",
+     "priceGBP": 529,
+     "options": {
+      "size": "2B / 4"
+     }
+    },
+    {
+     "sku": "48050",
+     "priceGBP": 719,
+     "options": {
+      "size": "5, 6"
+     }
+    },
+    {
+     "sku": "48070",
+     "priceGBP": 959,
+     "options": {
+      "size": "7"
+     }
+    },
+    {
+     "sku": "48080",
+     "priceGBP": 219,
+     "options": {
+      "size": "2A"
+     }
+    },
+    {
+     "sku": "48090",
+     "priceGBP": 489,
+     "options": {
+      "size": "4A"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/aluminium-floor-panel-europa-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "1": 169,
+    "2": 289,
+    "3": 389,
+    "2B / 4": 529,
+    "5, 6": 719,
+    "7": 959,
+    "2A": 219,
+    "4A": 489
+   },
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "PV mounting system",
+   "skus": [
+    "47022",
+    "47023",
+    "47024"
+   ],
+   "variants": [
+    {
+     "sku": "47022",
+     "priceGBP": 89,
+     "options": {
+      "size": "Europa"
+     }
+    },
+    {
+     "sku": "47023",
+     "priceGBP": 89,
+     "options": {
+      "size": "HighLine, AvantGarde, Panorama"
+     }
+    },
+    {
+     "sku": "47024",
+     "priceGBP": 89,
+     "options": {
+      "size": "Neo"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/pv-mounting-system?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 89,
+   "pricesBySize": {
+    "Europa": 89,
+    "HighLine, AvantGarde, Panorama": 89,
+    "Neo": 89
+   }
+  },
+  {
+   "name": "Gas Spring Retrofit Set",
+   "skus": [
+    "40008",
+    "40009"
+   ],
+   "variants": [
+    {
+     "sku": "40008",
+     "priceGBP": 53,
+     "options": {
+      "ausfuehrung": "Equipment Locker: 150 / 230 / 150 LARGE / 230 LARGE"
+     }
+    },
+    {
+     "sku": "40009",
+     "priceGBP": 53,
+     "options": {
+      "ausfuehrung": "Equipment Locker: 190 / 190 LARGE"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/gas-spring-retrofit-set?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 53
+  },
+  {
+   "name": "Additional Door Europa Garden Shed",
+   "skus": [
+    "22001",
+    "23001",
+    "24001",
+    "29001"
+   ],
+   "variants": [
+    {
+     "sku": "22001",
+     "priceGBP": 409,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    },
+    {
+     "sku": "23001",
+     "priceGBP": 409,
+     "options": {
+      "color": "Dark green"
+     }
+    },
+    {
+     "sku": "24001",
+     "priceGBP": 409,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "29001",
+     "priceGBP": 409,
+     "options": {
+      "color": "Metallic silver"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/additional-door-europa-garden-shed-complete?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 409
+  },
+  {
+   "name": "SmartBasePLUS for Europa Garden Shed",
+   "skus": [
+    "43401",
+    "43406",
+    "43412",
+    "43418",
+    "43423",
+    "43430",
+    "43436",
+    "43442"
+   ],
+   "variants": [
+    {
+     "sku": "43401",
+     "priceGBP": 799,
+     "options": {
+      "size": "1"
+     }
+    },
+    {
+     "sku": "43406",
+     "priceGBP": 1109,
+     "options": {
+      "size": "2"
+     }
+    },
+    {
+     "sku": "43412",
+     "priceGBP": 1349,
+     "options": {
+      "size": "3"
+     }
+    },
+    {
+     "sku": "43418",
+     "priceGBP": 1829,
+     "options": {
+      "size": "2B / 4"
+     }
+    },
+    {
+     "sku": "43423",
+     "priceGBP": 2019,
+     "options": {
+      "size": "5, 6"
+     }
+    },
+    {
+     "sku": "43430",
+     "priceGBP": 2789,
+     "options": {
+      "size": "7"
+     }
+    },
+    {
+     "sku": "43436",
+     "priceGBP": 1149,
+     "options": {
+      "size": "2A"
+     }
+    },
+    {
+     "sku": "43442",
+     "priceGBP": 1599,
+     "options": {
+      "size": "4A"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/smartbaseplus-ghe?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "1": 799,
+    "2": 1109,
+    "3": 1349,
+    "2B / 4": 1829,
+    "5, 6": 2019,
+    "7": 2789,
+    "2A": 1149,
+    "4A": 1599
+   },
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "Side Canopy Europa Garden Shed",
+   "skus": [
+    "42012",
+    "42014",
+    "42019",
+    "42022",
+    "42024",
+    "42029",
+    "42032",
+    "42034",
+    "42039",
+    "42040",
+    "42050",
+    "42060"
+   ],
+   "variants": [
+    {
+     "sku": "42012",
+     "priceGBP": 269,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "2, 3, 4A"
+     }
+    },
+    {
+     "sku": "42014",
+     "priceGBP": 269,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "2, 3, 4A"
+     }
+    },
+    {
+     "sku": "42019",
+     "priceGBP": 269,
+     "options": {
+      "color": "Metallic silver",
+      "size": "2, 3, 4A"
+     }
+    },
+    {
+     "sku": "42022",
+     "priceGBP": 349,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "4, 5"
+     }
+    },
+    {
+     "sku": "42024",
+     "priceGBP": 349,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "4, 5"
+     }
+    },
+    {
+     "sku": "42029",
+     "priceGBP": 349,
+     "options": {
+      "color": "Metallic silver",
+      "size": "4, 5"
+     }
+    },
+    {
+     "sku": "42032",
+     "priceGBP": 399,
+     "options": {
+      "color": "Metallic quartz grey",
+      "size": "6, 7"
+     }
+    },
+    {
+     "sku": "42034",
+     "priceGBP": 399,
+     "options": {
+      "color": "Metallic dark grey",
+      "size": "6, 7"
+     }
+    },
+    {
+     "sku": "42039",
+     "priceGBP": 399,
+     "options": {
+      "color": "Metallic silver",
+      "size": "6, 7"
+     }
+    },
+    {
+     "sku": "42040",
+     "priceGBP": 269,
+     "options": {
+      "color": "Dark green",
+      "size": "2, 3, 4A"
+     }
+    },
+    {
+     "sku": "42050",
+     "priceGBP": 349,
+     "options": {
+      "color": "Dark green",
+      "size": "4, 5"
+     }
+    },
+    {
+     "sku": "42060",
+     "priceGBP": 399,
+     "options": {
+      "color": "Dark green",
+      "size": "6, 7"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/side-canopy-europa-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "2, 3, 4A": 269,
+    "4, 5": 349,
+    "6, 7": 399
+   },
+   "fits": [
+    "2",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Side canopy"
+   ],
+   "notes": "The side canopy for the Europa garden shed can be attached either to the left, to the right or to both sides of the shed. The width of the side canopy is 150 cm. The set includes the supports, a short rainwater downpipe and the fixing material (not available for size 1 and size 2A). The supports of the side canopy are always galvanised and are not available in the roof colour. Important! Please note that only a concrete or point foundation is suitable for the mounting points of the roof supports for the side canopy."
+  },
+  {
+   "name": "Window Unit Europa Garden Shed",
+   "skus": [
+    "43040",
+    "43050",
+    "43060",
+    "43080"
+   ],
+   "variants": [
+    {
+     "sku": "43040",
+     "priceGBP": 309,
+     "options": {
+      "color": "Dark green"
+     }
+    },
+    {
+     "sku": "43050",
+     "priceGBP": 309,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "43060",
+     "priceGBP": 309,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "43080",
+     "priceGBP": 309,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/window-unit-europa-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 309,
+   "fits": [
+    "2",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "notes": "Window for your garden shed: the complete side wall element with a metal-framed clear plastic window brings daylight into the garden shed (window opening 50 x 60 cm)."
+  },
+  {
+   "name": "Aluminium Floor Frame Europa Garden Shed",
+   "skus": [
+    "41010",
+    "41020",
+    "41030",
+    "41040",
+    "41050",
+    "41070",
+    "41080",
+    "41090"
+   ],
+   "variants": [
+    {
+     "sku": "41010",
+     "priceGBP": 139,
+     "options": {
+      "size": "1"
+     }
+    },
+    {
+     "sku": "41020",
+     "priceGBP": 159,
+     "options": {
+      "size": "2"
+     }
+    },
+    {
+     "sku": "41030",
+     "priceGBP": 189,
+     "options": {
+      "size": "3"
+     }
+    },
+    {
+     "sku": "41040",
+     "priceGBP": 219,
+     "options": {
+      "size": "2B / 4"
+     }
+    },
+    {
+     "sku": "41050",
+     "priceGBP": 249,
+     "options": {
+      "size": "5, 6"
+     }
+    },
+    {
+     "sku": "41070",
+     "priceGBP": 289,
+     "options": {
+      "size": "7"
+     }
+    },
+    {
+     "sku": "41080",
+     "priceGBP": 159,
+     "options": {
+      "size": "2A"
+     }
+    },
+    {
+     "sku": "41090",
+     "priceGBP": 209,
+     "options": {
+      "size": "4A"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/aluminium-floor-frame-europa-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "1": 139,
+    "2": 159,
+    "3": 189,
+    "2B / 4": 219,
+    "5, 6": 249,
+    "7": 289,
+    "2A": 159,
+    "4A": 209
+   },
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "notes": "Gives the garden shed the necessary stability even without a concrete foundation. Four plastic corner joints enable precise assembly. The aluminium floor frame measures 40 x 40 mm."
+  },
+  {
+   "name": "SmartBase Foundation Europa",
+   "skus": [
+    "43901",
+    "43906",
+    "43912",
+    "43918",
+    "43923",
+    "43930",
+    "43936",
+    "43942"
+   ],
+   "variants": [
+    {
+     "sku": "43901",
+     "priceGBP": 609,
+     "options": {
+      "size": "1"
+     }
+    },
+    {
+     "sku": "43906",
+     "priceGBP": 889,
+     "options": {
+      "size": "2"
+     }
+    },
+    {
+     "sku": "43912",
+     "priceGBP": 1109,
+     "options": {
+      "size": "3"
+     }
+    },
+    {
+     "sku": "43918",
+     "priceGBP": 1439,
+     "options": {
+      "size": "2B / 4"
+     }
+    },
+    {
+     "sku": "43923",
+     "priceGBP": 1779,
+     "options": {
+      "size": "5, 6"
+     }
+    },
+    {
+     "sku": "43930",
+     "priceGBP": 2359,
+     "options": {
+      "size": "7"
+     }
+    },
+    {
+     "sku": "43936",
+     "priceGBP": 949,
+     "options": {
+      "size": "2A"
+     }
+    },
+    {
+     "sku": "43942",
+     "priceGBP": 1389,
+     "options": {
+      "size": "4A"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/smartbase-europa?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "pricesBySize": {
+    "1": 609,
+    "2": 889,
+    "3": 1109,
+    "2B / 4": 1439,
+    "5, 6": 1779,
+    "7": 2359,
+    "2A": 949,
+    "4A": 1389
+   },
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU"
+  },
+  {
+   "name": "Ground Anchor",
+   "skus": [
+    "41004",
+    "41006"
+   ],
+   "variants": [
+    {
+     "sku": "41004",
+     "priceGBP": 20,
+     "options": {
+      "package-unit": "4 pcs"
+     }
+    },
+    {
+     "sku": "41006",
+     "priceGBP": 29,
+     "options": {
+      "package-unit": "6 pcs"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/ground-anchor?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "notes": "If the floor frame is laid directly on a gravel base (approx. 10 cm gravel, without foundation or slabs), ground anchors are required for securing to the ground. These are available as accessories – please refer to the technical data for the number of anchors. Storm resistance must be ensured by the customer for this foundation solution."
+  },
+  {
+   "name": "Shelves",
+   "skus": [
+    "45010",
+    "45020",
+    "45030"
+   ],
+   "variants": [
+    {
+     "sku": "45010",
+     "priceGBP": 69,
+     "options": {
+      "package-unit": "2 pcs standard"
+     }
+    },
+    {
+     "sku": "45020",
+     "priceGBP": 89,
+     "options": {
+      "package-unit": "4 pcs standard"
+     }
+    },
+    {
+     "sku": "45030",
+     "priceGBP": 99,
+     "options": {
+      "package-unit": "2 pcs deep"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/shelves?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "notes": "Choose any position for the shelf. Choose from two different shelf depths. The standard depth is 24.5 cm. For those requiring extra storage space, we have developed a shelf with a depth of 43.5 cm. The standard width is 72 cm. The shelf set for the garden shed is also galvanised for an extra-long service life. Easy to retrofit with load bearing capacity of up to 15 kg per shelf. The set includes only the shelves. The support rails must be ordered separately. Suitable for: HighLine Garden Shed \\t AvantGarde Garden Shed \\t Panorama Garden Shed \\t Europa \\t Equipment Locker | Choose any position for the shelf. Choose from two different shelf depths. The standard depth is 24.5 cm. For those requiring extra storage space, we have developed a shelf with a depth of 43.5 cm. The standard width is 72 cm. The shelf set for the garden shed is also galvanised for an extra-long service life. Easy to retrofit with load bearing capacity of up to 15 kg per shelf. The set includes only the shelves. The support rails must be ordered separately. Suitable for: \\t HighLine Garden Shed \\t AvantGarde Garden Shed \\t Panorama Garden Shed \\t Europa \\t Equipment Locker \\t Alex"
+  },
+  {
+   "name": "Rainwater Downpipe Set Europa Garden Shed",
+   "skus": [
+    "44040",
+    "44050",
+    "44070",
+    "44080"
+   ],
+   "variants": [
+    {
+     "sku": "44040",
+     "priceGBP": 89,
+     "options": {
+      "color": "Dark green"
+     }
+    },
+    {
+     "sku": "44050",
+     "priceGBP": 89,
+     "options": {
+      "color": "Metallic dark grey"
+     }
+    },
+    {
+     "sku": "44070",
+     "priceGBP": 89,
+     "options": {
+      "color": "Metallic silver"
+     }
+    },
+    {
+     "sku": "44080",
+     "priceGBP": 89,
+     "options": {
+      "color": "Metallic quartz grey"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/rainwater-downpipe-set-europa-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)",
+   "priceGBP": 89,
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "size option names in the catalogue and/or the sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ]
+  },
+  {
+   "name": "\"BikeMax\" Bicycle Hanger, Europa Garden Shed",
+   "skus": [
+    "49010",
+    "49020"
+   ],
+   "variants": [
+    {
+     "sku": "49010",
+     "priceGBP": 49,
+     "options": {
+      "package-unit": "1 pc"
+     }
+    },
+    {
+     "sku": "49020",
+     "priceGBP": 89,
+     "options": {
+      "package-unit": "2 pcs"
+     }
+    }
+   ],
+   "source": "https://www.biohort.com/gb-en/p/bikemax-bicycle-hanger-europa-garden-shed?country_id=gb",
+   "priceSource": "https://www.biohort.com/api/catalog/siwa_vue_gb_en/product/_search (Vue Storefront catalogue index used by the GB shop; configurable products with configurable_children)"
+  },
+  {
+   "name": "Door baskets",
+   "sku": "46025",
+   "priceGBP": 49.0,
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "The door baskets can be easily fixed onto the inside of the door. Ideal for storing garden tools, gloves etc. with in easy reach (2 pieces per package). Size (W x L x H): 34 x 10 x 9.5 cm, load capacity: 1 kg per door basket"
+  },
+  {
+   "name": "Support Rail for Europa and Equipment Locker (2 pieces)",
+   "sku": "46020",
+   "priceGBP": 49.0,
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "The most important facts about the Biohort support rails at a glance: \\t DIN support rails with slots to hang shelves, shelf baskets, suspension basket, hook set or folding table \\t Choose any position for shelves \\t Galvanised for extra-long service life \\t Length approx. 173 cm \\t Content: Two support rails per package"
+  },
+  {
+   "name": "Hook Set",
+   "sku": "47070",
+   "priceGBP": 89.0,
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Set consists of a combination hook, a handle hook and a shovel hook on a wall bracket, which is hung between two support rails. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Garden Shed"
+  },
+  {
+   "name": "Suspension Basket",
+   "sku": "47071",
+   "priceGBP": 69.0,
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Basic",
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Ideal for storing small objects. Includes wall bracket for hanging on two support rails*. The basket is made of black polyester mesh. Size (W x L x H): 67 x 34 x 20 cm *Support rails not included. Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Equipment Locker"
+  },
+  {
+   "name": "Shelf baskets",
+   "sku": "46026",
+   "priceGBP": 79.0,
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Shelf baskets are suspended in 2 support rails*. Ideal for storing pesticides, lawn seeds, tins and tools. (2 pieces per package). Size (W x L x H): 72 x 16 x 11 cm, load capacity: 3 kg per shelf basket *Support rails not included in the delivery"
+  },
+  {
+   "name": "CleanLine Saver Set",
+   "sku": "99200",
+   "priceGBP": 49.0,
+   "fits": [
+    "1",
+    "2",
+    "2A",
+    "3",
+    "4",
+    "4A",
+    "5",
+    "6",
+    "7"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Care"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "Buy the Biohort CleanLine Universal Cleaner and the Biohort CleanLine Preservation together and save money!"
+  },
+  {
+   "name": "Tool Hanger (4 pieces)",
+   "sku": "47020",
+   "priceGBP": 29.0,
+   "fits": [
+    "2A"
+   ],
+   "fitsBasis": "sizes whose product-page bundles include this SKU",
+   "inPageBundles": [
+    "Premium"
+   ],
+   "source": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb",
+   "priceSource": "https://www.biohort.com/gb-en/p/garden-shed-europa?country_id=gb (embedded bundle data: Basic/Premium/Care/Side canopy packages)",
+   "notes": "The Biohort tool hangers are also galvanised to guarantee durability. Use the tool hangers for: spades rakes hoses tools Many other things Suitable for: HighLine Garden Shed AvantGarde Garden Shed Panorama Garden Shed Europa Equipment Locker"
+  }
+ ],
+ "pageBundles": "The product page offers per-size packages \"Basic\", \"Premium\", \"Care\" and (sizes 2,3,4,4A,5,6,7) \"Side canopy\".",
+ "downloads": {
+  "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/Minifolder_EN.pdf (\"Available in 9 sizes and 4 colours. Side canopy optionally available.\"; no prices)",
+  "assemblyManuals": [
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Y4021000_Aufbauanleitung_GHE_0424_WEB.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_GHE-Seitendach.pdf",
+   "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_4_GHE_Regenfallrohr_Ger%C3%A4tehaus_Europa.pdf"
+  ],
+  "submissionPlans": [
+   "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_Gertehaus_Europa.pdf"
+  ],
+  "partsLists": [
+   "https://www.biohort.com/asset/downloads/files/Stuecklisten/Stueckliste_GHE_0424.pdf"
+  ],
+  "priceList": "None linked from the GB Europa page."
+ },
+ "notes": [
+  "Europa has no door option in the shop: every size has the double door.",
+  "Size \"2B / 4\" appears in accessory size names (floor frame/panel, SmartBase); 2B is not a Europa size sold in GB, so \"2B / 4\" items are mapped to size 4.",
+  "Assembly manuals and parts list were listed but not read (time-boxed)."
+ ],
+ "buildIssues": []
+}

@@ -1,0 +1,1865 @@
+{
+  "range": "CasaNova",
+  "sourceUrls": [
+    "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+    "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf",
+    "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf",
+    "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_CN.pdf",
+    "https://www.biohort.com/gb-en/r/konfigurator/FF4232"
+  ],
+  "checked": "2026-10-13",
+  "priceListMeta": {
+    "title": "PRICE LIST 2026 No. 71 cn Z3, GB",
+    "valid": "Valid from 01.01.2026 until revoked for United Kingdom",
+    "pricesNote": "Prices are in GBP and include transport cost to the dealer's warehouse; **recommended retail price GBP incl. VAT and shipping costs",
+    "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p1"
+  },
+  "colours": [
+    {
+      "name": "Metallic quartz grey",
+      "skuDigit": "53xxx",
+      "webLabel": "Quartz grey-metallic"
+    },
+    {
+      "name": "Metallic dark grey",
+      "skuDigit": "52xxx",
+      "webLabel": "Dark grey-metallic"
+    }
+  ],
+  "coloursNote": "Interior always grey white (price list p2). No metallic silver for the building itself; the sectional overhead door is silver only.",
+  "sellingPoints": [
+    "Individually configured to suit your requirements",
+    "40 mm thick insulated walls",
+    "Elegant design – modern flat roof, no screws visible on the exterior walls",
+    "Maintenance-free for life - 20-year guarantee subject to Biohort’s warranty terms and conditions",
+    "Produced individually in line with the customer's requirements.",
+    "Easy to heat thanks to thermal insulation. U value of side walls: 0.76 W/(m2K)",
+    "Door hinge can be positioned on the right or left to suit you",
+    "Wide range of accessories for interior fittings",
+    "Ventilation via acrylic glass skylight, which can be opened",
+    "Comfortable door opening with gas spring",
+    "locking mechanism complete with stainless steel door handle",
+    "Roof and snow load of up to 215 kg/m2 (less roof loading such as greenery, for instance)",
+    "Top quality materials: Extruded aluminium sections and sandwich elements made from galvanised, polyamide enamel coated steel plate with an insulated core of 40 mm polystyrene (EPS20), screws and hinges made from stainless steel",
+    "High stability: Roof load up to 215 kg/m² less roof loading such as greenery, storm-proof (up to 150 km/h, wind force 12)* (* with professional assembly and anchoring)",
+    "No screws visible on the external walls"
+  ],
+  "guarantee": "20-year guarantee subject to Biohort’s warranty terms and conditions (product page); terms www.biohort.com/terms-of-guarantee (price list p1). Earlier research recorded moving/electrical/plastic/rubber parts as 24-month statutory warranty (from the published terms; not re-checked today).",
+  "delivery": "Web: \"Free Shipping within 6 weeks\". Price list p1: \"Delivery time: within 4–6 weeks upon order clarity\"; delivery to the dealer's warehouse, dealer arranges delivery to the end customer; Biohort checks on request whether end-customer delivery is possible; 38-t lorry access (3 m width); fixed delivery dates only with additional cost.",
+  "steelThickness": "≥ 0,50 mm steel plate, each side ≥ 7 µm galvanised + 1 µm pre-treatment + 5 µm primer + ≥ 20 µm polyamide enamel coating (price list p1). Sandwich wall element with 40 mm polystyrene core (EPS W20), U-value 0.76 W/(m2K).",
+  "roof": "Flat roof, 1° pitch (web FAQ); roof/snow load up to 215 kg/m2 less roof loading such as greenery; 2 roof drains with rainwater downpipes; roof overhang 140 mm (web FAQ table); 360° acrylic glass skylight which can be opened for ventilation (optional double-glazed version without ventilation).",
+  "standardFeaturesPriceList": [
+    "Insulated sandwich elements with a polystyrene core (EPS 20, 40 mm), U-value 0.76 W/(m2K)",
+    "Locking mechanism with stainless steel door handle",
+    "Door hinge position on the left or right available",
+    "Gas spring assisted door",
+    "Roof resp. snow load of up to 215 kg/m2 (less roof loading such as greenery)",
+    "Ventilation via acrylic glass panel which can be opened",
+    "2 roof drains with rainwater downpipes",
+    "Screws and anchors for mounting to the foundation"
+  ],
+  "sizes": [
+    {
+      "code": "3 x 2",
+      "variant": "standard door, right door hinge",
+      "exteriorBaseCm": [
+        304,
+        204
+      ],
+      "exteriorCm": [
+        328,
+        228,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        192,
+        229
+      ],
+      "effectiveM2": 5.61,
+      "foundationCm": [
+        304,
+        204
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        193.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        200
+      ],
+      "weightKg": 700,
+      "weightKgPriceList": 510,
+      "weightKgBrochure": 510,
+      "volumeM3PriceList": 12.8,
+      "skus": {
+        "Metallic quartz grey": "53010",
+        "Metallic dark grey": "52010"
+      },
+      "priceGBP": {
+        "53010": 8679,
+        "52010": 8679
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "3 x 2",
+      "variant": "standard door, left door hinge",
+      "exteriorBaseCm": [
+        304,
+        204
+      ],
+      "exteriorCm": [
+        328,
+        228,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        192,
+        229
+      ],
+      "effectiveM2": 5.61,
+      "foundationCm": [
+        304,
+        204
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        193.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        200
+      ],
+      "weightKg": 700,
+      "weightKgPriceList": 510,
+      "weightKgBrochure": 510,
+      "volumeM3PriceList": 12.8,
+      "skus": {
+        "Metallic quartz grey": "53014",
+        "Metallic dark grey": "52014"
+      },
+      "priceGBP": {
+        "53014": 8679,
+        "52014": 8679
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "3 x 3",
+      "variant": "standard door, right door hinge",
+      "exteriorBaseCm": [
+        304,
+        304
+      ],
+      "exteriorCm": [
+        328,
+        328,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        292,
+        229
+      ],
+      "effectiveM2": 8.53,
+      "foundationCm": [
+        304,
+        304
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        293.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        300
+      ],
+      "weightKg": 835,
+      "weightKgPriceList": 630,
+      "weightKgBrochure": 630,
+      "volumeM3PriceList": 19.5,
+      "skus": {
+        "Metallic quartz grey": "53011",
+        "Metallic dark grey": "52011"
+      },
+      "priceGBP": {
+        "53011": 9989,
+        "52011": 9989
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "3 x 3",
+      "variant": "standard door, left door hinge",
+      "exteriorBaseCm": [
+        304,
+        304
+      ],
+      "exteriorCm": [
+        328,
+        328,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        292,
+        229
+      ],
+      "effectiveM2": 8.53,
+      "foundationCm": [
+        304,
+        304
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        293.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        300
+      ],
+      "weightKg": 835,
+      "weightKgPriceList": 630,
+      "weightKgBrochure": 630,
+      "volumeM3PriceList": 19.5,
+      "skus": {
+        "Metallic quartz grey": "53015",
+        "Metallic dark grey": "52015"
+      },
+      "priceGBP": {
+        "53015": 9989,
+        "52015": 9989
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "3 x 4",
+      "variant": "standard door, right door hinge",
+      "exteriorBaseCm": [
+        304,
+        404
+      ],
+      "exteriorCm": [
+        328,
+        428,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        392,
+        229
+      ],
+      "effectiveM2": 11.45,
+      "foundationCm": [
+        304,
+        404
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        393.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        400
+      ],
+      "weightKg": 985,
+      "weightKgPriceList": 750,
+      "weightKgBrochure": 750,
+      "volumeM3PriceList": 26.2,
+      "skus": {
+        "Metallic quartz grey": "53012",
+        "Metallic dark grey": "52012"
+      },
+      "priceGBP": {
+        "53012": 11569,
+        "52012": 11569
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "3 x 4",
+      "variant": "standard door, left door hinge",
+      "exteriorBaseCm": [
+        304,
+        404
+      ],
+      "exteriorCm": [
+        328,
+        428,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        392,
+        229
+      ],
+      "effectiveM2": 11.45,
+      "foundationCm": [
+        304,
+        404
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        393.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        400
+      ],
+      "weightKg": 985,
+      "weightKgPriceList": 750,
+      "weightKgBrochure": 750,
+      "volumeM3PriceList": 26.2,
+      "skus": {
+        "Metallic quartz grey": "53016",
+        "Metallic dark grey": "52016"
+      },
+      "priceGBP": {
+        "53016": 11569,
+        "52016": 11569
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "3 x 5",
+      "variant": "standard door, right door hinge",
+      "exteriorBaseCm": [
+        304,
+        504
+      ],
+      "exteriorCm": [
+        328,
+        528,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        492,
+        229
+      ],
+      "effectiveM2": 14.37,
+      "foundationCm": [
+        304,
+        504
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        493.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        500
+      ],
+      "weightKg": 1130,
+      "weightKgPriceList": 870,
+      "weightKgBrochure": 870,
+      "volumeM3PriceList": 32.9,
+      "skus": {
+        "Metallic quartz grey": "53013",
+        "Metallic dark grey": "52013"
+      },
+      "priceGBP": {
+        "53013": 12949,
+        "52013": 12949
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "3 x 5",
+      "variant": "standard door, left door hinge",
+      "exteriorBaseCm": [
+        304,
+        504
+      ],
+      "exteriorCm": [
+        328,
+        528,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        492,
+        229
+      ],
+      "effectiveM2": 14.37,
+      "foundationCm": [
+        304,
+        504
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        493.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        500
+      ],
+      "weightKg": 1130,
+      "weightKgPriceList": 870,
+      "weightKgBrochure": 870,
+      "volumeM3PriceList": 32.9,
+      "skus": {
+        "Metallic quartz grey": "53017",
+        "Metallic dark grey": "52017"
+      },
+      "priceGBP": {
+        "53017": 12949,
+        "52017": 12949
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "3 x 6",
+      "variant": "standard door, right door hinge",
+      "exteriorBaseCm": [
+        304,
+        604
+      ],
+      "exteriorCm": [
+        328,
+        628,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        592,
+        229
+      ],
+      "effectiveM2": 17.29,
+      "foundationCm": [
+        304,
+        604
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        593.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        600
+      ],
+      "weightKg": 1275,
+      "weightKgPriceList": 990,
+      "weightKgBrochure": 990,
+      "volumeM3PriceList": 39.6,
+      "skus": {
+        "Metallic quartz grey": "53018",
+        "Metallic dark grey": "52018"
+      },
+      "priceGBP": {
+        "53018": 14729,
+        "52018": 14729
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "3 x 6",
+      "variant": "standard door, left door hinge",
+      "exteriorBaseCm": [
+        304,
+        604
+      ],
+      "exteriorCm": [
+        328,
+        628,
+        250.5
+      ],
+      "interiorCm": [
+        292,
+        592,
+        229
+      ],
+      "effectiveM2": 17.29,
+      "foundationCm": [
+        304,
+        604
+      ],
+      "foundationCmBrochure": [
+        293.1,
+        593.1
+      ],
+      "exteriorBaseCmBrochure": [
+        300,
+        600
+      ],
+      "weightKg": 1275,
+      "weightKgPriceList": 990,
+      "weightKgBrochure": 990,
+      "volumeM3PriceList": 39.6,
+      "skus": {
+        "Metallic quartz grey": "53019",
+        "Metallic dark grey": "52019"
+      },
+      "priceGBP": {
+        "53019": 14729,
+        "52019": 14729
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "4 x 2",
+      "variant": "standard door, right door hinge",
+      "exteriorBaseCm": [
+        404,
+        204
+      ],
+      "exteriorCm": [
+        428,
+        228,
+        250.5
+      ],
+      "interiorCm": [
+        392,
+        192,
+        224
+      ],
+      "effectiveM2": 7.53,
+      "foundationCm": [
+        404,
+        204
+      ],
+      "foundationCmBrochure": [
+        393.1,
+        193.1
+      ],
+      "exteriorBaseCmBrochure": [
+        400,
+        200
+      ],
+      "weightKg": 885,
+      "weightKgPriceList": 650,
+      "weightKgBrochure": 650,
+      "volumeM3PriceList": 16.9,
+      "skus": {
+        "Metallic quartz grey": "53020",
+        "Metallic dark grey": "52020"
+      },
+      "priceGBP": {
+        "53020": 10519,
+        "52020": 10519
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "4 x 2",
+      "variant": "standard door, left door hinge",
+      "exteriorBaseCm": [
+        404,
+        204
+      ],
+      "exteriorCm": [
+        428,
+        228,
+        250.5
+      ],
+      "interiorCm": [
+        392,
+        192,
+        224
+      ],
+      "effectiveM2": 7.53,
+      "foundationCm": [
+        404,
+        204
+      ],
+      "foundationCmBrochure": [
+        393.1,
+        193.1
+      ],
+      "exteriorBaseCmBrochure": [
+        400,
+        200
+      ],
+      "weightKg": 885,
+      "weightKgPriceList": 650,
+      "weightKgBrochure": 650,
+      "volumeM3PriceList": 16.9,
+      "skus": {
+        "Metallic quartz grey": "53024",
+        "Metallic dark grey": "52024"
+      },
+      "priceGBP": {
+        "53024": 10519,
+        "52024": 10519
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "4 x 4",
+      "variant": "standard door, right door hinge",
+      "exteriorBaseCm": [
+        404,
+        404
+      ],
+      "exteriorCm": [
+        428,
+        428,
+        250.5
+      ],
+      "interiorCm": [
+        392,
+        392,
+        224
+      ],
+      "effectiveM2": 15.37,
+      "foundationCm": [
+        404,
+        404
+      ],
+      "foundationCmBrochure": [
+        393.1,
+        393.1
+      ],
+      "exteriorBaseCmBrochure": [
+        400,
+        400
+      ],
+      "weightKg": 1150,
+      "weightKgPriceList": 890,
+      "weightKgBrochure": 890,
+      "volumeM3PriceList": 34.4,
+      "skus": {
+        "Metallic quartz grey": "53022",
+        "Metallic dark grey": "52022"
+      },
+      "priceGBP": {
+        "53022": 13669,
+        "52022": 13669
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "4 x 4",
+      "variant": "standard door, left door hinge",
+      "exteriorBaseCm": [
+        404,
+        404
+      ],
+      "exteriorCm": [
+        428,
+        428,
+        250.5
+      ],
+      "interiorCm": [
+        392,
+        392,
+        224
+      ],
+      "effectiveM2": 15.37,
+      "foundationCm": [
+        404,
+        404
+      ],
+      "foundationCmBrochure": [
+        393.1,
+        393.1
+      ],
+      "exteriorBaseCmBrochure": [
+        400,
+        400
+      ],
+      "weightKg": 1150,
+      "weightKgPriceList": 890,
+      "weightKgBrochure": 890,
+      "volumeM3PriceList": 34.4,
+      "skus": {
+        "Metallic quartz grey": "53026",
+        "Metallic dark grey": "52026"
+      },
+      "priceGBP": {
+        "53026": 13669,
+        "52026": 13669
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "4 x 5",
+      "variant": "standard door, right door hinge",
+      "exteriorBaseCm": [
+        404,
+        504
+      ],
+      "exteriorCm": [
+        428,
+        528,
+        250.5
+      ],
+      "interiorCm": [
+        392,
+        492,
+        224
+      ],
+      "effectiveM2": 19.29,
+      "foundationCm": [
+        404,
+        504
+      ],
+      "foundationCmBrochure": [
+        393.1,
+        493.1
+      ],
+      "exteriorBaseCmBrochure": [
+        400,
+        500
+      ],
+      "weightKg": 1295,
+      "weightKgPriceList": 1010,
+      "weightKgBrochure": 1010,
+      "volumeM3PriceList": 43.2,
+      "skus": {
+        "Metallic quartz grey": "53023",
+        "Metallic dark grey": "52023"
+      },
+      "priceGBP": {
+        "53023": 15249,
+        "52023": 15249
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "4 x 5",
+      "variant": "standard door, left door hinge",
+      "exteriorBaseCm": [
+        404,
+        504
+      ],
+      "exteriorCm": [
+        428,
+        528,
+        250.5
+      ],
+      "interiorCm": [
+        392,
+        492,
+        224
+      ],
+      "effectiveM2": 19.29,
+      "foundationCm": [
+        404,
+        504
+      ],
+      "foundationCmBrochure": [
+        393.1,
+        493.1
+      ],
+      "exteriorBaseCmBrochure": [
+        400,
+        500
+      ],
+      "weightKg": 1295,
+      "weightKgPriceList": 1010,
+      "weightKgBrochure": 1010,
+      "volumeM3PriceList": 43.2,
+      "skus": {
+        "Metallic quartz grey": "53027",
+        "Metallic dark grey": "52027"
+      },
+      "priceGBP": {
+        "53027": 15249,
+        "52027": 15249
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "4 x 6",
+      "variant": "standard door, right door hinge",
+      "exteriorBaseCm": [
+        404,
+        604
+      ],
+      "exteriorCm": [
+        428,
+        628,
+        250.5
+      ],
+      "interiorCm": [
+        392,
+        592,
+        224
+      ],
+      "effectiveM2": 23.21,
+      "foundationCm": [
+        404,
+        604
+      ],
+      "foundationCmBrochure": [
+        393.1,
+        593.1
+      ],
+      "exteriorBaseCmBrochure": [
+        400,
+        600
+      ],
+      "weightKg": 1440,
+      "weightKgPriceList": 1130,
+      "weightKgBrochure": 1130,
+      "volumeM3PriceList": 52,
+      "skus": {
+        "Metallic quartz grey": "53028",
+        "Metallic dark grey": "52028"
+      },
+      "priceGBP": {
+        "53028": 16829,
+        "52028": 16829
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    },
+    {
+      "code": "4 x 6",
+      "variant": "standard door, left door hinge",
+      "exteriorBaseCm": [
+        404,
+        604
+      ],
+      "exteriorCm": [
+        428,
+        628,
+        250.5
+      ],
+      "interiorCm": [
+        392,
+        592,
+        224
+      ],
+      "effectiveM2": 23.21,
+      "foundationCm": [
+        404,
+        604
+      ],
+      "foundationCmBrochure": [
+        393.1,
+        593.1
+      ],
+      "exteriorBaseCmBrochure": [
+        400,
+        600
+      ],
+      "weightKg": 1440,
+      "weightKgPriceList": 1130,
+      "weightKgBrochure": 1130,
+      "volumeM3PriceList": 52,
+      "skus": {
+        "Metallic quartz grey": "53029",
+        "Metallic dark grey": "52029"
+      },
+      "priceGBP": {
+        "53029": 16829,
+        "52029": 16829
+      },
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "sources": {
+        "dataSheet": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+        "prices": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (JSON-LD offers)",
+        "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+        "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf (technical table)"
+      }
+    }
+  ],
+  "doors": [
+    {
+      "type": "standard door",
+      "hinge": "right or left (separate SKUs, same price)",
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        95,
+        200
+      ],
+      "source": "https://www.biohort.com/gb-en/p/casanova?country_id=gb (data sheet clearance table); https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2"
+    },
+    {
+      "type": "double doors",
+      "doorOpeningCm": [
+        187,
+        198
+      ],
+      "doorOpeningCmPriceList": [
+        187,
+        200
+      ],
+      "source": "https://www.biohort.com/gb-en/p/casanova?country_id=gb; https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2",
+      "note": "Double Door Panel accessory GBP 529"
+    },
+    {
+      "type": "Sectional overhead garage door",
+      "doorOpeningCm": [
+        236,
+        200
+      ],
+      "source": "https://www.biohort.com/gb-en/p/casanova?country_id=gb",
+      "note": "Accessory, GBP 1,929 manual / GBP 2,419 electric"
+    },
+    {
+      "type": "Additional Door",
+      "doorOpeningCm": [
+        90,
+        198
+      ],
+      "priceGBP": 669,
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2"
+    }
+  ],
+  "accessories": [
+    {
+      "name": "Double Door Panel",
+      "skusByColour": {
+        "Right": {
+          "Metallic quartz grey": "53041",
+          "Metallic dark grey": "52041"
+        },
+        "Left": {
+          "Metallic quartz grey": "53045",
+          "Metallic dark grey": "52045"
+        }
+      },
+      "priceGBP": 529,
+      "dimensionsCm": [
+        99.5,
+        4,
+        200
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Cannot be retrofitted. Double door opening (W x H) 187 x 200 cm, incl. double locking mechanism, gas spring and threshold. Standard installation in the front or rear wall. Weight 26.0 kg.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2"
+    },
+    {
+      "name": "Additional charge for side installation of the double door",
+      "sku": "50060",
+      "priceGBP": 129,
+      "fits": [
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Except for sizes 3 x 2 and 4 x 2.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2"
+    },
+    {
+      "name": "Additional Door",
+      "skusByColour": {
+        "Right": {
+          "Metallic quartz grey": "53051",
+          "Metallic dark grey": "52051"
+        },
+        "Left": {
+          "Metallic quartz grey": "53055",
+          "Metallic dark grey": "52055"
+        }
+      },
+      "priceGBP": 669,
+      "dimensionsCm": [
+        95,
+        4,
+        200
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Cannot be retrofitted. Including stainless steel door handle, cylinder lock, gas spring and threshold ram[p]. Weight 35.0 kg.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2"
+    },
+    {
+      "name": "Glass Insert for Door",
+      "sku": "50039",
+      "priceGBP": 1259,
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Cannot be retrofitted. Insulated glass area 75 x 179 cm (W x H); only for standard door (right), additional door (right) and double door panel (left).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2"
+    },
+    {
+      "name": "Tilt and Turn Window",
+      "skusByColour": {
+        "Right": {
+          "Metallic quartz grey": "53031",
+          "Metallic dark grey": "52031"
+        },
+        "Left": {
+          "Metallic quartz grey": "53035",
+          "Metallic dark grey": "52035"
+        }
+      },
+      "priceGBP": 1439,
+      "dimensionsCm": [
+        83,
+        7.5,
+        65
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Cannot be retrofitted. Aluminium tilt and turn window with insulating glass; fitted height 119 cm (lower edge of outer frame). Weight 19.0 kg.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2"
+    },
+    {
+      "name": "Glass Element",
+      "skusByColour": {
+        "Metallic quartz grey": "53038",
+        "Metallic dark grey": "52038"
+      },
+      "priceGBP": 1439,
+      "dimensionsCm": [
+        103,
+        50,
+        206
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Cannot be retrofitted. Insulated glass area 83 x 181 cm (W x H); elements can be positioned next to one another depending on wall length. Weight 43.0 kg.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p2"
+    },
+    {
+      "name": "Sectional Overhead Door, without electric opener",
+      "sku": "50051",
+      "priceGBP": 1929,
+      "dimensionsCm": [
+        237.5,
+        4,
+        200
+      ],
+      "fits": [
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Cannot be retrofitted. Hörmann, 42 mm insulated, fully galvanised, colour silver. Standard door & 1 panel already deducted from the price. Weight 80.0 kg.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p3"
+    },
+    {
+      "name": "Sectional Overhead Door, with electric opener (including one remote)",
+      "sku": "50055",
+      "priceGBP": 2419,
+      "dimensionsCm": [
+        237.5,
+        4,
+        200
+      ],
+      "fits": [
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Price list fits 3 x 3 - 3 x 6 and 4 x 4 - 4 x 6; the earlier research recorded that the brochure excludes 3 x 3 for the electric version (see CONFLICTS-b.md). Weight 95.0 kg.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p3"
+    },
+    {
+      "name": "Preparation for External Lighting",
+      "priceGBP": 59,
+      "skusBySize": {
+        "2 m side": "50042",
+        "3 m side": "50043",
+        "4 m side": "50044",
+        "5 m side": "50045",
+        "6 m side": "50046"
+      },
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Price per side. Cutouts in the soffit panel (2/3/4/5/6 cutouts, diameter 6.8 cm); spotlights are not included in the delivery.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p3"
+    },
+    {
+      "name": "Double Glazed Acrylic Glass Skylight",
+      "pricesBySize": {
+        "3 x 2": 229,
+        "3 x 3": 269,
+        "3 x 4": 319,
+        "3 x 5": 369,
+        "3 x 6": 409,
+        "4 x 2": 269,
+        "4 x 4": 369,
+        "4 x 5": 409,
+        "4 x 6": 449
+      },
+      "skusBySize": {
+        "3 x 2": "50021",
+        "3 x 3": "50022",
+        "3 x 4": "50023",
+        "3 x 5": "50024",
+        "3 x 6": "50025",
+        "4 x 2": "50026",
+        "4 x 4": "50027",
+        "4 x 5": "50028",
+        "4 x 6": "50029"
+      },
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Cannot be retrofitted. Ventilation function not applicable.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p3"
+    },
+    {
+      "name": "Floor Frame",
+      "pricesBySize": {
+        "3 x 2": 379,
+        "3 x 3": 439,
+        "3 x 4": 499,
+        "3 x 5": 559,
+        "3 x 6": 629,
+        "4 x 2": 439,
+        "4 x 4": 559,
+        "4 x 5": 629,
+        "4 x 6": 679
+      },
+      "skusBySize": {
+        "3 x 2": "50010",
+        "3 x 3": "50011",
+        "3 x 4": "50012",
+        "3 x 5": "50013",
+        "3 x 6": "50014",
+        "4 x 2": "50015",
+        "4 x 4": "50016",
+        "4 x 5": "50017",
+        "4 x 6": "50018"
+      },
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Cannot be retrofitted (\"Installation at a later date not possible\"). Dimensions B x T x H cm: 3x2 297x197x4, 3x3 297x297x4, 3x4 297x397x4, 3x5 297x497x4, 3x6 297x597x4, 4x2 397x197x4, 4x4 397x397x4, 4x5 397x497x4, 4x6 397x597x4.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p3"
+    },
+    {
+      "name": "Floor Panels",
+      "pricesBySize": {
+        "3 x 2": 559,
+        "3 x 3": 809,
+        "3 x 4": 1079,
+        "3 x 5": 1359,
+        "3 x 6": 1589,
+        "4 x 2": 759,
+        "4 x 4": 1439,
+        "4 x 5": 1809,
+        "4 x 6": 1979
+      },
+      "skusBySize": {
+        "3 x 2": "50030",
+        "3 x 3": "50031",
+        "3 x 4": "50032",
+        "3 x 5": "50033",
+        "3 x 6": "50034",
+        "4 x 2": "50035",
+        "4 x 4": "50036",
+        "4 x 5": "50037",
+        "4 x 6": "50038"
+      },
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "2 mm aluminium checker plate in segments incl. connecting rails; floor frame required; 2-3 cm XPS underlay recommended. Dimensions: 3x2 280.5x180.5, 3x3 280.5x280.5, 3x4 280.5x380.5, 3x5 280.5x480.5, 3x6 280.5x580.5, 4x2 380.5x180.5, 4x4 380.5x380 (as published), 4x5 380.5x480.5, 4x6 380.5x580.5 (x 0.2 cm).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p3"
+    },
+    {
+      "name": "Roof Support White",
+      "pricesBySize": {
+        "3 x 2": 259,
+        "4 x 2": 259,
+        "3 x 3": 259,
+        "3 x 4": 329,
+        "4 x 4": 329,
+        "3 x 5": 359,
+        "4 x 5": 359,
+        "3 x 6": 389,
+        "4 x 6": 389
+      },
+      "skusBySize": {
+        "3 x 2": "50062",
+        "4 x 2": "50062",
+        "3 x 3": "50063",
+        "3 x 4": "50064",
+        "4 x 4": "50064",
+        "3 x 5": "50065",
+        "4 x 5": "50065",
+        "3 x 6": "50066",
+        "4 x 6": "50066"
+      },
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Cannot be retrofitted. Roof supports with grey white coating (= interior colour of the side walls).",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p3"
+    },
+    {
+      "name": "Shelf Support Rails 2 pieces per package",
+      "sku": "50082",
+      "priceGBP": 89,
+      "dimensionsCm": [
+        4,
+        4,
+        206
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Shelves 2 pieces per package",
+      "sku": "50088",
+      "priceGBP": 69,
+      "dimensionsCm": [
+        99,
+        24.5,
+        8.3
+      ],
+      "fits": [
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "support rails not included",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Shelves 2 pieces per package (deep)",
+      "sku": "50089",
+      "priceGBP": 89,
+      "dimensionsCm": [
+        99,
+        43.5,
+        8.3
+      ],
+      "fits": [
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "support rails not included",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Short Shelves 2 pieces per package (in corner)",
+      "sku": "50098",
+      "priceGBP": 79,
+      "dimensionsCm": [
+        93,
+        44.7,
+        14.7
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "support rails not included; for all sizes (in corner)",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Short Shelves 2 pieces per package, deep (in corner)",
+      "sku": "50099",
+      "priceGBP": 99,
+      "dimensionsCm": [
+        93,
+        44.7,
+        14.7
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "support rails not included; dimensions as published (same as non-deep)",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Hook Set",
+      "sku": "50087",
+      "priceGBP": 69,
+      "dimensionsCm": [
+        4,
+        4,
+        206
+      ],
+      "fits": [
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "One each: combination hook, handle hook, and shovel hook; support rails not included",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Hook Set (in corner)",
+      "sku": "50097",
+      "priceGBP": 69,
+      "dimensionsCm": [
+        93,
+        17,
+        73
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "For all sizes (in corner); support rails not included",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Folding Table",
+      "sku": "50080",
+      "priceGBP": 139,
+      "dimensionsCm": [
+        96,
+        57.5,
+        60
+      ],
+      "fits": [
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "support rails not included",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Bicycle Hanger BikeMax 1 piece per package",
+      "sku": "50085",
+      "priceGBP": 99,
+      "dimensionsCm": [
+        6,
+        14.5,
+        206
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Bicycle Hanger BikeMax 2 pieces per package",
+      "sku": "50086",
+      "priceGBP": 149,
+      "dimensionsCm": [
+        6,
+        14.5,
+        206
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Electric Mounting Panel, uncoated",
+      "sku": "50083",
+      "priceGBP": 149,
+      "dimensionsCm": [
+        36,
+        5,
+        209
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Electric Mounting Panel, grey white coated",
+      "sku": "50084",
+      "priceGBP": 209,
+      "dimensionsCm": [
+        36,
+        5,
+        209
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Threshold Access Ramp for Double Door",
+      "sku": "50090",
+      "priceGBP": 229,
+      "dimensionsCm": [
+        21,
+        195,
+        6.6
+      ],
+      "fits": [
+        "3 x 2",
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 2",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Threshold Access Ramp for Sectional Overhead Door",
+      "sku": "50092",
+      "priceGBP": 289,
+      "dimensionsCm": [
+        18.5,
+        237,
+        4.5
+      ],
+      "fits": [
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "fits sizes that take the sectional door",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    },
+    {
+      "name": "Sauna Module",
+      "skusByColour": {
+        "Right": "50250",
+        "Left": "50150"
+      },
+      "priceGBP": 8189,
+      "dimensionsCm": [
+        200,
+        200,
+        208
+      ],
+      "fits": [
+        "3 x 3",
+        "3 x 4",
+        "3 x 5",
+        "3 x 6",
+        "4 x 4",
+        "4 x 5",
+        "4 x 6"
+      ],
+      "notes": "Interior 180 x 180 x 188 cm; Scandinavian spruce; sauna heater (6.8 kW per price list), thermostat, corner light, loungers, hourglass, thermometer, infusion package. Weight 451.0 kg.",
+      "source": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf p4"
+    }
+  ],
+  "notQuoted": [
+    "External spotlights: price list says spotlights are not included with the lighting preparation; no GBP price published.",
+    "Roof XPS insulation / floor XPS underlay: recommended, customer-supplied; no Biohort GBP price.",
+    "Green roof / roof ballast: no published price.",
+    "Assembly service: by request; no published price."
+  ],
+  "downloads": {
+    "brochure": "https://www.biohort.com/asset/downloads/files/Prospekte/CasaNova_Prospekte/Biohort_CasaNova_EN.pdf",
+    "priceList": "https://www.biohort.com/asset/Inhalte/Allgemeine-Seiten/Preislisten/Endkundenpreisliste_cn_GB.pdf",
+    "assembly": "https://www.biohort.com/asset/downloads/files/Aufbauanleitungen/Aufbauanleitung_CN.pdf",
+    "other": [
+      "https://www.biohort.com/asset/downloads/files/sonstige/Einreichplan_CasaNova.pdf",
+      "https://www.biohort.com/asset/downloads/files/Fundamentplaene/CasaNova_Betonfundament_Stufe.pdf",
+      "https://www.biohort.com/asset/downloads/files/Fundamentplaene/CasaNova_Betonfundament_ohne_Stufe.pdf",
+      "https://www.biohort.com/asset/downloads/files/Fundamentplaene/CasaNova_Streifenfundament.pdf"
+    ]
+  },
+  "notes": [
+    "Converted from the earlier research on branch wip/codex-v2-2026-10-13 (docs/sources/catalogue.json) and re-verified on 13 Oct 2026 against the current GB page (JSON-LD offers, data sheet) and Endkundenpreisliste_cn_GB.pdf (version dated 17 Dec 2025 in PDF metadata). Every base price and every priced accessory in the earlier work matches the current price list.",
+    "9 sizes x 2 door hinges x 2 colours = 36 SKUs, all priced on the GB page and identical to the price list. Right- and left-hinge variants cost the same.",
+    "The web data sheet lists only the right-hinge EANs; left-hinge SKUs come from the price list and brochure and are confirmed by JSON-LD offers and the page's \"Right door hinge / Left door hinge\" option.",
+    "CasaNova accessories are not embedded in the GB product page HTML (no \"Matching accessories\" data found); they are sold via the Roomle configurator. All accessory prices here are from the price list.",
+    "Size code is nominal metres (W x L)."
+  ]
+}

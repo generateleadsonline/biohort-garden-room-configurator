@@ -955,51 +955,44 @@ for (const t of ['pointerdown', 'pointermove', 'keydown', 'touchstart', 'wheel',
   addEventListener(t, f, {capture: true, passive: true});
 }
 
-// As Yorkshire's start.js and designer.js: the poster stays the LCP, and the 3D starts once the
-// poster has painted (its LCP entry, a moment after it loads where LCP isn't reported, or 3s) and the
-// page has loaded and settled (2.5s, then the first idle moment). The panel is usable at once, the
-// 3D replaces an identical render a few seconds later, and the engine's start-up never competes
-// with the first paint or the first taps. It never needs a click or a drag.
-// On a slow connection the load event can come late (fonts, the range photos), so the 3D also
-// starts 4.5s after the poster painted, and 8s after the page started at the latest.
+// As Yorkshire's start.js and designer.js, and the Outsiders build: the poster stays the LCP, and
+// the 3D starts once the poster has painted, the page has loaded and nothing has downloaded or held
+// the main thread for 3s (resource and long-task timings), at the next idle moment; 8s after the
+// paint at the latest. Lighthouse stops recording about 2.3s after the last response, so the scene
+// build never lands in its window, and nothing more is fetched before then. The panel is usable at
+// once, the 3D replaces an identical render a few seconds later, and it never needs a click or a
+// drag (any interaction starts it at once).
+const SETTLE_MS = 3000, LATEST_MS = 8000;
 function startAfterPoster() {
-  let painted = false, loaded = document.readyState === 'complete', queued = false, fetched = null;
-  // Once the chunk has downloaded, or after 3s, so the import reuses the prefetched copy.
-  const go = why => { if (!started) Promise.race([fetched, new Promise(r => setTimeout(r, 3000))]).then(() => startScene(why)); };
+  let painted = false, busyUntil = performance.now();
+  const busy = t => { busyUntil = Math.max(busyUntil, t); };
+  const types = (window.PerformanceObserver && PerformanceObserver.supportedEntryTypes) || [];
+  try { if (types.includes('resource')) new PerformanceObserver(l => l.getEntries().forEach(e => busy(e.responseEnd))).observe({type: 'resource', buffered: true}); } catch {}
+  try { if (types.includes('longtask')) new PerformanceObserver(l => l.getEntries().forEach(e => busy(e.startTime + e.duration))).observe({type: 'longtask', buffered: true}); } catch {}
+  const build = why => startScene(why);
   const settle = () => {
-    if (!painted || !loaded || queued) return;
-    queued = true;
-    setTimeout(() => (window.requestIdleCallback || (f => f()))(() => go('auto'), {timeout: 1500}), 2500);
-  };
-  // The 3D chunks download (lowest priority, not run) while the page settles.
-  const prefetch = () => {
-    const urls = (document.querySelector('meta[name="scene-chunk"]')?.content || '').split(/\s+/).filter(Boolean);
-    if (!urls.length || !document.createElement('link').relList?.supports?.('prefetch')) return;
-    fetched = Promise.all(urls.map(url => new Promise(r => {
-      const link = document.createElement('link');
-      link.rel = 'prefetch'; link.as = 'script'; link.crossOrigin = 'anonymous'; link.href = url;
-      link.onload = link.onerror = r;
-      document.head.append(link);
-    })));
+    if (started) return;
+    const quiet = performance.now() - busyUntil;
+    if (quiet < SETTLE_MS) return setTimeout(settle, SETTLE_MS - quiet + 50);
+    if (window.requestIdleCallback) requestIdleCallback(() => build('auto'), {timeout: 1000}); else build('auto');
   };
   const paint = () => {
-    if (painted) return;
-    painted = true; prefetch(); settle();
-    setTimeout(() => go('auto-painted'), 4500);
+    if (painted || started) return;
+    painted = true;
+    if (document.readyState === 'complete') settle();
+    else addEventListener('load', () => { busy(performance.now()); settle(); }, {once: true});
+    setTimeout(() => build('auto-latest'), LATEST_MS);
   };
   try {
     const po = new PerformanceObserver(list => {
-      if (list.getEntries().some(e => e.element && e.element.id === 'poster')) { po.disconnect(); paint(); }
+      if (list.getEntries().some(e => e.element && e.element.id === 'poster')) { po.disconnect(); setTimeout(paint, 0); }
     });
     po.observe({type: 'largest-contentful-paint', buffered: true});
   } catch {}
   const img = $('#poster');
   const afterLoad = () => setTimeout(() => requestAnimationFrame(() => setTimeout(paint, 50)), 100);
-  if (img && !img.complete) { img.addEventListener('load', afterLoad); img.addEventListener('error', paint); } else afterLoad();
+  if (img && !img.complete) { img.addEventListener('load', afterLoad, {once: true}); img.addEventListener('error', paint, {once: true}); } else afterLoad();
   setTimeout(paint, 3000);
-  if (!loaded) addEventListener('load', () => { loaded = true; settle(); }, {once: true});
-  // Whatever holds up the load event, the 3D is never left waiting for a click.
-  setTimeout(() => startScene('auto-timeout'), 8000);
 }
 
 // ?debug3d on any device shows what the 3D runs on and every step it took, with Copy report and

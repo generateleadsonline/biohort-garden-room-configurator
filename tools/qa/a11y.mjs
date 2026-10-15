@@ -23,7 +23,11 @@ for (const [label, opts] of [['desktop', {viewport: {width: 1440, height: 900}}]
     await page.evaluate(r => window.__cfg.change({range: r, size: r === 'casanova' ? '4x6' : r === 'neo' ? '3C' : 'H5', openings: [{id: 'q1', kind: r === 'casanova' ? 'tiltWindow' : 'door', wall: 'left', p: .5}]}, {}), range);
     for (let i = 0; i < 8; i++) { await page.evaluate(i => window.__cfg.selectStep(i, {focusHeading: false}), i); await sleep(150); await run(`${range} step ${i + 1}`); }
   }
-  for (const mode of ['callback', 'showroom', 'brochure', 'book', 'quote']) {
+  // The price step's own form, with its errors, then the unlocked price.
+  await page.evaluate(() => { window.__cfg.selectStep(7, {focusHeading: false}); document.getElementById('q-submit').click(); }); await sleep(150); await run('price step form with errors');
+  await page.evaluate(() => window.__cfg.unlock()); await sleep(150); await run('price step unlocked');
+  await page.evaluate(() => window.__cfg.resetReceipt());
+  for (const mode of ['callback', 'showroom', 'brochure', 'book']) {
     await page.evaluate(m => document.querySelector(`[data-open="${m}"]`).click(), mode); await sleep(150);
     await run(`${mode} form`);
     if (mode === 'callback') {

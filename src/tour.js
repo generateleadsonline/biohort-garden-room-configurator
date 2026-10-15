@@ -5,12 +5,12 @@
 const KEY = 'bh-cfg-tour-v1';
 
 const STEPS = [
-  {target: null, title: 'Design your Biohort building in 3D', text: 'Choose a range, then its size, colour, doors, canopy, foundation and storage. Every choice changes the 3D model, and Biohort\'s published UK price updates as you go. It takes about five minutes.', next: 'Show me how'},
+  {target: null, title: 'Design your Biohort building in 3D', text: 'Choose a range, then its size, colour, doors, canopy, foundation and storage. Every choice changes the 3D model, and each option shows what it adds. It takes about five minutes, and at the end you send your design to see its full price.', next: 'Show me how'},
   {target: '#stage', title: 'Look all around it', text: 'Drag to turn your building, scroll or pinch to zoom, or use the + and - buttons. Tap a door, the canopy or the floor to jump to its options.'},
   {target: '.view-switch', title: 'Outside, inside and plan', text: 'Step inside to see the storage, or switch to the plan to check every dimension from above.'},
   {target: '#steps', title: 'Eight simple steps', text: 'Range, size, colour, doors and windows, roof and canopy, foundation, inside, then your price. Jump between them whenever you like.'},
   {target: '#panel-body', title: 'We show you every change', text: 'When you change an option, the view turns to that part and highlights it, and each option shows what it adds to the price.'},
-  {target: '#price-chip', title: 'Your price, as you go', text: 'Biohort\'s published UK prices including VAT, for the building and every part you add. The last step itemises them with Biohort\'s article numbers.'},
+  {target: '#price-chip', title: 'Your price', text: 'Send your design on the last step and you see its full price from Biohort\'s published UK prices, including VAT, itemised with Biohort\'s article numbers.'},
   {target: '.header-ctas, .menu-toggle', title: 'Prefer to talk?', text: 'Request a callback, find a Biohort building on display near you, download the brochure or call Biohort. Help replays this tour.', next: 'Start designing'}
 ];
 

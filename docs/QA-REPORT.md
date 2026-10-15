@@ -1,10 +1,55 @@
 # QA report: Biohort garden building designer v2
 
+## 15 October 2026: gated price and live 3D on load
+
+The GLO configurator audit of 15 October 2026 found two gaps against the house standard:
+
+- **Price not gated.** "£2,699 inc VAT" showed in the footer and on the price step throughout.
+- **No live 3D on load.** The 3D started only on the first drag.
+
+### What changed
+
+| Standard point | Change |
+|---|---|
+| 2. Live 3D on load | The 3D starts by itself, following Yorkshire's `start.js` and `designer.js`: once the poster has painted (its LCP entry, a moment after it loads where LCP isn't reported, or 3s) and the page has loaded and settled (2.5s, then the first idle moment), with an 8s backstop. The 3D chunk is prefetched (downloaded, not run) as soon as the poster has painted, so the download overlaps that wait; `tools/postbuild.mjs` writes its hashed name into the page. A first interaction, or a shared or saved design, still starts it at once. The boot ladder (WebGL2, safe, WebGL1 on three r162, SVG), crash guard and `?debug3d` are unchanged. `?qa=layout` still never starts it. |
+| 3. Intro walkthrough | Unchanged (opens 600ms after load on the first visit, replayed from Help). Its copy now says the full price is shown once the design is sent. |
+| 4. Gated price | The design's price is locked until details are sent. The footer chip reads "See your price" (a button to the form; the static HTML used to flash "Guide price £33,124", a leftover from the template). The size cards no longer show each size's building price before then. The price step shows a blurred placeholder card with the lead form under it ("Show my price"); the figures and the link to the product in Biohort's GB shop are not in the page until then. A successful send from the price step, or from any other form (each carries the design with the visitor's details), unlocks the itemised price, Book a call as the next step (the footer button becomes "Book a call"), Download PDF and the shop link, for the browser session (`bh-receipt-v1`). Before then Download PDF points to the form. Option prices ("+£x") and "From £x" in the range comparison stay visible. |
+| 6. Price step | Lead form plus Book a call ("Pick a day and time to talk it through") and Download PDF. Book a call is sent through the existing Blobs function as type `book-call` (the server still accepts `book` and `pdf` from pages loaded before the change) and is tracked as `bh_cta_click` `book-call`. |
+| 8. Lead form | First and last name, required UK phone (Ofcom rules), email and postcode, validated by the same code as the dialog (now one `formKit` for both forms). |
+
+Fixes found while checking (the same as on My Retreat, which shares this code):
+
+- **Phones: each step opened behind the 3D.** After a step change the panel was scrolled to the top of the window, under the pinned 3D and step bar, so the title (and, on the price step, the locked price and the form heading) were hidden. It now scrolls to just below the step bar. On desktop only the panel scrolls, never the window.
+- **A corrected field cleared its error on blur,** which moved the send button under the pointer mid-click, so the click was lost. Errors on a corrected field now clear as it is typed.
+
+### Results (local build, production headers and CSP via `tools/dev-api.mjs`)
+
+| Check | Result |
+|---|---|
+| Unit tests (`npm test`) | 12/12 (now including the `book-call` type); 739 of 741 prices match the GB price list, 2 not printed in it (unchanged) |
+| `standard.mjs` (new): fresh visitor at 1440x900 and 390x844, headless Chrome on Metal, no interaction | 44/44. Canvas after about 3.1s (desktop) and 2.9s (phone); tour open; no POST before the price step; no price in the bar, the size cards or the price step, and no shop link, before the send; Book a call and Download PDF on the price step; locked PDF points to the form; 021 number refused; after the send the price, Book a call, PDF and the GB shop link unlock; Book a call sent as `book-call` with day and time |
+| iPhone (Playwright WebKit 2215, no LCP API), fresh visitor | Canvas after 3.1s, tour open, price locked |
+| `forms.mjs` | 29/29: four dialog forms plus the price step's form; five records stored (callback, showroom, brochure, `book-call`, quote); the PDF downloads once unlocked |
+| `links.mjs` | 8/8: the PDF's links reopen the design with the price locked for a new visitor, and with its price once details were sent |
+| `events.mjs` | pass (desktop and phone) |
+| `a11y.mjs` (axe) | 0 violations in 69 states, including the price step's form with errors and the unlocked price step |
+| `layout.mjs` | 34/34 (7 widths, three ranges), no sideways scroll, every target 44px or more (the unlocked price step added) |
+| Lighthouse mobile, local, 3 runs | 100, 100 and 98 / 100 / 100 / 100; FCP 1.2s, LCP 1.7 to 2.3s (the poster), TBT 0ms, CLS 0.019 |
+
+Not rerun: the option sweep, z-fighting and phone failure suites; the scene, boot and options are unchanged.
+
+Known and unchanged: at 320px wide, on the Colour and Doors and windows steps, the long Next label ("Next: Doors & windows", "Next: Roof & canopy") leaves the footer chip too little room and it runs a few pixels under the Back button (the unlocked price did the same before).
+
+Evidence: `docs/qa/fix-2026-10-15/local/` (logs, the fresh-visitor screenshots and the Lighthouse summary).
+
+## 13 October 2026: v2 build
+
+
 **Date:** 13 October 2026
 **Build:** commit `7e6cbb5`, Netlify deploy `6ace3a424f51756fbf427910`
 **Live:** https://biohort-garden-room-configurator.netlify.app/configurator/
 
-## How the QA was run
+### How the QA was run
 
 - **One pass, local.** The QA ran on the local build, served with the production headers and CSP by `tools/dev-api.mjs`. Everything it found was fixed in one batch (listed below), and every suite was run again on the final build. The site was then deployed once.
 - **After the deploy.** `tools/qa/verify-live.mjs` confirmed that all 31 live files are byte-identical to the build. Every suite was then run again against the live URL.
@@ -12,7 +57,7 @@
   - No live form was submitted and no call was booked: the live forms run checks validation only.
   - The live enquiry endpoint was checked only with requests it refuses, so nothing was stored: an incomplete enquiry gets 400 naming all five missing fields, and a cross-site request gets 403.
 
-## Results
+### Results
 
 | Suite | What it proves | Local | Live |
 |---|---|---|---|
@@ -28,7 +73,7 @@
 | Lighthouse, mobile (3 runs) | Performance, accessibility, best practices, SEO | 99, 98, 99 / 100 / 100 / 100. TBT 0ms, CLS 0.049 | 100 / 100 / 100 / 100 in all three runs. FCP 0.8 to 1.1s, LCP 1.4 to 1.5s, TBT 0ms, CLS ≤0.049 |
 | Live files (`verify-live.mjs`) | Every deployed file matches the build by MD5; CSP header present | n/a | 31/31 |
 
-### Phone and failure scenarios (all pass)
+#### Phone and failure scenarios (all pass)
 
 - **iPhone:**
   - 3D at the phone tier (half-size textures, pixel ratio up to 1.5).
@@ -50,7 +95,7 @@
 - **Low memory (1GB):** starts on the light tier, still WebGL.
 - **Android:** no WebGL (SVG), dropped 3D (rebuilt with one context), shaders that won't load (safe tier), normal start at the phone tier.
 
-## Found in the QA pass and fixed in one batch
+### Found in the QA pass and fixed in one batch
 
 1. **Options that changed nothing visible** (found by the option sweep):
    - CasaNova's soffit spotlights were too small to see from the camera.
@@ -86,7 +131,7 @@
    - **Wording:** extra openings were labelled "2" and "3" in the specification, and the assembly note was cut off after a semicolon.
 6. **Catalogue:** door tool holders are capped at what fits (three on a double door or Europa, otherwise one more pair). CasaNova's delivery wording now follows the price list (see `docs/CONFIRMATIONS.md`, P7).
 
-## Evidence in the repo
+### Evidence in the repo
 
 - `docs/qa/local/`: the final local logs (unit tests, option sweep, z-fighting, phone scenarios, layout, axe, analytics, forms, links) and the Lighthouse runs.
 - `docs/qa/live/`: the same suites run against the live URL, plus the Lighthouse runs and the live file check.
@@ -94,7 +139,7 @@
   - **Design:** HighLine H5 in quartz grey with a double door, window, extra door, L canopy with back wall, aluminium floor, storage and two bikes. £8,854 at Biohort's published prices; assembly Quoted.
   - **Checks:** all seven pages were rendered to images and checked by eye. All 16 article prices were checked against the GB price list. Its links point at the live site.
 
-## Not done on purpose
+### Not done on purpose
 
 - No live enquiry was submitted and no call was booked.
 - Leads are stored only in Netlify Blobs (`biohort-enquiries`). Email or CRM routing needs a destination from Biohort: see `docs/CONFIRMATIONS.md`, point C2.

@@ -87,6 +87,10 @@ a{color:var(--blue);text-underline-offset:3px}
 .price-chip{min-width:0;font-size:13px;line-height:1.3;color:var(--muted)}
 .price-chip strong{display:block;font-size:18px;color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
 .price-chip .plus{display:block;font-size:12px;line-height:1.3;color:var(--muted)}
+/* Before the details are sent the chip is a button to the price step, never the figure. */
+.price-chip .chip-lock{display:block;min-height:44px;min-width:44px;text-align:left;font-size:14px;line-height:1.3;color:var(--green-2);font-weight:600}
+.price-chip .chip-lock .icon{width:14px;height:14px;margin-right:4px;vertical-align:-2px}
+.price-chip .chip-lock:hover .t{text-decoration:underline;text-underline-offset:3px}
 .nav-buttons{flex:none}
 #back .icon{display:none}
 @media (max-width:479px){#back{width:48px;padding:0}#back .icon{display:block}#back .txt{display:none}}
@@ -276,6 +280,17 @@ select{width:100%;min-height:44px;padding:0 36px 0 12px;border:1.5px solid var(-
 .price-card .near{margin:var(--s3) 0 0;font-size:13.5px;color:#d7d3cd}
 .cta-stack{display:grid;gap:var(--s2);margin-bottom:var(--s5)}
 .cta-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s2)}
+.price-card.is-locked .label{display:flex;align-items:center;gap:6px}
+.price-card.is-locked .label .icon{width:16px;height:16px}
+.price-blur{filter:blur(10px);user-select:none}
+.quote-form{margin:0 0 var(--s5);padding:var(--s5);border:1px solid var(--line);border-radius:var(--r-l);background:var(--paper)}
+.next-step{margin:0 0 var(--s5)}
+.next-step h2{outline:none}
+.next-step p{margin:0;font-size:14px;color:var(--ink-2)}
+.btn.tile{justify-content:flex-start;min-height:60px;padding:10px 14px;text-align:left;line-height:1.25}
+.btn.tile strong{display:block;font-weight:600}
+.btn.tile small{display:block;font-size:12.5px;font-weight:400}
+.pdf-status:empty{display:none}
 .spec{margin:0 0 var(--s5)}
 .spec h3{margin:var(--s4) 0 var(--s2);font-size:14px;font-weight:600;color:var(--green-2)}
 .spec dl{margin:0;display:grid;grid-template-columns:minmax(0,38%) minmax(0,1fr);gap:6px var(--s3);font-size:14px}

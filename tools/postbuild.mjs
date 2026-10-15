@@ -11,6 +11,12 @@ async function walk(dir) {
     else if (!p.endsWith('build-manifest.json')) out['/' + path.relative(root, p).split(path.sep).join('/')] = createHash('md5').update(await readFile(p)).digest('hex');
   }
 }
+// The 3D chunk's hashed name, so the page can prefetch it once the poster has painted and the
+// download overlaps the wait before the 3D starts (src/app.js startAfterPoster).
+const sceneChunk = (await readdir('dist/assets')).filter(f => /^scene-[\w-]+\.js$/.test(f));
+if (sceneChunk.length !== 1) { console.error('expected one scene chunk, found', sceneChunk); process.exit(1); }
+const page = await readFile('dist/index.html', 'utf8');
+if (!page.includes('name="scene-chunk"')) await writeFile('dist/index.html', page.replace('</head>', `  <meta name="scene-chunk" content="/assets/${sceneChunk[0]}">\n</head>`));
 await walk(root);
 for (const need of ['/index.html', '/legacy/scene.js']) if (!out[need]) { console.error('missing', need); process.exit(1); }
 const legacy = await readFile('dist/legacy/scene.js', 'utf8');

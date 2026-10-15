@@ -5,7 +5,9 @@
 // book a call. Nothing is emailed: records sit in the private Netlify Blobs store `biohort-enquiries`.
 import {decodeDesign, specRows, priceFor, designURL, bookingURL, summaryLine, designReference, shopURL, parseUKPhone, validEmail, validPostcode, formatPostcode, validName, SITE} from '../src/catalog.js';
 
-export const TYPES = ['callback', 'showroom', 'brochure', 'book', 'quote', 'pdf'];
+// `book-call` is Book a call (the designer sends it since 15 Oct 2026); `book` and `pdf` are kept so
+// a page loaded before then still sends.
+export const TYPES = ['callback', 'showroom', 'brochure', 'book-call', 'book', 'quote', 'pdf'];
 const MAX_BODY = 24 * 1024;
 const json = (status, body) => new Response(JSON.stringify(body), {status, headers: {'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store'}});
 const clean = (v, n = 200) => String(v ?? '').replace(/[\u0000-\u001f\u007f]/g, ' ').trim().slice(0, n);

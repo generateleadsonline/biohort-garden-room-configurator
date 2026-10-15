@@ -11,7 +11,8 @@ export const check = (ok, label, detail = '') => { console.log(`${ok ? 'PASS' : 
 export const failures = () => failed;
 // Headless Chrome has no GPU here: SwiftShader gives it real (slow) WebGL.
 export async function launch(type = 'chromium', opts = {}) {
-  return type === 'webkit' ? webkit.launch(opts) : chromium.launch({channel: 'chrome', args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'], ...opts});
+  const angle = process.env.ANGLE || 'swiftshader';
+  return type === 'webkit' ? webkit.launch(opts) : chromium.launch({channel: 'chrome', args: [`--use-angle=${angle}`, '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'], ...opts});
 }
 // Polls with plain evaluate calls: waitForFunction evaluates a string, which the live CSP refuses.
 export async function waitFor(page, fn, arg, timeout = 90000) {

@@ -12,6 +12,12 @@ for (const [label, url, form] of [['design link', C.designURL(design, BASE), fal
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto(url + (url.includes('?') ? '' : ''), {waitUntil: 'domcontentloaded'});
   await waitFor(page, () => document.getElementById('price-chip').textContent.length > 5);
+  // A new visitor: the price stays locked until details are sent, then it is the design's own.
+  const lockedChip = await page.textContent('#price-chip');
+  check(!/£\d/.test(lockedChip), `${label}: price locked for a new visitor`, lockedChip.trim());
+  await page.evaluate(() => { try { sessionStorage.setItem('bh-receipt-v1', 'BHE-QA'); } catch {} });
+  await page.goto('about:blank'); await page.goto(url, {waitUntil: 'domcontentloaded'});
+  await waitFor(page, () => document.getElementById('price-chip').textContent.length > 5);
   if (form) await waitFor(page, () => document.getElementById('form-dialog').open, null, 15000).catch(() => {});
   else await page.waitForTimeout(800);
   const got = await page.evaluate(() => ({hash: location.hash, chip: document.getElementById('price-chip').textContent, dialog: document.getElementById('form-dialog').open, title: document.getElementById('form-title').textContent, toast: document.getElementById('toast').textContent}));

@@ -49,7 +49,7 @@ test('other origins, unknown forms, bad designs and oversized bodies are refused
 });
 
 test('every form type is accepted', async () => {
-  for (const type of ['callback', 'showroom', 'brochure', 'book', 'quote', 'pdf']) {
+  for (const type of ['callback', 'showroom', 'brochure', 'book-call', 'book', 'quote', 'pdf']) {
     const store = memory();
     assert.equal((await handleEnquiry(post(good({type})), {store})).status, 200, type);
     assert.equal([...store.m.values()][0].type, type);

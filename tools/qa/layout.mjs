@@ -45,7 +45,11 @@ for (const [w, h] of SIZES) for (const range of ['highline', 'neo', 'casanova'])
   }
   if (range !== 'highline') { check(!issues.length, `${w}x${h} ${range}: no sideways scroll, every target 44px+`, issues.slice(0, 40).join(' | ')); check(!errors.length, `${w}x${h} ${range}: no page errors`, errors.slice(0, 3).join(' | ')); await ctx.close(); continue; }
   // Dialogs, the menu and the tour.
-  for (const mode of ['callback', 'showroom', 'brochure', 'book', 'quote', 'pdf']) {
+  // The price step once unlocked (the locked step, with its form, is measured above).
+  await page.evaluate(() => { window.__cfg.unlock(); window.__cfg.selectStep(7, {focusHeading: false}); }); await sleep(150);
+  { const m = await page.evaluate(MEASURE); if (m.overflow > 0) issues.push(`unlocked price step scrolls sideways by ${m.overflow}px`); for (const s of m.small) issues.push(`unlocked price step small target ${s}`); }
+  await page.evaluate(() => window.__cfg.resetReceipt());
+  for (const mode of ['callback', 'showroom', 'brochure', 'book']) {
     await page.evaluate(m => { document.querySelector(`[data-open="${m}"]`) ? document.querySelector(`[data-open="${m}"]`).click() : null; }, mode).catch(() => {});
     await page.evaluate(m => { if (!document.getElementById('form-dialog').open) { window.__cfg.selectStep(7, {focusHeading: false}); } }, mode);
     if (!(await page.evaluate(() => document.getElementById('form-dialog').open))) await page.evaluate(m => document.querySelector(`[data-open="${m}"], [data-action="pdf"]`)?.click(), mode);

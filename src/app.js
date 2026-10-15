@@ -23,6 +23,22 @@ const DEBUG3D = params.has('debug3d');
 const STORAGE = 'bh-design-v1', RECEIPT = 'bh-receipt-v1';
 const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const stacked = () => matchMedia('(max-width: 1023px)').matches;
+// On phones the 3D and the step bar stay pinned above the panel, so "into view" means just below the
+// step bar: scrollIntoView put the top of each step (its title, and the price step's locked price
+// and form heading) behind the 3D.
+function reveal(el, {gap = 20, block = 'start'} = {}) {
+  if (!el) return;
+  const behavior = reduced() ? 'auto' : 'smooth';
+  if (!stacked()) {
+    // Beside the 3D the panel scrolls on its own: move only it, never the window.
+    const body = $('#panel-body'), r = el.getBoundingClientRect(), b = body.getBoundingClientRect();
+    const top = block === 'center' ? r.top - b.top - (b.height - r.height) / 2 : r.top - b.top - gap;
+    if (Math.abs(top) > 2) body.scrollBy({top, behavior});
+    return;
+  }
+  const top = el.getBoundingClientRect().top - ($('#steps').getBoundingClientRect().bottom + gap);
+  if (Math.abs(top) > 2) window.scrollBy({top, behavior});
+}
 
 // ---- Analytics: every step and call to action, to the dataLayer when one exists -----------------
 // Events carry no contact details. QA reads them back from window.__events.
@@ -166,7 +182,7 @@ function stepRange() {
 function sizeChoice(code) {
   const s0 = normalise({...state, size: code}), d = dims(s0), on = state.size === code;
   const p = priceFor({...s0, openings: [], canopy: {left: 'none', right: 'none'}, foundation: 'none', items: {}, bikeLift: 'none', pv: false, floraboard: 0}).building?.unit;
-  return `<label class="size-card${on ? ' is-on' : ''}" for="size-${code}"><input type="radio" id="size-${code}" name="size" value="${esc(code)}"${on ? ' checked' : ''}><span class="code">${esc(sizeLabel(state.range, code))}</span><span class="dim">${metres(d.W)} x ${metres(d.D)}</span><span class="area">${d.area.toFixed(2)}m² inside</span><span class="price">${p ? pounds(p) : ''}</span></label>`;
+  return `<label class="size-card${on ? ' is-on' : ''}" for="size-${code}"><input type="radio" id="size-${code}" name="size" value="${esc(code)}"${on ? ' checked' : ''}><span class="code">${esc(sizeLabel(state.range, code))}</span><span class="dim">${metres(d.W)} x ${metres(d.D)}</span><span class="area">${d.area.toFixed(2)}m² inside</span><span class="price">${p && unlocked() ? pounds(p) : ''}</span></label>`;
 }
 function stepSize() {
   const R = state.range, d = dims(state);
@@ -297,22 +313,32 @@ function stepInside() {
   return html;
 }
 
+// The price is gated: until the visitor sends their details (here or in any of the forms, which
+// all carry the design), the price card is a blurred placeholder with the form beneath it. The real
+// figures (and the link to the product in Biohort's shop) are not in the page before then. Book a
+// call is open at any time (it is a lead form itself); the PDF, which carries the price, unlocks
+// with it.
 function stepPrice() {
-  const p = priceFor(state), ref = designReference(state);
+  const p = priceFor(state), ref = designReference(state), open = unlocked();
   const lines = p.lines.map(l => `<tr><td>${esc(l.name)}${l.qty > 1 ? ` <span class="qty">x ${l.qty}</span>` : ''}<span class="sku">Article ${esc(l.sku)}</span></td><td>${pounds(l.total)}</td></tr>`).join('');
   const quoted = p.quoted.map(q => `<tr class="quoted"><td>${esc(q.name)}<span class="sku">${esc(q.note)}</span></td><td>${q.key === 'assembly' || q.key === 'base' ? 'Quoted' : 'Quoted'}</td></tr>`).join('');
   const spec = specRows(state).map(([h, rows]) => `<h3>${esc(h)}</h3><dl>${rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`).join('');
-  return `<div class="price-card" id="price-card"><p class="label">${p.missing.length ? 'Published prices, plus quoted items' : 'Your price, including VAT'}</p><p class="big">${pounds(p.total)}</p><p class="basis">${esc(summaryLine(state))}. ${esc(p.caveat)}</p>
+  let name = ''; try { name = JSON.parse(sessionStorage.getItem('bh-contact') || '{}').firstName || ''; } catch {}
+  const gate = open
+    ? `<div id="quote-unlocked"><div class="price-card" id="price-card"><p class="label">${p.missing.length ? 'Published prices, plus quoted items' : 'Your price, including VAT'}</p><p class="big">${pounds(p.total)}</p><p class="basis">${esc(summaryLine(state))}. ${esc(p.caveat)}</p>
     <table class="lines"><caption class="visually-hidden">Price breakdown</caption>${lines}${quoted}<tr class="total"><td>Total, including 20% VAT</td><td>${pounds(p.total)}</td></tr></table>
     <p class="caveat">Prices from Biohort's GB configurator and 2026 price list, read 13 October 2026. Design reference ${ref}.</p></div>
+      <div class="next-step"><h2 class="group-title" id="thanks-title" tabindex="-1">${name ? `Thanks, ${esc(name)}. ` : ''}Your design is with Biohort.</h2><p>Biohort's UK team checks it and calls you to confirm every part and its price. Book a time to talk it through, download your PDF, or see it in Biohort's shop.</p></div></div>`
+    : `<div id="quote-locked"><div class="price-card is-locked"><p class="label">${icon('lock')}Your price, including VAT</p><p class="big price-blur" aria-hidden="true">£0,000</p><p class="basis">Send your design to see its full price from Biohort's published UK prices, itemised with article numbers, and to download your illustrated PDF.</p></div><div id="quote-slot"></div></div>`;
+  return `${gate}
   <div class="cta-stack">
-    <button type="button" class="btn wide" data-open="quote" data-cta="send-design" data-placement="price">${icon('send')}Send my design to Biohort</button>
     <div class="cta-row">
-      <button type="button" class="btn light" data-open="book" data-cta="book-call" data-placement="price">${icon('calendar')}Book a call</button>
-      <button type="button" class="btn light" data-action="pdf" data-cta="download-pdf" data-placement="price">${icon('download')}Download PDF</button>
+      <button type="button" class="btn tile${open ? '' : ' light'}" data-open="book" data-cta="book-call" data-placement="price">${icon('calendar')}<span><strong>Book a call</strong><small>Pick a day and time to talk it through</small></span></button>
+      <button type="button" class="btn tile light" data-action="pdf" data-cta="download-pdf" data-placement="price">${icon(open ? 'download' : 'lock')}<span><strong>Download PDF</strong><small>${open ? 'Your design, views and price' : 'Unlocks with your price'}</small></span></button>
     </div>
+    <p class="hint pdf-status" id="pdf-status" role="status"></p>
     <div class="cta-row">
-      <a class="btn ghost" href="${esc(shopURL(state))}" target="_blank" rel="noopener" data-cta="shop" data-placement="price">${icon('outside')}See it in Biohort's shop</a>
+      ${open ? `<a class="btn ghost" href="${esc(shopURL(state))}" target="_blank" rel="noopener" data-cta="shop" data-placement="price">${icon('outside')}See it in Biohort's shop</a>` : ''}
       <button type="button" class="btn ghost" data-action="share" data-cta="share" data-placement="price">${icon('share')}Share this design</button>
     </div>
   </div>
@@ -330,9 +356,17 @@ const RENDER = [stepRange, stepSize, stepColour, stepOpenings, stepRoof, stepBas
 function renderSteps() {
   $('#steps').innerHTML = STEPS.map((s, i) => `<button type="button" data-step="${i}"${i === state.step ? ' aria-current="step"' : ''} class="${ui.visited.has(i) && i !== state.step ? 'done' : ''}" title="${esc(s.label)}"><span class="n">${i + 1}</span><span class="l">${esc(s.label)}</span></button>`).join('');
 }
+const scratch = document.createElement('div');
 function renderPrice() {
   const p = priceFor(state);
-  $('#price-chip').innerHTML = `${esc(designName(state))}<strong>${pounds(p.total)}</strong><span class="plus">${p.missing.length ? '+ quoted items · ' : ''}inc VAT</span>`;
+  // Locked: a button to the price step instead of the figure. It wraps rather than overflow beside
+  // the longest Next label, and the static HTML matches it, so the footer doesn't shift on load.
+  // Only real changes are written, so the live region stays quiet.
+  const html = !unlocked()
+    ? `<button type="button" class="chip-lock" data-action="see-price" data-cta="see-price" data-placement="footer"><span class="t">${icon('lock')}See your price</span></button>`
+    : `${esc(designName(state))}<strong>${pounds(p.total)}</strong><span class="plus">${p.missing.length ? '+ quoted items · ' : ''}inc VAT</span>`;
+  scratch.innerHTML = html;
+  if (scratch.innerHTML !== $('#price-chip').innerHTML) $('#price-chip').innerHTML = html;
 }
 function render({keepFocus = false} = {}) {
   const active = keepFocus ? document.activeElement : null;
@@ -344,11 +378,14 @@ function render({keepFocus = false} = {}) {
   const lede = s.id === 'roof' ? (state.range === 'casanova' ? 'The light band, the roof bars and spotlight cut-outs.' : 'Canopy, downpipes and what goes on the roof and walls.') : s.id === 'price' ? `${summaryLine(state)}.` : s.lede;
   $('#panel-lede').textContent = lede;
   $('#step-content').innerHTML = RENDER[state.step]();
+  // The price step's form is one element kept across renders, so what the visitor typed survives.
+  const slot = $('#quote-slot');
+  if (slot) { slot.replaceWith(quoteForm); quote.prefill(); }
   for (const el of $$('#step-content [data-hex]')) el.style.background = el.dataset.hex;
   $('#usps').innerHTML = '<h2 class="visually-hidden">Why Biohort</h2>' + (USPS[s.usps] || []).map(u => `<div class="usp">${icon('check')}<span><strong>${esc(u.title)}</strong>${esc(u.text)}</span></div>`).join('');
   renderPrice();
   $('#back').hidden = state.step === 0;
-  $('#next').textContent = state.step === STEPS.length - 1 ? 'Send my design' : `Next: ${STEPS[state.step + 1].label}`;
+  $('#next').textContent = state.step === STEPS.length - 1 ? (unlocked() ? 'Book a call' : 'Show my price') : `Next: ${STEPS[state.step + 1].label}`;
   $('#undo').disabled = !undoStack.length; $('#redo').disabled = !redoStack.length;
   if (activeId) document.getElementById(activeId)?.focus({preventScroll: true});
   else if (activeAction) $('#step-content ' + activeAction)?.focus({preventScroll: true});
@@ -372,11 +409,11 @@ function selectStep(i, {focusHeading = true} = {}) {
   }
   if (focusHeading) {
     $('#panel-title').focus({preventScroll: true});
-    if (stacked()) $('#panel').scrollIntoView({block: 'start', behavior: reduced() ? 'auto' : 'smooth'});
+    if (stacked()) reveal($('#panel-title'));
     else $('#panel-body').scrollTop = 0;
   }
   track('step_view', {step: i + 1, step_name: STEPS[i].id});
-  if (STEPS[i].id === 'price') track('price_view', {total: priceFor(state).total, range: state.range});
+  if (STEPS[i].id === 'price') track('price_view', {total: unlocked() ? priceFor(state).total : undefined, range: state.range, locked: !unlocked()});
 }
 
 // ---- Panel events --------------------------------------------------------------------------------
@@ -439,6 +476,7 @@ content.addEventListener('click', e => {
     ui.opening = o.id;
     change({openings: state.openings.map(x => (x.id === o.id ? next : x))}, {key: 'opening', focus: {id: o.id, wall: o.wall}});
   } else if (a === 'pdf') downloadPDF('price');
+  else if (a === 'see-price') focusQuote();
   else if (a === 'share') openShare();
   else if (a === 'compare') openCompare();
 });
@@ -474,10 +512,14 @@ function addOpening(kind) {
 $('#steps').addEventListener('click', e => { const b = e.target.closest('[data-step]'); if (b) selectStep(Number(b.dataset.step)); });
 $('#back').addEventListener('click', () => selectStep(state.step - 1));
 $('#next').addEventListener('click', () => {
-  if (state.step === STEPS.length - 1) return openForm('quote', 'footer');
+  if (state.step === STEPS.length - 1) {
+    track('cta_click', {cta: unlocked() ? 'book-call' : 'show-price', placement: 'footer'});
+    return unlocked() ? openForm('book', 'footer') : sendQuote('footer');
+  }
   track('cta_click', {cta: 'next', placement: 'footer'});
   selectStep(state.step + 1);
 });
+$('#price-chip').addEventListener('click', e => { if (e.target.closest('[data-action="see-price"]')) focusQuote(); });
 $('#undo').addEventListener('click', () => { if (!undoStack.length) return; redoStack.push(clone(state)); const step = state.step; state = normalise({...undoStack.pop(), step}); render(); persist(); scene?.update(state); toast('Undone'); track('undo'); });
 $('#redo').addEventListener('click', () => { if (!redoStack.length) return; undoStack.push(clone(state)); const step = state.step; state = normalise({...redoStack.pop(), step}); render(); persist(); scene?.update(state); toast('Redone'); track('redo'); });
 
@@ -527,6 +569,9 @@ $('#help').addEventListener('click', e => tour.start(e.currentTarget));
 $('#help-menu').addEventListener('click', () => { menu.hidden = true; menuToggle.setAttribute('aria-expanded', 'false'); tour.start(menuToggle); });
 
 // ---- Forms --------------------------------------------------------------------------------------
+// The dialog serves the header and menu forms and Book a call; the price step has its own form,
+// which unlocks the price. Any successful send unlocks it, since every form carries the
+// design with the visitor's details.
 const FORMS = {
   callback: {title: 'Request a callback', lede: 'Biohort\'s UK team calls you back about your design. It is attached to your request, so they can see exactly what you chose.', submit: 'Request my callback',
     fields: `<div class="field"><label for="f-time">Best time to call</label><select id="f-time" name="bestTime"><option>Any time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>`,
@@ -537,16 +582,80 @@ const FORMS = {
     done: 'We\'ll put you in touch with the nearest stockist showing your range. Your design is attached.'},
   brochure: {title: 'Download the brochure', lede: 'Biohort\'s English product catalogue: every range, size and accessory, with the CasaNova brochure if that\'s your range.', submit: 'Download the brochure',
     done: 'Your brochure is opening. If it doesn\'t, use the button below.'},
-  book: {title: 'Book a design call', lede: 'Choose a day and time and Biohort\'s UK team will call you to go through your design and confirm every part before you order.', submit: 'Request this call',
+  book: {title: 'Book a design call', lede: 'Pick a day and time to talk it through. Biohort\'s UK team calls you to go through your design and confirm every part before you order.', submit: 'Request this call',
     fields: `<div class="field-row"><div class="field"><label for="f-day">Preferred day</label><input id="f-day" name="day" type="date"></div><div class="field"><label for="f-slot">Time</label><select id="f-slot" name="slot"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div></div>`,
-    done: 'Biohort will confirm your design call. Your design and its full specification are attached.'},
-  quote: {title: 'Send your design to Biohort', lede: 'Biohort checks your design, confirms every part and its price, and calls you to arrange delivery and, if you want one, an assembly partner.', submit: 'Send my design',
-    fields: `<div class="field"><label for="f-notes">Anything else Biohort should know? <span class="hint">Optional</span></label><textarea id="f-notes" name="notes" maxlength="1000" placeholder="Access, the base you have, timing"></textarea></div>`,
-    done: 'Your design is with Biohort. They will check it and call you to confirm every part and its price.'},
-  pdf: {title: 'Download your design PDF', lede: 'Renders of your design from the front, all four sides, inside and the plan, with the full specification, every published price, next steps and a link to book a call.', submit: 'Download my PDF',
-    done: 'Your PDF is being made from your 3D design. It downloads in a few seconds.'}
+    done: 'Biohort will confirm your design call. Your design and its full specification are attached.'}
 };
-const dialog = $('#form-dialog'), leadForm = $('#lead-form');
+// The pipeline's form types: Book a call is stored and reported as `book-call`.
+const TYPE = {book: 'book-call'};
+const FIELDS = ['first', 'last', 'phone', 'email', 'postcode'];
+const unlocked = () => Boolean(receipt);
+
+/** Validation, errors and the request body for one form whose inputs are named prefix + field. */
+function formKit(form, prefix) {
+  const input = id => form.querySelector(`#${prefix}${id}`), hint = `${prefix}phone-hint`;
+  function fieldError(id, message) {
+    const el = input(id), out = form.querySelector(`#${prefix}${id}-error`);
+    if (message) { el.setAttribute('aria-invalid', 'true'); el.setAttribute('aria-describedby', [`${prefix}${id}-error`, id === 'phone' ? hint : ''].filter(Boolean).join(' ')); out.textContent = message; out.hidden = false; }
+    else { el.removeAttribute('aria-invalid'); if (id === 'phone') el.setAttribute('aria-describedby', hint); else el.removeAttribute('aria-describedby'); out.hidden = true; }
+    return !message;
+  }
+  function validate() {
+    const f = form.elements;
+    const problems = {
+      first: !f.firstName.value.trim() ? 'Enter your first name.' : !validName(f.firstName.value) ? 'Use letters only, for example Sam.' : '',
+      last: !f.lastName.value.trim() ? 'Enter your last name.' : !validName(f.lastName.value) ? 'Use letters only, for example Taylor.' : '',
+      phone: phoneProblem(f.phone.value),
+      email: !f.email.value.trim() ? 'Enter your email address so Biohort can send your design.' : !validEmail(f.email.value) ? 'Enter an email address like name@example.com.' : '',
+      postcode: !f.postcode.value.trim() ? 'Enter the postcode where the building will go.' : !validPostcode(f.postcode.value) ? 'Enter a full UK postcode, such as SW1A 1AA.' : ''
+    };
+    let first = null;
+    for (const [k, msg] of Object.entries(problems)) { if (!fieldError(k, msg) && !first) first = k; }
+    return first;
+  }
+  const problem = (id, value) => id === 'phone' ? phoneProblem(value) : id === 'email' ? (validEmail(value) ? '' : 'Enter an email address like name@example.com.') : id === 'postcode' ? (validPostcode(value) ? '' : 'Enter a full UK postcode, such as SW1A 1AA.') : (validName(value) ? '' : 'Use letters only.');
+  for (const id of FIELDS) {
+    input(id).addEventListener('blur', e => {
+      if (!e.target.value.trim()) return;
+      if (id === 'postcode' && validPostcode(e.target.value)) e.target.value = formatPostcode(e.target.value);
+      if (id === 'phone') { const p = parseUKPhone(e.target.value); if (p.valid) e.target.value = p.display; }
+      fieldError(id, problem(id, e.target.value));
+    });
+    // A corrected field clears its error as it is typed, not on blur: clearing it on blur moved the
+    // send button under the pointer mid-click, so the click was lost.
+    input(id).addEventListener('input', e => { if (e.target.getAttribute('aria-invalid') === 'true' && e.target.value.trim() && !problem(id, e.target.value)) fieldError(id, ''); });
+  }
+  return {
+    form, input, fieldError, validate,
+    reset() { for (const id of FIELDS) fieldError(id, ''); },
+    prefill() { try { const saved = JSON.parse(sessionStorage.getItem('bh-contact') || 'null'); if (saved) for (const [k, v] of Object.entries(saved)) { const i = form.elements[k]; if (i && !i.value) i.value = v; } } catch {} },
+    body(type, placement, extra) {
+      const f = form.elements, phone = parseUKPhone(f.phone.value);
+      return {
+        type: TYPE[type] || type, placement,
+        firstName: f.firstName.value.trim(), lastName: f.lastName.value.trim(), phone: phone.e164, phoneDisplay: phone.display,
+        email: f.email.value.trim(), postcode: formatPostcode(f.postcode.value), marketing: f.marketing.checked, company: f.company.value,
+        extra, design: encodeDesign(state), reference: designReference(state), page: location.origin + location.pathname,
+        attribution: attribution()
+      };
+    }
+  };
+}
+
+/** Posts one enquiry; returns the reference, or throws with the server's message. */
+async function sendLead(kit, body) {
+  const res = await fetch('/api/enquiry', {method: 'POST', headers: {'content-type': 'application/json'}, body: JSON.stringify(body)});
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok || !data.ok) {
+    if (data.field) { kit.fieldError(data.field, data.error); kit.input(data.field)?.focus(); }
+    throw new Error(data.error || `The server said ${res.status}`);
+  }
+  receipt = data.reference;
+  try { sessionStorage.setItem(RECEIPT, receipt); sessionStorage.setItem('bh-contact', JSON.stringify({firstName: body.firstName, lastName: body.lastName, phone: body.phoneDisplay, email: body.email, postcode: body.postcode})); } catch {}
+  return data.reference;
+}
+
+const dialog = $('#form-dialog'), leadForm = $('#lead-form'), lead = formKit(leadForm, 'f-');
 let formMode = 'callback', formOpener = null, formPlacement = '';
 
 function openForm(mode, placement = '') {
@@ -562,72 +671,28 @@ function openForm(mode, placement = '') {
   $('#form-submit').textContent = f.submit;
   $('#form-view').hidden = false; $('#form-done').hidden = true;
   $('#form-error').hidden = true;
-  for (const id of ['first', 'last', 'phone', 'email', 'postcode']) { const i = $('#f-' + id); i.removeAttribute('aria-invalid'); $(`#f-${id}-error`).hidden = true; }
-  try { const saved = JSON.parse(sessionStorage.getItem('bh-contact') || 'null'); if (saved) for (const [k, v] of Object.entries(saved)) { const i = leadForm.elements[k]; if (i && !i.value) i.value = v; } } catch {}
+  lead.reset();
+  lead.prefill();
   dialog.showModal();
   setTimeout(() => leadForm.elements.firstName.focus(), 30);
   track('form_open', {form: mode, placement: formPlacement});
 }
 dialog.addEventListener('close', () => { if (formOpener?.isConnected) formOpener.focus({preventScroll: true}); });
 
-function fieldError(id, message) {
-  const input = $('#f-' + id), out = $(`#f-${id}-error`);
-  if (message) { input.setAttribute('aria-invalid', 'true'); input.setAttribute('aria-describedby', [`f-${id}-error`, id === 'phone' ? 'f-phone-hint' : ''].filter(Boolean).join(' ')); out.textContent = message; out.hidden = false; }
-  else { input.removeAttribute('aria-invalid'); if (id === 'phone') input.setAttribute('aria-describedby', 'f-phone-hint'); else input.removeAttribute('aria-describedby'); out.hidden = true; }
-  return !message;
-}
-function validate() {
-  const f = leadForm.elements;
-  const problems = {
-    first: !f.firstName.value.trim() ? 'Enter your first name.' : !validName(f.firstName.value) ? 'Use letters only, for example Sam.' : '',
-    last: !f.lastName.value.trim() ? 'Enter your last name.' : !validName(f.lastName.value) ? 'Use letters only, for example Taylor.' : '',
-    phone: phoneProblem(f.phone.value),
-    email: !f.email.value.trim() ? 'Enter your email address so Biohort can send your design.' : !validEmail(f.email.value) ? 'Enter an email address like name@example.com.' : '',
-    postcode: !f.postcode.value.trim() ? 'Enter the postcode where the building will go.' : !validPostcode(f.postcode.value) ? 'Enter a full UK postcode, such as SW1A 1AA.' : ''
-  };
-  let first = null;
-  for (const [k, msg] of Object.entries(problems)) { if (!fieldError(k, msg) && !first) first = k; }
-  return first;
-}
-for (const id of ['first', 'last', 'phone', 'email', 'postcode']) {
-  $('#f-' + id).addEventListener('blur', e => {
-    if (!e.target.value.trim()) return;
-    if (id === 'postcode' && validPostcode(e.target.value)) e.target.value = formatPostcode(e.target.value);
-    if (id === 'phone') { const p = parseUKPhone(e.target.value); if (p.valid) e.target.value = p.display; }
-    const f = leadForm.elements;
-    const msg = id === 'phone' ? phoneProblem(f.phone.value) : id === 'email' ? (validEmail(f.email.value) ? '' : 'Enter an email address like name@example.com.') : id === 'postcode' ? (validPostcode(f.postcode.value) ? '' : 'Enter a full UK postcode, such as SW1A 1AA.') : (validName(e.target.value) ? '' : 'Use letters only.');
-    fieldError(id, msg);
-  });
-}
-
 leadForm.addEventListener('submit', async e => {
   e.preventDefault();
-  const bad = validate();
-  if (bad) { $('#f-' + bad).focus(); track('form_error', {form: formMode, field: bad}); return; }
-  const f = leadForm.elements, button = $('#form-submit');
+  const bad = lead.validate();
+  if (bad) { lead.input(bad).focus(); track('form_error', {form: formMode, field: bad}); return; }
+  const button = $('#form-submit');
   const extra = {};
   for (const el of $$('#form-mode-fields [name]')) extra[el.name] = el.value;
-  const phone = parseUKPhone(f.phone.value);
-  const body = {
-    type: formMode, placement: formPlacement,
-    firstName: f.firstName.value.trim(), lastName: f.lastName.value.trim(), phone: phone.e164, phoneDisplay: phone.display,
-    email: f.email.value.trim(), postcode: formatPostcode(f.postcode.value), marketing: f.marketing.checked, company: f.company.value,
-    extra, design: encodeDesign(state), reference: designReference(state), page: location.origin + location.pathname,
-    attribution: attribution()
-  };
   button.disabled = true; button.textContent = 'Sending…';
   $('#form-error').hidden = true;
   try {
-    const res = await fetch('/api/enquiry', {method: 'POST', headers: {'content-type': 'application/json'}, body: JSON.stringify(body)});
-    const data = await res.json().catch(() => ({}));
-    if (!res.ok || !data.ok) {
-      if (data.field) { fieldError(data.field, data.error); $('#f-' + data.field)?.focus(); }
-      throw new Error(data.error || `The server said ${res.status}`);
-    }
-    receipt = data.reference;
-    try { sessionStorage.setItem(RECEIPT, receipt); sessionStorage.setItem('bh-contact', JSON.stringify({firstName: body.firstName, lastName: body.lastName, phone: phone.display, email: body.email, postcode: body.postcode})); } catch {}
+    const reference = await sendLead(lead, lead.body(formMode, formPlacement, extra));
     track('form_success', {form: formMode, placement: formPlacement});
-    showDone(data.reference);
+    render({keepFocus: true});
+    showDone(reference);
   } catch (err) {
     const msg = $('#form-error');
     msg.textContent = `Your details didn't send: ${err.message}. Please try again, or call Biohort on ${COMPANY.phone}.`;
@@ -648,14 +713,73 @@ function showDone(reference) {
     actions.push(`<a class="btn wide" href="${COMPANY.catalogue}" target="_blank" rel="noopener" data-cta="brochure-download" data-placement="form">${icon('download')}Biohort product catalogue (PDF)</a>`);
     if (state.range === 'casanova') actions.push(`<a class="btn light wide" href="${COMPANY.casanovaBrochure}" target="_blank" rel="noopener" data-cta="brochure-casanova" data-placement="form">${icon('download')}CasaNova brochure (PDF)</a>`);
   }
-  if (formMode !== 'pdf') actions.push(`<button type="button" class="btn light wide" data-action="done-pdf" data-cta="download-pdf" data-placement="form-done">${icon('download')}Download my design PDF</button>`);
+  actions.push(`<button type="button" class="btn${formMode === 'brochure' ? ' light' : ''} wide" data-action="done-price" data-cta="see-price" data-placement="form-done">See your price</button>`);
+  actions.push(`<button type="button" class="btn light wide" data-action="done-pdf" data-cta="download-pdf" data-placement="form-done">${icon('download')}Download my design PDF</button>`);
   actions.push(`<a class="btn ghost wide" href="tel:${COMPANY.tel}" data-cta="phone" data-placement="form-done">${icon('phone')}Call ${COMPANY.phone}</a>`);
   $('#done-actions').innerHTML = actions.join('');
   $('#done-title').focus();
   if (formMode === 'brochure') { window.open(COMPANY.catalogue, '_blank', 'noopener'); track('brochure_download'); }
-  if (formMode === 'pdf') makePDF();
 }
-$('#done-actions').addEventListener('click', e => { if (e.target.closest('[data-action="done-pdf"]')) makePDF(); });
+$('#done-actions').addEventListener('click', e => {
+  if (e.target.closest('[data-action="done-pdf"]')) makePDF();
+  if (e.target.closest('[data-action="done-price"]')) {
+    dialog.close();
+    if (state.step !== STEPS.length - 1) selectStep(STEPS.length - 1);
+    else reveal($('#price-card'));
+  }
+});
+
+// The price step's own form. Built once and moved into each render of the step (see render()).
+const quoteForm = document.createElement('form');
+quoteForm.id = 'quote-form'; quoteForm.className = 'quote-form'; quoteForm.noValidate = true;
+quoteForm.setAttribute('aria-labelledby', 'quote-form-title');
+quoteForm.innerHTML = `<h2 class="group-title" id="quote-form-title">Send your design to see your price</h2>
+  <div class="field-row">
+    <div class="field"><label for="q-first">First name</label><input id="q-first" name="firstName" autocomplete="given-name" required maxlength="60"><p class="error" id="q-first-error" hidden></p></div>
+    <div class="field"><label for="q-last">Last name</label><input id="q-last" name="lastName" autocomplete="family-name" required maxlength="60"><p class="error" id="q-last-error" hidden></p></div>
+  </div>
+  <div class="field"><label for="q-phone">Phone number</label><input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="24" placeholder="07700 123456" aria-describedby="q-phone-hint"><p class="hint" id="q-phone-hint">A UK mobile or landline. Biohort's UK team will call you on it.</p><p class="error" id="q-phone-error" hidden></p></div>
+  <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com"><p class="error" id="q-email-error" hidden></p></div>
+  <div class="field"><label for="q-postcode">Postcode of the garden</label><input id="q-postcode" name="postcode" autocomplete="postal-code" required maxlength="8" placeholder="SW1A 1AA" class="short"><p class="error" id="q-postcode-error" hidden></p></div>
+  <div class="field"><label for="q-notes">Anything else Biohort should know? <span class="hint">Optional</span></label><textarea id="q-notes" name="notes" maxlength="1000" placeholder="Access, the base you have, timing"></textarea></div>
+  <div class="field hp" aria-hidden="true"><label for="q-company">Company</label><input id="q-company" name="company" tabindex="-1" autocomplete="off"></div>
+  <label class="check"><input type="checkbox" id="q-marketing" name="marketing"><span>Send me occasional news and offers from Biohort. Optional.</span></label>
+  <p class="small-print">Free, with no obligation. Your design, its full specification and a link to it are sent with your details, and Biohort's UK team checks every part. We use your details only to reply to you. <a href="${COMPANY.privacy}" target="_blank" rel="noopener">Privacy policy</a>.</p>
+  <p class="error form-error" id="q-form-error" role="alert" hidden></p>
+  <button type="submit" class="btn wide" id="q-submit">${icon('lock')}<span>Show my price</span></button>`;
+const quote = formKit(quoteForm, 'q-');
+let quoteBusy = false;
+quoteForm.addEventListener('submit', e => { e.preventDefault(); sendQuote('price'); });
+async function sendQuote(placement) {
+  if (quoteBusy) return;
+  if (STEPS[state.step].id !== 'price') return focusQuote();
+  const bad = quote.validate();
+  if (bad) { const el = quote.input(bad); reveal(stacked() ? el.closest('.field') : el, {gap: 8, block: 'center'}); el.focus({preventScroll: true}); track('form_error', {form: 'quote', field: bad}); return; }
+  const button = quoteForm.querySelector('#q-submit'), label = button.querySelector('span'), error = quoteForm.querySelector('#q-form-error');
+  quoteBusy = true; button.disabled = true; label.textContent = 'Sending…'; error.hidden = true;
+  try {
+    await sendLead(quote, quote.body('quote', placement, {notes: quoteForm.elements.notes.value}));
+    track('form_success', {form: 'quote', placement});
+    render();
+    $('#thanks-title')?.focus({preventScroll: true});
+    reveal($('#quote-unlocked'));
+    toast('Here is your price. Your PDF is ready.');
+  } catch (err) {
+    error.textContent = `Your details didn't send: ${err.message}. Please try again, or call Biohort on ${COMPANY.phone}.`;
+    error.hidden = false;
+    track('form_fail', {form: 'quote'});
+  } finally {
+    quoteBusy = false; button.disabled = false; label.textContent = 'Show my price';
+  }
+}
+/** Takes the visitor to the price step's form (from the footer chip or a locked PDF button). */
+function focusQuote() {
+  if (unlocked()) { if (STEPS[state.step].id !== 'price') selectStep(STEPS.length - 1); return; }
+  if (STEPS[state.step].id !== 'price') selectStep(STEPS.length - 1, {focusHeading: false});
+  const first = quoteForm.querySelector('#q-first');
+  reveal(stacked() ? quoteForm : first, {gap: 8, block: 'center'});
+  first.focus({preventScroll: true});
+}
 
 function attribution() {
   const out = {};
@@ -665,9 +789,13 @@ function attribution() {
 }
 
 // ---- PDF ----------------------------------------------------------------------------------------
+// The PDF carries the price, so it unlocks with it: until then the button points to the form.
 function downloadPDF(placement) {
-  if (!receipt) return openForm('pdf', placement);
-  makePDF();
+  if (unlocked()) return makePDF();
+  const status = $('#pdf-status');
+  if (status) status.textContent = 'Enter your details above to see your price and unlock your PDF.';
+  track('pdf_locked', {placement});
+  focusQuote();
 }
 let pdfBusy = false;
 async function makePDF() {
@@ -683,12 +811,12 @@ async function makePDF() {
     const origin = QA && /^https:\/\/[a-z0-9.-]+\.netlify\.app$/.test(params.get('pdforigin') || '') ? params.get('pdforigin') : location.origin;
     await mod.downloadPDF(state, views, {contactName: name, origin});
     track('pdf_download', {total: priceFor(state).total, views: Object.keys(views).length});
-    if (!$('#form-done').hidden) status.textContent = 'Your PDF has downloaded: your design from every side, inside and in plan, its full specification, price and next steps.';
-    else toast('Your design PDF has downloaded.');
+    if (dialog.open && !$('#form-done').hidden) status.textContent = 'Your PDF has downloaded: your design from every side, inside and in plan, its full specification, price and next steps.';
+    else { toast('Your design PDF has downloaded.'); const s = $('#pdf-status'); if (s) s.textContent = 'Your PDF has downloaded: your design from every side, inside and in plan, its specification, price and next steps.'; }
   } catch (err) {
     console.error(err);
     const msg = `The PDF couldn't be made on this device. Your design is saved with your enquiry, and Biohort can send it to you: call ${COMPANY.phone}.`;
-    if (!$('#form-done').hidden) status.textContent = msg; else toast(msg);
+    if (dialog.open && !$('#form-done').hidden) status.textContent = msg; else toast(msg);
     track('pdf_fail', {error: String(err).slice(0, 80)});
   } finally { pdfBusy = false; }
 }
@@ -827,6 +955,42 @@ for (const t of ['pointerdown', 'pointermove', 'keydown', 'touchstart', 'wheel',
   addEventListener(t, f, {capture: true, passive: true});
 }
 
+// As Yorkshire's start.js and designer.js: the poster stays the LCP, and the 3D starts once the
+// poster has painted (its LCP entry, a moment after it loads where LCP isn't reported, or 3s) and the
+// page has loaded and settled (2.5s, then the first idle moment). The panel is usable at once, the
+// 3D replaces an identical render a few seconds later, and the engine's start-up never competes
+// with the first paint or the first taps. It never needs a click or a drag.
+function startAfterPoster() {
+  let painted = false, loaded = document.readyState === 'complete', queued = false;
+  const settle = () => {
+    if (!painted || !loaded || queued) return;
+    queued = true;
+    setTimeout(() => (window.requestIdleCallback || (f => f()))(() => startScene('auto'), {timeout: 1500}), 2500);
+  };
+  // The 3D chunk downloads (lowest priority, not run) while the page settles.
+  const prefetch = () => {
+    const url = document.querySelector('meta[name="scene-chunk"]')?.content;
+    if (!url || document.querySelector('link[rel="prefetch"]')) return;
+    const link = document.createElement('link');
+    link.rel = 'prefetch'; link.as = 'script'; link.crossOrigin = 'anonymous'; link.href = url;
+    document.head.append(link);
+  };
+  const paint = () => { if (!painted) prefetch(); painted = true; settle(); };
+  try {
+    const po = new PerformanceObserver(list => {
+      if (list.getEntries().some(e => e.element && e.element.id === 'poster')) { po.disconnect(); paint(); }
+    });
+    po.observe({type: 'largest-contentful-paint', buffered: true});
+  } catch {}
+  const img = $('#poster');
+  const afterLoad = () => setTimeout(() => requestAnimationFrame(() => setTimeout(paint, 50)), 100);
+  if (img && !img.complete) { img.addEventListener('load', afterLoad); img.addEventListener('error', paint); } else afterLoad();
+  setTimeout(paint, 3000);
+  if (!loaded) addEventListener('load', () => { loaded = true; settle(); }, {once: true});
+  // Whatever holds up the load event, the 3D is never left waiting for a click.
+  setTimeout(() => startScene('auto-timeout'), 8000);
+}
+
 // ?debug3d on any device shows what the 3D runs on and every step it took, with Copy report and
 // Send report (anonymous; returns a reference to quote), so a phone that misbehaves can say why.
 function debug3d() {
@@ -872,7 +1036,8 @@ if (QA) {
     get attempt() { return Math.max(0, boot.diagnostics().log.filter(e => e.event === 'ready').length - 1); },
     get fallback() { return $('#stage').dataset.fallback || null; },
     change, selectStep, focusFor, priceFor: () => priceFor(state), start: startScene, STEP,
-    resetReceipt() { receipt = null; try { sessionStorage.removeItem(RECEIPT); } catch {} },
+    resetReceipt() { receipt = null; try { sessionStorage.removeItem(RECEIPT); } catch {} render(); },
+    unlock() { receipt = 'QA'; render(); }, get unlocked() { return unlocked(); },
     makePDF,
     setState(s, {keepCamera = true} = {}) { state = normalise({...s, step: state.step}); render(); scene?.update(state, {keepCamera}); }
   };
@@ -889,8 +1054,10 @@ track('configurator_view', {resumed: loadedFrom || 'new', range: state.range});
 track('step_view', {step: state.step + 1, step_name: STEPS[state.step].id});
 if (loadedFrom === 'link') toast('This shared design is ready to make your own.');
 else if (loadedFrom === 'device') toast('Welcome back. Your design is as you left it.');
-// A shared or saved design differs from the poster, so its 3D starts straight away.
+// A shared or saved design differs from the poster, so its 3D starts straight away; otherwise it
+// starts once the poster has painted. ?qa=layout never starts it (layout checks measure the page).
 if (loadedFrom || (QA && params.get('qa') !== 'layout') || DEBUG3D || TIER_PARAM) startScene(loadedFrom || 'qa');
+else if (params.get('qa') !== 'layout') startAfterPoster();
 if (params.get('book') === '1') setTimeout(() => openForm('book', 'pdf-link'), 300);
 else if (!tour.seen() && !QA) setTimeout(() => tour.start($('#panel-title')), 600);
 window.addEventListener('pagehide', e => { if (!e.persisted) scene?.dispose(); });

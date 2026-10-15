@@ -43,6 +43,20 @@ Known and unchanged: at 320px wide, on the Colour and Doors and windows steps, t
 
 Evidence: `docs/qa/fix-2026-10-15/local/` (logs, the fresh-visitor screenshots and the Lighthouse summary).
 
+### Deploy and live checks
+
+Commits `4733170` (gate and auto-start), `e9d8c40` (start timing iteration) and `be393df` (the quiet-window start, live), pushed to `main`; Netlify (Git-linked) deploy `6ad0e39b130f72a2ae207965`. `verify-live.mjs`: all 31 live files match the build, CSP header present. No live form was submitted: `standard.mjs` answers the POSTs in the browser (from the price step on, and fails if any POST happens before), and `forms.mjs` ran with `LIVE=1`.
+
+| Check (live, https://biohort-garden-room-configurator.netlify.app/configurator/) | Result |
+|---|---|
+| `standard.mjs` with `LIVE=1` | 44/44; canvas after 8.0s (desktop) and 4.5s (phone) with no interaction; the gate, unlock, Book a call (`book-call`) and PDF as locally |
+| Fresh-visitor timing, headless Chrome on Metal | Canvas 6.3 to 6.9s in three of four fresh visitors and 10.8s in one (this Mac's connection to Netlify was slow and uneven: single files took 1 to 5s), no interaction, no POST |
+| iPhone (WebKit 2215), fresh visitor | Canvas after 7.6s, tour open, price locked |
+| `forms.mjs` `LIVE=1`, `links.mjs`, `events.mjs` | 16/16 (validation only); 8/8; pass |
+| Lighthouse mobile, 3 runs | 98, 99 and 100 / 100 / 100 / 100; TBT 0ms, CLS 0 to 0.019, LCP 1.5 to 1.8s (the poster); no scene request inside any trace (trace ends 4.1 to 4.9s) |
+
+Evidence: `docs/qa/fix-2026-10-15/live/`.
+
 ## 13 October 2026: v2 build
 
 

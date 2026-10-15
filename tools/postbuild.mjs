@@ -15,8 +15,12 @@ async function walk(dir) {
 // download overlaps the wait before the 3D starts (src/app.js startAfterPoster).
 const sceneChunk = (await readdir('dist/assets')).filter(f => /^scene-[\w-]+\.js$/.test(f));
 if (sceneChunk.length !== 1) { console.error('expected one scene chunk, found', sceneChunk); process.exit(1); }
+// With the chunks it imports (three.js may sit in a shared one), less the page's own entry.
+const sceneCode = await readFile(`dist/assets/${sceneChunk[0]}`, 'utf8');
+const sceneDeps = [...sceneCode.matchAll(/(?:from|import)\s*"\.\/([\w.-]+\.js)"/g)].map(m => m[1]).filter(f => !/^index-/.test(f));
+const sceneURLs = [sceneChunk[0], ...new Set(sceneDeps)].map(f => `/assets/${f}`).join(' ');
 const page = await readFile('dist/index.html', 'utf8');
-if (!page.includes('name="scene-chunk"')) await writeFile('dist/index.html', page.replace('</head>', `  <meta name="scene-chunk" content="/assets/${sceneChunk[0]}">\n</head>`));
+if (!page.includes('name="scene-chunk"')) await writeFile('dist/index.html', page.replace('</head>', `  <meta name="scene-chunk" content="${sceneURLs}">\n</head>`));
 await walk(root);
 for (const need of ['/index.html', '/legacy/scene.js']) if (!out[need]) { console.error('missing', need); process.exit(1); }
 const legacy = await readFile('dist/legacy/scene.js', 'utf8');

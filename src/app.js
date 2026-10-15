@@ -960,22 +960,33 @@ for (const t of ['pointerdown', 'pointermove', 'keydown', 'touchstart', 'wheel',
 // page has loaded and settled (2.5s, then the first idle moment). The panel is usable at once, the
 // 3D replaces an identical render a few seconds later, and the engine's start-up never competes
 // with the first paint or the first taps. It never needs a click or a drag.
+// On a slow connection the load event can come late (fonts, the range photos), so the 3D also
+// starts 4.5s after the poster painted, and 8s after the page started at the latest.
 function startAfterPoster() {
-  let painted = false, loaded = document.readyState === 'complete', queued = false;
+  let painted = false, loaded = document.readyState === 'complete', queued = false, fetched = null;
+  // Once the chunk has downloaded, or after 3s, so the import reuses the prefetched copy.
+  const go = why => { if (!started) Promise.race([fetched, new Promise(r => setTimeout(r, 3000))]).then(() => startScene(why)); };
   const settle = () => {
     if (!painted || !loaded || queued) return;
     queued = true;
-    setTimeout(() => (window.requestIdleCallback || (f => f()))(() => startScene('auto'), {timeout: 1500}), 2500);
+    setTimeout(() => (window.requestIdleCallback || (f => f()))(() => go('auto'), {timeout: 1500}), 2500);
   };
-  // The 3D chunk downloads (lowest priority, not run) while the page settles.
+  // The 3D chunks download (lowest priority, not run) while the page settles.
   const prefetch = () => {
-    const url = document.querySelector('meta[name="scene-chunk"]')?.content;
-    if (!url || document.querySelector('link[rel="prefetch"]')) return;
-    const link = document.createElement('link');
-    link.rel = 'prefetch'; link.as = 'script'; link.crossOrigin = 'anonymous'; link.href = url;
-    document.head.append(link);
+    const urls = (document.querySelector('meta[name="scene-chunk"]')?.content || '').split(/\s+/).filter(Boolean);
+    if (!urls.length || !document.createElement('link').relList?.supports?.('prefetch')) return;
+    fetched = Promise.all(urls.map(url => new Promise(r => {
+      const link = document.createElement('link');
+      link.rel = 'prefetch'; link.as = 'script'; link.crossOrigin = 'anonymous'; link.href = url;
+      link.onload = link.onerror = r;
+      document.head.append(link);
+    })));
   };
-  const paint = () => { if (!painted) prefetch(); painted = true; settle(); };
+  const paint = () => {
+    if (painted) return;
+    painted = true; prefetch(); settle();
+    setTimeout(() => go('auto-painted'), 4500);
+  };
   try {
     const po = new PerformanceObserver(list => {
       if (list.getEntries().some(e => e.element && e.element.id === 'poster')) { po.disconnect(); paint(); }

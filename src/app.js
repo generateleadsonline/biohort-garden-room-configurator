@@ -643,15 +643,17 @@ function formKit(form, prefix) {
 }
 
 /** Posts one enquiry; returns the reference, or throws with the server's message. */
-async function sendLead(kit, body) {
+async function sendLead(kit, body, {unlock = false} = {}) {
   const res = await fetch('/api/enquiry', {method: 'POST', headers: {'content-type': 'application/json'}, body: JSON.stringify(body)});
   const data = await res.json().catch(() => ({}));
   if (!res.ok || !data.ok) {
     if (data.field) { kit.fieldError(data.field, data.error); kit.input(data.field)?.focus(); }
     throw new Error(data.error || `The server said ${res.status}`);
   }
-  receipt = data.reference;
-  try { sessionStorage.setItem(RECEIPT, receipt); sessionStorage.setItem('bh-contact', JSON.stringify({firstName: body.firstName, lastName: body.lastName, phone: body.phoneDisplay, email: body.email, postcode: body.postcode})); } catch {}
+  // Only the price step's own form unlocks the price, Book a call and the PDF (as on Oeco); the
+  // other forms send the design and contact details without revealing the price.
+  if (unlock) receipt = data.reference;
+  try { if (unlock) sessionStorage.setItem(RECEIPT, receipt); sessionStorage.setItem('bh-contact', JSON.stringify({firstName: body.firstName, lastName: body.lastName, phone: body.phoneDisplay, email: body.email, postcode: body.postcode})); } catch {}
   return data.reference;
 }
 
@@ -714,7 +716,7 @@ function showDone(reference) {
     if (state.range === 'casanova') actions.push(`<a class="btn light wide" href="${COMPANY.casanovaBrochure}" target="_blank" rel="noopener" data-cta="brochure-casanova" data-placement="form">${icon('download')}CasaNova brochure (PDF)</a>`);
   }
   actions.push(`<button type="button" class="btn${formMode === 'brochure' ? ' light' : ''} wide" data-action="done-price" data-cta="see-price" data-placement="form-done">See your price</button>`);
-  actions.push(`<button type="button" class="btn light wide" data-action="done-pdf" data-cta="download-pdf" data-placement="form-done">${icon('download')}Download my design PDF</button>`);
+  if (unlocked()) actions.push(`<button type="button" class="btn light wide" data-action="done-pdf" data-cta="download-pdf" data-placement="form-done">${icon('download')}Download my design PDF</button>`);
   actions.push(`<a class="btn ghost wide" href="tel:${COMPANY.tel}" data-cta="phone" data-placement="form-done">${icon('phone')}Call ${COMPANY.phone}</a>`);
   $('#done-actions').innerHTML = actions.join('');
   $('#done-title').focus();
@@ -724,6 +726,7 @@ $('#done-actions').addEventListener('click', e => {
   if (e.target.closest('[data-action="done-pdf"]')) makePDF();
   if (e.target.closest('[data-action="done-price"]')) {
     dialog.close();
+    if (!unlocked()) return focusQuote();
     if (state.step !== STEPS.length - 1) selectStep(STEPS.length - 1);
     else reveal($('#price-card'));
   }
@@ -758,7 +761,7 @@ async function sendQuote(placement) {
   const button = quoteForm.querySelector('#q-submit'), label = button.querySelector('span'), error = quoteForm.querySelector('#q-form-error');
   quoteBusy = true; button.disabled = true; label.textContent = 'Sending…'; error.hidden = true;
   try {
-    await sendLead(quote, quote.body('quote', placement, {notes: quoteForm.elements.notes.value}));
+    await sendLead(quote, quote.body('quote', placement, {notes: quoteForm.elements.notes.value}), {unlock: true});
     track('form_success', {form: 'quote', placement});
     render();
     $('#thanks-title')?.focus({preventScroll: true});

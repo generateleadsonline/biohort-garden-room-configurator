@@ -158,3 +158,12 @@ Evidence: `docs/qa/fix-2026-10-15/live/`.
 
 - No live enquiry was submitted and no call was booked.
 - Leads are stored only in Netlify Blobs (`biohort-enquiries`). Email or CRM routing needs a destination from Biohort: see `docs/CONFIRMATIONS.md`, point C2.
+
+
+## 16 October 2026: only the price form unlocks the price
+
+John's decision after the 15 Oct standard audit: like Oeco, only the price step's own form unlocks the price, Book a call and the PDF. The callback, showroom, brochure and Book a call forms still send the design and contact details, but the price stays locked until the price form is sent. Their details are kept for the session, so the price form is prefilled.
+
+Checked on the local build and then on live in headless Chrome, with every POST answered inside the browser so nothing was submitted. A sent callback left the price step blurred with the form showing; a sent price form then unlocked the price.
+
+The thank-you panel after the other forms now shows Download PDF only once the price is unlocked, because `makePDF()` has no lock of its own. Its See your price button goes to the prefilled price form while the price is locked.
